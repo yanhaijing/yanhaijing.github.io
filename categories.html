@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Categories
+title: 分类
 header: Posts By Category
 group: navigation
 ---

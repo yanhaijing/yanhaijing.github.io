@@ -19,5 +19,5 @@ group: navigation
 便一直专注前端开发，到现在2年多了，深入学习了html，css和javascript，后来又接触了jquery，学习了javaee和php，一路
 走来，书籍一直是我最好的老师，差不多看过前端的所有书籍。
 
-现在一直致力于前端发展，这里是我的[简历](/download/resume.doc)。
+现在一直致力于前端发展，这里是我的[简历](download/resume.doc)。
     

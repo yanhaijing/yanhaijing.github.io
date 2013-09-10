@@ -75,7 +75,7 @@ JB :
   tags_path : /tags.html
   atom_path : /atom.xml
   rss_path : /rss.xml
-  about_path: /yan_about.html
+  about_path: /yan_about.md
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.

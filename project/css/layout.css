@@ -1,0 +1,56 @@
+.container-fluid{
+	max-width:1300px;
+	min-width:1300px;
+	margin:auto
+}
+
+/**
+ * 	缩略图
+ * ----------------------------
+ */
+.thumbnail{
+	position: relative;
+	padding-bottom: 60px
+}
+.thumbnail p{
+	display: none;
+	color:#333333
+}
+.thumbnail h3{
+	text-overflow:ellipsis; 
+	white-space:nowrap; 
+	overflow:hidden;
+	color:#262626;
+	font-size: 18px
+}
+.thumbnail .info{
+	position: absolute;
+	width:98.2%;
+	bottom:0;
+	background: #ffffff
+}
+.thumbnail:hover p{
+	display: block
+}
+/**
+ * 	每行5个的css
+ * 	------------------------------
+ */
+.box5 li:first-child a{
+	height: 411px
+}
+.box5 li:first-child a img{
+	height: 99%
+}
+/**
+ * 	每行5个，右对齐的css
+ * 	------------------------------
+ */
+.thumbnails.box5-right li{
+	float: right;
+	margin-right:2.127659574468085%;
+	margin-left: 0
+}
+.thumbnails.box5-right li:first-child{
+	margin-right: 0
+}

@@ -20,3 +20,5 @@
     {% endif %}  
   {% endif %}
 {% endcapture %}{% assign jbcache = nil %}
+
+{% assign BLOG_IMG = "/blog/" %}

@@ -8,8 +8,8 @@
 
 ##联系方式
 
-- [Twitter](http://t.qq.com/yanhaijing1234 "yanhaijing's Twitter")
-- [Email](http://yanhaijing1234@gmail.com "yanhaijing's Email")
+- [Weibo](http://weibo.com/yanhaijing1234 "yanhaijing's Weibo")
+- [Email](http://yanhaijing@yeah.net "yanhaijing's Email")
 
 
 ## License

@@ -3,7 +3,7 @@
     var wumiiTitle = "{{ page.title }}";
     var wumiiTags = "{{ page.tags | join: ',' }}";
     var wumiiCategories = [{{ '"' }}{{ page.categories | json }}{{ '"' }}];
-    var wumiiSitePrefix = "http://yanhaijing.github.io/";
+    var wumiiSitePrefix = "http://yanhaijing.com/";
     var wumiiParams = "&num=5&mode=3&pf=JAVASCRIPT";
 </script>
 <script type="text/javascript" src="http://widget.wumii.cn/ext/relatedItemsWidget"></script>

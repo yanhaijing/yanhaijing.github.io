@@ -3,6 +3,8 @@ layout: post
 category : javaScript
 tagline: "原创"
 tags : [javascript]
+keywords: [javascript]
+description: 为什么会用这样一个题目呢，这是要说封装的什么问题，本文并不讲高深的封装理论，只是解决一个小问题。
 ---
 {% include JB/setup %}
 

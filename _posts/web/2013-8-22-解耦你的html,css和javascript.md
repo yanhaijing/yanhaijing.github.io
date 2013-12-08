@@ -3,6 +3,8 @@ layout: post
 category : web
 tagline: "译"
 tags : [web, html, css, javascript]
+keywords: [web, html, css, javascript]
+description: 今天在web上任何大一点的网站或应用程序都包含大量的html，css和javascript。随着互联网的发展和我们对互联网越来越依赖，计划组织和维护你的前端代码是绝对必要的。
 ---
 {% include JB/setup %}
 

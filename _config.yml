@@ -13,12 +13,14 @@ safe: true
 #
 title : 颜海镜
 tagline: yanhaijing
+description: 颜海镜的博客，专注于web前端，分享html css javascript php等原创知识
+keywords: [yanhaijing, 颜海镜, 博客, 颜海镜的博客, web, web前端, html, css, javascript, php]
 author :
-  name : yanhaijing
+  name : 颜海镜
   email : yanhaijing@yeah.net
   github : https://github.com/yanhaijing
   twitter : http://weibo.com/yanhaijing1234
-  feedburner : yanhaijing
+  feedburner : 颜海镜的博客
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -28,7 +30,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : https://github.com/yanhaijing
+production_url : http://yanhaijing.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

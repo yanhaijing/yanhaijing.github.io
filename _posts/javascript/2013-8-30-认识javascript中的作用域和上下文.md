@@ -3,6 +3,8 @@ layout: post
 category : javaScript
 tagline: "译"
 tags : [javascript]
+keywords: [javascript]
+description: javascript中的作用域(scope)和上下文(context)是这门语言的独到之处，这部分归功于他们带来的灵活性。每个函数有不同的变量上下文和作用域。这些概念是javascript中一些强大的设计模式的后盾。然而这也给开发人员带来很大困惑。下面全面揭示了javascript中的上下文和作用域的不同，以及各种设计模式如何使用他们。
 ---
 {% include JB/setup %}
 

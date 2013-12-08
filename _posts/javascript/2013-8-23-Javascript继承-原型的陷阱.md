@@ -3,6 +3,8 @@ layout: post
 category : javaScript
 tagline: "译"
 tags : [javascript]
+keywords: [javascript]
+description: 在学习javascript的过程中，许多新手发现很难弄明白javascript复杂的的原型继承工作机制。在这篇文章中我谈谈在通过父函数的原型继承模型中如何实现实例属性。
 ---
 {% include JB/setup %}
 

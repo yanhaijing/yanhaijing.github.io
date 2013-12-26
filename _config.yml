@@ -13,8 +13,6 @@ safe: true
 #
 title : 颜海镜
 tagline: yanhaijing
-description: 颜海镜的博客，专注于web前端，分享html css javascript php等原创知识
-keywords: [yanhaijing, 颜海镜, 博客, 颜海镜的博客, web, web前端, html, css, javascript, php]
 author :
   name : 颜海镜
   email : yanhaijing@yeah.net

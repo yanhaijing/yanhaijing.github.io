@@ -2,7 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>    
+    <title>{{ page.title }}</title>
+    
+    {% if page.keywords %}
+    <meta name="keywords" content="{{ page.keywords | join:','}}" />
+    {% else %}
+    <meta name="keywords" content="{{ site.keywords | join:','}}" />
+    {%endif %}
+    
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% else %}
+    <meta name="description" content="{{ site.description }}" />
+    {%endif %}    
     <meta name="author" content="{{ site.author.name }}">
     
     <!-- Enable responsive viewport -->
@@ -60,6 +72,7 @@
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           
           <a class="weibo" href="http://weibo.com/yanhaijing1234/profile" target="_blank"> <img width="20" src="{{ HOME_PATH }}img/weibo_16x16.png" /></a>
+          <a class="rss" href="/rss.xml" target="_blank"> <img width="19" alt="rss" src="{{ HOME_PATH }}img/rss.jpg" /></a>
           <a class="alipay" href='http://me.alipay.com/yanhaijing' target="_blank"> <img width="80" style="width:80px" src='{{ HOME_PATH }}img/btn-index.png' /></a>
           {% include JB/analytics %}                    
         </p>

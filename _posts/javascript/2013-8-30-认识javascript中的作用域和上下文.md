@@ -192,5 +192,3 @@ ECMAScript 5 (ES5)引入了*Function.prototype.bind*方法来控制上下文，�
 	    }
 	}
 注：本文为翻译文章，原文为 [Understanding Scope and Context in JavaScript](http://flippinawesome.org/2013/08/26/understanding-scope-and-context-in-javascript/)。
-
- 

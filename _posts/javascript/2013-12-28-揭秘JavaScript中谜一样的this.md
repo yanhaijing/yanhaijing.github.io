@@ -117,8 +117,3 @@ description: 在这篇文章里我想阐明JavaScript中的this，希望对你�
 ## 译者注 ##
 
 本文为翻译文章，原文“[Demystifying this in JavaScript](http://flippinawesome.org/2013/12/09/demystifying-this-in-javascript/)”
-
-[![支付宝向他付款]({{ BLOG_IMG }}0.png)](https://me.alipay.com/yanhaijing)如果你觉得我的翻译对你有帮助那你就支持我一下吧。
-
-
- 

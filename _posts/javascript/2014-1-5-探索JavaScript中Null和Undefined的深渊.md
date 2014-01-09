@@ -93,8 +93,3 @@ null的用例是使他与众不同的主要方面，因为不像`undefined`，`n
 本文问翻译文章，原文为“[Exploring the Abyss of Null and Undefined in JavaScript](http://flippinawesome.org/2013/12/09/exploring-the-abyss-of-null-and-undefined-in-javascript/)”
 
 本文较难以理解，可参照原文便于理解。
-
-[![支付宝向他付款]({{ BLOG_IMG }}0.png)](https://me.alipay.com/yanhaijing)如果你觉得我的翻译对你有帮助那你就支持我一下吧。
-
-
- 

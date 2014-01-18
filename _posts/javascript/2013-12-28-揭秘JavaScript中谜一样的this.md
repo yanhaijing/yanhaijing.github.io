@@ -12,6 +12,8 @@ description: 在这篇文章里我想阐明JavaScript中的this，希望对你�
 
 似是而非，这可能是你对this的感觉：
 
+![]({{ BLOG_IMG }}48.gif)
+
 很疯狂，不是吗?在这篇短文，我旨在揭开它的神秘面纱。
 
 ## this的工作原理 ##

@@ -4,7 +4,7 @@ category : javaScript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript]
-description: 
+description: 在本文中，我将复习一些数组原型的方法，并探索这些方法的用法。
 ---
 {% include JB/setup %}
 

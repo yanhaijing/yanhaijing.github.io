@@ -61,7 +61,7 @@ description: 迟早你需要用到其他开发人员的抽象成果——即你�
 	});
 	doSomething("Other");
 
-> 再继续之前我应该解释清楚`doSomething`函数体内容，我使用[expect.js](https://github.com/LearnBoost/expect.js) （断言方面的库）仅是为了保证我写的代码的行为和我期望的是一样的，体现一点点TDD（测试驱动咖开发）方法。
+> 再继续之前我应该解释清楚`doSomething`函数体内容，我使用[expect.js](https://github.com/LearnBoost/expect.js) （断言方面的库）仅是为了保证我写的代码的行为和我期望的是一样的，体现一点点TDD（测试驱动开发）方法。
 
 下面开始我们的`injector`模块，这是非常棒的一个单例模式，所以它能在我们程序的不同部分工作的很好。
 
@@ -93,7 +93,7 @@ description: 迟早你需要用到其他开发人员的抽象成果——即你�
 
 ## 反射方法 ##
 
-根据维基百科的定义反射是指一个程序在运行时检查和修改一个对象的结构和行为的能力。简单的说，在JavaScript的上下文里，这具体指读取和分析的对象或函数的源代码。让我们完成文章开头提到的`doSomething`函数。如果你早控制台输出`doSomething.tostring()`日志。你将得到如下的字符串：
+根据维基百科的定义反射是指一个程序在运行时检查和修改一个对象的结构和行为的能力。简单的说，在JavaScript的上下文里，这具体指读取和分析的对象或函数的源代码。让我们完成文章开头提到的`doSomething`函数。如果你在控制台输出`doSomething.tostring()`。你将得到如下的字符串：
 
 	"function (service, router, other) {
 	    var s = service();

@@ -6,7 +6,7 @@ tagline: Web前端
 {% include JB/setup %}
 
 <ul class="posts">
-  {% for post in site.posts limit:20 %}
+  {% for post in site.posts limit:50 %}
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
     {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}

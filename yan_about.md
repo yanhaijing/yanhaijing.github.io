@@ -27,11 +27,6 @@ group: navigation
 
 <a target="_blank" href="http://yanhaijing.com/myProject/" title="我的作品">http://yanhaijing.com/myProject/</a>
 
-## 我的简历 ##
-
-<a target="_blank" href="{{ HOME_PATH }}resume.html" title="我的简历">Html版</a>
-[Doc版]({{ HOME_PATH }}download/resume.doc "我的简历")
-
 ## 我的Q群 ##
 下面是我几个群，欢迎加入
 

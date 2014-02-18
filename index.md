@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 颜海镜
-tagline: Web前端
+tagline: 专注Web前端
 ---
 {% include JB/setup %}
 

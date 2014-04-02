@@ -31,10 +31,10 @@ description: 如果你想对使用手机，平板电脑和辅助技术的用户�
 ###title属性有用的例子：
 
 - 为frame或iframe元素贴上标签：
-	- `<frame title="navigation">`
+    - `<frame title="navigation">`
 - 提供需要程序才能实现的在特殊情况下才显示的标签，直接使用可见的文本标签会显得多余：
-	- `<input type="text" title="search"> <input type="submit" value="search">`
-	-[ 数据表格中的标签控件](http://files.paciellogroup.com/presentations/techshare07/?slideSelect=0#slide28)。
+    - `<input type="text" title="search"> <input type="submit" value="search">`
+    - [ 数据表格中的标签控件](http://files.paciellogroup.com/presentations/techshare07/?slideSelect=0#slide28)。
 ###title属性无用或用处不大的例子：
 
 - 为不能作为文本的链接或周围内容添加额外信息：

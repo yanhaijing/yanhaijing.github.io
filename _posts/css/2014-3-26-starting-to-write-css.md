@@ -5,7 +5,7 @@ category : css
 tagline: "转"
 tags : [css]
 keywords: [css]
-description: 
+description: 你是否觉得 CSS 不再跟以前一样了呢？最近几年成了热门话题，许多聪明的人也在谈论它。CSS 远不止是前端开发者应该用来美化网页的小玩意儿。我们关心性能，想要创作出更好的网站。
 ---
 {% include JB/setup %}
 

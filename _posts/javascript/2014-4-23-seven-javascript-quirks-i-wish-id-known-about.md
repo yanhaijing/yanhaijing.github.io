@@ -5,7 +5,7 @@ category : javaScript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript]
-description:
+description: 如果你是一个JavaScript新手或仅仅最近才在你的开发工作中接触它，你可能感到沮丧。所有的语言都有自己的怪癖（quirks）——但从基于强类型的服务器端语言转移过来的开发人员可能会感到困惑。我就曾经这样，几年前，当我被推到了全职JavaScript开发者的时候，有很多事情我希望我一开始就知道。在这篇文章中，我将分享一些怪癖，希望我能分享给你一些曾经令我头痛不已的经验。这不是一个完整列表——仅仅是一部分——但希望它让你看清这门语言的强大之处，可能曾经被你认为是障碍的东西。
 ---
 {% include JB/setup %}
 

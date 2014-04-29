@@ -79,7 +79,7 @@ description: 在这篇文章里，我将深入研究JavaScript中最基本的部
 
 ###激活/变量对象【AO/VO】
 
-当函数被调用是executionContextObj被创建，但在实际函数执行之前。这是我们上面提到的第一阶段，创建阶段。在此阶段，解释器扫描传递给函数的参数或auguments，本地函数声明和本地变量声明，并创建executionContextObj对象。扫描的结果将完成变量对象的创建。
+当函数被调用是executionContextObj被创建，但在实际函数执行之前。这是我们上面提到的第一阶段，创建阶段。在此阶段，解释器扫描传递给函数的参数或arguments，本地函数声明和本地变量声明，并创建executionContextObj对象。扫描的结果将完成变量对象的创建。
 
 **下面是解释器如果执行代码的伪逻辑：**
 

@@ -186,7 +186,7 @@ description: 在这篇文章里，我将深入研究JavaScript中最基本的部
 
 **注意：**有些人一直在问闭包，回调，延时等问题，我将在[下一篇文章](http://davidshariff.com/blog/javascript-scope-chain-and-closures/)里提到，更多关注域执行上下文有关的[作用域链](http://davidshariff.com/blog/javascript-scope-chain-and-closures/)相关方面。
 
-深入阅读
+##深入阅读
 
 - [ECMA-262 5th Edition](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-262.pdf)
 - [ECMA-262-3 in detail. Chapter 2. Variable object](http://dmitrysoshnikov.com/ecmascript/chapter-2-variable-object/)

@@ -336,7 +336,7 @@ OK，非常棒——现在我们已经知道了IIFE是什么——以及为什�
 
 我已经从其他JavaScript开发者的见解中收益颇多，所以请看看下面的这些链接，并给这些人一些鼓励，他们给予了我们谆谆教诲。
 
-- Axel Rauschmayer’s great post on [When is it OK to use == in JavaScript?](http://www.2ality.com/2011/12/strict-equality-exemptions.html) (hint: never)
+- Axel Rauschmayer’s 非常棒的文章 [在JavaScript中什么时候使用==是正确的？](http://yanhaijing.com/javascript/2014/04/25/strict-equality-exemptions) (提示：从不)
 - [Fixing the typeof Operator](http://javascriptweblog.wordpress.com/2011/08/08/fixing-the-javascript-typeof-operator/) by Angus Croll
 - [Airbnb Github Issue comment](https://github.com/airbnb/javascript/issues/21#issuecomment-10203921) that’s the single best explanation on IIFE parens placement
 - [Function Declarations vs. Function Expressions](http://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/) – by Angus Croll

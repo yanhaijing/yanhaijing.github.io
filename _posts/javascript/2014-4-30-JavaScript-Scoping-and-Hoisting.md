@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript中的this关键字
+title: JavaScript的作用域和提升机制
 category : javaScript
 tagline: "译"
 tags : [javascript]

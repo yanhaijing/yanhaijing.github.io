@@ -1,5 +1,6 @@
 ---
 layout: post
+title: 解耦你的html,css和javascript
 category : web
 tagline: "译"
 tags : [web, html, css, javascript]

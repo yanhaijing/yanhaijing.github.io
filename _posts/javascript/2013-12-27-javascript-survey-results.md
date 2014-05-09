@@ -1,5 +1,6 @@
 ---
 layout: post
+title: 2013年JavaScript开发人员调查结果
 category : javaScript
 tagline: "译"
 tags : [javascript]

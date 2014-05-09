@@ -1,5 +1,6 @@
 ---
 layout: post
+title: 给HTML初学者的30条最佳实践
 category : html
 tagline: "整理"
 tags : [html]
@@ -413,4 +414,4 @@ address标签也容易被误用，你不见得知道哦！
 本系列文章有三篇，令两篇如下：
 
 - [给javascript初学者的24条建议](http://yanhaijing.com/javascript/2013/12/11/%E7%BB%99JavaScript%E5%88%9D%E5%AD%A6%E8%80%85%E7%9A%8424%E6%9D%A1%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5)
-- [高效jQuery的奥秘](http://yanhaijing.com/jquery/2013/12/05/%E9%AB%98%E6%95%88jQuery%E7%9A%84%E5%A5%A5%E7%A7%98)
+- [高效jQuery的奥秘](http://yanhaijing.com/jquery/2013/12/05/writing-better-jquery-code)

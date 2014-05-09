@@ -1,5 +1,6 @@
 ---
 layout: post
+title: JavaScript 封装问题
 category : javaScript
 tagline: "原创"
 tags : [javascript]

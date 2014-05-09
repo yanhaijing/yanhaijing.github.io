@@ -1,5 +1,6 @@
 ---
 layout: post
+title: 有趣的JavaScript原生数组函数
 category : javaScript
 tagline: "译"
 tags : [javascript]

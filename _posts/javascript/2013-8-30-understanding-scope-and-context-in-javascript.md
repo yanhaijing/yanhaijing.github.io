@@ -1,5 +1,6 @@
 ---
 layout: post
+title: 认识javascript中的作用域和上下文
 category : javaScript
 tagline: "译"
 tags : [javascript]

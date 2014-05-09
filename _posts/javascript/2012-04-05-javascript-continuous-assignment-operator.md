@@ -1,5 +1,6 @@
 ---
 layout: post
+title: 写了10年Javascript未必全了解的连续赋值运算
 category : javaScript
 tagline: "转"
 tags : [javascript]

@@ -1,5 +1,6 @@
 ---
 layout: post
+title: 高效jQuery的奥秘
 category : jQuery
 tagline: "译"
 tags : [jQuery]

@@ -1,5 +1,6 @@
 ---
 layout: post
+title: JavaScript里的依赖注入
 category : javaScript
 tagline: "译"
 tags : [javascript]

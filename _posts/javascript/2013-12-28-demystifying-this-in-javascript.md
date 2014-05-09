@@ -1,5 +1,6 @@
 ---
 layout: post
+title: 揭秘JavaScript中谜一样的this
 category : javaScript
 tagline: "译"
 tags : [javascript]

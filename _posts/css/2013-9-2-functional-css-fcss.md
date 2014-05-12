@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 函数式-CSS
+title: 函数式 CSS
 category : css
 tagline: "译"
 tags : [css]

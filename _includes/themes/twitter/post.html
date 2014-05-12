@@ -8,8 +8,9 @@
       <span>{{ page.date | date_to_long_string }}</span>
     </div>
     <div class="content">
-      {{ content }}
+      {{ content }}     
       {% include JB/copyright %}
+      {% include JB/alipay %}
     </div>
 
   {% unless page.categories == empty %}

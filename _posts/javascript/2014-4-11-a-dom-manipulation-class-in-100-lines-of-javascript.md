@@ -21,6 +21,7 @@ description: 如果你构建过Web引用程序，你可能处理过很多DOM操�
 	dom('.selector').val() 
 	//设置元素的值/内容
 	dom('.selector').val('value') 
+
 这应该包括了大多数可能用到的操作。然而如何我们可以一次操作多个对象会显得个更好。如果能生成一个JavaScript对象，那将是伟大之举。
 
 	//生成包装DOM元素的对象
@@ -31,6 +32,7 @@ description: 如果你构建过Web引用程序，你可能处理过很多DOM操�
 	    },
 	    propC: '.selector'
 	}) 
+
 一旦我们将元素存下来，我们能很容易对它们执行val方法。
 
 	//检索DOM元素的值
@@ -41,6 +43,7 @@ description: 如果你构建过Web引用程序，你可能处理过很多DOM操�
 	    },
 	    propC: '.selector'
 	}).val()
+
 这将是将数据直接从DOM转换为JavaScript对象的有效方法。
 
 现在我们心理已经清楚我们的API看起来的样子，我们类库代码看起来像下面这样：
@@ -52,11 +55,13 @@ description: 如果你构建过Web引用程序，你可能处理过很多DOM操�
 	    }
 	    return api;
 	}
+
 ##作用域
 
 很明显，我们打算使用类似getElementById，querySelector或querySelectorAll这样的方法。通常情况下，你可以像下面这样访问DOM：
 
 	var header = document.querySelector('.header');
+
 querySeletor是非常有趣的，例如，它不仅仅是document对象的方法，同时也是其他DOM元素的方法。这意味着，我们可以在特定上下文中运行查询。比如：
 
 	<header>
@@ -70,6 +75,7 @@ querySeletor是非常有趣的，例如，它不仅仅是document对象的方法
 	var footer = document.querySelector('footer');
 	console.log(header.querySelector('p').textContent); // Big
 	console.log(footer.querySelector('p').textContent); // Small
+
 我们能在特定的DOM树上操作，并且我们的类库应该支持传递作用域。所以，如果它接受一个父元素选择符是非常棒的。
 
 	var dom = function(el, parent) {
@@ -93,6 +99,7 @@ querySeletor是非常有趣的，例如，它不仅仅是document对象的方法
 	    parent = parent || document;
 	    return parent.querySelectorAll(selector);
 	};
+
 在那之后我们应该传递el参数。通常情况下将是一个(选择符)字符串，但我们也应该支持：
 
 - DOM元素——类库的val方法会非常方便，所以我们可能需要使用已经引用的元素；
@@ -129,6 +136,7 @@ querySeletor是非常有趣的，例如，它不仅仅是document对象的方法
 	        }
 	    break;
 	}
+
 如果开发者传递字符串将执行第一个case。我们转换parent并且调用querySelector的快捷方式。第二个case将会被执行如果我们传递一个DOM元素或JavaScript对象。我们检查对象是否有nodeName属性，如果有这个属性，我们直接将它的值作为api.el的值。如果没有，那么我们遍历对象的所有属性并且为每个属性初始化为类库实例。这里有一些测试用例：
 
 	<p>text</p>
@@ -138,15 +146,19 @@ querySeletor是非常有趣的，例如，它不仅仅是document对象的方法
 	<footer>
 	    <p>Small</p>
 	</footer>
+
 访问第一个段落：
 
 	dom('p').el
+
 访问header节点里的段落：
 
 	dom('p', 'header').el
+
 传递一个DOM元素：
 
 	dom(document.querySelector('header')).el
+
 传递一个JavaScript对象：
 
 	var els = dom({
@@ -161,6 +173,7 @@ querySeletor是非常有趣的，例如，它不仅仅是document对象的方法
 	// 执行dom函数。例如，获取值
 	// footer是paragraphs的属性
 	els.paragraphs.footer.el
+
 ##获取或设置元素的值
 
 表单元素的值如input或select可以被很容易的检索到——我们可以使用元素的value属性。我们我们已经有一个能访问的DOM元素了——存储在api.el。然而，当我们碰到单选框或复选框是有些棘手。对于其他HTML节点像div，section或span我们获取元素的值实际上是获取textContent属性。如果textContent是undefined那么可以用innerHTML代替（相似）。让我们写出另一个switch语句：
@@ -183,6 +196,7 @@ querySeletor是非常有趣的，例如，它不仅仅是document对象的方法
 	    }
 	    return set ? api : null;
 	}
+
 首先我们需要确保api.el属性存在。set是布尔类型变量告诉我们是获取还是设置元素的value属性。有.value属性的元素包括一个辅助方法。switch语句将包含方法的实际逻辑。最后我们返回api本身，为了保持链式操作。当然我们这样做仅当我们使用设置器函数时。
 
 让我们看看如何处理不能同类型的元素。例如input节点：
@@ -207,12 +221,14 @@ querySeletor是非常有趣的，例如，它不仅仅是document对象的方法
 	        return useValueProperty.apply(this, [value]);
 	    }
 	break;
+
 这可能是最有趣的例子了。有两种类型的元素需要不同的处理——单选框和复选框。这些元素实际上是一组，我们要牢记这点。这就是为什么我们使用querySelectorAll获取整组并找出哪个是被选择/选中的。更复杂的是，复选框可能不止被选中一个。上面的方法完美处理所有这些情况。
 处理textarea元素非常简单，这要得益于我们上面写的辅助函数。
 
 	case 'textarea': 
 	    return useValueProperty.apply(this, [value]); 
 	break;
+
 下面看我们如何处理下拉列表（select）：
 
 	case 'select':
@@ -229,6 +245,7 @@ querySeletor是非常有趣的，例如，它不仅仅是document对象的方法
 	        return this.el.value;
 	    }
 	break;
+
 最后是默认操作：
 
 	default: 
@@ -244,6 +261,7 @@ querySeletor是非常有趣的，例如，它不仅仅是document对象的方法
 	        }
 	    }
 	break;
+
 上面这些代码我们完成了我们的val方法。这里有一个简单的HTML表单和相应的测试：
 
 	<form>
@@ -257,6 +275,7 @@ querySeletor是非常有趣的，例如，它不仅仅是document对象的方法
 	    </select>
 	    <footer>version: 0.3</footer>
 	</form>
+
 如果我们写下面的：
 
 	dom({
@@ -267,6 +286,7 @@ querySeletor是非常有趣的，例如，它不仅仅是document对象的方法
 	    },
 	    version: 'footer'
 	}, 'form').val();
+
 我们会得到：
 
 	{
@@ -277,6 +297,7 @@ querySeletor是非常有趣的，例如，它不仅仅是document对象的方法
 	    name: "sample text",
 	    version: "version: 0.3"
 	}
+
 这方法对于把数据冲HTML导成JavaScript对象非常有帮助。这正是我们很多人每天都很常见的任务。
 
 ##最后结果

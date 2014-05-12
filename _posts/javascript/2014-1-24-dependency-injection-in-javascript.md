@@ -29,12 +29,14 @@ description: 迟早你需要用到其他开发人员的抽象成果——即你�
 	    var s = service();
 	    var r = router();
 	};
+
 为使看起来更有趣，这函数接受一个参数。当然，我们完全可以使用上面的代码，但这显然不够灵活。如果我们想使用`ServiceXML`或`ServiceJSON`呢,或者如果我们需要一些测试模块呢。我们不能仅靠编辑函数体来解决问题。首先，我们可以通过函数的参数来解决依赖性。即：
 
 	var doSomething = function(service, router, other) {
 	    var s = service();
 	    var r = router();
 	};
+
 我们通过传递额外的参数来实现我们想要的功能，然而，这会带来新的问题。想象如果我们的`doSomething` 方法散落在我们的代码中。如果我们需要更改依赖条件，我们不可能更改所有调用函数的文件。
 
 我们需要一个能帮我们搞定这些的工具。这就是依赖注入尝试解决的问题。让我们写下一些我们的依赖注入解决办法应该达到的目标：
@@ -53,6 +55,7 @@ description: 迟早你需要用到其他开发人员的抽象成果——即你�
 	define(['service', 'router'], function(service, router) {       
 	    // ...
 	});
+
 这种想法是先描述需要的依赖，然后再写你的函数。这里参数的顺序很重要。如上所说，让我们写一个叫做`injector`的模块，能接受相同的语法。
 
 	var doSomething = injector.resolve(['service', 'router'], function(service, router, other) {
@@ -75,6 +78,7 @@ description: 迟早你需要用到其他开发人员的抽象成果——即你�
 	
 	    }
 	}
+
 这是一个非常简单的对象，有两个方法，一个用来存储的属性。我们要做的是检查`deps`数组并在`dependencies`变量中搜索答案。剩下的只是调用`.apply`方法并传递之前的`func`方法的参数。
 
 	resolve: function(deps, func, scope) {
@@ -90,6 +94,7 @@ description: 迟早你需要用到其他开发人员的抽象成果——即你�
 	        func.apply(scope || {}, args.concat(Array.prototype.slice.call(arguments, 0)));
 	    }        
 	}
+
 `scope`是可选的，`Array.prototype.slice.call(arguments, 0)`是必须的，用来将`arguments`变量转换为真正的数组。到目前为止还不错。我们的测试通过了。这种实现的问题是，我们需要写所需部件两次，并且我们不能混淆他们的顺序。附加的自定义参数总是位于依赖之后。
 
 ## 反射方法 ##
@@ -100,9 +105,11 @@ description: 迟早你需要用到其他开发人员的抽象成果——即你�
 	    var s = service();
 	    var r = router();
 	}"
+
 通过此方法返回的字符串给我们遍历参数的能力，更重要的是，能够获取他们的名字。这其实是[Angular](http://angularjs.org/) 实现它的依赖注入的方法。我偷了一点懒，直接截取Angular代码中获取参数的正则表达式。
 
 	/^function\s*[^\(]*\(\s*([^\)]*)\)/m
+
 我们可以像下面这样修改`resolve` 的代码：
 
 	resolve: function() {
@@ -119,6 +126,7 @@ description: 迟早你需要用到其他开发人员的抽象成果——即你�
 	        func.apply(scope || {}, args);
 	    }        
 	}
+
 我们执行正则表达式的结果如下：
 
 	["function (service, router, other)", "service, router, other"]
@@ -127,6 +135,7 @@ description: 迟早你需要用到其他开发人员的抽象成果——即你�
 	var a = Array.prototype.slice.call(arguments, 0);
 	...
 	args.push(self.dependencies[d] && d != '' ? self.dependencies[d] : a.shift());
+
 我们循环遍历`dependencies`数组，如果发现缺失项则尝试从`arguments`对象中获取。谢天谢地，当数组为空时，`shift`方法只是返回`undefined`，而不是抛出一个错误（这得益于web的思想）。新版的`injector` 能像下面这样使用：
 
 	var doSomething = injector.resolve(function(service, other, router) {
@@ -135,16 +144,19 @@ description: 迟早你需要用到其他开发人员的抽象成果——即你�
 	    expect(other).to.be('Other');
 	});
 	doSomething("Other");
+
 不必重写依赖并且他们的顺序可以打乱。它仍然有效，我们成功复制了Angular的魔法。
 
 然而，这种做法并不完美，这就是反射类型注射一个非常大的问题。压缩会破坏我们的逻辑，因为它改变参数的名字，我们将无法保持正确的映射关系。例如，`doSometing()`压缩后可能看起来像这样：
 
 	var doSomething=function(e,t,n){var r=e();var i=t()}
+
 Angular团队提出的解决方案看起来像：
 
 	var doSomething = injector.resolve(['service', 'router', function(service, router) {
 	
 	}]);
+
 这看起来很像我们开始时的解决方案。我没能找到一个更好的解决方案，所以决定结合这两种方法。下面是`injector`的最终版本。
 
 	var injector = {
@@ -173,6 +185,7 @@ Angular团队提出的解决方案看起来像：
 	        }        
 	    }
 	}
+
 `resolve`访客接受两或三个参数，如果有两个参数它实际上和文章前面写的一样。然而，如果有三个参数，它会将第一个参数转换并填充`deps`数组，下面是一个测试例子：
 
 	var doSomething = injector.resolve('router,,service', function(a, b, c) {
@@ -181,6 +194,7 @@ Angular团队提出的解决方案看起来像：
 	    expect(c().name).to.be('Service');
 	});
 	doSomething("Other");
+
 你可能注意到在第一个参数后面有两个逗号——注意这不是笔误。空值实际上代表“`Other`”参数（占位符）。这显示了我们是如何控制参数顺序的。
 
 ## 直接注入Scope ##
@@ -207,6 +221,7 @@ Angular团队提出的解决方案看起来像：
 	        }        
 	    }
 	}
+
 我们所做的一切其实就是将依赖添加到作用域。这样做的好处是，开发人员不用再写依赖性参数；它们已经是函数作用域的一部分。
 
 	var doSomething = injector.resolve(['service', 'router'], function(other) {
@@ -215,6 +230,7 @@ Angular团队提出的解决方案看起来像：
 	    expect(other).to.be('Other');
 	});
 	doSomething("Other");
+
 ## 结束语 ##
 
 其实我们大部分人都用过依赖注入，只是我们没有意识到。即使你不知道这个术语，你可能在你的代码里用到它百万次了。希望这篇文章能加深你对它的了解。

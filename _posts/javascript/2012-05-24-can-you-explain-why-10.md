@@ -73,4 +73,5 @@ description: 首先，问“[这个问题(英文)][1]”的人是个天才，他
 [1]: http://stackoverflow.com/q/7202157/343194 "Can you explain why ++[[]][+[]]+[+[]] = “10”?"
 
 ## 注 ##
+
 本文问转载文章，原文：[http://justjavac.com/javascript/2012/05/24/can-you-explain-why-10.html](http://justjavac.com/javascript/2012/05/24/can-you-explain-why-10.html)

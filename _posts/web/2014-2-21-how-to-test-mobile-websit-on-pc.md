@@ -25,7 +25,6 @@ chrome模拟手机总共有四种方法，原理都一样，通过伪装User-Age
 
 这时可以新建一个用户，就不影响原来用户访问的时候也是访问的手机版。
 
-
 ### 2.一次性模拟iPhone和安卓手机
 
 开始–运行中输入以下命令，启动浏览器：
@@ -33,9 +32,11 @@ chrome模拟手机总共有四种方法，原理都一样，通过伪装User-Age
 模拟谷歌Android：
 
 	chrome.exe --user-agent="Mozilla/5.0 (Linux; U; Android 2.2; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+
 模拟苹果iPhone：
 
 	chrome.exe --user-agent="Mozilla/5.0 (iPad; U; CPU OS 3_2_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B500 Safari/531.21.10"
+
 这种方法仅供特殊情况下使用，因为重启Chrome将不能恢复正常User-Agent，所以是一次性。
 
 ![]({{ BLOG_IMG }}60.png)

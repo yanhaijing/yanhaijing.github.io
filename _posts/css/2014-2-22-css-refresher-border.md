@@ -18,11 +18,13 @@ description: 边界是众所周知的，有什么新的东西吗？好吧，我�
 你可能很熟悉边的最基本用法。
 
 	border: 1px solid black;
+
 上面的代码将给元素应用1px的边。即简洁又简单；但我们也可以稍作修改。
 
 	border-width: thick;
 	border-style: solid;
 	border-color: black;
+
 除了指定具体的边框宽度值，也可以使用这三个关键词：`thin`，`medium` 和 `thick`。
 
 ![]({{BLOG_IMG}}75.jpg)
@@ -38,6 +40,7 @@ description: 边界是众所周知的，有什么新的东西吗？好吧，我�
 	.box:hover {
 	    border: 1px solid green;
 	}
+
 一个更优雅的和简洁（DRY，don't repeat yourself）的做法是只更新边的颜色属性。
 
 	.box {
@@ -47,6 +50,7 @@ description: 边界是众所周知的，有什么新的东西吗？好吧，我�
 	.box:hover {
 	    border-color: green;
 	}
+
 此外，一会你会发现，这种单个属性的方式有助于通过CSS创建自定义的形状。
 
 ## 圆角 ##
@@ -58,6 +62,7 @@ description: 边界是众所周知的，有什么新的东西吗？好吧，我�
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+
 然而，今天我们不关心前缀，只简单坚持官方形式：`border-radius`。
 
 ![image]({{BLOG_IMG}}76.jpg)
@@ -70,12 +75,14 @@ description: 边界是众所周知的，有什么新的东西吗？好吧，我�
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 30px;
 	border-bottom-left-radius: 0;
+
 在上面的代码中，设置`border-top-right-radius`和`border-bottom-left-radius`为零是多余的，除非该元素有继承的值。
 
 就像`margin`和`padding`一样，如果需要的话，这些设置可以合并为一个单一的属性。
 
 	/* 左上角, 右上角, 右下角, 左下角 */
 	border-radius: 20px 0 30px 0;
+
 举个例子(网页设计师经常这样做)，可以用CSS的`border-radius`属性模拟柠檬的形状，如下：
 
 	.lemon {
@@ -87,6 +94,7 @@ description: 边界是众所周知的，有什么新的东西吗？好吧，我�
 	}
  
 ![image]({{BLOG_IMG}}78.jpg)
+
 ## 扩展知识 ##
 
 许多设计师一直用的是目前为止在本章列出的知识，然而，有一些方法我们可以进一步扩展！
@@ -167,6 +175,7 @@ description: 边界是众所周知的，有什么新的东西吗？好吧，我�
 	       0 0 0 10px yellow,
 	       0 0 0 15px orange;
 	}
+
 ![image]({{BLOG_IMG}}82.jpg)
 
 在这种情况下，我们灵活使用`box-shadow`属性，这种方法，并不是css规范的本意。
@@ -184,12 +193,14 @@ description: 边界是众所周知的，有什么新的东西吗？好吧，我�
 例如……
 
 	border-radius: 50px / 100px; /* 水平半径, 垂直半径 */
+
 ……相当于：
 
 	border-top-left-radius: 50px 100px;
 	border-top-right-radius: 50px 100px;
 	border-bottom-right-radius: 50px 100px;
 	border-bottom-left-radius: 50px 100px;
+
 这种技术是特别有用，当你需要模拟一个平缓的，冗长的曲线，而不是一个通用的圆角。例如，下面的代码允许我们稍微变形一个正方形形状，模拟出更多卷纸一样的效果。
 
 	.box {
@@ -200,6 +211,7 @@ description: 边界是众所周知的，有什么新的东西吗？好吧，我�
 	    border-bottom-right-radius: 15em 1em;
 	 
 	}
+
 ![image]({{BLOG_IMG}}83.jpg)
 
 ## CSS形状 ##
@@ -209,6 +221,7 @@ description: 边界是众所周知的，有什么新的东西吗？好吧，我�
 在接下来的几个例子，假设以下标记……
 
 	<div class="box"></div>
+
 ……和基本样式如下：
 
 	.box {
@@ -216,6 +229,7 @@ description: 边界是众所周知的，有什么新的东西吗？好吧，我�
 	   height: 200px;
 	   background: black;
 	}
+
 最常用的例子是如何使用CSS形状创建一个箭头。
 
 关键是了解如何用CSS生成箭头，通过为每个边设置不同的颜色，并且将容器的宽和高都减为零。
@@ -230,6 +244,7 @@ description: 边界是众所周知的，有什么新的东西吗？好吧，我�
 	  border-bottom: 100px solid blue;
 	  border-left: 100px solid yellow;  
 	}
+
 在本章的开始，更清洁的语法是不使用复合语法：
 
 	.arrow {
@@ -243,12 +258,14 @@ description: 边界是众所周知的，有什么新的东西吗？好吧，我�
 	}
 
 我们甚至可以进一步精简，通过合并颜色值。
+
 	.arrow {
 	  width: 0; height: 0;
 	 
 	  border: 100px solid;
 	  border-color: red green blue yellow;
 	}
+
 ![image]({{BLOG_IMG}}84.jpg)
 
 很有趣，不是吗？不过，当我们后退一步时更有趣。现在，如果我们将除了蓝边之外的所有的`border-color`设置为透明的将会怎样？
@@ -263,11 +280,13 @@ description: 边界是众所周知的，有什么新的东西吗？好吧，我�
 ![image]({{BLOG_IMG}}85.jpg)
 
 太棒了！但用`div`创建一个箭头似乎不太符合语义化。然而，通过`after`或`before`等相关伪元素可以用来创建箭头。
+
 ### 创建一个气泡
 
 创建一个100%CSS的气泡，我们从下面的标记考试。
 
 	<div class="speech-bubble">Hi there!</div>
+
 接下来，应用一些基本样式。
 
 	.speech-bubble {
@@ -307,6 +326,7 @@ description: 边界是众所周知的，有什么新的东西吗？好吧，我�
 ![image]({{BLOG_IMG}}87.jpg)
 
 因为我们知道我们想要向下的箭头，上面的图片表明，除了红色(或上)边境其他的都应该被省略，或者设置为透明。
+
 	.speech-bubble:after {
 	  content: '';
 	  position: absolute;
@@ -438,6 +458,7 @@ description: 边界是众所周知的，有什么新的东西吗？好吧，我�
 	<div class="speech-bubble speech-bubble-top">
 	    <p>Text goes here.</p>
 	</div>
+
 接下来，修改CSS。
 
 	.speech-bubble {

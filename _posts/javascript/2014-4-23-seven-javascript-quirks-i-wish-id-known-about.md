@@ -20,6 +20,7 @@ description: 如果你是一个JavaScript新手或仅仅最近才在你的开发
 - 命名vs匿名函数
 - 立即执行函数表达式
 - typeof vs Object.prototype.toString
+
 ##1.) 相等
 
 C#出身的我非常熟悉==比较运算符。值类型（或字符串）当有相同值是是相等的。引用类型相等需要有相同的引用。（我们假设你没有重载==运算符，或实现你自己的等值运算和GetHashCode方法）我很惊讶为什么JavaScript有两个等值运算符：==和===。最初我的大部分代码都是用的==，所以我并不知道当我运行如下代码的时候JavaScript为我做了什么：
@@ -29,6 +30,7 @@ C#出身的我非常熟悉==比较运算符。值类型（或字符串）当有�
 	if(x == "1") {
 	    console.log("YAY! They're equal!");
 	}
+
 这是黑暗魔法吗？整数1是如何和字符串"1"相等的？
 
 在JavaScript中，有相等（==）和严格相等（===）之说。相等运算符将强制转换两边的操作数为相同类型后执行严格相等比较。所以在上面的例子中，字符串"1"会被转换为整数1，这个过程在幕后进行，然后与变量x进行比较。
@@ -45,6 +47,7 @@ C#出身的我非常熟悉==比较运算符。值类型（或字符串）当有�
 	if(x === 1) {
 	    console.log("YES! Strict Equality FTW.")
 	}
+
 你可能正在考虑可能发生强制类型转换而引起的各种恐怖问题——假设你的引用中发生了这种转换，可能导致你非常困难找到问题出在哪里。这并不奇怪，这也是为什么经验丰富的JavaScript开发者总是建议使用严格相等。
 
 ##2.) 点号 vs 括号
@@ -56,9 +59,11 @@ C#出身的我非常熟悉==比较运算符。值类型（或字符串）当有�
 	
 	// 获取数组的第三个元素
 	var theOneWeWant = myArray[2]; // remember, 0-based index不要忘了第一个元素的索引是0
+
 然而，你知道它也可以使用括号引用对象的成员吗？比如说：
 
 	var name = person["firstName"];
+
 为什么会这样有用吗？而你会用点符号的大部分时间，有几个实例的括号使某些方法可能无法这样做。例如，我会经常重构大开关语句到一个调度表，所以这样的事情：
 
 为什么可以这样用？你以前可能对使用点更熟悉，有几个特例只能用括号表示法。例如，我经常会将switch语句重构为查找表（速度更快），其实就像这样：
@@ -80,6 +85,7 @@ C#出身的我非常熟悉==比较运算符。值类型（或字符串）当有�
 	        break;
 	    }
 	}
+
 可以转化为像下面这样：
 
 	var thingsWeCanDo = {
@@ -93,6 +99,7 @@ C#出身的我非常熟悉==比较运算符。值类型（或字符串）当有�
 	    var thingToDo = thingsWeCanDo.hasOwnProperty(doWhat) ? doWhat : "default"
 	    thingsWeCanDo[thingToDo]();
 	}
+
 使用switch并没有错误（并且在许多情况下，如果被迭代多次并且非常关注性能，switch可能比查找表表现更好）。然而查找表提供了一个很好的方法来组织和扩展代码，并且括号允许你的属性延时求值。
 
 ##3.) 函数上下文
@@ -117,6 +124,7 @@ C#出身的我非常熟悉==比较运算符。值类型（或字符串）当有�
 	
 	marty.timeTravel(1955);
 	// Marty McFly is time traveling to 1955
+
 你可能已经知道你能引用marty对象的timeTravel方法并且创建一个其他对象的新引用。这实际上是JavaScript非常强大的特色——使我们能够在不同的实例上引用行为（调用函数）。
 
 	var doc = {
@@ -125,10 +133,12 @@ C#出身的我非常熟悉==比较运算符。值类型（或字符串）当有�
 	}
 	
 	doc.timeTravel = marty.timeTravel;
+
 所以——如果我们调用doc.timeTravel(1885)将会发生什么？
 
 	doc.timeTravel(1885);
 	// Emmett Brown is time traveling to 1885
+
 再次——上演黑暗魔法。嗯，并不是真的。记住，当你调用一个方法的时候，this上下文是被调用函数父的父对象。
 
 当我们保存marty.TimeTravel方法的引用然后调用我们保存的引用时发生了什么？让我们看看：
@@ -156,12 +166,14 @@ C#出身的我非常熟悉==比较运算符。值类型（或字符串）当有�
 
 	var flux = document.getElementById("flux-capacitor");
 	flux.addEventListener("click", marty.timeTravel);
+
 在上面的代码中，当用户点击按钮是，我们会看见“undefined undefined is time traveling to [object MouseEvent]”。什么？好——首先，非常明显的问题是我们没有给我们的timeTravel方法提供year参数。反而，我们直接订阅这方法作为事件处理程序，并且MouseEvent参数被作为第一个参数传递个事件处理程序。这是很容易修复的，但真正的问题是我们再次见到“undefined undefined”。不要无望——你已经知道为什么会发生这种情况（即使你还没意识到）。让我们修改我们的timeTravel函数，输出this，从而帮助我们搞清事实：
 
 	marty.timeTravel = function(year) {
 	    console.log(this.firstName + " " + this.lastName + " is time traveling to " + year);
 	    console.log(this);
 	};
+
 现在——当我们点击这按钮，我们将类似下面的输出 在你的浏览器控制台：
 
 ![]({{ BLOG_IMG }}126.png)
@@ -173,6 +185,7 @@ C#出身的我非常熟悉==比较运算符。值类型（或字符串）当有�
 	flux.addEventListener("click", function(e) {
 	    marty.timeTravel(someYearValue); 
 	});
+
 点击按钮将会在控制台输出类似下面的信息：
 
 ![]({{ BLOG_IMG }}127.png)
@@ -194,6 +207,7 @@ C#出身的我非常熟悉==比较运算符。值类型（或字符串）当有�
 	var marty = new TimeTraveler("Marty", "McFly");
 	console.log(marty.firstName + " " + marty.lastName);
 	// Marty McFly
+
 ###Call，Apply和BindCall
 
 你可能开始疑惑，上面的例子中，没有语言级别的特性允许我们在运行时指定调用函数的this值吗？你是对的。存在于函数原型上的call和apply方法允许我们调用函数并传递this值。
@@ -201,9 +215,11 @@ C#出身的我非常熟悉==比较运算符。值类型（或字符串）当有�
 call方法的第一个参数是this，后面是被调用函数的参数序列：
 
 	someFn.call(this, arg1, arg2, arg3);
+
 apply的第一个参数也是this，后面是其余参数组成的数组：
 
 	someFn.apply(this, [arg1, arg2, arg3]);
+
 我们的doc和marty实例他们自己能时间旅行，但einstein（[爱因斯坦](http://backtothefuture.wikia.com/wiki/Einstein)）需要他们的帮助才能完成时间旅行。所以让我们给我们的doc实例添加一个方法，以至于doc能帮助einstein完成时间旅行。
 
 	doc.timeTravelFor = function(instance, year) {
@@ -211,6 +227,7 @@ apply的第一个参数也是this，后面是其余参数组成的数组：
 	    // 如果你使用apply使用下面的语法
 	    // this.timeTravel.apply(instance, [year]);
 	};
+
 现在它可以传送Einstein 了：
 
 	var einstein = {
@@ -219,6 +236,7 @@ apply的第一个参数也是this，后面是其余参数组成的数组：
 	};
 	doc.timeTravelFor(einstein, 1985);
 	// Einstein (the dog) is time traveling to 1985
+
 我知道这个例子有些牵强，但它足以让你看到应用函数到其他对象的强大之处。
 
 这种方法还有我们没有发现的另一种用处。让我们给我们的marty实例添加一个goHome方法，作为this.timeTravel(1985)的快捷方式。
@@ -226,9 +244,11 @@ apply的第一个参数也是this，后面是其余参数组成的数组：
 	marty.goHome = function() {
 	    this.timeTravel(1985);
 	}
+
 然而，我们知道如果我们订阅marty.goHome作为按钮的点击事件处理程序，this的值将是按钮——并且不幸的是按钮没有timeTravel方法。我们能用上面的方法解决——用个一匿名函数作为事件处理程序，并在其内部调用上述方法——但我们有另一个选择——bind函数：
 
 	flux.addEventListener("click", marty.goHome.bind(marty));
+
 bind函数实际上会返回一个新函数，新函数的this值根据你提供的参数设置。如果你需要支持低版本浏览器（例如：ie9以下版本），你可能需要bind函数的[shim](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)（或者，如果你使用jQuery你可以用$.proxy代替，underscore和lodash都提供_.bind方法）。
 
 > 记住重要一点，如果你直接使用原型上的bind方法，它将创建一个实例方法，这将绕过原型方法的优点。这不是错误，做到心里清楚就行了。我写了关于这个问题得更多信息在[这里](http://freshbrewedcode.com/jimcowart/2013/02/12/getting-into-context-binds/)。
@@ -269,6 +289,7 @@ bind函数实际上会返回一个新函数，新函数的this值根据你提供
 	someElement.addEventListener("click", function(e) {
 	    // I'm anonymous!
 	});
+
 然而，同样的我们的marty.timeTravvel方法也是一个匿名函数：
 
 	var marty = {
@@ -278,6 +299,7 @@ bind函数实际上会返回一个新函数，新函数的this值根据你提供
 	        console.log(this.firstName + " " + this.lastName + " is time traveling to " + year);
 	    }
 	}
+
 因为函数声明必须有一个唯一的名字，只有函数表达式可以没有名字。
 
 ##6.) 立即执行函数表达式

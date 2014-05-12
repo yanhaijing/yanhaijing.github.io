@@ -111,4 +111,5 @@ fun 执行后，这里的 变量 b 溢出到 fun 外成为了全局变量。
     alert(typeof b); // --> number  
 
 ## 注 ##
+
 原文：[http://justjavac.com/javascript/2012/04/05/javascript-continuous-assignment-operator.html](http://justjavac.com/javascript/2012/04/05/javascript-continuous-assignment-operator.html)

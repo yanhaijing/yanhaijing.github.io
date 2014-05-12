@@ -24,6 +24,7 @@ description:
 	
 	this.foo = 'def';
 	alert(foo); // def
+
 每当你在全局作用域中使用“this”关键字时（没在函数内部），它通常指向全局对象（global object）。现在让我们看看函数内部“this”的值：
 
 	var boat = {
@@ -42,6 +43,7 @@ description:
 	
 	bigBoat.boatInfo = boat.boatInfo;
 	bigBoat.boatInfo(); // false, 'big'
+
 那么上面的“this”如何确定？我们看到上面的boat对象有一个`size`属性和一个`boatInfo`方法。在`boatInfo()`内部，会弹出this的值是否是`boat`对象，也会弹出this的size属性。所以我们执行`boat.boatInfo()`，我们看见this的值是`boat`对象和`boat`的`size`属性值是`normal`。
 
 然后我们创建另一个对象`bigBoat`，也有一个size属性是big。然而，bigBoat对象没有boatInfo方法，所以我们从boat对象拷贝方法 `bigBoat.boatInfo = boat.boatInfo`。现在，当我们调用bigBoat.boatInfo()并进入函数时，我们看到this不等于boat，并且现在size属性值是big。为什么会这样？boatInfo()内部的this值是如何改变的？
@@ -61,6 +63,7 @@ description:
 	    }
 	}
 	foo.baz(); // foo - 因为baz()方法被调用时术语foo对象
+
 如果this就这么简单，那上面的代码就足够了。我们可以进一步使事情变得复杂，通过不同的调用语法，改变相同函数内部“this”的值。
 
 	var foo = {
@@ -72,6 +75,7 @@ description:
 	
 	var anotherBaz = foo.baz;
 	anotherBaz(); // global - 因为anotherBaz()被调用时术语global对象
+
 我们看到baz()内部的“this”值每次都不同，这是因为调用的语法不同。现在，让我们看看深度嵌套对象内部“this”的值：
 
 	var anum = 0;
@@ -89,6 +93,7 @@ description:
 	
 	var hello = foo.baz.bar;
 	hello(); // 0 - 因为()的左边是hello，而它被调用时属于global对象
+
 另一个经常被问的问题是事件处理程序内部的“this”关键字如何求值？答案是事件处理程序内部的“this”总是引用触发事件的元素。让我们看一个例子：
 
 	<div id="test">I am an element with id #test</div>
@@ -104,6 +109,7 @@ description:
 	
 	alert(myElem.onclick === doAlert); // true 
 	myElem.onclick(); // I am an element
+
 我们看到当doAlert()第一次调用时，弹出的值是undefined，由于doAlert()属于global对象。然后我们写`myElem.onclick = doAlert`。这意味这当onclick被出发时，它作为myElem的一个方法，“this”的值将是myElem元素。
 
 我想说的最后一点是，“this”的值也可以通过call和apply手动设置，这超过我们所讨论的范围。还感兴趣的是，当调用构造函数时，“this”引用新创建的实例对象。原因是因为构造函数前面的“new”关键字，它创建一个新对象，构造函数内部的“this”总引用新创建的对象。
@@ -111,6 +117,7 @@ description:
 ##总结
 
 希望今天的文章已经澄清了“this”关键字的误解，并且你总能知道“this”的正确值。现在我们知道“this”的值不是静态的，值得确定依赖于函数被如何调用。
+
 ##注
 
 原文 http://davidshariff.com/blog/javascript-this-keyword/

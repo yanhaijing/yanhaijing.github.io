@@ -27,6 +27,7 @@ description: 今天，我想展示给你一个巧妙的花招。我们将创建�
 让我们加入唯一的HTML元素：一个锚标签。这是有理可依，因为大多数的图标同时也是一个链接。
 
 	<a class="docIcon" href="#">Document Icon</a>
+
 可以给图标设置任何尺寸，我们设置为40\*56px——只是演示，在实际环境中你可能需要其他尺寸。同时，我们需要添加 `display:block`，因为所有的锚标签默认情况下都是内联函数。
 
 	.docIcon
@@ -40,6 +41,7 @@ description: 今天，我想展示给你一个巧妙的花招。我们将创建�
 	    position:relative;
 	    margin:42px auto;
 	}
+
 注意，以上，我们设定的定位上下文是为后面伪元素服务。你会发现，我仅仅用了官方CSS3语法中的渐变。你可能会想需要使用浏览器前缀。为了加快速度，你可以用[prefixr.com](http://prefixr.com/)（网站挂掉了，试试这个吧，[http://leaverou.github.io/prefixfree/](http://leaverou.github.io/prefixfree/)）或在你最喜欢的代码编辑器里使用它的API。简单的复制上面的代码片段，粘贴到prefixr的文本框内，然后点击确认，它会生成各种带前缀的属性，像这样：
 
 	.docIcon {
@@ -72,6 +74,7 @@ description: 今天，我想展示给你一个巧妙的花招。我们将创建�
 	 
 	    text-indent:-9999em;
 	}
+
 **到目前为止，我们得到如下所示：**
 
 ![]({{BLOG_IMG}}51.png)
@@ -87,6 +90,7 @@ description: 今天，我想展示给你一个巧妙的花招。我们将创建�
 	    -moz-border-radius:3px 15px 3px 3px;
 	    border-radius:3px 15px 3px 3px;
 	}
+
 通过这四个值，可以指定的顶部，底部，左，右半径，因此。这是类似于你设置外边据和内边距的方式。
 
 **现在如下：**
@@ -122,12 +126,14 @@ description: 今天，我想展示给你一个巧妙的花招。我们将创建�
 	   border-bottom: 1px solid #ccc;
 	   border-left: 1px solid #ccc;
 	}
+
 为给我们的生成内容设置右上方的卷角，我们必须，再次采用相同的设置。
 
 	...
 	-webkit-border-radius:3px 15px 3px 3px;
 	-moz-border-radius:3px 15px 3px 3px;
 	border-radius:3px 15px 3px 3px;
+
 **展示！**
 
 ![]({{BLOG_IMG}}53.png)
@@ -147,6 +153,7 @@ description: 今天，我想展示给你一个巧妙的花招。我们将创建�
 	    margin:22px 20% 0;
 	    height:15px;
 	}
+
 创建一组线显得有点棘手，但是如果我们是聪明的话，我们可以使用CSS渐变达到这种效果。首先，把总高度除以五，将每一块用实心填充。请参考下面的图像，清晰的体现这一思想。要把它放进你的工具箱，它是个漂亮的技术，不是吗？
 
 ![]({{BLOG_IMG}}54.png)
@@ -163,6 +170,7 @@ description: 今天，我想展示给你一个巧妙的花招。我们将创建�
 	    background: -ms-linear-gradient(top, #ccc 0, #ccc 20%, #fff 20%, #fff 40%, #ccc 40%, #ccc 60%, #fff 60%, #fff 80%, #ccc 80%, #ccc 100%);
 	    background:linear-gradient(top, #ccc 0, #ccc 20%, #fff 20%, #fff 40%, #ccc 40%, #ccc 60%, #fff 60%, #fff 80%, #ccc 80%, #ccc 100%);
 	}
+
 **我们完成了！**
 
 ![]({{BLOG_IMG}}55.png)

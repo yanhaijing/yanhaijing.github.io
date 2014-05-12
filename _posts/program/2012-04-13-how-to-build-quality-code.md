@@ -135,5 +135,7 @@ DRY 这一法则可能是编程界中最通用的法则了。
 另外，好的代码审查应该不是当代码完成的时候，
 而是在代码编写的过程中，不断地迭代代码审查。
 好的实践，无论代码是否完成，代码审核需要几天一次地不断地进行。
+
 ## 注 ##
+
 原文：[http://justjavac.com/other/2012/04/13/how-to-build-quality-code.html](http://justjavac.com/other/2012/04/13/how-to-build-quality-code.html)

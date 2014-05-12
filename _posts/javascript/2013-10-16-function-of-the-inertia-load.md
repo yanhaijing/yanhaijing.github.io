@@ -84,4 +84,5 @@ description: 利用函数的惰性载入提高 javascript 代码性能。
 惰性载入函数的优点只执行一次 `if` 分支，避免了函数每次执行时候都要执行 `if` 分支和不必要的代码，因此提升了代码性能，至于那种方式更合适，就要看您的需求而定了。
 
 ## 注 ##
+
 本文为转载文章，原文：["利用函数的惰性载入提高javascript代码性能"](http://justjavac.com/javascript/2013/10/16/function-of-the-inertia-load.html)

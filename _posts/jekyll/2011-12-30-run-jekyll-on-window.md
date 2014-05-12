@@ -45,9 +45,11 @@ description: Jekyll 是一个简单的网站静态页面生成工具。由于是
 在该目录中运行如下命令：
 
 	python distribute_setup.py
+
 6.然后通过如下命令来安装pygments：
 
 	easy_install Pygments
+
 最后需要修改2处Bug： 
 
 1. Pygmentize中的Bug：修改如下文件

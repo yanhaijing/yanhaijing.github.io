@@ -65,9 +65,11 @@ CSS没有作用域。样式定义时可能意外重写其他规则，而且无�
     .main-footer .whitepaper-link {
       font-size:9px;
     }
+
 但如果我们想在其他地方有小号的.whitepaper-link呢？上面这样的嵌套选择符我们在我们的样式中强制了DOM结构(样式规则和DOM结构紧紧耦合在一起)。这就是说”你只能在main-footer中有一个小的whitepaper链接“。在CSS规则中强制结构阻止我们重用样式，并且将我们数据的表现和它在结构中的表现混合在一起(结构和表现紧耦合)。当我们通过嵌套的选择符强制结构时，我们在它们间创造了依赖。在软件工程的任何区域管理依赖都是令人头痛和容易出错的。我们应该避免。
 
 代替强制结构，让我们像下面这样定义它：
+
     .whitepaper-link {
       font-weight: bold;
       font-size:12px;
@@ -91,6 +93,7 @@ CSS没有作用域。样式定义时可能意外重写其他规则，而且无�
     /* errors.css.scss */
     .error { color: red; }
     .sidebar .error { border:1px solid red; }
+
 这是意大利面条式代码的东西。这不是与一群工程师使用全局变量类似。一些工程师在他们的代码中将重定义变量(样式)，然而其他人仍然期望它(变量)保持原来的定义。这 .error 样式变得不再安全，无法知道它在给定的上下文中的确切行为。样式规则变得充满意外，然而我们讨厌意外。
 
 解决方案是从不重写一个已经定义的样式规则。如果你把规则当成不可更改的——那意味着，它们是一成不变的,定义之后也永远无法改变它们——你可以避免许多由全局变量和不稳定变量引起的问题。
@@ -106,6 +109,7 @@ CSS没有作用域。样式定义时可能意外重写其他规则，而且无�
     .sidebar-error { border:1px solid red; }
     \<!-- example.html -->
     \<div class="error sidebar-error">Oh no!</div>
+
 我们没有重定义 .error 规则，而是给我们的 error div增加一个新的规则来增强它。我们的 error div 的表现将是 .error 和 .sidebar-error的组合。
 
 这仍然让人有点迷惑，我们没有重写 .error 规则自己，但我们重写他的一个属性。如果你正在使用 Sass，更富有表现力的在你的样式中用SCSS方式定义组合是通过@extend指令。
@@ -119,6 +123,7 @@ CSS没有作用域。样式定义时可能意外重写其他规则，而且无�
     example.html
     <!-- example.html -->
     <div class="sidebar-error">Oh no!</div>
+
 现在我们的标记保持苗条，并且没有给人错误的印象，它看起来应该像 .error。任何浏览错误样式表的开发者将看到 .slidebar-error是 .error 外加一个边扩展。他们能自信的使用 .error 因为它从没被重定义，并且我们仍将有我们自定义的 .sidebar-error 表现。
 
 ## FCSS ##

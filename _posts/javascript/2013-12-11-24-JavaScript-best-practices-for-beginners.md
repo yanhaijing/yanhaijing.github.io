@@ -16,7 +16,6 @@ description: 作为”30 HTML和CSS最佳实践”的后续，本周，我们将
 JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操作中使用前者是最佳实践。
 
 
-
 > “如果两边的操作数具有相同的类型和值，===返回true，!==返回false。”——JavaScript：语言精粹
 
 然而，当使用==和！=时，你可能会遇到类型不同的情况，这种情况下，操作数的类型会被强制转换成一样的再做比较，这可能不是你想要的结果。
@@ -33,11 +32,13 @@ JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操
 
 	if(someVariableExists)  
 	   x = false 
+
 然后，如果像下面这样：
 
 	if(someVariableExists)  
 	   x = false  
 	   anotherFunctionCall(); 
+
 有人可能会认为上面的代码等价于下面这样：
 
 	if(someVariableExists) {  
@@ -50,9 +51,11 @@ JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操
 	   x = false;  
 	}  
 	anotherFunctionCall();
+
 你可能注意到了，上面的缩进容易给人花括号的假象。无可非议，这是一种可怕的实践，应不惜一切代价避免。仅有一种情况下，即只有一行的时候，花括号是可以省略的，但这点是饱受争议的。
 
 	if(2 + 2 === 4) return 'nicely done'; 
+
 **未雨绸缪**
 
 很可能，有一天你需要在if语句块中添加更多的语句。这样的话，你必须重写这段代码。底线——省略是雷区。
@@ -84,6 +87,7 @@ JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操
 	<script type="text/javascript" src="path/to/anotherFile.js"></script>  
 	</body>  
 	</html>  
+
 ## 6.避免在For语句内声明变量 ##
 
 当执行冗长的for语句时，要保持语句块的尽量简洁，例如：
@@ -95,6 +99,7 @@ JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操
 	   container.innerHtml += 'my number: ' + i;  
 	   console.log(i);  
 	} 
+
 注意每次循环都要计算数组的长度，并且每次都要遍历dom查询“container”元素——效率严重地下！
 
 **建议**
@@ -104,6 +109,7 @@ JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操
 	   container.innerHtml += 'my number: ' + i;  
 	   console.log(i);  
 	} 
+
 感兴趣可以思考如何继续优化上面的代码，欢迎留下评论大家分享。
 
 ## 7.构建字符串的最优方法 ##
@@ -126,6 +132,7 @@ JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操
 	function doSomething() {...}  
 	  
 	console.log(name); // Jeffrey -- 或 window.name  
+
 **更好的做法**
 
 	var DudeNameSpace = {  
@@ -133,7 +140,8 @@ JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操
 	   lastName : 'Way',  
 	   doSomething : function() {...}  
 	}  
-	console.log(DudeNameSpace.name); // Jeffrey 
+	console.log(DudeNameSpace.name); // Jeffrey
+ 
 注：这里只是简单命名为 "DudeNameSpace"，实际当中要取更合理的名字。
 
 ## 9.给代码添加注释 ##
@@ -144,6 +152,7 @@ JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操
 	for(var i = 0, len = array.length; i < len; i++) {  
 	   console.log(array[i]);  
 	}  
+
 ## 10.拥抱渐进增强 ##
 
 确保javascript被禁用的情况下能平稳退化。我们总是被这样的想法吸引，“大多数我的访客已经启用JavaScript，所以我不必担心。”然而，这是个很大的误区。
@@ -157,9 +166,11 @@ JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操
 	setInterval(  
 	"document.getElementById('container').innerHTML += 'My new number: ' + i", 3000  
 	);
+
 不仅效率低下，而且这种做法和"eval"如出一辙。从不给setInterval和setTimeout传递字符串作为参数，而是像下面这样传递函数名。
 
 	setInterval(someFunction, 3000);
+
 ## 12.不要使用"with"语句 ##
 
 乍一看，"with"语句看起来像一个聪明的主意。基本理念是，它可以为访问深度嵌套对象提供缩写，例如……
@@ -168,15 +179,18 @@ JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操
 	   arms = true;  
 	   legs = true;  
 	} 
+
 而不是像下面这样：
 
 	being.person.man.bodyparts.arms = true;  
 	being.person.man.bodyparts.legs= true; 
+
 不幸的是，经过测试后，发现这时“设置新成员时表现得非常糟糕。作为代替，您应该使用变量，像下面这样。
 
 	var o = being.person.man.bodyparts;  
 	o.arms = true;  
 	o.legs = true; 
+
 ## 13.使用{}代替 new Ojbect() ##
 
 在JavaScript中创建对象的方法有多种。可能是传统的方法是使用"new"加构造函数，像下面这样：
@@ -187,6 +201,7 @@ JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操
 	o.someFunction = function() {  
 	   console.log(this.name);  
 	} 
+
 然而，这种方法的受到的诟病不及实际上多。作为代替，我建议你使用更健壮的对象字面量方法。
 
 **更好的做法**
@@ -214,6 +229,7 @@ JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操
 	var a = new Array();  
 	a[0] = "Joe";  
 	a[1] = 'Plumber'; 
+
 **更好的做法：**
 
 	var a = ['Joe','Plumber'];  
@@ -226,11 +242,13 @@ JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操
 	var someItem = 'some string';  
 	var anotherItem = 'another string';  
 	var oneMoreItem = 'one more string';
+
 **更好的做法**
 
 	var someItem = 'some string',  
 	    anotherItem = 'another string',  
 	    oneMoreItem = 'one more string';
+
 …应而不言自明。我怀疑这里真的有所提速，但它能是你的代码更清晰。
 
 ## 17.谨记，不要省略分号 ##
@@ -241,6 +259,7 @@ JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操
 	function doSomething() {  
 	  return 'something'  
 	} 
+
 已经说过，这是一个非常糟糕的做法可能会导致更大的，难以发现的问题。
 
 **更好的做法**
@@ -249,6 +268,7 @@ JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操
 	function doSomething() {  
 	  return 'something';  
 	} 
+
 ## 18."For in"语句 ##
 
 当遍历对象的属性时，你可能会发现还会检索方法函数。为了解决这个问题，总在你的代码里包裹在一个if语句来过滤信息。
@@ -258,6 +278,7 @@ JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操
 	      ...then do something...  
 	   }  
 	} 
+
 参考 JavaScript：语言精粹，道格拉斯（Douglas Crockford）。
 
 ## 19.使用Firebug的"timer"功能优化你的代码 ##
@@ -269,6 +290,7 @@ JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操
 	 for(x=5000; x > 0; x--){}  
 	 console.timeEnd("MyTimer");  
 	} 
+
 ## 20.阅读，阅读，反复阅读 ##
 
 虽然我是一个巨大的web开发博客的粉丝(像这样!)，午餐之余或上床睡觉之前，实在没有什么比一本书更合适了，坚持放一本web开发方面书在你的床头柜。下面是一些我最喜爱的JavaScript书籍。
@@ -290,6 +312,7 @@ JavaScript 使用2种不同的等值运算符：===|!== 和 ==|!=，在比较操
 	      lastName: 'way'  
 	   };  
 	})();  
+
 ## 22.原生代码永远比库快 ##
 
 JavaScript库，例如jQuery和Mootools等可以节省大量的编码时间，特别是AJAX操作。已经说过，总是记住，库永远不可能比原生JavaScript代码更快(假设你的代码正确)。
@@ -308,6 +331,7 @@ jQuery的“each”方法是伟大的循环，但使用原生"for"语句总是�
 	for(var i = 0, len = response.length; i < len; i++) {  
 	  container.innerHTML += '<li>' + response[i].name + ' : ' + response[i].email + '</li>';  
 	}  
+
 ## 24.移除"language"属性 ##
 
 曾经脚本标签中的“language”属性非常常见。
@@ -315,6 +339,7 @@ jQuery的“each”方法是伟大的循环，但使用原生"for"语句总是�
 	<script type="text/javascript" language="javascript">  
 	...  
 	</script> 
+
 然而，这个属性早已被弃用，所以请移除（译者注：html5 中已废弃，但如果你喜欢，你仍然可以添加）。
 
 ## 就这样吧，伙计 ##

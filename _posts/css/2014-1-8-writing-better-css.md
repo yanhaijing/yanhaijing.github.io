@@ -31,12 +31,14 @@ description: 编写好的CSS代码能提升页面的渲染速度。本质上，�
 	// 好的
 	#someid {..}
 	#otherid {..}
+
 ## 后代选择符最烂 ##
 
 不仅性能低下而且代码很脆弱，html代码和css代码严重耦合，html代码结构发生变化时，CSS也得修改，这是多么糟糕，特别是在大公司里，写html和css的往往不是同一个人。
 
 	// 烂透了
 	html div tr td {..}
+
 ## 避免链式（交集）选择符 ##
 
 这和过度约束的情况类似，更明智的做法是简单的创建一个新的CSS类选择符。
@@ -46,6 +48,7 @@ description: 编写好的CSS代码能提升页面的渲染速度。本质上，�
 	
 	// 好的
 	.menu-left-icon {..}
+
 ## 坚持KISS原则 ##
 
 想象我们有如下的DOM：
@@ -55,6 +58,7 @@ description: 编写好的CSS代码能提升页面的渲染速度。本质上，�
 	    <li><a href="#" class="facebook">Facebook</a></li>
 	    <li><a href="#" class="dribble">Dribbble</a></li>
 	</ul>
+
 下面是对应的规则……
 
 	// 糟糕
@@ -62,6 +66,7 @@ description: 编写好的CSS代码能提升页面的渲染速度。本质上，�
 	
 	// 好的
 	#navigator {..}
+
 ## 使用复合语法 ##
 
 尽可能使用复合语法。
@@ -83,6 +88,7 @@ description: 编写好的CSS代码能提升页面的渲染速度。本质上，�
 	 padding: 20px 10px 20px 10px;
 	 background: #000 url(../imgs/carrot.png) repeat-x bottom;
 	}
+
 ## 避免不必要的命名空间 ##
 
 	// 糟糕
@@ -90,6 +96,7 @@ description: 编写好的CSS代码能提升页面的渲染速度。本质上，�
 	
 	//好的
 	.someclass .otherclass td.somerule {..}
+
 ## 避免不必要的重复 ##
 
 尽可能组合重复的规则。
@@ -113,6 +120,7 @@ description: 编写好的CSS代码能提升页面的渲染速度。本质上，�
 	 background: blue;
 	 font-size: 15px;
 	}
+
 ## 尽可能精简规则 ##
 
 在上面规则的基础上，你可以进一步合并不同类里的重复的规则。
@@ -149,6 +157,7 @@ description: 编写好的CSS代码能提升页面的渲染速度。本质上，�
 	.otherclass {
 	 font-size: 8px;
 	}
+
 ## 避免不明确的命名约定 ##
 
 最好使用表示语义的名字。一个好的CSS类名应描述它是什么而不是它像什么。
@@ -168,6 +177,7 @@ description: 编写好的CSS代码能提升页面的渲染速度。本质上，�
 	 /* Transitions */
 	 /* Other */
 	}
+
 ## 组织好的代码格式 ##
 
 代码的易读性和易维护性成正比。下面是我遵循的格式化方法。
@@ -194,7 +204,6 @@ description: 编写好的CSS代码能提升页面的渲染速度。本质上，�
 	        2px 2px 2px #000,
 	        1px 4px 1px 1px #ddd inset;
 	}
- 
 
 显然，这些只是极少数的规则，是我在我自己的CSS中，本着更高效和更易维护性而尝试遵循的规则。如果你想阅读更多的知识，我建议阅读MDN上的[编写高效的CSS](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS)和谷歌指南上的[优化浏览器渲染](https://developers.google.com/speed/docs/best-practices/rendering#UseEfficientCSSSelectors)。
 

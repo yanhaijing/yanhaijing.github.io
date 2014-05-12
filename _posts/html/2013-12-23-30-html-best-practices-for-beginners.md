@@ -20,6 +20,7 @@ description: 闲话少说，让我们回顾三十个创建标记的最佳实践�
     <li>Some text here.  
     <li>Some new text here.  
     <li>You get the idea.
+
 注意外面包裹的UL/OL标签被遗漏了（谁知是故意还是无意的），而且还忘记了关闭LI标签。按今天的标准来看，这是很明显的糟糕做法，应该100%避免。总之，保持闭合标签。否则，你验证html标签的时候可能遇到问题。
 
 更好的方式
@@ -51,17 +52,18 @@ description: 闲话少说，让我们回顾三十个创建标记的最佳实践�
     <!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”>
 
     <!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN” “http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd”>
+
 关于该使用什么样的文档类型声明，一直有不同的说法。通常认为使用最严格的声明是最佳选择，但研究表明，大部分浏览器会使用普通的方式解析这种声明，所以很多人选择使用HTML4.01标准。选择声明的底线是，它是不是真的适合你，所以你要综合考虑来选择适合你得项目的声明。
 
 ## 3.永远不要使用内联样式 ##
 
 当你在埋头写代码时，可能会经常顺手或偷懒的加上一点行内css代码，就像这样：
 
-    <p style="color: red;">I'm going to make this text red so that it really stands out and makes people take notice! </p>  
+    <p style="color: red;">I'm going to make this text red so that it really stands out and makes people take notice! </p> 
+ 
 这样看起来即方便又没有问题。然而，这在你的编码实践中是个错误。
 
 在你写代码时，在内容结构完成之前最好不要加入样式代码。
-
 
 
 > 这样的编码方式就像打游击，是一种很山寨的做法。——Chris Coyier
@@ -102,6 +104,7 @@ description: 闲话少说，让我们回顾三十个创建标记的最佳实践�
     <script type="text/javascript" src="path/to/anotherFile.js"></script>  
     </body>  
     </html> 
+
 ## 6.永远不要使用内联javascript。现在不是1996年了！ ##
 
 许多年以前，还存在一种这样的方式，就是直接将JS代码加入到HTML标签中。尤其是在简单的图片相册中非常常见。本质上讲，一个“onclick”事件是附加在 标签上的，其效果等同于一些JS代码。不需要讨论太多，非常不应该使用这样的方式，应该把代码转移到一个外部JS文件中，然后使用“ addEventListener / attachEvent ”加入事件监听器。或者使用[jquery](http://jquery.com/)等框架，只需要使用“click”方法。
@@ -109,6 +112,7 @@ description: 闲话少说，让我们回顾三十个创建标记的最佳实践�
     $('a#moreCornInfoLink').click(function() {  
       alert('Want to learn more about corn?');  
     }); 
+
 ## 7.边开发，边验证 ##
 
 ![]({{ BLOG_IMG }}30.png)
@@ -133,6 +137,7 @@ Firebug是当之无愧的网页开发最佳插件，它不但可以调试JavaScr
 
 - [Overview of Firebug](http://michaelsync.net/2007/09/08/firebug-tutorial-overview-of-firebug)
 - [Debug Javascript With Firebug – video tutorial](http://www.digitalmediaminute.com/screencast/firebug-js/)
+
 ## 10.保持标签名小写 ##
 
 理论上讲，html不区分大小写，你可以随意书写，例如：
@@ -140,6 +145,7 @@ Firebug是当之无愧的网页开发最佳插件，它不但可以调试JavaScr
     <DIV>  
     <P>Here's an interesting fact about corn. </P>  
     </DIV>
+
 但最好不要这样写，费力气输入大些字母没有任何用处，并且会让代码很难看.
 
 **建议**
@@ -147,12 +153,14 @@ Firebug是当之无愧的网页开发最佳插件，它不但可以调试JavaScr
     <div>  
     　　<p>Here's an interesting fact about corn. </p>  
     </div> 
+
 ## 11.使用H1-H6标签 ##
 
 笔者建议你在网页中使用其中全部六种标记，虽然大部分人只会用到前四个，但使用最多的H会有很多好处，比如设备友好、搜索引擎友好等，不妨把你的P标签都替换成H6。
 
     <h1>This is a really important corn fact! </h1>  
     <h6>Small, but still significant corn fact goes here. </h6>
+
 ## 12.写博客时，请将H1留给文章标题 ##
 
 ![]({{ BLOG_IMG }}33.jpg)
@@ -178,6 +186,7 @@ Firebug是当之无愧的网页开发最佳插件，它不但可以调试JavaScr
       <a href="#">About </a>  
       <a href="#">Contact </a>  
     </div>
+
 如果你想书写优美的代码，那最好不要用这种方式。
 
 > 为什么要用UL布局导航菜单？ ——因为UL生来就是为定义列表准备的
@@ -189,6 +198,7 @@ Firebug是当之无愧的网页开发最佳插件，它不但可以调试JavaScr
       <li><a href="#">About</a></li>  
       <li><a href="#">Contact</a></li>  
     </ul>  
+
 ## 15.学习如何应对IE ##
 
 IE一直以来都是前端开发人员的噩梦！
@@ -198,6 +208,7 @@ IE一直以来都是前端开发人员的噩梦！
     <!--[if lt IE 7]>  
        <link rel="stylesheet" type="text/css" media="screen" href="path/to/ie.css" />  
     <![endif]-->  
+
 这些代码的意思是：如果用户浏览器是IE6及以下，那这段代码才会生效。如果你想把IE7也包含进来，那么就把“[if lt IE 7]”改为“[if lte IE 7]”。
 
 ## 16.选择合适的IDE ##
@@ -220,6 +231,7 @@ PC 用户
 - [Notepad++](http://notepad-plus.sourceforge.net/uk/site.htm)
 - [Aptana](http://www.aptana.com/)
 - [Dreamweaver CS4](http://www.adobe.com/products/dreamweaver/)
+
 ## 17.上线前，压缩代码 ##
 
 ![]({{ BLOG_IMG }}37.png)  
@@ -236,6 +248,7 @@ PC 用户
 - [CSS Optimiser](http://www.cssoptimiser.com/)
 - [CSS Compressor](http://www.cssdrive.com/index.php/main/csscompressor/)
 - [Clean CSS](http://www.cleancss.com/)
+
 ## 18.精简，精简，在精简 ##
 
 ![]({{ BLOG_IMG }}38.jpg)
@@ -252,10 +265,12 @@ PC 用户
 
 **糟糕的做法**
 
-    <IMG SRC="cornImage.jpg" />  
+    <IMG SRC="cornImage.jpg" /> 
+ 
 **更好的做法**
 
     <img src="cornImage.jpg" alt="A corn field I visited." />  
+
 ## 20.通宵达旦 ##
 
 我经常不知不觉的学习工作到凌晨，我认为这是个很好的状况。
@@ -290,6 +305,7 @@ Photoshop是前端工程师的一个重要工具，如果你已经熟练掌握HT
 2. 花费每月25$注册成为[Lynda.com](http://www.lynda.com/)的会员，海量精品课程。
 3. 推荐“[You Suck at Photoshop](http://www.mydamnchannel.com/You_Suck_at_Photoshop/Season_1/1DistortWarpandLayerEffects_1373.aspx)”系列
 4. 花费几个小时记住尽可能多的PS快捷键。
+
 ## 25.学习每一个HTML标签 ##
 
 虽然有些HTML标签很少用到，但你依然应该了解他们。比如“abbr”、“cite”等，你必须学习它们以备不时之需。
@@ -298,6 +314,8 @@ Photoshop是前端工程师的一个重要工具，如果你已经熟练掌握HT
 
 - **abbr** 和你估计的差不多，它是abbreviation的缩写（英语差的估计不到），“Blvd”能用`<abbr>`标签包裹，因为他是“boulevard”的缩写。（喜大普奔也可以喽）。
 - **cite** 被用来作为引用内容的标题（blockquote）。例如，如果你在你的博客中引用本篇文章，你可以将“给HTML初学者的三十条最佳实践”用`<cite>`包裹，注意它不应该被用来包裹引用的作者，这是常见的误区。
+
+
 ## 26.参与社区讨论 ##
 
 网络上有许许多多优秀的资源，而社区中也隐藏着许多高手，这里你既可以自学，也能请教经验丰富的开发者。
@@ -343,6 +361,7 @@ Css Reset也就Reset Css ,就是重置一些HTML标签样式，或者说默认�
         border-collapse: collapse;  
         border-spacing: 0;  
     }
+
 ## 28.对齐元素 ##
 
 ![]({{ BLOG_IMG }}42.png)
@@ -357,6 +376,8 @@ Css Reset也就Reset Css ,就是重置一些HTML标签样式，或者说默认�
 
 - [Slice and Dice that PSD](http://net.tutsplus.com/videos/screencasts/slice-and-dice-that-psd/)
 - [From PSD to HTML/CSS](http://net.tutsplus.com/videos/screencasts/converting-a-design-from-psd-to-html/)
+
+
 ## 30.不要随意使用框架 ##
 
 Javascript和CSS都有许多优秀的框架，但如果你是初学者，不要急于使用它们。如果你还没能熟练的驾驭CSS，使用框架会混淆你的知识体系。尽管你可能能会说javascript和jQuery是可以同事学习的，但这对css并不适合。我个人提倡960 CSS 网格框架，并且我经常使用它。还是那句话，如果你是css的初学者，学习框架只会让你更加困惑。
@@ -413,5 +434,5 @@ address标签也容易被误用，你不见得知道哦！
 
 本系列文章有三篇，令两篇如下：
 
-- [给javascript初学者的24条建议](http://yanhaijing.com/javascript/2013/12/11/%E7%BB%99JavaScript%E5%88%9D%E5%AD%A6%E8%80%85%E7%9A%8424%E6%9D%A1%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5)
+- [给javascript初学者的24条建议](http://yanhaijing.com/javascript/2013/12/11/24-JavaScript-best-practices-for-beginners)
 - [高效jQuery的奥秘](http://yanhaijing.com/jquery/2013/12/05/writing-better-jquery-code)

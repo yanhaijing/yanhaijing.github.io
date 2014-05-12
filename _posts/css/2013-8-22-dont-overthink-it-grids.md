@@ -39,6 +39,7 @@ description: 下面是我如何构建网格。 它一点都不难也不复杂。
          Sidebar
       </div>
     </div>
+
 为了让他们水平排列，我们只需要浮动他们并设置合适的宽度。 我们选择他们像下面这样：
 
     [class*='col-'] {
@@ -100,11 +101,13 @@ description: 下面是我如何构建网格。 它一点都不难也不复杂。
     <div class="grid grid-pad">
       Grid with outside gutters also
     </div>
+
 **第一步**是给网格父元素添加左内边距（以及可选的的顶部和底部内边距）：
 
     .grid-pad {
       padding: 20px 0 20px 20px;
     }
+
 **第二步**是重新设置最后一列的右内边距
 
     .grid-pad > [class*='col-']:last-of-type {
@@ -126,6 +129,7 @@ description: 下面是我如何构建网格。 它一点都不难也不复杂。
     .col-1-8 {
       width: 12.5%;
     }
+
 做你想做的效果，只要确保列分数加起来为1。 耶，需要一点点思考，但比平常更容易。
 
 ![多列网格例子]({{ BLOG_IMG }}9.png)
@@ -210,8 +214,6 @@ description: 下面是我如何构建网格。 它一点都不难也不复杂。
 ## 成果 ##
 
 这是在CodePen上的一个[例子](http://codepen.io/chriscoyier/pen/eGcLw)
-
- 
 
 ## 浏览器不支持 ##
 

@@ -47,6 +47,7 @@ jQuery与javascript一样，一般来说,最好确保你的变量在函数作用
 	var $element = $('#element');
 	var h = $element.height();
 	$element.css('height',h-20);
+
 ## 使用匈牙利命名法 ##
 
 在变量前加$前缀，便于识别出jQuery对象。
@@ -62,6 +63,7 @@ jQuery与javascript一样，一般来说,最好确保你的变量在函数作用
 	var $first = $('#first');
 	var $second = $('#second'),
 	var value = $first.val();
+
 ## 使用 Var 链（单 Var 模式） ##
 
 将多条var语句合并为一条语句，我建议将未赋值的变量放到后面。
@@ -75,6 +77,7 @@ jQuery与javascript一样，一般来说,最好确保你的变量在函数作用
 	  i,
 	  j,
 	  myArray = {};
+
 ## 请使用'On' ##
 
 在新版jQuery中，更短的 on("click") 用来取代类似 click() 这样的函数。在之前的版本中 on() 就是 bind()。自从jQuery 1.7版本后，on() 附加事件处理程序的首选方法。然而，出于一致性考虑，你可以简单的全部使用 on()方法。
@@ -99,6 +102,7 @@ jQuery与javascript一样，一般来说,最好确保你的变量在函数作用
 	$first.on('hover',function(){
 	    $first.css('border','1px solid red');
 	})
+
 ## 精简javascript ##
 
 一般来说,最好尽可能合并函数。
@@ -118,6 +122,7 @@ jQuery与javascript一样，一般来说,最好确保你的变量在函数作用
 	        'color':'blue'
 	    });
 	});
+
 ## 链式操作 ##
 
 jQuery实现方法的链式操作是非常容易的。下面利用这一点。
@@ -137,6 +142,7 @@ jQuery实现方法的链式操作是非常容易的。下面利用这一点。
 	$second.on('click',function(){
 	    alert('hello everybody');
 	}).fadeIn('slow').animate({height:'120px'},500);
+
 ## 维持代码的可读性 ##
 
 伴随着精简代码和使用链式的同时，可能带来代码的难以阅读。添加缩紧和换行能起到很好的效果。
@@ -155,6 +161,7 @@ jQuery实现方法的链式操作是非常容易的。下面利用这一点。
 	    .on('click',function(){ alert('hello everybody');})
 	    .fadeIn('slow')
 	    .animate({height:'120px'},500);
+
 ## 选择短路求值 ##
 
 短路求值是一个从左到右求值的表达式，用 &&（逻辑与）或 || （逻辑或）操作符。
@@ -172,6 +179,7 @@ jQuery实现方法的链式操作是非常容易的。下面利用这一点。
 	function initVar($myVar) {
 	    $myVar = $myVar || $('#selector');
 	}
+
 ## 选择捷径 ##
 
 精简代码的其中一种方式是利用编码捷径。
@@ -183,6 +191,7 @@ jQuery实现方法的链式操作是非常容易的。下面利用这一点。
 	// 建议
 	
 	if(collection.length){..}
+
 ## 繁重的操作中分离元素 ##
 
 如果你打算对DOM元素做大量操作（连续设置多个属性或css样式），建议首先分离元素然后在添加。
@@ -208,6 +217,7 @@ jQuery实现方法的链式操作是非常容易的。下面利用这一点。
 	//... 许多复杂的操作
 	
 	$container.append($element);
+
 ## 熟记技巧 ##
 
 你可能对使用jQuery中的方法缺少经验,一定要查看的文档，可能会有一个更好或更快的方法来使用它。
@@ -221,6 +231,7 @@ jQuery实现方法的链式操作是非常容易的。下面利用这一点。
 	// 建议 (高效)
 	
 	$.data('#id',key,value);
+
 ## 使用子查询缓存的父元素 ##
 
 正如前面所提到的，DOM遍历是一项昂贵的操作。典型做法是缓存父元素并在选择子元素时重用这些缓存元素。
@@ -238,6 +249,7 @@ jQuery实现方法的链式操作是非常容易的。下面利用这一点。
 	    $container = $('#container '),
 	    $containerLi = $container.find('li'),
 	    $containerLiSpan= $containerLi.find('span');
+
 ## 避免通用选择符 ##
 
 将通用选择符放到后代选择符中，性能非常糟糕。
@@ -249,6 +261,7 @@ jQuery实现方法的链式操作是非常容易的。下面利用这一点。
 	// 建议
 	
 	$('.container').children();
+
 ## 避免隐式通用选择符 ##
 
 通用选择符有时是隐式的，不容易发现。
@@ -260,6 +273,7 @@ jQuery实现方法的链式操作是非常容易的。下面利用这一点。
 	// 建议
 	
 	$('.someclass input:radio');
+
 ## 优化选择符 ##
 
 例如，Id选择符应该是唯一的，所以没有必要添加额外的选择符。
@@ -272,6 +286,7 @@ jQuery实现方法的链式操作是非常容易的。下面利用这一点。
 	// 建议
 	$('#myid');
 	$('#footer .myLink');
+
 ## 避免多个ID选择符 ##
 
 在此强调，ID 选择符应该是唯一的，不需要添加额外的选择符，更不需要多个后代ID选择符。
@@ -283,6 +298,7 @@ jQuery实现方法的链式操作是非常容易的。下面利用这一点。
 	// 建议
 	
 	$('#inner');
+
 ## 坚持最新版本 ##
 
 新版本通常更好：更轻量级，更高效。显然，你需要考虑你要支持的代码的兼容性。例如，2.0版本不支持ie 6/7/8。
@@ -302,6 +318,7 @@ jQuery实现方法的链式操作是非常容易的。下面利用这一点。
 	  console.log('hooray');
 	});
 	// 注：此处可能不当，应为live能实现实时绑定，delegate或许更合适
+
 ## 利用CDN ##
 
 谷歌的CND能保证选择离用户最近的缓存并迅速响应。（使用谷歌CND请自行搜索地址，此处地址以不能使用，推荐jquery官网提供的[CDN](http://code.jquery.com/jquery-1.10.2.min.js)）。

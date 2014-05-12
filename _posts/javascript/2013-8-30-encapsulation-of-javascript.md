@@ -38,6 +38,7 @@ description: 为什么会用这样一个题目呢，这是要说封装的什么�
 	
 	var a = new Dialog();
 	a.init();
+
 下面是火狐提示的错误：
 
 ![火狐下提示错误]({{ BLOG_IMG }}12.png)

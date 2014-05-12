@@ -34,6 +34,7 @@ javascript中的作用域(scope)和上下文(context)是这门语言的独到之
 	};
 	
 	object.foo(); // true
+
 同样的原理适用于当调用一个函数时通过new的操作符创建一个对象的实例。当以这种方式调用时，this 的值将被设置为新创建的实例：
 
 	function foo(){
@@ -42,6 +43,7 @@ javascript中的作用域(scope)和上下文(context)是这门语言的独到之
 	
 	foo() // window
 	new foo() // foo
+
 当调用一个未绑定函数，this 将被默认设置为 全局上下文(global context) 或window对象(如果在浏览器中)。然而如果函数在严格模式下被执行("use strict")，this的值将被默认设置为undefined。
 
 ## 执行上下文和作用域链 ##
@@ -65,6 +67,7 @@ javascript是一个单线程语言，这意味着在浏览器中同时只能做�
 	    }   
 	}
 	first();
+
 运行前面的代码将会导致嵌套的函数被从上倒下执行直到 fourth 函数，此时作用域链从上到下为： fourth, third, second, first, global。fourth 函数能够访问全局变量和任何在first,second和third函数中定义的变量，就如同访问自己的变量一样。一旦fourth函数执行完成，fourth晕高兴上下文将被从作用域链顶端移除并且执行将返回到thrid函数。这一过程持续进行直到所有代码已完成执行。
 
 不同执行上下文之间的变量命名冲突通过攀爬作用域链解决，从局部直到全局。这意味着具有相同名称的局部变量在作用域链中有更高的优先级。
@@ -84,6 +87,7 @@ javascript是一个单线程语言，这意味着在浏览器中同时只能做�
 	
 	var getLocalVariable = foo();
 	getLocalVariable() // private variable
+
 其中最流行的闭包类型是广为人知的模块模式。它允许你模拟公共的，私有的和特权成员：
 
 	var Module = (function(){
@@ -106,6 +110,7 @@ javascript是一个单线程语言，这意味着在浏览器中同时只能做�
 	        }
 	    }
 	})();
+
  模块实际上有些类似于单例，在末尾添加一对括号，当解释器解释完后立即执行(立即执行函数)。闭包执行上下位的外部唯一可用的成员是返回对象中公用的方法和属性(例如*Module.publicMethod*)。然而，所有的私有属性和方法在整个程序的生命周期中都将存在，由于(闭包)使执行上下文收到保护，和变量的交互要通过公用的方法。
 
 另一种类型的闭包叫做立即调用函数表达式(immediately-invoked function expression IIFE)，无非是一个在window上下文中的自调用匿名函数(self-invoked anonymous function)。
@@ -126,6 +131,7 @@ javascript是一个单线程语言，这意味着在浏览器中同时只能做�
 	    };
 	
 	})(this);
+
 对保护全局命名空间，这种表达式非常有用，所有在函数体内声明的变量都是局部变量，并通过闭包在整个运行环境保持存在。这种封装源代码的方式对程序和框架都是非常流行的，通常暴露单一全局接口与外界交互。
 
 ## Call 和 Apply ##
@@ -137,6 +143,7 @@ javascript是一个单线程语言，这意味着在浏览器中同时只能做�
 	}
 	user.call(window, 'John', 'Doe', 30);
 	user.apply(window, ['John', 'Doe', 30]);
+
 执行的结果是相同的，user 函数在window上下文上被调用，并提供了相同的三个参数。
 
 ECMAScript 5 (ES5)引入了*Function.prototype.bind*方法来控制上下文，它返回一个新函数，这函数(的上下文)被永久绑定到bind方法的第一个参数，无论函数被如何调用。它通过闭包修正函数的上下文，下面是为不支持的浏览器提供的方案： 
@@ -151,7 +158,6 @@ ECMAScript 5 (ES5)引入了*Function.prototype.bind*方法来控制上下文，�
 	        }
 	    }
 	}
- 
 
 它常用在上下文丢失：面向对象和事件处理。这点有必要的因为 节点的addEventListener 方法总保持函数执行的上下文为事件处理被绑定的节点，这点很重要。然而如果你使用高级面向对象技术并且需要维护回调函数的上下文是方法的实例，你必须手动调整上下文。这就是bind 带来的方便：
 
@@ -163,9 +169,11 @@ ECMAScript 5 (ES5)引入了*Function.prototype.bind*方法来控制上下文，�
 	MyClass.prototype.onClick = function(e){
 	    // do something
 	};
+
 当回顾bind函数的源代码，你可能注意到下面这一行相对简单的代码，调用Array的一个方法：
 
 	Array.prototype.slice.call(arguments, 1);
+
 有趣的是,这里需要注意的是*arguments*对象实际上并不是一个数组，然而它经常被描述为类数组(array-like)对象，很向 nodelist(*document.getElementsByTagName()*方法返回的结果)。他们包含lenght属性，值能够被索引，但他们仍然不是数组，由于他们不支持原生的数组方法，比如slice和push。然而，由于他们有和数组类似的行为，数组的方法能被调用和劫持。如果你想这样，在类数组的上下文中执行数组方法，可参照上面的例子。
 
 这种调用其他对象方法的技术也被应用到面向对象中，当在javascript中模仿经典继承(类继承)：
@@ -174,6 +182,7 @@ ECMAScript 5 (ES5)引入了*Function.prototype.bind*方法来控制上下文，�
 	    // call the superclass init method in the context of the "MyClass" instance
 	    MySuperClass.prototype.init.apply(this, arguments);
 	}
+
 通过在子类(MyClass)的实例中调用超类(MySuperClass)的方法，我们能重现这种强大的设计模式。
 
 ## 结论 ##
@@ -192,4 +201,5 @@ ECMAScript 5 (ES5)引入了*Function.prototype.bind*方法来控制上下文，�
 	        }
 	    }
 	}
+
 注：本文为翻译文章，原文为 [Understanding Scope and Context in JavaScript](http://flippinawesome.org/2013/08/26/understanding-scope-and-context-in-javascript/)。

@@ -27,6 +27,7 @@ description: 在学习javascript的过程中，许多新手发现很难弄明白
 	};
 	
 	SubWidget.prototype = new Widget();
+
 在我们设置SubWidget 的原型为Widget的一个实例之前，对象的关系图如下：
 
 ![]({{ BLOG_IMG }}1.png)
@@ -42,6 +43,7 @@ description: 在学习javascript的过程中，许多新手发现很难弄明白
 	
 	sub1.messages.push( 'foo' ); 
 	sub2.messages.push( 'bar' );
+
 现在我们的对象关系图看起来像这样：
 
 ![]({{ BLOG_IMG }}3.png)
@@ -74,6 +76,7 @@ description: 在学习javascript的过程中，许多新手发现很难弄明白
 	
 	console.log( sub1.messages ); //[ 'foo', 'bar' ]
 	console.log( sub2.messages ); //[ 'foo', 'bar' ]
+
 如果你运行这段代码，在你的控制台将出现2个重复 ["foo", "bar"]。每个对象共享相同的messages数组。
 
 ## 解决问题 ##
@@ -84,6 +87,7 @@ description: 在学习javascript的过程中，许多新手发现很难弄明白
 	  this.name = name;
 	  this.messages = [];
 	};
+
 然而，如果我们想创建其他继承自Widget的对象呢？新对象也要添加消息数组。很快维护和扩展我们的代码将变成一场噩梦。另外，如果我们想给Widget构造函数添加其他属性，我们如何将这些属性编程子类的实例属性？这种方法是不可重用的和不够灵活。
 
 为了妥善解决这个问题，需要给我们的SubWidget构造函数添加一行代码，调用Widget构造函数并且传入SubWidget构造函数的作用域。为此我们要用apply()方法，可以灵活的无副作用的将SubWidget构造函数的arguments传入Widget构造函数中。
@@ -102,6 +106,7 @@ description: 在学习javascript的过程中，许多新手发现很难弄明白
 	};
 	
 	SubWidget.prototype = new Widget();
+
 apply()方法可以让我们可以将messages数字的作用域更改为SubWidget的实例。现在我们创建的每一个实例对象都有一个实例messages 数组。
 	
 	var Widget = function( ){
@@ -127,6 +132,7 @@ apply()方法可以让我们可以将messages数字的作用域更改为SubWidge
 	
 	console.log(sub1.messages); // ['foo']
 	console.log(sub2.messages); // ['bar']
+
 运行上面的代码，你将看见 ["foo"] 和 ["bar"] ，因为我们的对象实例现在有自己的messages数组属性。
 
 现在我们的对象关系图如下：
@@ -144,12 +150,14 @@ apply()方法可以让我们可以将messages数字的作用域更改为SubWidge
 	  this.name = name;
 	  Widget.apply( this, Array.prototype.slice.call( arguments ) );
 	};
+
 作者的代码中父类会覆盖子类的属性，这有悖于重构的概念，稍加改变即可，在子类构造函数中先调用父类构造函数，这相当于java中的super：
 
 	var SubWidget = function( name ){
 	  Widget.apply( this, Array.prototype.slice.call( arguments ) );
 	  this.name = name;
 	};
+
 2
 
 	var SubWidget = function( name ){
@@ -158,7 +166,8 @@ apply()方法可以让我们可以将messages数字的作用域更改为SubWidge
 	  Widget.apply( this, Array.prototype.slice.call( arguments ) );
 	};
 
-SubWidget.prototype = new Widget();
+	SubWidget.prototype = new Widget();
+
 父类的属性被初始化了2次，一次是借用构造函数，一次是new Widget(),造成浪费，稍加改变即可：
 
 	var SubWidget = function( name ){
@@ -169,5 +178,7 @@ SubWidget.prototype = new Widget();
 	
 	SubWidget.prototype = Widget.prototype;
 
-注：本文为翻译文章，原文为"[JavaScript Inheritance – How To Shoot Yourself In the Foot With Prototypes!](http://flippinawesome.org/2013/06/03/javascript-inheritance-how-to-shoot-yourself-in-the-foot-with-prototypes/#comment-2875 "javascript-inheritance-how-to-shoot-yourself-in-the-foot-with-prototypes")"
+##注
+
+原文："[JavaScript Inheritance – How To Shoot Yourself In the Foot With Prototypes!](http://flippinawesome.org/2013/06/03/javascript-inheritance-how-to-shoot-yourself-in-the-foot-with-prototypes/#comment-2875 "javascript-inheritance-how-to-shoot-yourself-in-the-foot-with-prototypes")"
  

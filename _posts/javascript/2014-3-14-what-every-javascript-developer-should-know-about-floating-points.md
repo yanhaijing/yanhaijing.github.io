@@ -86,12 +86,13 @@ JavaScript中的浮点数采用IEEE-754格式的规定。更具体的说是一�
 	
 	> foo(0.1, 0.2)
 	"0.10.2"
+
 设计内置方法`toPrecision()`和`toFixed()`的目的仅是用于显示。谨慎使用！
 
 ##结论
 
 JavaScript中的数字是真正的浮点数。由于二进制表示的固有缺陷，以及有限的机器空间，我们不得不面对一个充满舍入误差的规范。本文解释了为什么这些舍入误差是什么和为什么。记住使用一个很棒的库而不是自己去做一切。
 
-#注
+##注
 
 原文：*http://flippinawesome.org/2014/02/17/what-every-javascript-developer-should-know-about-floating-points/*

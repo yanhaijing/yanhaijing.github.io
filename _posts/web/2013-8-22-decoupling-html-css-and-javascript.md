@@ -52,6 +52,7 @@ CSS禅意花园是一个伟大的想法,只要你的网站的标记很少改变�
 	ul.sidebar > li > ul {
 	  /* submenu styles */
 	}
+
 这种方法最终需要更多的类在HTML中,但它会降低(html,css)之间的耦合,从长远来看这使CSS代码更可重用和可维护。它也可以让你的标记标记标记自我(self-documenting)。如果在HTML中没有类,开发人员不清楚CSS无法预知她的标记变化将影响其他的代码。另一方面,如果在HTML有类那很明显元素被应用的样式和功能。
 
 ## 一个类有超过一个职责 ##
@@ -59,6 +60,7 @@ CSS禅意花园是一个伟大的想法,只要你的网站的标记很少改变�
 有时一个类即用于样式的目的,还作为一个JavaScript钩子(javascript选择符)。虽然这可能看起来像一个节约(因为它需要一个更少的类标记)实际上一个元素表示和行为的耦合。
 
 	<button class="add-item">Add to Cart</button>
+
 上面的例子展示了一个“添加到购物车”按钮样式与添加物品类。
 
 如果开发者想要给这个元素添加一个单击事件监听器,它可以很容易将已经存在的类当作挂钩。我的意思是,如果一个(类)已经存在,为什么要添加另一个呢?
@@ -164,4 +166,6 @@ JavaScript“选择器”不应该过度依赖于DOM结构。这样的选择器�
 
 >当你选择修改HTML和CSS,试图减少你花在写作和编辑CSS上的大量时间,这包括接受,你必须花更多的时间更改HTML元素的类，如果你想改变元素的风格。这被证明是相当实用的,包括前端和后端开发人员——任何人都可以重新排列预先构建的“乐高积木”;事实证明,没有人可以执行css炼金术。
 
-注：本文为翻译文章，原文<[Decoupling Your HTML, CSS, and JavaScript](http://philipwalton.com/articles/decoupling-html-css-and-javascript/)>
+##注
+
+原文<[Decoupling Your HTML, CSS, and JavaScript](http://philipwalton.com/articles/decoupling-html-css-and-javascript/)>

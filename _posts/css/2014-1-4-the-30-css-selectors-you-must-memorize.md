@@ -10,6 +10,7 @@ description: 所以你学会了基础的id，类和后代选择符，然后你�
 {% include JB/setup %}
 
 所以你学会了基础的id，类和后代选择符，然后你就一直用它们了吗？如果是这样，你丢失了（css的）巨大的灵活性。在本文中提到的很多选择器属于CSS3规范的一部分，因此，只有在现代浏览器中才可使用。
+
 ## 1.\* ##
 
     * {  
@@ -822,6 +823,7 @@ not伪类灰常有用。例如我要选择所有的div，除了有id为container
 其次，当使用javascript库时，如流行的jQuery，最好尽可能使用这些css3本身的选择器而不是使用库的自定义方法/选择器。这能让你的代码更快哦，因为这些选择器引擎本身就能被浏览器解析，而不是用这些库选择器。
  
 感谢阅读，希望你能学到一两个技巧。
+
 ## 译者注 ##
 
 本文问翻译文章，原文为“[The 30 CSS Selectors you Must Memorize](http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/)”

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 函数要多小才够好——谈小函数之道
-category : 程序设计
+category : program
 tagline: "转"
 tags : [程序设计]
 keywords: [程序设计, 函数, code]

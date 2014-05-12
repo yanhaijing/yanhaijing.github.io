@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 由计算机谈最强大脑周玮
-category : 计算机
+category : computer
 tagline: "原创"
 tags : [计算机]
 keywords: [最强大脑, 周玮， 计算机]

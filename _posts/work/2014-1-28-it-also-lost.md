@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 亦得亦失
-category : 工作
+category : work
 tagline: "原创"
 tags : [工作]
 keywords: [2013总结]

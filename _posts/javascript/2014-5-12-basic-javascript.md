@@ -38,7 +38,7 @@ description: 这是我所知道的最完整最简洁的JavaScript基础教程。
 19.	[下一步学什么？](#sect_learn_next)
 
 
-##本文约定（Conventions used in this blog post）
+<h2 id="sect_conventions">本文约定（Conventions used in this blog post）</h2>
 
 ###命令行交互（Command line interaction）
 
@@ -55,7 +55,7 @@ description: 这是我所知道的最完整最简洁的JavaScript基础教程。
 
 [mdn array push](https://www.google.com/search?q=mdn+array+push)
 
-##语言的性质（The nature of the language）
+<h2 id="sect_nature">语言的性质（The nature of the language）</h2>
 
 本节对JavaScript的性质简要介绍，以帮助你理解一些疑问。
 
@@ -84,7 +84,7 @@ JavaScript直到ECMAScript 3才加入异常处理，这解释了为什么这门�
 - [Perl and Python influences in JavaScript](http://www.2ality.com/2013/02/javascript-influences.html)
 - [Javascript:10天设计一门语言](http://yanhaijing.com/javascript/2013/06/22/javascript-designing-a-language-in-10-days)
 
-##语法（Syntax）
+<h2 id="sect_syntax">语法（Syntax）</h2>
 
 这节介绍一些JavaScript的基本语法规则。
 
@@ -171,7 +171,7 @@ JavaScript有两种注释方式：单行注释和多行注释。单行注释以/
 - [Expressions versus statements in JavaScript](http://www.2ality.com/2012/09/expressions-vs-statements.html)
 - [Automatic semicolon insertion in JavaScript](http://www.2ality.com/2011/05/semicolon-insertion.html)
 
-##变量和赋值（Variables and assignment）
+<h2 id="sect_variables_assignment">变量和赋值（Variables and assignment）</h2>
 
 JavaScript中的变量在使用之前必须先声明：
 
@@ -197,7 +197,7 @@ JavaScript中的变量在使用之前必须先声明：
 	x = x + 1;
  
 
-###标识符和变量名（Identifiers and variable names）
+<h3 id="identifiers">标识符和变量名（Identifiers and variable names）</h3>
 
 标识符就是事物的名字，在JavaScript中他们扮演不同的语法角色。例如，变量的名称是一个标识符。
 
@@ -223,7 +223,7 @@ JavaScript中的变量在使用之前必须先声明：
 - [Valid JavaScript variable names](http://mathiasbynens.be/notes/javascript-identifiers) [by Mathias Bynens]
 
 
-##值（Values）
+<h2 id="sect_values">值（Values）</h2>
 
 JavaScript有所有我们期待的编程语言值类型：布尔，数字，字符串，数组等。JavaScript中的所有值都有属性。每个属性有一个键（或名字）和一个值。考虑记录的域（fields of record）。你可以使用点（.）操作符读取属性：
 
@@ -255,7 +255,7 @@ JavaScript有所有我们期待的编程语言值类型：布尔，数字，字�
 
 上面，我们在值“hello”上面调用方法 toUpperCase()。
 
-###原始类型值和对象（Primitive values versus objects）
+<h3 id="sect_prim_vs_obj">原始类型值和对象（Primitive values versus objects）</h3>
 
 JavaScript定义了不同值之间的区别：
 
@@ -364,7 +364,7 @@ JavaScript定义了不同值之间的区别：
 
 [数组](#sect_arrays)所有的数据结构（如）都是对象，但并不是所有的对象都是数据结构。例如：[正则表达式是对象](#sect_regexp)，但不是一个数据结构。
 
-###undefined 和 null（undefined and null）
+<h3 id="sect-non-values">undefined 和 null（undefined and null）</h3>
 
 多少有些不必要，JavaScript有两个“无值（non-values）”：undefined 和 null。
 
@@ -518,7 +518,7 @@ JavaScript定义了不同值之间的区别：
 - [Improving the JavaScript typeof operator](http://www.2ality.com/2011/11/improving-typeof.html)
 - [探索javascript中null和undefined的深渊](http://yanhaijing.com/javascript/2014/01/05/exploring-the-abyss-of-null-and-undefined-in-javascript)
 
-##布尔（Booleans）
+<h2 id="sect_booleans">布尔（Booleans）</h2>
 
 布尔类型原始值包括true和false。下面的操作符产生布尔值：
 
@@ -528,7 +528,7 @@ JavaScript定义了不同值之间的区别：
 - 比较运算符（字符串或数字）：> >= < <=
 
 
-###真值和假值（Truthy and falsy）
+<h3 id="sect_truthy_falsy">真值和假值（Truthy and falsy）</h3>
 
 每当JavaScript希望一个布尔值时（例如：if语句的条件），可以使用任何值。它将被理解（转换）为true或false。下面的值被理解为false：
 
@@ -579,7 +579,7 @@ JavaScript中的二元逻辑运算符是短路运算——如果第一个操作�
 - [Equality in JavaScript: === versus ==](http://www.2ality.com/2011/06/javascript-equality.html)
 - [在JavaScript中什么时候使用==是正确的？](http://yanhaijing.com/javascript/2014/04/25/strict-equality-exemptions)
 
-##数字（Numbers）
+<h2 id="sect_numbers">数字（Numbers）</h2>
 
 JavaScript中的所有数字都是浮点型（虽然大部分的JavaScript引擎内部也使用整数）。至于为什么这样设计，查看这里（[每一个JavaScript开发者应该了解的浮点知识](http://yanhaijing.com/javascript/2014/03/14/what-every-javascript-developer-should-know-about-floating-points)）。
 
@@ -641,7 +641,7 @@ JavaScript中也有[位运算符](https://developer.mozilla.org/en-US/docs/Web/J
 - [NaN and Infinity in JavaScript](http://www.2ality.com/2012/02/nan-infinity.html)
 - [Working with large integers in JavaScript](http://www.2ality.com/2012/07/large-integers.html)
 
-##字符串（Strings）
+<h2 id="sect_strings">字符串（Strings）</h2>
 
 字符串可以直接通过字符串字面量创建。这些字面量被单引号或双引号包裹。反斜线（\\）转义字符并且产生一些控制字符。例如：
 
@@ -712,7 +712,7 @@ length属性是字符串的字符数量。
 - [String concatenation in JavaScript](http://www.2ality.com/2011/10/string-concatenation.html)
 - [JavaScript: single quotes or double quotes?](http://www.2ality.com/2012/09/javascript-quotes.html)
 
-##语句（Statements）
+<h2 id="sect_statements">语句（Statements）</h2>
 
 ###条件（Conditionals）
 
@@ -786,7 +786,7 @@ for 循环的格式如下：
 - break中断循环
 - continue开始一个新的循环迭代
 
-##函数（Functions）
+<h2 id="sect_functions">函数（Functions）</h2>
 
 定义函数的一种方法是通过函数声明：
 
@@ -896,7 +896,7 @@ for 循环的格式如下：
         ...
     }
 
-###将arguments 转换为数组（Converting arguments to an array）
+<h3 id="sect_toarray">将arguments 转换为数组（Converting arguments to an array）</h3>
 
 arguments 不是一个数组，它仅仅是[类数组](http://www.2ality.com/2013/05/quirk-array-like-objects.html)（array-like）：它有一个length属性，并且你可以通过方括号索引方式访问它的元素。然而，你不能移除元素，或在它上面调用任何数组方法。因此，有时你需要将其转换为数组。这就是下面函数的作用。
 
@@ -908,7 +908,7 @@ arguments 不是一个数组，它仅仅是[类数组](http://www.2ality.com/201
 
 - [JavaScript quirk 5: parameter handling](http://www.2ality.com/2013/05/quirk-parameters.html)
 
-##异常处理（Exception handling）
+<h2 id="sect_exceptions">异常处理（Exception handling）</h2>
 
 [异常处理](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)最常见的方式像下面这样：
 
@@ -1001,7 +1001,7 @@ try分支包裹易出错的代码，如果try分支内部抛出异常，catch分
 - [揭秘javascript中谜一样的this](http://yanhaijing.com/javascript/2013/12/28/demystifying-this-in-javascript)
 - [JavaScript中的this关键字](http://yanhaijing.com/javascript/2014/04/30/javascript-this-keyword)
 
-##变量作用域和闭包（Variable scoping and closures）
+<h2 id="sect_var_scope_closures">变量作用域和闭包（Variable scoping and closures）</h2>
 
 在JavaScript中，你必须通过var声明变量，在你使用它们之前：
 
@@ -1058,7 +1058,7 @@ try分支包裹易出错的代码，如果try分支内部抛出异常，catch分
         }
     }
 
-###闭包（Closures）
+<h3 id="sect_closures">闭包（Closures）</h3>
 
 每个函数保持和函数体内部变量的连接，甚至离开创建它的作用域之后。例如：
 
@@ -1120,7 +1120,7 @@ try分支包裹易出错的代码，如果try分支内部抛出异常，catch分
 - [JavaScript的作用域和提升机制](http://yanhaijing.com/javascript/2014/04/30/JavaScript-Scoping-and-Hoisting)
 - [了解JavaScript的执行上下文](http://yanhaijing.com/javascript/2014/04/29/what-is-the-execution-context-in-javascript)
 
-##对象和继承（Objects and inheritance）
+<h2 id="sect_objects">对象和继承（Objects and inheritance）</h2>
 
 和所有的[值类型](#sect_values)一样，对象有属性。事实上，你可以将对象当作一组属性的集合，每个属性是一对（键和值）。键是字符串，值可以是任意JavaScript值。到目前为止，我们仅仅见过键是[标识符](#identifiers)的属性，因为点操作符处理的键必须为标识符。在这节，你讲见到另一种方法属性的方法，能将任意字符串作为键。
 
@@ -1248,7 +1248,7 @@ delete操作符用来删除一个属性：
 
 在JavaScript中函数表达式经常被用作函数参数。时刻小心函数表达式中的this。
 
-###构造函数：对象工厂（Constructors: factories for objects）
+<h3 id="sect_constructors">构造函数：对象工厂（Constructors: factories for objects）</h3>
 
 目前为止，你可能认为JavaScript的对象仅是键值的映射，通过JavaScript对象字面量可以得出这个观点，看起来很像其他语言中的地图/字典（map/dictionary）。然而，JavaScript对象也支持真正意义上的面向对象特性：继承（inheritance）。本节会完全讲解JavaScript中继承的工作原理，但会给你以此为开始的简单模式。如果你想得到更多知识，请查阅这篇文章“[JavaScript inheritance by example](http://www.2ality.com/2012/01/js-inheritance-by-example.html)”。
 
@@ -1290,7 +1290,7 @@ p是Point的一个实例：
 - [Javascript继承 原型的陷阱](http://yanhaijing.com/javascript/2013/08/23/javascript-inheritance-how-to-shoot-yourself-in-the-foot-with-prototypes)
 - [Javascript 封装问题](http://yanhaijing.com/javascript/2013/08/30/encapsulation-of-javascript)
 
-##数组（Arrays）
+<h2 id="sect_arrays">数组（Arrays）</h2>
 
 数组是数组元素的序列，能通过整数索引方法数组元素，数组索引从0开始。
 
@@ -1405,7 +1405,7 @@ map创建一个新数组，通过给每个存在数组元素应用一个函数�
 - [JavaScript quirk 8: array-like objects](http://www.2ality.com/2013/05/quirk-array-like-objects.html)
 - [有趣的javascript原生数组函数](http://yanhaijing.com/javascript/2014/01/17/fun-with-javascript-native-array-functions)
 
-##正则表达式（Regular expressions）
+<h2 id="sect_regexp">正则表达式（Regular expressions）</h2>
 
 JavaScript内建支持正则表达式。他们被双斜线分隔：
 
@@ -1438,7 +1438,7 @@ replace的第一个参数必须是正则表达式，并且开启全局搜索（/
 - [JavaScript: an overview of the regular expression API](http://www.2ality.com/2011/04/javascript-overview-of-regular.html)
 - [JavaScript Regular Expression Enlightenment](http://tech.pro/tutorial/1214/javascript-regular-expression-enlightenment) [by Cody Lindley]
 
-##数学（Math）
+<h2 id="sect_math">数学（Math）</h2>
 
 [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)是一个有算数功能的对象。例如：
 
@@ -1457,7 +1457,7 @@ replace的第一个参数必须是正则表达式，并且开启全局搜索（/
     > Math.cos(Math.PI)  // 预定义常量π
     -1
 
-##标准库的其他功能（Other functionality of the standard library）
+<h2 id="sect_standard_library">标准库的其他功能（Other functionality of the standard library）</h2>
 
 JavaScript标准库相对简单，但有很多其他东西你可以使用：
 
@@ -1465,7 +1465,7 @@ JavaScript标准库相对简单，但有很多其他东西你可以使用：
 - [JSON](http://www.2ality.com/2011/08/json-api.html)：一个对象，功能是转换和生成JSON数据。
 - [console.*](https://developer.mozilla.org/en-US/docs/Web/API/console) 方法：浏览器的具体方法，不是语言成分的部分，但他们也可以在[Node.js](http://nodejs.org/api/stdio.html)中工作。
 
-##下一步学什么？
+<h2 id="sect_learn_next">下一步学什么？</h2>
 
 在你学会了这篇文章的基础教程后，你可以转到大部分章节末尾提到的高级教程。此外，我建议你看下面的资源：
 

@@ -8,11 +8,10 @@
       <span>{{ page.date | date_to_long_string }}</span>
     </div>
     <div class="content">
-      {{ content }}     
-      {% include JB/copyright %}
-      {% include JB/alipay %}
+      {{ content }}                
     </div>
-
+    {% include JB/copyright %}
+	{% include JB/alipay %}
   {% unless page.categories == empty %}
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>

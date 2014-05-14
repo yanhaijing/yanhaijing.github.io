@@ -15,13 +15,15 @@ group: navigation
   
 后来好好学习了c语言，但总是觉得c语言做不出漂亮的东西，便学习了vb做了贪吃蛇，后来又学java做了大鱼吃小鱼，2011开始便一直专注前端开发，到现在2年多了，深入学习了html，css和javascript，后来又接触了jquery，学习了javaee和php，一路走来，书籍一直是我最好的老师。
 
-期间有过一些小成就，小作品，可以点击下面的项目主页查看，现在我在搞webgl方面的工作。
+期间有过一些小成就，小作品，可以点击下面的项目主页查看。
 
-如果你想了解关于我的更多信息可以点击下面我的简历。
+曾搞过一段时间webgl。
+
+目前就职于金山软件，从事Web前端开发工作。
 
 ## 爱好 ##
 
-读书，生活，羽毛球，乒乓球，相声，评书，前端
+读书，生活，羽毛球，乒乓球，相声，评书
 
 ## 我的作品 ##
 
@@ -30,9 +32,9 @@ group: navigation
 ## 我的Q群 ##
 下面是我几个群，欢迎加入
 
-<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=2abbc3c1882f4250778a56919845e48892a83a41ba8111fa48a315d008accb60"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="github 家园" title="github 家园"></a>
-<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=e14aef34b7f3defcfa13e8d1764eb53ea3c36db31665a3815df3db8c97237ff5"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="threejs 官方群" title="threejs 官方群"></a>
-<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=310a309679ba9b185b18f01b86afba964d0736b9599ed13be8d49de1e609d6d6"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="javascript 家园" title="javascript 家园"></a>
+<a target="_blank" href="http://url.cn/OZZ7bw"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="github 家园" title="github 家园"></a>
+<a target="_blank" href="http://url.cn/RyKWB0"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="码农之家" title="码农之家"></a>
+<a target="_blank" href="http://url.cn/OXkoEC"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="CSS家园" title="CSS家园"></a>
 
 ## 更多信息 ##
 

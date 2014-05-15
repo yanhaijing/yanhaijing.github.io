@@ -12,7 +12,7 @@ description:
 不解释
 
 	(function(){
-			//私有静态成员
+		//私有静态成员
 		var user = "";
 			 
 		//私有静态方法
@@ -20,7 +20,7 @@ description:
 		}
 			 
 		Box = function(value){
-				//私有成员
+			//私有成员
 			privateStaticUser = value;               
 			 
 			//这个是私有方法
@@ -35,7 +35,9 @@ description:
 			//共有成员
 			this.user = 1;
 		};
-		 
-		Box.staticMethod = function(){}//公有静态方法
-		Box.staticProperty = 1; //公有静态成员
+		
+		//公有静态方法 
+		Box.staticMethod = function(){}
+		//公有静态成员
+		Box.staticProperty = 1; 
 	})();

@@ -929,7 +929,7 @@ try分支包裹易出错的代码，如果try分支内部抛出异常，catch分
 
 - [Subtyping JavaScript builtins in ECMAScript 5 [especially relevant for errors]](http://www.2ality.com/2011/12/subtyping-builtins.html)
 
-##严格模式（Strict mode）
+<h2 id="sect_strict_mode">严格模式（Strict mode）</h2>
 
 [严格模式](http://www.2ality.com/2011/01/javascripts-strict-mode-summary.html)开启检测和一些其他措施，是JavaScript变成更整洁的语言。推荐使用严格模式。为了开启严格模式，只需在JavaScript文件或script标签第一行添加如下语句：
 

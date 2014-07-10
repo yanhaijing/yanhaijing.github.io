@@ -59,7 +59,7 @@ Adobe将PhoneGap已经放到Apache名下进行开源，并且还改了个名字�
 2.  添加ANT_HOME变量为ant的根目录
 3.  确保安装了jdk并配置好了JAVA_HOME
 
-然后保存环境变量，打开命令行输入 ant -version 你应该看见类似下面的输出，那恭喜成功了，可以进行下一步了，如果未成功，可百度下错误原因：
+然后保存环境变量，打开命令行输入 `ant -version` 你应该看见类似下面的输出，那恭喜成功了，可以进行下一步了，如果未成功，可百度下错误原因：
 
 ![](http://images.cnitblog.com/i/460220/201406/241748446899380.png)
 
@@ -87,7 +87,7 @@ git是我非常喜欢的版本控制工具，我电脑上自带的是github for 
 
 ## 使用npm安装PhoneGap全局环境
 
-到这里就可以安装官网上的提供的教程来了，打开刚刚安装的node的命令行工具，然后输入 `npm install -g phonegap，将会自动安装phonegap，需要注意的是安装过程非常缓慢，因为安装期间回到用到git命令去下载文件（不是git慢，而是外网慢）。安装完成后会提示安装成功，当然你也可以输入phonegap -v，你将会看到如下输出，说明你安装成功了：`
+到这里就可以安装官网上的提供的教程来了，打开刚刚安装的node的命令行工具，然后输入 `npm install -g phonegap`，将会自动安装phonegap，需要注意的是安装过程非常缓慢，因为安装期间回到用到git命令去下载文件（不是git慢，而是外网慢）。安装完成后会提示安装成功，当然你也可以输入 `phonegap -v`，你将会看到如下输出，说明你安装成功了：`
 
 ![](http://images.cnitblog.com/i/460220/201406/241815094551502.png)
 
@@ -99,20 +99,19 @@ git是我非常喜欢的版本控制工具，我电脑上自带的是github for 
 
 ## 将PhoneGap编译为android项目
 
-接下来先切换到myapp1目录，然后运行phonegap run andriod
+接下来先切换到myapp1目录，然后运行`phonegap run andriod`
 
-<div class="cnblogs_code">
-<pre>cd my-<span style="color: #000000;">app
-phonegap run android</span></pre>
-</div>
+	cd myapp
+	phonegap run android
+
 
 会出现很多构建信息，成功后会自动启动adk模拟器
 
 ![](http://images.cnitblog.com/i/460220/201406/241822552363434.png)
 
-&nbsp;![](http://images.cnitblog.com/i/460220/201406/241900059861008.png)
+![](http://images.cnitblog.com/i/460220/201406/241900059861008.png)
 
-如果你不想运行安卓模拟器，而只想构将项目那么可以，你只需运行 phonegap&nbsp;build&nbsp;android&nbsp; 即可。
+如果你不想运行安卓模拟器，而只想构将项目那么可以，你只需运行 `phonegap build android` 即可。
 
 ## 将上述项目导入ADT进行后续开发
 
@@ -140,6 +139,5 @@ phonegap run android</span></pre>
 
 参考文献：
 
-http://zhidao.baidu.com/link?url=TQDJTCYZqa-lG9AvhAvYjbj3DqbHwZLkIbGvBlFBMsomC73s0Ro-byUvAxu9fsByVPjpSicFFFGtS2dVrVqzpYcVU2NK8ljogH0dX8XXp1i
-
-http://zhaochaozcx.blog.163.com/blog/static/22000865201375102830684/
+- http://zhidao.baidu.com/link?url=TQDJTCYZqa-lG9AvhAvYjbj3DqbHwZLkIbGvBlFBMsomC73s0Ro-byUvAxu9fsByVPjpSicFFFGtS2dVrVqzpYcVU2NK8ljogH0dX8XXp1i
+- http://zhaochaozcx.blog.163.com/blog/static/22000865201375102830684/

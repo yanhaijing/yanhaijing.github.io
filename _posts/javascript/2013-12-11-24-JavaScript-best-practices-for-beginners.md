@@ -348,7 +348,7 @@ jQuery的“each”方法是伟大的循环，但使用原生"for"语句总是�
 
 ## 译者补充 ##
 
-第三部分在这里：[高效jQuery的奥秘](http://yanhaijing.com/jquery/2013/12/05/%E9%AB%98%E6%95%88jQuery%E7%9A%84%E5%A5%A5%E7%A7%98/ "高效jQuery的奥秘")
+第三部分在这里：[高效jQuery的奥秘](http://yanhaijing.com/jquery/2013/12/05/writing-better-jquery-code "高效jQuery的奥秘")
 
 本文为翻译文章，原文为“[24 JavaScript Best Practices for Beginners](http://net.tutsplus.com/tutorials/JavaScript-ajax/24-JavaScript-best-practices-for-beginners/)”
 

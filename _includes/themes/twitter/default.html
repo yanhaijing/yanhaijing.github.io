@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    
+
     {% if page.keywords %}
     <meta name="keywords" content="{{ page.keywords | join:','}}" />
     {% else %}
     <meta name="keywords" content="{{ site.keywords | join:','}}" />
     {%endif %}
-    
+
     {% if page.description %}
     <meta name="description" content="{{ page.description }}" />
     {% else %}
     <meta name="description" content="{{ site.description }}" />
-    {%endif %}    
+    {%endif %}
     <meta name="author" content="{{ site.author.name }}">
-    
+
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -30,11 +30,11 @@
     <!-- Le styles -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link href="{{ BASE_PATH }}/assets/css/my-style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ ASSET_PATH }}/css/syntax.css" rel="stylesheet" type="text/css" media="all">
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="favicon.ico">
-  	<!-- Update these with your own images   
+  	<!-- Update these with your own images
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
@@ -53,11 +53,11 @@
           <a class="brand" href="{{ HOME_PATH }}"><img style="vertical-align: bottom;width:20px;height:20px" width="20" height="20" src="{{ HOME_PATH }}img/facelessman.png" />{{ site.title }}</a>
           <ul class="nav">
           	<li><a href="http://yanhaijing.com/basejs/" target="_blank">JS简易教程</a></li>
-          	<li><a href="http://yanhaijing.com/es5/" target="_blank">ES5合集</a></li>           
+          	<li><a href="http://yanhaijing.com/es5/" target="_blank">ES5合集</a></li>
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
-            
+
           </ul>
         </div>
       </div>
@@ -69,16 +69,16 @@
         {{ content }}
       </div>
       <hr>
-      
+
       {% include JB/wumi %}
       <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          
+
           <a class="github" href="https://github.com/yanhaijing/yanhaijing.github.com" target="_blank" title="Fork me on GitHub"> <img width="20" height="20" align="Fork me on GitHub" src="{{ HOME_PATH }}img/auth-github.png" /></a>
           <a class="weibo" href="http://weibo.com/yanhaijing1234/profile" target="_blank" title="weibo"> <img width="20" height="20" align="weibo" src="{{ HOME_PATH }}img/auth-weibo.png" /></a>
-          <a class="rss" href="/rss.xml" target="_blank" title="RSS"> <img width="19" height="19" alt="RSS" src="{{ HOME_PATH }}img/rss.jpg" /></a>          
-          {% include JB/analytics %}                    
+          <a class="rss" href="/rss.xml" target="_blank" title="RSS"> <img width="19" height="19" alt="RSS" src="{{ HOME_PATH }}img/rss.jpg" /></a>
+          {% include JB/analytics %}
         </p>
       </footer>
 

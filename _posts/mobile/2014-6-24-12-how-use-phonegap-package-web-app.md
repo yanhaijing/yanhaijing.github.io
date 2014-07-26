@@ -45,7 +45,7 @@ description: 最近做了一款小游戏，定位是移动端访问，思来想�
 
 jdk 下载：http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
-配置java环境：http://zhidao.baidu.com/link?url=OY0oVYGYuBgsCu-ASgWoY2V1Sh0W5R0yPgpndOjA1c_cvAqUnBGv3RWGVZGIvSeAEUXPN39Pg6kUzTgizeuoYq
+配置java环境：http://jingyan.baidu.com/article/ed15cb1b2ed02a1be369818a.html
 
 ## 安装Ant构建工具
 

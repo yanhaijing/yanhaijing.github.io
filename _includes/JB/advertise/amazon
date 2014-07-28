@@ -1,4 +1,4 @@
 <aside class="advertise">
 	<h2>广告</h2>
-	<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=12&l=ez&f=ifr&f=ifr" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" border="0" frameborder="0" style="border:none;"></iframe>
+	<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=12&l=ez&f=ifr&f=ifr" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" border="0" frameborder="0" style="border:none;max-width:100%"></iframe>
 </aside>

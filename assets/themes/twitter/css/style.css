@@ -68,6 +68,7 @@
     background-color: #FFF7DC;
     border: 2px solid #FFBFBF;
     font:14px Microsoft Yahei,tahoma,sans-serif;
+    word-break:break-word;
 }
 
 .donate figcaption{

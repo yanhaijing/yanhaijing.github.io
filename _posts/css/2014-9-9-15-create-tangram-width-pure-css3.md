@@ -2,7 +2,7 @@
 layout: post
 title: 纯CSS3打造七巧板
 category : css
-tagline: "译"
+tagline: "原创"
 tags : [css]
 keywords: [css]
 description: 最近项目上要制作一个七巧板，脑子里瞬间闪现，什么。。。七巧板不是小时候玩的吗。。。

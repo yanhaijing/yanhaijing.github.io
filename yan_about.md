@@ -46,4 +46,5 @@ group: navigation
 ## 友情链接 ##
 [@justjavac(迷渡)](http://justjavac.com/)
 [@腊八粥(张伟)](http://www.labazhou.net/)
+[@php101(土豆丫)](http://www.php101.cn/)
   

@@ -40,7 +40,6 @@ group: navigation
 
 [![]({{ HOME_PATH }}img/auth-douban.png)](http://www.douban.com/people/yanhaijing/ "我的豆瓣")
 [![]({{ HOME_PATH }}img/auth-tqq.png)](http://t.qq.com/web_javascript "我的腾讯微博")
-[![]({{ HOME_PATH }}img/wumi.jpg)](http://www.wumii.com/user/178847715440404 "我的无觅")
 [![]({{ HOME_PATH }}img/turing.jpg)](http://www.ituring.com.cn/users/121364 "我的图灵")
 
 ## 友情链接 ##

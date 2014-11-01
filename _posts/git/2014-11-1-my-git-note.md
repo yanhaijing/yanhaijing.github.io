@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: 我的git笔记
@@ -6,7 +5,7 @@ category : git
 tagline: "原创"
 tags : [git]
 keywords: [git]
-description: 
+description: 这篇文章记录个人常用的一些命令，和记不住的一些命令。
 ---
 {% include JB/setup %}
 

@@ -47,4 +47,5 @@ group: navigation
 [@腊八粥(张伟)](http://www.labazhou.net/)
 [@php101(土豆丫)](http://www.php101.cn/)
 [@zcfree8(梧桐)](http://zcfree8.github.io/)
+[@淡忘~浅思](http://www.ido321.com/)
   

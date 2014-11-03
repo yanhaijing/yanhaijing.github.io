@@ -114,7 +114,7 @@ b.js
 
 console.js 与console就想html5shim于html5，仅此而已，如此简单。
 
-github地址：[https://github.com/yanhaijing/console.js](https://github.com/yanhaijing/console.js)
+求个star(⊙ｏ⊙)，github地址：[https://github.com/yanhaijing/console.js](https://github.com/yanhaijing/console.js)
 
 
 

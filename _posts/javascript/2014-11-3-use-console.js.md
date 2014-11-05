@@ -9,7 +9,7 @@ description: console.js 与console就想html5shim于html5，仅此而已，如�
 ---
 {% include JB/setup %}
 
-本文仅先给使用console调试的FE同学，如果你还不知道console是什么，或者还停留在`alert`阶段，那就不要浪费时间了，say bay bay！
+本文仅先给使用console调试的FE同学，如果你还不知道console是什么，或者还停留在`alert`阶段，那就不要浪费时间了，say bye bye！
 
 你是否试程序的过程中用过`console.log(***)`，发现在现代浏览器里运行好好的，到了ie里却出现莫名其妙的错误，你完全不知道为什么。
 

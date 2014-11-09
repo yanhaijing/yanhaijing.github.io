@@ -1,6 +1,6 @@
 ---
 layout: post
-title: js对象继承一瞥
+title: JavaScript对象继承一瞥
 category : js
 tagline: "原创"
 tags : [js]

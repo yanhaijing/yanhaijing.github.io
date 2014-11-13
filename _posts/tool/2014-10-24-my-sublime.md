@@ -136,6 +136,10 @@ DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，�
 
 这个插件还是非常有用的，因为sublime 本身 不支持gbk编码，在utf8如此流行的今天，我们整站还是gbk编码，o(︶︿︶)o 唉，所以全靠这个插件了。
 
+###HTML/CSS/JS Prettify
+
+不解释，神奇，秒杀jsFormat，能够格式化css html 和js。
+
 ##总结
 
 sublime非常棒的，正是我喜欢的风格。

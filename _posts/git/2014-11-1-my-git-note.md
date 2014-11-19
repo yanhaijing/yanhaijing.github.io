@@ -15,6 +15,9 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 
 这篇文章记录个人常用的一些命令，和记不住的一些命令。
 
+![]({{ BLOG_IMG }}146.png)
+![]({{ BLOG_IMG }}147.png)
+
 ##安装
 
 在 Windows 上安装 Git 同样轻松，有个叫做 msysGit 的项目提供了安装包：
@@ -61,6 +64,7 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 ##本地
 
 	git add *#跟踪新文件
+	git add -u [path]#添加[指定路径下]已跟踪文件
 
 	rm *&git rm *#移除文件
 	git rm -f *#移除文件
@@ -75,6 +79,9 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 	git commit --amend#修改最后一次提交
 
 	git reset HEAD *#取消已经暂存的文件
+	git reset --mixed HEAD *#同上
+	git reset --soft HEAD *#重置到指定状态，不会修改索引区和工作树
+	git reset --hard HEAD *#重置到指定状态，会修改索引区和工作树
 
 	git checkout -- file#取消对文件的修改（从暂存区去除file）
 	git checkout branch|tag|commit -- file_name#从仓库取出file覆盖当前分支

@@ -83,11 +83,37 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 	git reset --mixed HEAD *#同上
 	git reset --soft HEAD *#重置到指定状态，不会修改索引区和工作树
 	git reset --hard HEAD *#重置到指定状态，会修改索引区和工作树
+	git reset -- files#重置index区文件
+	
+	git revert HEAD #撤销前一次操作
+	git revert HEAD~ #撤销前前一次操作
+	git revert commit ##撤销指定操作
 
-	git checkout -- file#取消对文件的修改（从暂存区去除file）
+	git checkout -- file#取消对文件的修改（从暂存区——覆盖worktree file）
 	git checkout branch|tag|commit -- file_name#从仓库取出file覆盖当前分支
-	git checkout -- .#从暂存区去除文件覆盖工作区
+	git checkout -- .#从暂存区取出文件覆盖工作区
+	
+	git diff file #查看指定文件的差异
+	git diff --stat #查看简单的diff结果
+	git diff #比较Worktree和Index之间的差异
+	git diff --cached #比较Index和HEAD之间的差异
+	git diff HEAD #比较Worktree和HEAD之间的差异
+	git diff branch #比较Worktree和branch之间的差异
+	git diff branch1 branch2 #比较两次分支之间的差异
+	git diff commit commit #比较两次提交之间的差异
+	
 
+	git log #查看最近的提交日志
+	git log --pretty=oneline #单行显示提交日志
+	git log --graph --pretty=oneline --abbrev-commit
+	git log -num #显示第几条log（倒数）
+
+	git stash #将工作区现场（已跟踪文件）储藏起来，等以后恢复后继续工作。
+	git stash list #查看保存的工作现场
+	git stash apply #恢复工作现场
+	git stash drop #删除stash内容
+	git stash pop #恢复的同时直接删除stash内容
+	git stash apply stash@{0} #恢复指定的工作现场，当你保存了不只一份工作现场时。
 
 ##分支
 
@@ -97,17 +123,25 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 	git branch -v#查看各个分支最后一个提交对象的信息
 	git branch --merge#查看已经合并到当前分支的分支
 	git branch --no-merge#查看为合并到当前分支的分支
-
 	git branch test#新建test分支
+	git branch -m old new #重命名分支
+	git branch -d test#删除test分支
+	git branch -D test#强制删除test分支
+	git branch --set-upstream dev origin/dev #将本地dev分支与远程dev分支之间建立链接
+
 	git checkout test#切换到test分支
 	git checkout -b test#新建+切换到test分支
 	git checkout -b test dev#基于dev新建test分支，并切换
 
-	git branch -d test#删除test分支
-	git branch -D test#强制删除test分支
-
 	git merge test#将test分支合并到当前分支
+	git merge --squash test ##合并压缩，将test上的commit压缩为一条
+
+	git cherry-pick commit #拣选合并，将commit合并到当前分支
+	git cherry-pick -n commit #拣选多个提交，合并完后可以继续拣选下一个提交
+	
 	git rebase master#将master分之上超前的提交，变基到当前分支
+	git rebase --onto master 169a6 #限制回滚范围，rebase当前分支从169a6以后的提交
+	git rebase --interactive #交互模式
 
 ##远端
 	

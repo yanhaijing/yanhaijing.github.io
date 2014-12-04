@@ -79,6 +79,13 @@ description: 作为aptana死忠粉的我，最近由于工作需要最近开始�
 <td>ctrl+h</td>
 <td>替换</td>
 </tr>
+<tr>
+<td>ctrl+[shift]+f</td>
+<td>[全局]查找</td>
+</tr>
+<td>ctrl+tab, alt+num, ctrl+pageup</td>
+<td>切换tab面板</td>
+</tr>
 </tbody>
 </table>
 
@@ -139,6 +146,18 @@ DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，�
 ###HTML/CSS/JS Prettify
 
 不解释，神奇，秒杀jsFormat，能够格式化css html 和js。
+
+###Terminal
+
+可以sublime中，打开命令行，非常方便哦。
+
+###jQuery
+
+支持jquery的只能语法提示，很赞。
+
+###SyncedSideBar
+
+支持当前文件在左侧面板中定位，不错。
 
 ##总结
 

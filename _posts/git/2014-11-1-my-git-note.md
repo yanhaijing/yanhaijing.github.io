@@ -141,18 +141,24 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 	
 	git rebase master#将master分之上超前的提交，变基到当前分支
 	git rebase --onto master 169a6 #限制回滚范围，rebase当前分支从169a6以后的提交
-	git rebase --interactive #交互模式
+	git rebase --interactive #交互模式	
+	git rebase --continue# 处理完冲突继续合并	
+	git rebase --skip# 跳过	
+	git rebase --abort# 取消合并
 
 ##远端
 	
-	git fetch originname branchname#拉去远端上指定分支
-	git merge originname branchname#合并远端上指定分支
-	git push originname branchname#推送到远端上指定分支
-	git push originname localbranch:serverbranch#推送到远端上指定分支
-	
-	git checkout -b test origin/dev#基于远端dev新建test分支
+	git fetch origin remotebranch[:localbranch]# 从远端拉去分支[到本地指定分支]
 
-	git push origin :server#删除远端分支
+	git merge origin/branch#合并远端上指定分支
+
+	git pull origin remotebranch:localbranch# 拉去远端分支到本地分支
+
+	git push origin branch#将当前分支，推送到远端上指定分支
+	git push origin localbranch:remotebranch#推送本地指定分支，到远端上指定分支
+	git push origin :remotebranch#删除远端指定分支
+	
+	git checkout -b [--track] test origin/dev#基于远端dev分支，新建本地test分支[同时设置跟踪]
 
 
 ##源
@@ -168,9 +174,9 @@ git是一个分布式代码管理工具，所以可以支持多个仓库，在gi
 
 	git remote rename origin1 origin2#重命名
 
-	git remote rm origin1#删除
+	git remote rm origin#删除
 
-	git remote show origin1#查看指定源的全部信息
+	git remote show origin#查看指定源的全部信息
 
 
 ##标签
@@ -197,7 +203,7 @@ git是一个分布式代码管理工具，所以可以支持多个仓库，在gi
 其实还有两个最有用的命令还未提到。
 
 	git help *#获取命令的帮助信息
-	git status#获取当前的状态，非常有用，因为git会提示接下来的能做的事情
+	git status#获取当前的状态，非常有用，因为git会提示接下来的能做的操作
 
 ##参考资料
 

@@ -14,10 +14,10 @@ description: 本文将会介绍如何在真机上调试移动端的页面。
 本会介绍的方法如下：
 
 - UC浏览器开发版
-- winner
-- chrome 远程调试
-- firefox 远程调试
-- opera 远程调试
+- Chrome 远程调试
+- Firefox 远程调试
+- Opera 远程调试
+- Weinre
 
 ##UC浏览器开发版
 
@@ -28,11 +28,29 @@ description: 本文将会介绍如何在真机上调试移动端的页面。
 
 UC开发版的网站上介绍的很清楚，也有很详细的文档，这里就不再赘述，简单记录下WIFI的调试方法，保证pc和手机在同一个网段，在PC上打开Chrome或Safari，在地址栏输入：**手机IP + :9998**，在手机端会弹出确认按钮，点击确认后，就可在pc上看到效果了，如此简单。
 
+##Chrome浏览器
+
+要先使用Chrome浏览器的远程调试功能需要先翻墙才可以，还需做如下准备：
+
+- PC Chrome最新版
+- 安卓 Chrome最新版
+- 数据线一根
+
+插上数据线，打开手机里的浏览器，然后PC浏览器-菜单-更多工具-检查设备，就会看到如下界面：
+
+![]({{BLOG_IMG}}156.png)
+
+点击inspect，稍等片刻即可打开调试界面：
+
+![]({{BLOG_IMG}}157.png)
+
+功能和PC一样，异常强大。
+
+更多信息请移步[这里](https://developer.chrome.com/devtools/docs/remote-debugging#installing-androidsdk)。
+
 ##Firefox浏览器
 
-火狐的调试方法具体可以看[这里](https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Firefox_for_Android)。
-
-需要如下几个准备工作：
+首先，需要如下几个准备工作：
 
 - PC Firefox 15+
 - Android Firefox 15+
@@ -67,7 +85,15 @@ PC端Firefox打开about:config，设置devtools.debugger.remote-enabled为True�
 
 如果你没有其他特别的远程调试要求，只需要使用默认值。按“确定”。手机端会弹出一个确定按钮，点击确定就可以在电脑上调试手机上的网页了。
 
-##weinre
+这里火狐的实现有一个不好的地方，就是在调试面板里选择dom是，手机页面里不会跟着变色，这点还需改进。
+
+更多信息，请移步[这里](https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Firefox_for_Android)。
+
+##Opera浏览器
+
+Opera浏览器的实现方式，请移步[这里](http://yanhaijing.com/web/2014/02/21/how-to-test-mobile-websit-on-pc/)。
+
+##Weinre
 
 网上关于winner的介绍大多是基于java，很繁琐，其实基于node+npm会简单很多，感谢node，感谢npm。
 
@@ -104,4 +130,4 @@ PC端Firefox打开about:config，设置devtools.debugger.remote-enabled为True�
 
 ##总结
 
-后面的一些方法还没有实验过，只是听说说以就不写出来了，先挖个坑吧，以后慢慢填。
+后面的一些方法还没有实验过，只是听说过，所以就不写出来了，先挖个坑吧，以后慢慢填。

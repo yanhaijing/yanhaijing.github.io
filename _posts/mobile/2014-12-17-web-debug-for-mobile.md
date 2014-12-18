@@ -91,7 +91,29 @@ PC端Firefox打开about:config，设置devtools.debugger.remote-enabled为True�
 
 ##Opera浏览器
 
-Opera浏览器的实现方式，请移步[这里](http://yanhaijing.com/web/2014/02/21/how-to-test-mobile-websit-on-pc/)。
+请下载opera官方浏览器，而非中文版，中文版把这个功能阉割了（鄙视一下），在手机浏览器地址栏输入如下命令，会看到下图所示的信息。
+
+	opera:debug
+
+![]({{BLOG_IMG}}158.png)
+
+勾上enable选项，然后在pc上命令行输入如下命令：
+
+	adb forward tcp:9222 localabstract:opera_devtools_remote
+
+然后用基于chrominu的浏览器打开http://localhost:9222，已chrome为例，会看到如下界面：
+
+![]({{BLOG_IMG}}159.png)
+
+点击相应页面即可进入调试界面，非常方便。
+
+这里需要注意，可能会出现空白，因为opera的调试页面使用了不安全的链接被组织了，只需点一下右上角的安全提示按钮，选择允许即可，如下图所示。
+
+![]({{BLOG_IMG}}160.png)
+
+其实在chrome浏览器的检索设备界面，也能看到opera的页面，但是点击inspect就会崩溃，无语啊。
+
+更多信息，请移步[这里](https://dev.opera.com/articles/remotely-debugging-opera-for-android/)。
 
 ##Weinre
 
@@ -130,4 +152,6 @@ Opera浏览器的实现方式，请移步[这里](http://yanhaijing.com/web/2014
 
 ##总结
 
-后面的一些方法还没有实验过，只是听说过，所以就不写出来了，先挖个坑吧，以后慢慢填。
+还有一些其他方法还没有实验过，只是听说过，所以就不写出来了，先挖个坑吧，以后慢慢填。
+
+网上的很多资料都陈旧了，浏览器已经改版了，还有些人根本自己都没有实验过，就敢写，上面的方法我都亲自实验过了。如果遇到什么问题，可以给我留言讨论。

@@ -5,7 +5,7 @@ category : web
 tagline: "原创"
 tags : [web]
 keywords: [web,charset]
-description: 
+description: 本文会介绍web相关的编码问题，包括html，css和javascript相关的编码问题。
 ---
 {% include JB/setup %}
 
@@ -15,13 +15,14 @@ lisp主张代码即数据，其实我们写的代码也是数据（信息），�
 
 **小贴士：**嗨，你知道吗！windows的换行符是 \\r\\l，linux的是 \\l，mac的是 \\r，这是有意还是故意的呢……
 
-下面将介绍web开发过程中涉及的如下编码问题：
+本文会试图说清web开发过程中，如下方面的编码问题：
 
 - 编码简史
 - 文件编码
 - HTML编码
 - CSS编码
-- JS编码
+- JavaScript编码
+- ajax编码
 
 ##编码简史
 
@@ -42,6 +43,10 @@ lisp主张代码即数据，其实我们写的代码也是数据（信息），�
 终于老外发明了 [Unicode](http://zh.wikipedia.org/wiki/Unicode)，一切都解决了，Unicode有两个字节的16位的编码空间，Unicode是一个归法，比较常用的有UTF8和UTF16两种编码方式。
 
 [UTF8](http://zh.wikipedia.org/wiki/UTF-8)在web领域比较常用，是一种变长的编码方式，[UTF16](http://zh.wikipedia.org/wiki/UTF-16)是一种定长方式。
+
+最后来看一下，‘回’字的不同编码，要记住哦，后面会多次用到。
+
+![]({{BLOG_IMG}}162.png)
 
 ##文件编码
 
@@ -123,7 +128,58 @@ lisp主张代码即数据，其实我们写的代码也是数据（信息），�
 
 那么问题来了，如果即设置了charset属性，又设置了@charset指定，结果是@charset指定会覆盖link的charset属性，charset属性已经废弃了，建议用css的@charset指令。
 
-如果我们显示指定的编码和css文件的编码不一致也会导致乱码问题。
+**注：**如果我们显示指定的编码和css文件的编码不一致也会导致乱码问题。
+
+##JavaScript
+
+说清了CSS的编码，我们再来说JavaScript的编码问题，首先还是如果HTML文件的编码和JavaScript文件的编码不一致的话就会产生乱码，这时就需要我们显示声明一下js文件的编码才可以。
+
+html中的script标签有一个charset属性，用来指定引入外部jss文件的编码（字符集）。下面的代码显示声明引入的js的编码是utf8。
+
+	<script src="***.js" charset="utf-8"></script>
+
+**注：**如果我们显示指定的编码和js文件的编码不一致也会导致乱码问题。
+
+其实在JavaScript中仅支持utf16编码，其实也不是utf16，而是utf16的子集——ucs-2，这导致在js中无法表示BMP之外的文字（更多信息请看[这里](http://www.ruanyifeng.com/blog/2014/12/unicode.html)）。
+
+无论js源文件的编码是什么，下面的源代码的输出结果是一样的——前提是解码js的过程正确。
+
+	'回'.charCodeAt(0)#输出 22238
+
+22238的十六进制表示是56 DE，而这正是‘回’字的utf16编码。
+
+##ajax
+
+说ajax之前，先来说说表单提交吧，下面分别是utf8页面和gbk页面的表单提交请求，其中参数name是'回'字。可以看出表单请求的编码是由页面决定的。
+	
+	http://localhost/github/webtest/charset/form.php?name=%E5%9B%9E
+	http://localhost/github/webtest/charset/form.php?name=%BB%D8
+
+ajax发送的代码也是由页面决定的，但我们在发送参数前都会encodeURIComponent一下，encodeURIComponent不管页面编码是什么，都会返回utf8编码。
+
+让我们构造一个例子，页面A的编码为gbk，有如下的代码：
+
+    xhr.open("GET","form.php?name=" + encodeURIComponent('回') + 'namegbk=' + '回',true);
+
+我们看到发送的ajax请求如下所示：
+
+	http://localhost/github/webtest/charset/form.php?name=%E5%9B%9Enamegbk=%BB%D8
+
+这个例子巧妙的验证了上面的结论。
+
+再来说说json，json只支持utf8编码，所以不要返回gbk编码的json。
+
+![]({{BLOG_IMG}}161.png)
+
+##总结
+
+在信息交换的任何一个环节，如果编码信息和解码信息不一致都会产生乱码问题。
+
+本文中的所有例子都可以从[webtest](https://github.com/yanhaijing/webtest/tree/master/charset)下载。
+
+关于编码还有很多东西可以需要学习，我强烈建议你可以阅读下参考资料里面的一些文章，同时我还建议您阅读"[code](http://www.amazon.cn/gp/product/B009RSXIB4?ie=UTF8&camp=536&creativeASIN=B009RSXIB4&linkCode=xm2&tag=yanhaijing-23)"这本书。
+
+[![]({{BLOG_IMG}}163.png)](http://www.amazon.cn/gp/product/B009RSXIB4?ie=UTF8&camp=536&creativeASIN=B009RSXIB4&linkCode=xm2&tag=yanhaijing-23)
 
 ##参考资料
 - [http://www.unicode.org/](http://www.unicode.org/)

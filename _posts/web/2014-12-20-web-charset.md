@@ -92,27 +92,21 @@ lisp主张代码即数据，其实我们写的代码也是数据（信息），�
 
 	header("Content-Type:text/html; charset=utf-8");
 
-这里是设置http头的[例子](https://github.com/yanhaijing/webtest/blob/master/charset/http.php)
-
 如果没有设置http头信息，或者在文件系统直接打开页面，html的meta标签就派上了用场，meta中可以设置http头信息，下面的代码和上面php的功能相同：
 
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
-在html中将上面的代码简化为如下形式：
+在html5中将上面的代码简化为如下形式：
 
 	<meta charset="utf-8">
 
-这里是设置meta的[例子](https://github.com/yanhaijing/webtest/blob/master/charset/meta.html)
-
-如果既没有设置http头，也为设置meta，那么用户代码会使用系统的默认设置，windows下的中文环境的默认编码一般是 gb2312，所以用户代理就会用gb2312来解码页面，如果页面的编码也刚好是gb2312那么万事ok，否则就会出现乱码。
-
-这里有未设置meta的[例子](https://github.com/yanhaijing/webtest/blob/master/charset/nometa.html)
+如果既没有设置http头，也没有meta标签，那么用户代码会使用系统的默认设置，windows下的中文环境的默认编码一般是 gb2312，所以用户代理就会用gb2312来解码页面，如果页面的编码也刚好是gb2312那么万事ok，否则就会出现乱码。
 
 用户代理一般可以设置默认的编码是什么。比如chrome打开设置下的内容网络，会看到如下的设置界面。
 
 ![]({{BLOG_IMG}}151.png)
 
-如果上面设置的编码和页面本身的编码不同就会出现乱码的现象，所以大家要特别注意。
+**注：**如果最终显示的编码和页面本身的编码不同就会出现乱码。
 
 ##CSS
 

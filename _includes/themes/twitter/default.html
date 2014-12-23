@@ -1,87 +1,86 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-
-    {% if page.keywords %}
-    <meta name="keywords" content="{{ page.keywords | join:','}}" />
-    {% else %}
-    <meta name="keywords" content="{{ site.keywords | join:','}}" />
-    {%endif %}
-
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}" />
-    {% else %}
-    <meta name="description" content="{{ site.description }}" />
-    {%endif %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> {% if page.keywords %}
+    <meta name="keywords" content="{{ page.keywords | join:','}}" /> {% else %}
+    <meta name="keywords" content="{{ site.keywords | join:','}}" /> {%endif %} {% if page.description %}
+    <meta name="description" content="{{ page.description }}" /> {% else %}
+    <meta name="description" content="{{ site.description }}" /> {%endif %}
     <meta name="author" content="{{ site.author.name }}">
-
-    <!-- Enable responsive viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="wumiiVerification" content="771d3a71-b5df-499f-ae8f-da48a5a7ce78" />
     <meta name="ujianVerification" content="75029d9014448fdd57172c36ff0828ef" />
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="{{ BASE_PATH }}/assets/js/html5.js"></script>
-    <![endif]-->
+
+    <title>{{ page.title }}</title>
 
     <!-- Le styles -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link href="{{ ASSET_PATH }}/css/syntax.css" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ BASE_PATH }}/assets/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ BASE_PATH }}/assets/css/syntax.css" rel="stylesheet" type="text/css" media="all">
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="favicon.ico">
-  	<!-- Update these with your own images
+    <!-- Update these with your own images
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  	-->
+    -->
 
     <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
-  </head>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="{{ BASE_PATH }}/assets/js/html5.js"></script>
+    <![endif]-->
+</head>
 
-  <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-narrow">
-          <a class="brand" href="{{ HOME_PATH }}"><img style="vertical-align: bottom;width:20px;height:20px" width="20" height="20" src="{{ HOME_PATH }}img/facelessman.png" />{{ site.title }}</a>
-          <ul class="nav">
-          	<li><a href="http://yanhaijing.com/basejs/" target="_blank" title="JavaScript简易教程">JS简易教程</a></li>
-          	<li><a href="http://yanhaijing.com/es5/" target="_blank" title="ECMAScript5.1中文版 + ECMAScript3（合集）">ES5合集</a></li>
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-
-          </ul>
+<body>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container container-narrow">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ HOME_PATH }}"><img class="my-avarst" width="20" height="20" src="{{ HOME_PATH }}img/facelessman.png" />{{ site.title }}</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://yanhaijing.com/basejs/" target="_blank" title="JavaScript简易教程">JS简易教程</a>
+                    </li>
+                    <li><a href="http://yanhaijing.com/es5/" target="_blank" title="ECMAScript5.1中文版 + ECMAScript3（合集）">ES5合集</a>
+                    </li>
+                    {% assign pages_list = site.pages %} {% assign group = 'navigation' %} {% include JB/pages_list %}
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
         </div>
-      </div>
-    </div>
+    </nav>
 
-    <div class="container-narrow">
-
-      <div class="content">
+    <div class="container container-narrow">
         {{ content }}
-      </div>
-      <hr>
+        <hr> {% include JB/wumi %}
+        <footer>
+            <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
 
-      {% include JB/wumi %}
-      <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-
-          <a class="github" href="https://github.com/yanhaijing/yanhaijing.github.com" target="_blank" title="Fork me on GitHub"> <img width="20" height="20" align="Fork me on GitHub" src="{{ HOME_PATH }}img/auth-github.png" /></a>
-          <a class="weibo" href="http://weibo.com/yanhaijing1234/profile" target="_blank" title="weibo"> <img width="20" height="20" align="weibo" src="{{ HOME_PATH }}img/auth-weibo.png" /></a>
-          <a class="rss" href="/rss.xml" target="_blank" title="RSS"> <img width="19" height="19" alt="RSS" src="{{ HOME_PATH }}img/rss.jpg" /></a>
-          {% include JB/analytics %}
-        </p>
-      </footer>
-
+                <a class="github" href="https://github.com/yanhaijing/yanhaijing.github.com" target="_blank" title="Fork me on GitHub"> <img width="20" height="20" align="Fork me on GitHub" src="{{ HOME_PATH }}img/auth-github.png" />
+                </a>
+                <a class="weibo" href="http://weibo.com/yanhaijing1234/profile" target="_blank" title="weibo"> <img width="20" height="20" align="weibo" src="{{ HOME_PATH }}img/auth-weibo.png" />
+                </a>
+                <a class="rss" href="/rss.xml" target="_blank" title="RSS"> <img width="19" height="19" alt="RSS" src="{{ HOME_PATH }}img/rss.jpg" />
+                </a>
+                {% include JB/analytics %}
+            </p>
+        </footer>
     </div>
-  </body>
+
+    <script src="{{ BASE_PATH }}/assets/js/jquery-1.11.1.min.js"></script>
+    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+</body>
 </html>

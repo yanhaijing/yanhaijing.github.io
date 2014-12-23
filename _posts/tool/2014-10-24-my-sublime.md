@@ -162,3 +162,7 @@ DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，�
 ##总结
 
 sublime非常棒的，正是我喜欢的风格。
+
+##参考资料
+
+- [Gif多图：我常用的 16 个 Sublime Text 快捷键](http://blog.jobbole.com/82527/)

@@ -185,7 +185,7 @@ options下有很多参数，主要参数如下：
 - verbose 是否添加版权信息
 - timestamp	是否添加时间戳
 
-这里有[basejs](https://github.com/yanhaijing/basejs)使用的例子。
+这里有[basejs](http://yanhaijing.com/basejs/)的[配置文件](https://github.com/yanhaijing/basejs/blob/gh-pages/Gruntfile.js)和生成的[manifest文件](https://github.com/yanhaijing/basejs/blob/gh-pages/index.manifest)的例子。
 
 ##参考资料
 

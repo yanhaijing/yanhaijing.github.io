@@ -52,6 +52,10 @@ description: 作为aptana死忠粉的我，最近由于工作需要最近开始�
 <td>跳转到对应括号</td>
 </tr>
 <tr>
+<td>ctrl+shift+m</td>
+<td>选中括号间的内容</td>
+</tr>
+<tr>
 <td>alt+.</td>
 <td>close tag</td>
 </tr>
@@ -83,8 +87,53 @@ description: 作为aptana死忠粉的我，最近由于工作需要最近开始�
 <td>ctrl+[shift]+f</td>
 <td>[全局]查找</td>
 </tr>
+<tr>
 <td>ctrl+tab, alt+num, ctrl+pageup</td>
 <td>切换tab面板</td>
+</tr>
+<tr>
+<td>ctrl+shift+y</td>
+<td>将光标处的表达式计算，对于数学不好的很有用</td>
+</tr>
+<tr>
+<td>ctrl+shift+v|ctrl+v</td>
+<td>粘贴并缩紧|粘贴</td>
+</tr>
+<tr>
+<td>ctrl+d</td>
+<td>选择一个选中项的下一个匹配项</td>
+</tr>
+<tr>
+<td>alt+f3</td>
+<td>选择文件中的所有匹配项项</td>
+</tr>
+<tr>
+<td>ctrl+shift+’</td>
+<td>选择所有选中项的标签</td>
+</tr>
+<tr>
+<td>ctrl+shift+a</td>
+<td>选择当前选中项的父容器，可连续使用</td>
+</tr>
+<tr>
+<td>ctrl+shift+[↑↓]</td>
+<td>上移或下移行</td>
+</tr>
+<tr>
+<td>ctrl+shift+d</td>
+<td>复制行或选中项</td>
+</tr>
+<tr>
+<td>alt+shift+w</td>
+<td>用标签包裹行或选中项</td>
+</tr>
+<tr>
+<td>ctrl+[↑↓]|alt+[↑↓]|alt+shift+[↑↓]</td>
+<td>加1|加10|加0.1</td>
+</tr>
+<tr>
+<td>ctrl+shift+;</td>
+<td>移除未闭合的容器元素</td>
 </tr>
 </tbody>
 </table>
@@ -158,6 +207,9 @@ DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，�
 ###SyncedSideBar
 
 支持当前文件在左侧面板中定位，不错。
+
+###Clipboard History
+可以保存粘贴的历史，很赞的功能，再也不用担心历史丢失了。
 
 ##总结
 

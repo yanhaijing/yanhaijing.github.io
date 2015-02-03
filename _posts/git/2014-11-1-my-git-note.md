@@ -46,6 +46,15 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 
 	ssh -T git@github.com #测试是否成功
 
+配置别名，git的命令没有自动完成功能，有点坑哈，别名派上了用场
+
+	git config --global alias.st status #git st
+	git config --global alias.co checkout #git co
+	git config --global alias.br branch #git br
+	git config --global alias.ci commit #git ci
+
+笔者一般只配置第一个，因为git status使用的频率实在太多。
+
 ##新建仓库
 
 	git init#初始化

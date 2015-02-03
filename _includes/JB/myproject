@@ -2,7 +2,7 @@
     <h2>开源项目</h2>
     <ul>
         <li>
-            <a href="https://github.com/yanhaijing/lodjs" target="_blank">template.js</a> JavaScript模块加载器，基于AMD。
+            <a href="https://github.com/yanhaijing/lodjs" target="_blank">lodJS</a> JavaScript模块加载器，基于AMD。
         </li>
         <li>
             <a href="https://github.com/yanhaijing/data.js" target="_blank">data.js</a> 是带有消息通知的数据中心，我把她称为活的数据。

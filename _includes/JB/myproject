@@ -2,7 +2,7 @@
     <h2>开源项目</h2>
     <ul>
         <li>
-            <a href="https://github.com/yanhaijing/template.js" target="_blank">template.js</a> 一款JavaScript模板引擎，简单好用。
+            <a href="https://github.com/yanhaijing/lodjs" target="_blank">template.js</a> JavaScript模块加载器，基于AMD。
         </li>
         <li>
             <a href="https://github.com/yanhaijing/data.js" target="_blank">data.js</a> 是带有消息通知的数据中心，我把她称为活的数据。
@@ -12,6 +12,9 @@
         </li>
         <li>
             <a href="https://github.com/yanhaijing/inverter" target="_blank">变色方块</a> 是一款休闲益智小游戏，适合所有人群。
+        </li>
+        <li>
+            <a href="http://yanhaijing.com/myProject/" target="_blank">查看更多</a>
         </li>
     </ul>
 </aside>

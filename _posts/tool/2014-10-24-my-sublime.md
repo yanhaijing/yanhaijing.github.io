@@ -22,119 +22,35 @@ description: 作为aptana死忠粉的我，最近由于工作需要最近开始�
 <tr><th>快捷键</th><th>功能</th></tr>
 </thead>
 <tbody>
+<tr><td>ctrl+shift+p</td><td>打开命令面板</td></tr>
 <tr><td>ctrl + p</td><td>搜索项目中的文件</td></tr>
-<tr>
-<td>ctrl+k, ctrl+b</td>
-<td>切换侧边栏显示状态</td>
-</tr>
-<tr>
-<td>ctrl+shift+backspace</td>
-<td>左侧全部删除</td>
-</tr>
-<tr>
-<td>ctrl+y</td>
-<td>重做或重复</td>
-</tr>
-<tr>
-<td>shift+方向键</td>
-<td>移动并选择</td>
-</tr>
-<tr>
-<td>ctrl+[|]</td>
-<td>缩进|取消缩紧</td>
-</tr>
-<tr>
-<td>ctrl+l</td>
-<td>选择行，重复可依次增加选择下一行</td>
-</tr>
-<tr>
-<td>ctrl+m</td>
-<td>跳转到对应括号</td>
-</tr>
-<tr>
-<td>ctrl+shift+m</td>
-<td>选中括号间的内容</td>
-</tr>
-<tr>
-<td>alt+.</td>
-<td>close tag</td>
-</tr>
-<tr>
-<td>ctrl+shift+p</td>
-<td>打开命令面板</td>
-</tr>
-<tr>
-<td>ctrl+r</td>
-<td>前往Method</td>
-</tr>
-<tr>
-<td>ctrl+g</td>
-<td>跳转到第几行</td>
-</tr>
-<tr>
-<td>ctrl+/</td>
-<td>当前行注释状态切换</td>
-</tr>
-<tr>
-<td>ctrl+shift+[|]</td>
-<td>折叠|展开(代码)</td>
-</tr>
-<tr>
-<td>ctrl+h</td>
-<td>替换</td>
-</tr>
-<tr>
-<td>ctrl+[shift]+f</td>
-<td>[全局]查找</td>
-</tr>
-<tr>
-<td>ctrl+tab, alt+num, ctrl+pageup</td>
-<td>切换tab面板</td>
-</tr>
-<tr>
-<td>ctrl+shift+y</td>
-<td>将光标处的表达式计算，对于数学不好的很有用</td>
-</tr>
-<tr>
-<td>ctrl+shift+v|ctrl+v</td>
-<td>粘贴并缩紧|粘贴</td>
-</tr>
-<tr>
-<td>ctrl+d</td>
-<td>选择一个选中项的下一个匹配项</td>
-</tr>
-<tr>
-<td>alt+f3</td>
-<td>选择文件中的所有匹配项项</td>
-</tr>
-<tr>
-<td>ctrl+shift+’</td>
-<td>选择所有选中项的标签</td>
-</tr>
-<tr>
-<td>ctrl+shift+a</td>
-<td>选择当前选中项的父容器，可连续使用</td>
-</tr>
-<tr>
-<td>ctrl+shift+[↑↓]</td>
-<td>上移或下移行</td>
-</tr>
-<tr>
-<td>ctrl+shift+d</td>
-<td>复制行或选中项</td>
-</tr>
-<tr>
-<td>alt+shift+w</td>
-<td>用标签包裹行或选中项</td>
-</tr>
-<tr>
-<td>ctrl+[↑↓]|alt+[↑↓]|alt+shift+[↑↓]</td>
-<td>加1|加10|加0.1</td>
-</tr>
-<tr>
-<td>ctrl+shift+;</td>
-<td>移除未闭合的容器元素</td>
-</tr>
+<tr><td>ctrl+r</td><td>前往Method</td></tr>
+<tr><td>ctrl+g</td><td>跳转到第几行</td></tr>
+<tr><td>ctrl+k, ctrl+b</td><td>切换侧边栏显示状态</td></tr>
+<tr><td>ctrl+shift+[backspace|del]</td><td>左侧|右侧全部删除</td></tr>
+<tr><td>ctrl+y</td><td>重做或重复</td></tr>
+<tr><td>shift+方向键</td><td>移动并选择</td></tr>
+<tr><td>ctrl+[|]</td><td>缩进|取消缩紧</td></tr>
+<tr><td>ctrl+l</td><td>选择行，重复可依次增加选择下一行</td></tr>
+<tr><td>ctrl+m</td><td>跳转到对应括号</td></tr>
+<tr><td>ctrl+shift+m</td><td>选中括号间的内容</td></tr>
+<tr><td>alt+.</td><td>close tag</td></tr>
+<tr><td>ctrl+/</td><td>当前行注释状态切换</td></tr>
+<tr><td>ctrl+shift+[|]</td><td>折叠|展开(代码)</td></tr>
+<tr><td>ctrl+h</td><td>替换</td></tr>
+<tr><td>ctrl+[shift]+f</td><td>[全局]查找</td></tr>
+<tr><td>ctrl+tab, alt+num, ctrl+pageup</td><td>切换tab面板</td></tr>
+<tr><td>ctrl+shift+y</td><td>将光标处的表达式计算，对于数学不好的很有用</td></tr>
+<tr><td>ctrl+shift+v|ctrl+v</td><td>粘贴并缩紧|粘贴</td></tr>
+<tr><td>ctrl+d</td><td>选择一个选中项的下一个匹配项</td></tr>
+<tr><td>alt+f3</td><td>选择文件中的所有匹配项项</td></tr>
+<tr><td>ctrl+shift+’</td><td>选择所有选中项的标签</td></tr>
+<tr><td>ctrl+shift+a</td><td>选择当前选中项的父容器，可连续使用</td></tr>
+<tr><td>ctrl+shift+[↑↓]</td><td>上移或下移行</td></tr>
+<tr><td>ctrl+shift+d</td><td>复制行或选中项</td></tr>
+<tr><td>alt+shift+w</td><td>用标签包裹行或选中项</td></tr>
+<tr><td>ctrl+[↑↓]|alt+[↑↓]|alt+shift+[↑↓]</td><td>加1|加10|加0.1</td></tr>
+<tr><td>ctrl+shift+;</td><td>移除未闭合的容器元素</td></tr>
 </tbody>
 </table>
 

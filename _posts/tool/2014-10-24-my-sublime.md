@@ -100,6 +100,14 @@ DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，�
 
 专门用来格式化js的工具，非常给力。
 
+###HTML/CSS/JS Prettify
+
+不解释，神奇，秒杀jsFormat，能够格式化css html 和js。
+
+**注意：**格式化的文件路径中不能有中文，不然会报找不到node的错误（windows下）。
+
+![]({BLOG_IMG/168.png})
+
 ###BracketHighlighter
 
 像这些符号是成对的：花括号{}， 中括号[],括号：() ，引号“” 等。 这些符号当我们鼠标放在开始符号的位置的时候， 希望能明显看到结尾符号在哪儿sublime默认是下划线，很不明显， 想要明显一点，可以安装插件  BracketHighlighter。
@@ -107,10 +115,6 @@ DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，�
 ###GBK Encoding Support
 
 这个插件还是非常有用的，因为sublime 本身 不支持gbk编码，在utf8如此流行的今天，我们整站还是gbk编码，o(︶︿︶)o 唉，所以全靠这个插件了。
-
-###HTML/CSS/JS Prettify
-
-不解释，神奇，秒杀jsFormat，能够格式化css html 和js。
 
 ###Terminal
 

@@ -106,7 +106,7 @@ DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，�
 
 **注意：**格式化的文件路径中不能有中文，不然会报找不到node的错误（windows下）。
 
-![]({BLOG_IMG/168.png})
+![]({BLOG_IMG}/168.png)
 
 ###BracketHighlighter
 

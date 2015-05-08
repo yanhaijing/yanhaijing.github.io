@@ -1,9 +1,9 @@
 ---
 layout: post
 title: JavaScript模块的前世今生
-category : js
+category : javaScript
 tagline: "原创"
-tags : [js]
+tags : [javaScript]
 keywords: [module, js]
 description: 本文将会陈述下JavaScript模块的前世今生。
 ---

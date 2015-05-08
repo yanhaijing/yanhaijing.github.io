@@ -1,20 +1,20 @@
 ---
 layout: post
 title: 细说JavaScript中对象的属性和方法
-category : js
+category : javaScript
 tagline: "原创"
-tags : [js]
+tags : [javaScript]
 keywords: [object, js]
 description: 本文分为两部分，分别介绍Object和Object.prototype上的一些常用方法。
 ---
 {% include JB/setup %}
 
-最近在回家的路上读了尼古拉斯的新书《JavaScript面向对象精要》，发现自己对对象的属性和方法不是很熟悉，特别是es5新增的部分，特写此文总结一下，同时也与大家共勉。
+最近在回家的路上读了尼古拉斯的新书《[JavaScript面向对象精要](http://www.amazon.cn/gp/product/B00VDSW6X2/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00VDSW6X2&linkCode=as2&tag=yanhaijing-23)》，发现自己对对象的属性和方法不是很熟悉，特别是es5新增的部分，特写此文总结一下，同时也与大家共勉。
 
 本文分为两部分，分别介绍Object和Object.prototype上的一些常用方法。主要参考了[MDN][1]，每个方法都给出了[MDN][1]的链接。
 
 ## 前言
-查看一个对象属性的最好方法，不是去百度，也不是去google，而是用下面的方法（抄袭自 《DOM启蒙》）：
+查看一个对象属性的最好方法，不是去百度，也不是去google，而是用下面的方法（抄袭自 《[DOM启蒙](http://www.amazon.cn/gp/product/B00JWXDB52/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00JWXDB52&linkCode=as2&tag=yanhaijing-23)》）：
 	
 	Object.getOwnPropertyNames(Object).sort().forEach(function (val) {console.log(val, '\n')});
 

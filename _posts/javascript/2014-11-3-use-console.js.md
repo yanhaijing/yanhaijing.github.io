@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 给你的网站添加 console.js 
-category : javaScript
+category : javascript
 tagline: "原创"
-tags : [javaScript]
+tags : [javascript]
 keywords: [console, js]
 description: console.js 与console就想html5shim于html5，仅此而已，如此简单。
 ---

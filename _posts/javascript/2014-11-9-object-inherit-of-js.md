@@ -1,9 +1,9 @@
 ---
 layout: post
 title: JavaScript对象继承一瞥
-category : javaScript
+category : javascript
 tagline: "原创"
-tags : [javaScript]
+tags : [javascript]
 keywords: [js, 对象继承]
 description: 本文就来总结下，如何使用构造函数来实现继承。
 ---

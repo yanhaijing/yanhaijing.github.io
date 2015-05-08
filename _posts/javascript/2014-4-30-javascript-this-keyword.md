@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JavaScript中的this关键字
-category : javaScript
+category : javascript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript]

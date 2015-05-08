@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 在JavaScript中什么时候使用==是正确的？
-category : javaScript
+category : javascript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JavaScript原型之路
-category : javaScript
+category : javascript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript]

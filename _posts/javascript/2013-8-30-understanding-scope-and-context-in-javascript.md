@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 认识javascript中的作用域和上下文
-category : javaScript
+category : javascript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript]

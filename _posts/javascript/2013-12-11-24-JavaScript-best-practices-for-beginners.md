@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 给JavaScript初学者的24条最佳实践
-category : javaScript
+category : javascript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript]

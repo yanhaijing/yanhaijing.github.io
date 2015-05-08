@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 一段代码详解JavaScript面向对象
-category : javaScript
+category : javascript
 tagline: "原创"
 tags : [javascript]
 keywords: [javascript]

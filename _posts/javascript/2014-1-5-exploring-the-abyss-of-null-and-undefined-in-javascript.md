@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 探索JavaScript中Null和Undefined的深渊
-category : javaScript
+category : javascript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript]

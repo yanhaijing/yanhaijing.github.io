@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JavaScript简易教程
-category : javaScript
+category : javascript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript, JavaScript教程, JavaScript简易教程, JavaScript基础教程, JavaScript入门教程]

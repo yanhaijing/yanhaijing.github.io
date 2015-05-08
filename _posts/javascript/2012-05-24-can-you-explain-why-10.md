@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 为什么++[[]][+[]]+[+[]]=10？
-category : javaScript
+category : javascript
 tagline: "转"
 tags : [javascript]
 keywords: [javascript, 语法]

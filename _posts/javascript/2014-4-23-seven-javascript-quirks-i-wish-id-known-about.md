@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 我希望我知道的七个JavaScript技巧
-category : javaScript
+category : javascript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript]

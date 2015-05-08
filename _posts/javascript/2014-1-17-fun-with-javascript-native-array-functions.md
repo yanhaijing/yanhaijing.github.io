@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 有趣的JavaScript原生数组函数
-category : javaScript
+category : javascript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript]

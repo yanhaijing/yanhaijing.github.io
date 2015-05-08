@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 写了10年Javascript未必全了解的连续赋值运算
-category : javaScript
+category : javascript
 tagline: "转"
 tags : [javascript]
 keywords: [javascript, 赋值]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2013年JavaScript开发人员调查结果
-category : javaScript
+category : javascript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript]

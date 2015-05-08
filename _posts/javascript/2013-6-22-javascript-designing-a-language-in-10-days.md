@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Javascript:10天设计一门语言
-category : javaScript
+category : javascript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript]

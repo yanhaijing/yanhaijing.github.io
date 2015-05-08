@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JavaScript 封装问题
-category : javaScript
+category : javascript
 tagline: "原创"
 tags : [javascript]
 keywords: [javascript]

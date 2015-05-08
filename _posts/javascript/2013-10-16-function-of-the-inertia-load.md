@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 利用函数的惰性载入提高javascript代码性能
-category : javaScript
+category : javascript
 tagline: "转"
 tags : [javascript]
 keywords: [javascript]

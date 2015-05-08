@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 了解JavaScript的执行上下文
-category : javaScript
+category : javascript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript]

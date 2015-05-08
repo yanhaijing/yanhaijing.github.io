@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Javascript继承-原型的陷阱
-category : javaScript
+category : javascript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript]

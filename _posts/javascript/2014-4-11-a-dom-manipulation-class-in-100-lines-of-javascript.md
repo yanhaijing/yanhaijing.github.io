@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 仅100行的JavaScript DOM操作类库
-category : javaScript
+category : javascript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript]

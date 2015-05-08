@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 细说JavaScript中对象的属性和方法
-category : javaScript
+category : javascript
 tagline: "原创"
-tags : [javaScript]
+tags : [javascript]
 keywords: [object, js]
 description: 本文分为两部分，分别介绍Object和Object.prototype上的一些常用方法。
 ---

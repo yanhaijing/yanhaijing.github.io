@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 每一个JavaScript开发者应该了解的浮点知识
-category : javaScript
+category : javascript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript]

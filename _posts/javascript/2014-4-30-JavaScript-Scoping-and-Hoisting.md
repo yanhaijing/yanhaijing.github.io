@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JavaScript的作用域和提升机制
-category : javaScript
+category : javascript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript]

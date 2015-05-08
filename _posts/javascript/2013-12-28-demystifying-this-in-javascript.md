@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 揭秘JavaScript中谜一样的this
-category : javaScript
+category : javascript
 tagline: "译"
 tags : [javascript]
 keywords: [javascript]

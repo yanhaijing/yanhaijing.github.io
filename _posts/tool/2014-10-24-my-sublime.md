@@ -31,12 +31,12 @@ description: 作为aptana死忠粉的我，最近由于工作需要最近开始�
 <tr><td>ctrl+y</td><td>重做或重复</td></tr>
 <tr><td>shift+方向键</td><td>移动并选择</td></tr>
 <tr><td>ctrl+[|]</td><td>缩进|取消缩紧</td></tr>
+<tr><td>ctrl+shift+[|]</td><td>折叠|展开(代码)</td></tr>
 <tr><td>ctrl+l</td><td>选择行，重复可依次增加选择下一行</td></tr>
 <tr><td>ctrl+m</td><td>跳转到对应括号</td></tr>
 <tr><td>ctrl+shift+m</td><td>选中括号间的内容</td></tr>
 <tr><td>alt+.</td><td>close tag</td></tr>
 <tr><td>ctrl+/</td><td>当前行注释状态切换</td></tr>
-<tr><td>ctrl+shift+[|]</td><td>折叠|展开(代码)</td></tr>
 <tr><td>ctrl+h</td><td>替换</td></tr>
 <tr><td>ctrl+[shift]+f</td><td>[全局]查找</td></tr>
 <tr><td>ctrl+tab, alt+num, ctrl+pageup</td><td>切换tab面板</td></tr>

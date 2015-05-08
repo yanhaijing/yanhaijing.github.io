@@ -3,7 +3,7 @@ layout: post
 title: 亦得亦失
 category : work
 tagline: "原创"
-tags : [工作]
+tags : [work]
 keywords: [2013总结]
 description: 愿或不愿2013以然过去，光阴荏苒，日月如梭这一年经历了很多事情，也不很顺利，在此做个总结。
 ---

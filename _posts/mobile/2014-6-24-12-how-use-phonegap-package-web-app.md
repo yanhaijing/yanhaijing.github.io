@@ -3,7 +3,7 @@ layout: post
 title: 如何使用PhoneGap打包Web App
 category : mobile
 tagline: "原创"
-tags : [phonegap]
+tags : [mobile, phonegap]
 keywords: [phonegap]
 description: 最近做了一款小游戏，定位是移动端访问，思来想去最后选择了jQuery mobile最为框架，制作差不多以后，是否可以打包成App，恰好以前对PhoneGap有耳闻，便想用这个来做打包，可以其中艰辛曲折多次让我想放弃的心情，官方提供的例子，对我这种没用过的人而言，真是无语的很，所已将配置环境和打包过程写下做个记录。
 ---

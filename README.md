@@ -2,12 +2,16 @@
 
 嗨，这是我的个人博客，如果你在网上见到过颜海镜，或是yanhaijing，头像是一个无脸男，那个人就是我哦。
 
+<img src="http://yanhaijing.com/img/facelessman.png" width="120">
+
 ##关于我
 [这里有我的简介](http://yanhaijing.com/yan_about.html)
 
 ## 技术支持
-
-参见: <http://jekyllbootstrap.com>
+- [jekyllcn](http://jekyllcn.com/)
+- [jekyllbootstrap](http://jekyllbootstrap.com)
+- [Markdown 语法说明](http://wowubuntu.com/markdown/)
+- [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)
 
 ##联系方式
 

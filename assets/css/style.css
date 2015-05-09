@@ -87,6 +87,9 @@
     border: 2px solid #d3d3d3;
     background-color: #DEEBF7;
 }
+.myproject h2 {
+    margin-top: 0px;
+}
 .donate figcaption {
     text-indent: 45px;
 }

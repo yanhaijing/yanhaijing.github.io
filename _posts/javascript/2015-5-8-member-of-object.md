@@ -241,8 +241,11 @@ Object.prototype上的方法，都是实例方法，必须在对象实例上调�
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable)。
 
-##总结
+## 总结
 除了上面介绍的方法，还有一些实验方法，和不常用的方法，可以在[这里](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)找到。
+
+## 相关文章
+- [有趣的JavaScript原生数组函数](http://yanhaijing.com/javascript/2014/01/17/fun-with-javascript-native-array-functions/)
 
 [1]: https://developer.mozilla.org "MDN"
 [2]: https://developer.mozilla.org/zh-CN/docs/JavaScript/Reference/Functions_and_function_scope/Strict_mode "严格模式"

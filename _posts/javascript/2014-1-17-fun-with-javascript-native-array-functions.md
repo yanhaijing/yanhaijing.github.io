@@ -83,6 +83,7 @@ description: 在本文中，我将复习一些数组原型的方法，并探索�
 - `.concat` 的标志用法：`array.concat(val, val2, val3, valn)`
 - `.concat` 返回一个新书组
 - `array.concat()`没有参数的情况下，会返回原数组的浅拷贝
+
 浅拷贝意味着新数组和原数组保持相同的对象引用，这通常是好事。例如：
 
 	var a = { foo: 'bar' }
@@ -375,6 +376,9 @@ description: 在本文中，我将复习一些数组原型的方法，并探索�
 	// [8, 7, 1, 1]
 
 和复制不同的是，数组本身被更改。在以后的文章中我将展开对这些概念的理解，去看看如何创建一个库，如Underscore或Lo-Dash。
+
+## 相关文章
+- [细说JavaScript中对象的属性和方法](http://yanhaijing.com/javascript/2015/05/08/member-of-object/)
 
 ## 译者注 ##
 

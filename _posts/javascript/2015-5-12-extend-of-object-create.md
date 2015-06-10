@@ -35,9 +35,9 @@ Object.creates的语法如下：
         //如果只有一个参数
         if (arguments.length < 2) return obj;
 		
-        [].slice.call(arguments, 1).forEach(function (val1, key1) {
-            Object.getOwnPropertyNames(val1).forEach(function (val2) {
-                Object.defineProperty(obj, val2, Object.getOwnPropertyDescriptor(val1, val2));
+        [].slice.call(arguments, 1).forEach(function (copy) {
+            Object.getOwnPropertyNames(copy).forEach(function (prop) {
+                Object.defineProperty(obj, prop, Object.getOwnPropertyDescriptor(copy, prop));
             });
         });
         return obj;

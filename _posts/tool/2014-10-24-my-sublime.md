@@ -51,6 +51,9 @@ description: 作为aptana死忠粉的我，最近由于工作需要最近开始�
 <tr><td>alt+shift+w</td><td>用标签包裹行或选中项</td></tr>
 <tr><td>ctrl+[↑↓]|alt+[↑↓]|alt+shift+[↑↓]</td><td>加1|加10|加0.1</td></tr>
 <tr><td>ctrl+shift+;</td><td>移除未闭合的容器元素</td></tr>
+<tr><td>ctrl+j</td><td>合并选中的行（多行边一行）</td></tr>
+<tr><td>ctrl+kk</td><td>从光标处删除至行尾</td></tr>
+<tr><td>ctrl+shift+k</td><td>删除整行</td></tr>
 </tbody>
 </table>
 

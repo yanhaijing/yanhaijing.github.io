@@ -23,20 +23,20 @@ group: navigation
 ## 我的Q群 ##
 下面是我几个群，欢迎加入
 
-<a target="_blank" href="http://url.cn/OZZ7bw"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="github 家园" title="github 家园"></a>
+<a target="_blank" href="http://url.cn/OZZ7bw"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="GitHub 家园" title="GitHub 家园"></a>
 <a target="_blank" href="http://url.cn/RyKWB0"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="码农之家" title="码农之家"></a>
 <a target="_blank" href="http://url.cn/OXkoEC"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="CSS家园" title="CSS家园"></a>
 
 ## 更多信息 ##
 
-[![]({{ HOME_PATH }}img/auth-douban.png)](http://www.douban.com/people/yanhaijing/ "我的豆瓣")
-[![]({{ HOME_PATH }}img/auth-tqq.png)](http://t.qq.com/web_javascript "我的腾讯微博")
-[![]({{ HOME_PATH }}img/turing.jpg)](http://www.ituring.com.cn/users/121364 "我的图灵")
+[![]({{ HOME_PATH }}img/auth-douban.png)](http://www.douban.com/people/yanhaijing/ "我在豆瓣")
+[![]({{ HOME_PATH }}img/auth-tqq.png)](http://t.qq.com/web_javascript "我在腾讯微博")
+[![]({{ HOME_PATH }}img/turing.jpg)](http://www.ituring.com.cn/users/121364 "我在图灵")
 
 ## 友情链接 ##
-[@justjavac(迷渡)](http://justjavac.com/)
-[@腊八粥(张伟)](http://www.labazhou.net/)
-[@php101(土豆丫)](http://www.php101.cn/)
-[@zcfree8(梧桐)](http://zcfree8.github.io/)
-[@淡忘~浅思](http://www.ido321.com/)
+- [@justjavac(迷渡)](http://justjavac.com/)
+- [@腊八粥(IT翻译博客)](http://www.labazhou.net/)
+- [@php101(土豆丫)](http://www.php101.cn/)
+- [@zcfree8(梧桐)](http://zcfree8.github.io/)
+- [@淡忘~浅思](http://www.ido321.com/)
   

@@ -40,4 +40,5 @@ group: navigation
 - [@zcfree8(梧桐)](http://zcfree8.github.io/)
 - [@淡忘~浅思](http://www.ido321.com/)
 - [@杨佰(yangbai)的个人博客](http://www.yangbai.me/)
-  
+- [@前端小武](http://www.xuexb.com/)
+

@@ -144,3 +144,4 @@ sublime非常棒的，正是我喜欢的风格。
 ##参考资料
 
 - [Gif多图：我常用的 16 个 Sublime Text 快捷键](http://blog.jobbole.com/82527/)
+- [12个不可不知的Sublime Text应用技巧和诀窍](http://segmentfault.com/a/1190000000505218)

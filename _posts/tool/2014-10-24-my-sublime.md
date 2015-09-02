@@ -70,7 +70,7 @@ sublime的功能已经很满足大部分需求了，但还是有个别差异化�
 
 我们输入下面的代码点击回车运行， 就能安装好package control了。
 
-	import urllib2,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')
+    import urllib2,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')
 
 运行结束以后，记得重启编辑器，就能在Preferences中看到 package control了。
 
@@ -78,76 +78,82 @@ sublime的功能已经很满足大部分需求了，但还是有个别差异化�
 
 然后我们按住 ctrl+shift+p。此时会输出一个输入框，即可安装，删除，更新插件了。
 
-###[LESS](https://github.com/danro/LESS-sublime)
+### Smarty
+提供smarty语法的支持。
+
+### Liquid
+提供Liquid语法支持，如果你也写博客的话不妨试试。
+
+### CSS3_Syntax
+对css语法高亮的支持，view-syntax-css3选中css3就能使用css3高亮了。必须每条属性都加上分号，并且属性必须小写，不然不会高亮，有点鸡肋啊。
+
+### Autoprefixer
+可以给css自动加前缀功能
+
+### [LESS](https://github.com/danro/LESS-sublime)
 
 这是一个非常棒的插件，可以让sublime支持less的语法高亮和语法提示，对于搞less的同学灰常重要，不过多解释。
 
 ### SASS
 提供sass语法高亮支持。
 
-###Emmet
+### JavaScriptNext - ES6 Syntax
+提供ES6的语法支持。
 
+### jQuery
+支持jquery的只能语法提示，很赞。
+
+### Emmet
 Emmet的前身是大名鼎鼎的Zen coding，如果你从事Web前端开发的话，对该插件一定不会陌生。它使用仿CSS选择器的语法来生成代码，大大提高了HTML/CSS代码编写的速度。
 
 - [这里是一篇演示文章](http://www.iteye.com/news/27580)
 - [Emmet官网](http://docs.emmet.io/)
 
-###SublimeLinter
-
+### SublimeLinter
 可以验证各种语法错误，不多解释。
 
-###DocBlockr
-
+### DocBlockr
 DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，变量，和参数，根据它们自动生成文档范式，你的工作就是去填充对应的说明。
 
 ![]({{BLOG_IMG}}144.gif)
 
-###JsFormat
-
+### JsFormat
 专门用来格式化js的工具，非常给力。
 
-###HTML/CSS/JS Prettify
-
+### HTML/CSS/JS Prettify
 不解释，神奇，秒杀jsFormat，能够格式化css html 和js。
 
 **注意：**格式化的文件路径中不能有中文，不然会报找不到node的错误（windows下）。
 
 ![]({{BLOG_IMG}}168.png)
 
-###BracketHighlighter
-
+### BracketHighlighter
 像这些符号是成对的：花括号{}， 中括号[],括号：() ，引号“” 等。 这些符号当我们鼠标放在开始符号的位置的时候， 希望能明显看到结尾符号在哪儿sublime默认是下划线，很不明显， 想要明显一点，可以安装插件  BracketHighlighter。
 
-###GBK Encoding Support
-
+### GBK Encoding Support
 这个插件还是非常有用的，因为sublime 本身 不支持gbk编码，在utf8如此流行的今天，我们整站还是gbk编码，o(︶︿︶)o 唉，所以全靠这个插件了。
 
-###Terminal
-
+### Terminal
 可以sublime中，打开命令行，非常方便哦。
 
-###jQuery
-
-支持jquery的只能语法提示，很赞。
-
-###SyncedSideBar
-
+### SyncedSideBar
 支持当前文件在左侧面板中定位，不错。
 
-###Clipboard History
+### Clipboard History
 可以保存粘贴的历史，很赞的功能，再也不用担心历史丢失了。ctrl+alt+v可打开历史面板，上下选择即可，安装后会和默认的ctrl+shift+v（粘贴缩进）冲突，干掉这个快捷键。
-
-###CSS3_Syntax
-对css语法高亮的支持，view-syntax-css3选中css3就能使用css3高亮了。必须每条属性都加上分号，并且属性必须小写，不然不会高亮，有点鸡肋啊。
 
 ### AllAutocomplete
 自动完成插件，可在全部打开的文件中，自动完成。
 
-##总结
+### HexViewer
+提供十六进制文件查看功能。
 
+### MultiEditUtils
+扩展多行编辑的功能。
+
+##总结
 sublime非常棒的，正是我喜欢的风格。
 
 ##参考资料
-
 - [Gif多图：我常用的 16 个 Sublime Text 快捷键](http://blog.jobbole.com/82527/)
 - [12个不可不知的Sublime Text应用技巧和诀窍](http://segmentfault.com/a/1190000000505218)

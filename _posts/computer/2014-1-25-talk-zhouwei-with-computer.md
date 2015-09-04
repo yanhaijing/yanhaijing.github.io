@@ -3,9 +3,9 @@ layout: post
 title: 由计算机谈最强大脑周玮
 category : computer
 tagline: "原创"
-tags : [计算机]
+tags : [computer]
 keywords: [最强大脑, 周玮， 计算机]
-description: 
+description:
 ---
 {% include JB/setup %}
 
@@ -77,8 +77,7 @@ description:
 
 当上帝为你关闭一扇门时，也会为你打开一扇窗，塞翁失马焉知非福啊，我想可能不是上面的某一个原因造就了周玮，可能是综合的，也可能是其他原因，我们能做的就是祝福他，也祝福我们自己，上帝从不眷顾谁，愿世界更美好。
 
- 
 
- 
 
- 
+
+

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 基于Grunt构建一个JavaScript库
-category : grunt
+category : tool
 tagline: "译"
-tags : [grunt]
-keywords: [grunt]
+tags : [tool]
+keywords: [grunt, tool]
 description: 本文解释如何使用Grunt.js构建JavaScript库。Grunt.js依赖Node.js和npm，所以第一节解释其是什么，如何安装和使用。如果你对npm有了解，那你可以跳过这一节。第四和第五节讲述如何配置Grunt和一系列典型Grunt任务。
 ---
 {% include JB/setup %}
@@ -171,7 +171,7 @@ Grunt将配置信息写到Gruntfile.js或Gruntfile.coffee文件里。由于我�
 
 	//包装函数 有一个参数
 	module.exports = function(grunt) {
-	
+
 	  // 默认任务。在本例子中没有任何操作。
 	  grunt.registerTask('default', []);
 	};
@@ -211,15 +211,15 @@ Grunt将配置信息写到Gruntfile.js或Gruntfile.coffee文件里。由于我�
 任务配置必须被存储在一个对象内部，有各自的任务名，并且被传递给 grunt.initConfig方法：
 
 	module.exports = function(grunt) {
-	
+
 	  grunt.initConfig({
 	    firstTask : { /* ... 配置第一个任务 ... */ },
 	    secondTask : { /* ... 配置第二个任务 ... */ },
 	    // ... 其他任务 ...
 	    lastTask : { /* ... 最后一个任务 ... */ }
 	  });
-	
-	  // ... the rest ... 
+
+	  // ... the rest ...
 	};
 
 全面的任务配置信息解释看这里[Grunt.js文档](http://gruntjs.com/configuring-tasks)。本节仅描述最通用，简单的例子。假设任务接受一个文件列表，并处理他们，然后生出输出文件。
@@ -245,7 +245,7 @@ Grunt将配置信息写到Gruntfile.js或Gruntfile.coffee文件里。由于我�
 	multipleTargetsTask: {
 	  target1: { src: ['src/**/*.js'] },
 	  target2: { src: ['test/**/*.js']] }
-	} 
+	}
 
 #### 加载和注册任务（Load and Register Tasks）
 
@@ -254,11 +254,11 @@ Grunt将配置信息写到Gruntfile.js或Gruntfile.coffee文件里。由于我�
 上面介绍的结构合起来如下：
 
 	module.exports = function(grunt) {
-	
+
 	  grunt.initConfig({ /* ... tasks configuration ... */ });
 	  grunt.loadNpmTasks('grunt-plugin-name');
 	  grunt.registerTask('default', ['firstTask', 'secondTask', ...]);
-	
+
 	};
 
 ### 配置JSHint（Configure JSHint）
@@ -284,7 +284,7 @@ JSHint 的参数 “eqeqeq” 会将 == 和 != 操作符报告为警告。默认
 	options: {
 	  eqeqeq: true,
 	  trailing: true
-	} 
+	}
 
 #### 配置JSHint任务（Configure the JSHint Task）
 
@@ -320,7 +320,7 @@ JSHint的配置信息必须写在名为“jshint”的属性内部。可以有�
 目前为止完整的 Gruntfile.js 文件如下：
 
 	module.exports = function(grunt) {
-	
+
 	  grunt.initConfig({
 	    jshint: {
 	      options: {
@@ -332,7 +332,7 @@ JSHint的配置信息必须写在名为“jshint”的属性内部。可以有�
 	      }
 	    }
 	  });
-	
+
 	  grunt.loadNpmTasks('grunt-contrib-jshint');
 	  grunt.registerTask('default', ['jshint']);
 	};
@@ -383,11 +383,11 @@ Grunt提供一套[模版系统](http://gruntjs.com/api/grunt.template)，我们�
 上面的模版生成如下的页头：
 
 	/*! gruntdemo v0.0.1 - 2013-06-04
-	 *  License: BSD */ 
+	 *  License: BSD */
 
 项目的名称和版本部分也需要在多处使用。将项目名和版本号拼在一起，存储在一个变量中：
 
-	var name = '<%= pkg.name %>-v<%= pkg.version%>'; 
+	var name = '<%= pkg.name %>-v<%= pkg.version%>';
 
 生成的名字如下：
 
@@ -428,7 +428,7 @@ concat插件也可以通过banner属性添加banner。由于上面我们已经�
 	module.exports = function(grunt) {
 	  var bannerContent = '... banner template ...';
 	  var name = '<%= pkg.name %>-v<%= pkg.version%>';
-	
+
 	  grunt.initConfig({
 	    // pkg is used from templates and therefore
 	    // MUST be defined inside initConfig object
@@ -445,7 +445,7 @@ concat插件也可以通过banner属性添加banner。由于上面我们已经�
 	    },
 	    jshint: { /* ... jshint configuration ... */ }
 	  });
-	
+
 	  grunt.loadNpmTasks('grunt-contrib-jshint');
 	  grunt.loadNpmTasks('grunt-contrib-concat');
 	  grunt.registerTask('default', ['jshint', 'concat']);
@@ -516,8 +516,8 @@ concat插件也可以通过banner属性添加banner。由于上面我们已经�
 
 	module.exports = function(grunt) {
 	  var bannerContent = '... banner template ...';
-	  var name = '<%= pkg.name %>-v<%= pkg.version%>';  
-	
+	  var name = '<%= pkg.name %>-v<%= pkg.version%>';
+
 	  grunt.initConfig({
 	    // pkg must be defined inside initConfig object
 	    pkg : grunt.file.readJSON('package.json'),
@@ -537,7 +537,7 @@ concat插件也可以通过banner属性添加banner。由于上面我们已经�
 	    concat: { /* ... concat configuration ... */ },
 	    jshint: { /* ... jshint configuration ... */ }
 	  });
-	   
+
 	  grunt.loadNpmTasks('grunt-contrib-jshint');
 	  grunt.loadNpmTasks('grunt-contrib-concat');
 	  grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -572,15 +572,15 @@ copy配置信息包括三个目标，分别对应三个发布文件。没有配�
 	  /* define filenames */
 	  latest = '<%= pkg.name %>';
 	  name = '<%= pkg.name %>-v<%= pkg.version%>';
-	
+
 	  devRelease = 'distrib/'+name+'.js';
 	  minRelease = 'distrib/'+name+'.min.js';
 	  sourceMapMin = 'distrib/source-map-'+name+'.min.js';
-	
+
 	  lDevRelease = 'distrib/'+latest+'.js';
 	  lMinRelease = 'distrib/'+latest+'.min.js';
 	  lSourceMapMin = 'distrib/source-map-'+latest+'.min.js';
-	
+
 	  grunt.initConfig({
 	    copy: {
 	      development: { // copy non-minified release file
@@ -600,7 +600,7 @@ copy配置信息包括三个目标，分别对应三个发布文件。没有配�
 	    concat: { /* ... concat configuration ... */ },
 	    jshint: { /* ... jshint configuration ... */ }
 	  });
-	
+
 	  grunt.loadNpmTasks('grunt-contrib-jshint');
 	  grunt.loadNpmTasks('grunt-contrib-concat');
 	  grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -630,7 +630,7 @@ Qunit 单元测试经常要运行 src 目录里的 JavaScript 文件，由于测
 	  <div id="qunit"></div>
 	  <div id="qunit-fixture"></div>
 	  <script src="../libs/qunit/qunit.js"></script>
-	
+
 	  <!-- Use latest versionless copy of current release -->
 	  <script src="../distrib/gruntdemo.min.js"></script>
 	  <script src="tests.js"></script>
@@ -668,7 +668,7 @@ Qunit 单元测试经常要运行 src 目录里的 JavaScript 文件，由于测
 	  var name, latest, bannerContent, devRelease, minRelease,
 	      sourceMap, sourceMapUrl, lDevRelease, lMinRelease,
 	      lSourceMapMin;
-	 
+
 	  latest = '<%= pkg.name %>';
 	  name = '<%= pkg.name %>-v<%= pkg.version%>';
 	  bannerContent = '/*! <%= pkg.name %> v<%= pkg.version %> - ' +
@@ -678,11 +678,11 @@ Qunit 单元测试经常要运行 src 目录里的 JavaScript 文件，由于测
 	  minRelease = 'distrib/'+name+'.min.js';
 	  sourceMapMin = 'distrib/'+name+'.min.js.map';
 	  sourceMapUrl = name+'.min.js.map';
-	 
+
 	  lDevRelease = 'distrib/'+latest+'.js';
 	  lMinRelease = 'distrib/'+latest+'.min.js';
 	  lSourceMapMin = 'distrib/'+latest+'.min.js.map';
-	   
+
 	  grunt.initConfig({
 	    pkg: grunt.file.readJSON('package.json'),
 	    qunit:{
@@ -739,13 +739,13 @@ Qunit 单元测试经常要运行 src 目录里的 JavaScript 文件，由于测
 	      }
 	    }
 	  });
-	 
+
 	  grunt.loadNpmTasks('grunt-contrib-jshint');
 	  grunt.loadNpmTasks('grunt-contrib-concat');
 	  grunt.loadNpmTasks('grunt-contrib-uglify');
 	  grunt.loadNpmTasks('grunt-contrib-copy');
 	  grunt.loadNpmTasks('grunt-contrib-qunit');
-	 
+
 	  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'copy', 'qunit']);
 	};
 

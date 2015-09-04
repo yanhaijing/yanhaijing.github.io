@@ -3,8 +3,8 @@ layout: post
 title: Node.js 给前端带来了什么
 category : nodejs
 tagline: "转"
-tags : [node.js, javascript]
-keywords: [node.js, javascript]
+tags : [nodejs, javascript]
+keywords: [nodejs, javascript]
 description: 在软件开发领域，前端工程师曾经是一个比较纠结的职业。
 ---
 {% include JB/setup %}

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: 列举webpack的几大特色
-category : webpack
+category : tool
 tagline: "译"
-tags : [webpack]
-keywords: [webpack]
-description: webpack]是一款优秀的静态资源打包工具，本文将会介绍其一些特色
+tags : [tool]
+keywords: [webpack, tool]
+description: webpack是一款优秀的静态资源打包工具，本文将会介绍其一些特色
 ---
 {% include JB/setup %}
 

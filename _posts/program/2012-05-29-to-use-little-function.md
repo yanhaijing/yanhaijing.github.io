@@ -3,7 +3,7 @@ layout: post
 title: 函数要多小才够好——谈小函数之道
 category : program
 tagline: "转"
-tags : [程序设计]
+tags : [program]
 keywords: [程序设计, 函数, code]
 description: 设计良好的函数往往比较小，而过大函数的设计往往一塌糊涂，或者存在很大的优化空间。
 ---
@@ -48,7 +48,7 @@ description: 设计良好的函数往往比较小，而过大函数的设计往�
         Socket_init();
         Db_init();
         Int I = 0;
-        
+
         For (I = 0;I < max_chn_num;i++)//初始化所有通道
         {
             G_user_chn[i].status = status_init;
@@ -61,7 +61,7 @@ description: 设计良好的函数往往比较小，而过大函数的设计往�
     void chn_init()
     {
         Int I = 0;
-        
+
         For (I = 0;I < max_chn_num;i++)//初始化所有通道
         {
             G_user_chn[i].status =status_init;

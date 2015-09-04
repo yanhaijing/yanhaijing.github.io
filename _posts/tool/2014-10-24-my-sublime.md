@@ -4,7 +4,7 @@ title: 我的 Sublime Text 2 笔记
 category : tool
 tagline: "原创"
 tags : [tool]
-keywords: [工具]
+keywords: [sublime, tool]
 description: 作为aptana死忠粉的我，最近由于工作需要最近开始使用sublime，初次使用，就被其秒开的启动速度，简洁的界面设计，无干扰的信息提示所这幅。
 ---
 {% include JB/setup %}

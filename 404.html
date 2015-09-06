@@ -8,6 +8,26 @@
         <meta name="author" content="颜海镜">
     </head>
     <body>
+        <script src="/assets/plugin/jquery/jquery-1.11.3.min.js"></script>
+        <script>
+            // 自动匹配名字相同的博文，自动跳转
+            var name = location.pathname.slice(0, -1).split('/').pop();
+            $.ajax({
+                url: '/sitemap.txt'
+            })
+            .done(function(ret) {
+                $.each(ret.split('\n'), function (k, v) {
+                    if (v.indexOf(name) > 0) {
+                        location.href = v;
+                        return false;
+                    }
+                });
+            })
+            .fail(function() {
+            })
+            .always(function() {
+            });
+        </script>
         <script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8"></script>
     </body>
 </html>

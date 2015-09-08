@@ -112,7 +112,8 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 
 	git log #查看最近的提交日志
 	git log --pretty=oneline #单行显示提交日志
-	git log --graph --pretty=oneline --abbrev-commit
+	git log --graph # 图形化显示
+	git log --abbrev-commit # 显示log id的缩写
 	git log -num #显示第几条log（倒数）
 
 	git stash #将工作区现场（已跟踪文件）储藏起来，等以后恢复后继续工作。

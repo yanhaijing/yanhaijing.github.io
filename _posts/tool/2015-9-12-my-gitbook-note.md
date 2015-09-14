@@ -72,10 +72,12 @@ GitBook需要使用markdown格式编写，如果你不了解可以看看[这里]
 
 	$ gitbook install # 安装插件
 
-	$ gitbook serve ./图书名称 # 本地预览
+	$ gitbook serve [book] # 本地预览
 	$ gitbook serve --port 8001 # 指定端口
 
-	$ gitbook build ./repository --output=./outputFolder # 输出一个静态网站
+	$ gitbook build repository PATH # 输出一个静态网站
+
+	$ gitbook pdf book pdf # 生成pdf文件
 
 	$ gitbook help # 查看帮助
 
@@ -85,15 +87,7 @@ GitBook需要使用markdown格式编写，如果你不了解可以看看[这里]
 README.md和SUMMARY.md是Gitbook项目必备的两个文件，也就是一本最简单的GitBook也必须含有这两个文件，它们在一本Gitbook中具有不同的用处。
 
 ### README.md
-这个文件相当于一本Gitbook的简介。自从GitBook 2.0.0开始支持自定义简介文件，在book.json中定义，这样README.md就可以用作项目的简介。
-
-	{
-	    "structure": {
-	        "readme": "myIntro.md"
-	    }
-	}
-
-更多信息请看[这里](https://help.gitbook.com/format/introduction.html)。
+这个文件相当于一本Gitbook的简介。
 
 ### SUMMARY.md
 这个文件是一本书的目录结构，使用Markdown语法，一个简单的例子如下所示。
@@ -109,9 +103,31 @@ README.md和SUMMARY.md是Gitbook项目必备的两个文件，也就是一本最
 
 更多信息请看[这里](https://help.gitbook.com/format/chapters.html)。
 
+### book.json
+自从GitBook 2.0.0开始支持自定义简介文件，在book.json中定义，这样README.md就可以用作项目的简介。
+
+	{
+	    "structure": {
+	        "readme": "myIntro.md"
+	    }
+	}
+
+更多信息请看[这里](https://help.gitbook.com/format/introduction.html)。
+
+book.json还有自定义更多的信息，比如网页的title，description等，全部可配置信息请查看[这里](https://help.gitbook.com/format/configuration.html)。
+
 ## 发布
+使用gitbook可以很方便的发布到很多平台下面举几个常用的例子。
+
 ### 发布到GitHub
 源代码保存到master分支，build出来的上传到gh-pages分支，就这么简单的搞定了。如果你还不会使用git和github，那么不妨读读我的另一篇文章《[我的git笔记](http://yanhaijing.com/git/2014/11/01/my-git-note)》。
+
+### 发布PDF
+这里已windows平台为例子，需要先安装[calibre](http://calibre-ebook.com/)（其实只是需要ebook-convert这个工具），安装好后将其安装目录配置到PATH。
+
+然后就可以使用下面的命令生成pdf了。
+
+	$ gitbook pdf . ../temp.pdf # 将当前目录，生成到父目录下的temp.pdf
 
 ### 发布到GitBook
 还没想好，想好了再写。

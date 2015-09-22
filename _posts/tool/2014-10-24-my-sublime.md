@@ -79,7 +79,7 @@ sublime的功能已经很满足大部分需求了，但还是有个别差异化�
 然后我们按住 ctrl+shift+p。此时会输出一个输入框，即可安装，删除，更新插件了。
 
 ### Smarty
-提供smarty语法的支持。
+提供smarty语法的支持。Smarty插件默认的分隔符是`{}`，如果你使用的分隔符不同可以更改插件目录的Smarty.tmPreferences文件，找到其中的SMARTY_LDELIM和SMARTY_RDELIM，修改为你的分隔符即可。
 
 ### Liquid
 提供Liquid语法支持，如果你也写博客的话不妨试试。

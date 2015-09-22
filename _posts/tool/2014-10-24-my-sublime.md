@@ -62,7 +62,11 @@ sublime的功能已经很满足大部分需求了，但还是有个别差异化�
 
 ![]({{BLOG_IMG}}141.png)
 
-由于sublime 2本身不带插件，所以要先安装插件管理器（[package control](https://sublime.wbond.net/)），首先打开控制台，点击sublime的菜单栏 view->show console(或者使用快捷键 ctrl+`)。
+### Package Control
+由于sublime 2本身不带插件，所以要先安装插件管理器（[Package Control](https://sublime.wbond.net/)），可以通过在线和离线安装。
+
+#### 在线安装
+首先打开控制台，点击sublime的菜单栏 view->show console(或者使用快捷键 ctrl+`)。
 
 现在打开了控制台， 这个控制台有上下两栏， 上面一栏会实时显示sublime执行了什么插件，输出执行结果， 如果你安装的某个插件不能正常运行，应该先在这里看看有没有报错。下面栏是一个输入框，可以运行python代码。
 
@@ -72,14 +76,24 @@ sublime的功能已经很满足大部分需求了，但还是有个别差异化�
 
     import urllib2,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')
 
-运行结束以后，记得重启编辑器，就能在Preferences中看到 package control了。
+运行结束以后，记得重启编辑器，就能在Preferences中看到 Package Control了。
 
 ![]({{BLOG_IMG}}143.bmp)
 
-然后我们按住 ctrl+shift+p。此时会输出一个输入框，即可安装，删除，更新插件了。
+#### 离线安装
+如果在线安装失败，你可以试试离线安装，前提是需要一个[Package Control的安装包](http://sublime.wbond.net/Package%20Control.sublime-package)，将该安装包替换到Sublime Text2的相关路径下即可，这里有两个路径，经验证放置到其中任意一处均可。
 
-### Smarty
+- 路径一：打开Sublime Text 2，点击PreFerences --> Browse Packages，进入一个文件夹后返回该文件夹的上一级“Sublime Text2”，找到一个“Installed Packages”文件夹（如果没有该文件夹则创建个新的），将下载好的Package Control的安装包放到“Installed Packages”文件夹下即可。
+- 路径二：Sublime Text 2 的安装路径，“Sublime Text 2\Pristine Packages\”文件夹下。
+
+其中路径一是官方推荐的防止路径，详细信息，请看[这里](https://sublime.wbond.net/installation#Simple)。
+
+安装完成后，按住 ctrl+shift+p。此时会输出一个输入框，即可安装，删除，更新插件了。
+
+### [Smarty](https://packagecontrol.io/packages/Smarty)
 提供smarty语法的支持。Smarty插件默认的分隔符是`{}`，如果你使用的分隔符不同可以更改插件目录的Smarty.tmPreferences文件，找到其中的SMARTY_LDELIM和SMARTY_RDELIM，修改为你的分隔符即可。
+
+- [github](https://github.com/amitsnyderman/sublime-smarty)
 
 ### Liquid
 提供Liquid语法支持，如果你也写博客的话不妨试试。
@@ -117,11 +131,8 @@ DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，�
 
 ![]({{BLOG_IMG}}144.gif)
 
-### JsFormat
-专门用来格式化js的工具，非常给力。
-
 ### HTML/CSS/JS Prettify
-不解释，神奇，秒杀jsFormat，能够格式化css html 和js。
+能够格式化css html 和js。
 
 **注意：**格式化的文件路径中不能有中文，不然会报找不到node的错误（windows下）。
 
@@ -150,6 +161,9 @@ DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，�
 
 ### MultiEditUtils
 扩展多行编辑的功能。
+
+### Package Syncing
+最后推荐一个同步插件，这个插件可以在不同的机器同步配置信息和插件，非常方便，但鉴于国内的墙太高，我都是直接把插件给手动备份了，然后直接拖进去，或者直接去github上下载对应的包。
 
 ##总结
 sublime非常棒的，正是我喜欢的风格。

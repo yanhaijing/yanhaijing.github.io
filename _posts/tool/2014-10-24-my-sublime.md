@@ -13,6 +13,29 @@ description: 作为aptana死忠粉的我，最近由于工作需要最近开始�
 
 俗话说，工欲善其事必先利其器，作为码农，在开始编码之前，必须要对自己的工具熟悉，才能事半功倍，所以开始了一番折腾，下面记录下一些笔记。
 
+## 初始化
+安装完编辑器后就可以使用了，但我一般会进行一些配置，希望你也按照自己的喜欢进行配置。
+
+下面的配置都是打开Preferences->Setting-Default，在那里面有很多默认配置选项，我们可以在这里改变默认值。
+
+修改显示字体大小，我一般习惯使用14号字
+
+    "font_size": 14, // 默认10
+
+保存文件时自动在末尾添加空行（我们的项目有这样的要求）
+
+    "ensure_newline_at_eof_on_save": true, // 默认是false
+
+默认使用Unix换行符，如果大家使用统一的换行符，会让事情变得简单
+
+    "default_line_ending": "unix", // 默认是system
+
+使用空格填充tab键，没有好坏之分，统一就好
+
+    "translate_tabs_to_spaces": true,// 默认是false
+
+上面的配置项，如果你是一个完美主义者，可以在用户配置文件中配置，不修改默认配置文件。
+
 ##快捷键
 
 作为码农，很多时间都是在敲键盘的，所以快捷键是非常重要的，sublime的快捷键非常非常多，很难都记住，按照80/20原则，只有20%是常用的，下面是我常用的快捷键：
@@ -90,6 +113,9 @@ sublime的功能已经很满足大部分需求了，但还是有个别差异化�
 
 安装完成后，按住 ctrl+shift+p。此时会输出一个输入框，即可安装，删除，更新插件了。
 
+### Vintage
+如果你习惯使用vim，那么可以安装这个插件，这个插件可以让sublime像vim一样。
+
 ### [Smarty](https://packagecontrol.io/packages/Smarty)
 提供smarty语法的支持。Smarty插件默认的分隔符是`{}`，如果你使用的分隔符不同可以更改插件目录的Smarty.tmPreferences文件，找到其中的SMARTY_LDELIM和SMARTY_RDELIM，修改为你的分隔符即可。
 
@@ -164,6 +190,8 @@ DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，�
 
 ### Package Syncing
 最后推荐一个同步插件，这个插件可以在不同的机器同步配置信息和插件，非常方便，但鉴于国内的墙太高，我都是直接把插件给手动备份了，然后直接拖进去，或者直接去github上下载对应的包。
+
+[这里](https://github.com/yanhaijing/mysublime)是我的Package Syncing 导出来的文件。
 
 ##总结
 sublime非常棒的，正是我喜欢的风格。

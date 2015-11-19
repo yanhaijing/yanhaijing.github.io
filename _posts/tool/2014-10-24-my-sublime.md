@@ -171,7 +171,9 @@ DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，�
 这个插件还是非常有用的，因为sublime 本身 不支持gbk编码，在utf8如此流行的今天，我们整站还是gbk编码，o(︶︿︶)o 唉，所以全靠这个插件了。
 
 ### Terminal
-可以sublime中，打开命令行，非常方便哦。
+可以sublime中，打开命令行，非常方便哦。还可在自定义打开的命令行，比如我就把默认命令行改为了git-bash。只需在设置中进行如下配置即可（注意路径）。
+
+	"terminal": "D:\\Program Files\\Git\\git-bash.exe"
 
 ### SyncedSideBar
 支持当前文件在左侧面板中定位，不错。

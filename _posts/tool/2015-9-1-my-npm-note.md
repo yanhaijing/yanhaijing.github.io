@@ -41,6 +41,8 @@ npm默认从npm上下载安装包资源：
 
 	npm config list ## 查看刚才的配置是否生效
 
+**注意：** 如果你要发布npm包，你需要在改为npm的官方网址。
+
 如果你使用的是linux也可以使用别名的方式：
 
 	alias cnpm="npm --registry=https://registry.npm.taobao.org \

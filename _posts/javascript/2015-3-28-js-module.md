@@ -162,6 +162,7 @@ KMD是[kissy](http://docs.kissyui.com/1.4/docs/html/tutorials/kissy/loader/index
 - [SeaJS与RequireJS最大的区别](http://www.douban.com/note/283566440/)
 - [YUI Modules 与 AMD/CMD，哪一种方式更好？](http://www.zhihu.com/question/21347409)
 - [ES6的模块、构建工具及应用的发布](http://zhuanlan.zhihu.com/FrontendMagazine/19569085)
+- [写了十年JS却不知道模块化为何物？](https://blog.wilddog.com/?p=587)
 
 
 

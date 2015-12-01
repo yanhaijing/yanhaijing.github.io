@@ -143,8 +143,8 @@ sublime的功能已经很满足大部分需求了，但还是有个别差异化�
 
 这是一个非常棒的插件，可以让sublime支持less的语法高亮和语法提示，对于搞less的同学灰常重要，不过多解释。
 
-### SASS
-提供sass语法高亮支持。
+### SCSS
+提供sass语法高亮支持，不建议安装SASS，SCSS更适合.scss语法支持。
 
 ### JavaScriptNext - ES6 Syntax
 提供ES6的语法支持。
@@ -161,8 +161,8 @@ Emmet的前身是大名鼎鼎的Zen coding，如果你从事Web前端开发的�
 - [这里是一篇演示文章](http://www.iteye.com/news/27580)
 - [Emmet官网](http://docs.emmet.io/)
 
-### SublimeLinter
-可以验证各种语法错误，不多解释。
+### <del>SublimeLinter<del>
+可以验证各种语法错误，不多解释。目前这个插件已经不支持sublime2了，我还没找到代替的插件。
 
 ### DocBlockr
 DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，变量，和参数，根据它们自动生成文档范式，你的工作就是去填充对应的说明。
@@ -193,14 +193,29 @@ DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，�
 ### Clipboard History
 可以保存粘贴的历史，很赞的功能，再也不用担心历史丢失了。ctrl+alt+v可打开历史面板，上下选择即可，安装后会和默认的ctrl+shift+v（粘贴缩进）冲突，干掉这个快捷键。
 
+### Autoprefixer
+自动添加css前缀，这个也是挺有用的。
+
+### AutoFileName
+以前用dreamweave的时候在引用文件的时候，可以自动补全文件名的功能，这个插件让sublime有了这个功能。
+
 ### AllAutocomplete
 自动完成插件，可在全部打开的文件中，自动完成。
+
+### Aligment
+对齐插件，强迫症患者必备，可以按等号对齐两边的变量。
 
 ### HexViewer
 提供十六进制文件查看功能。
 
 ### MultiEditUtils
 扩展多行编辑的功能。
+
+### Markdown Preview
+如果你也喜欢md语法，那么安装这个插件吧，可以很方便的预览。
+
+### HTMLEntity Snippets
+当你想输入html实体标签时，然后又记不住时，使用这个插件吧。
 
 ### Package Syncing
 最后推荐一个同步插件，这个插件可以在不同的机器同步配置信息和插件，非常方便，但鉴于国内的墙太高，我都是直接把插件给手动备份了，然后直接拖进去，或者直接去github上下载对应的包。

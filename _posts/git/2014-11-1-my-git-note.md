@@ -28,13 +28,15 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 ##配置
 
 首先是配置帐号信息
+	
+	git config -e [--global] # 编辑Git配置文件
 
 	git config --global user.name yanhaijing
 	git config --global user.email yanhaijing@yeah.net
 
-	git config --list#查看配置的信息
+	git config --list #查看配置的信息
 
-	git help config#获取帮助信息
+	git help config #获取帮助信息
 
 配置自动换行（自动转换坑太大）
 
@@ -53,16 +55,16 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 	git config --global alias.br branch #git br
 	git config --global alias.ci commit #git ci
 
-笔者一般只配置第一个，因为git status使用的频率实在太多。
+笔者一般只配置配置这几个，你也可以配置其他命令。
 
 ##新建仓库
 
-	git init#初始化
-	git status#获取状态
-	git add file#.或*代表全部添加
-	git commit -m "message"#此处注意乱码
-	git remote add origin git@github.com:yanhaijing/test.git#添加源
-	git push -u origin master#push同事设置默认跟踪分支
+	git init #初始化
+	git status #获取状态
+	git add [file1] [file2] ... #.或*代表全部添加
+	git commit -m "message" #此处注意乱码
+	git remote add origin git@github.com:yanhaijing/test.git #添加源
+	git push -u origin master #push同事设置默认跟踪分支
 
 ##从现有仓库克隆
 
@@ -71,20 +73,22 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 
 ##本地
 
-	git add *#跟踪新文件
-	git add -u [path]#添加[指定路径下]已跟踪文件
+	git add * # 跟踪新文件
+	git add -u [path] # 添加[指定路径下]已跟踪文件
 
-	rm *&git rm *#移除文件
-	git rm -f *#移除文件
-	git rm --cached *#取消跟踪
-	git mv file_from file_to#重命名跟踪文件
+	rm *&git rm * # 移除文件
+	git rm -f * # 移除文件
+	git rm --cached * # 停止追踪指定文件，但该文件会保留在工作区
+	git mv file_from file_to # 重命名跟踪文件
 
-	git log#查看提交记录
+	git log # 查看提交记录
 
-	git commit#提交更新
+	git commit # 提交更新	
+	git commit [file1] [file2] ... # 提交指定文件	
 	git commit -m 'message'
-	git commit -a#跳过使用暂存区域，把所有已经跟踪过的文件暂存起来一并提交
+	git commit -a # 跳过使用暂存区域，把所有已经跟踪过的文件暂存起来一并提交
 	git commit --amend#修改最后一次提交
+	git commit -v # 提交时显示所有diff信息
 
 	git reset HEAD *#取消已经暂存的文件
 	git reset --mixed HEAD *#同上
@@ -115,6 +119,9 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 	git log --graph # 图形化显示
 	git log --abbrev-commit # 显示log id的缩写
 	git log -num #显示第几条log（倒数）
+	git log --stat # 显示commit历史，以及每次commit发生变更的文件
+	git log --follow [file] # 显示某个文件的版本历史，包括文件改名
+	git log -p [file] # 显示指定文件相关的每一次diff
 
 	git stash #将工作区现场（已跟踪文件）储藏起来，等以后恢复后继续工作。
 	git stash list #查看保存的工作现场
@@ -132,6 +139,8 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 	git branch --merge#查看已经合并到当前分支的分支
 	git branch --no-merge#查看为合并到当前分支的分支
 	git branch test#新建test分支
+	git branch branch [branch|commit|tag] # 从指定位置出新建分支
+	git branch --track branch remote-branch # 新建一个分支，与指定的远程分支建立追踪关系
 	git branch -m old new #重命名分支
 	git branch -d test#删除test分支
 	git branch -D test#强制删除test分支
@@ -164,8 +173,9 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 
 	git push origin branch#将当前分支，推送到远端上指定分支
 	git push origin localbranch:remotebranch#推送本地指定分支，到远端上指定分支
-	git push origin :remotebranch#删除远端指定分支
-	
+	git push origin :remotebranch # 删除远端指定分支
+	git push origin remotebranch --delete # 删除远程分支
+	git branch -dr branch # 删除本地和远程分支
 	git checkout -b [--track] test origin/dev#基于远端dev分支，新建本地test分支[同时设置跟踪]
 
 
@@ -193,7 +203,7 @@ git是一个分布式代码管理工具，所以可以支持多个仓库，在gi
 
 	git tag#列出现有标签	
 
-	git tag v0.1#新建标签
+	git tag v0.1 [branch|commit] # [从指定位置]新建标签
 	git tag -a v0.1 -m 'my version 1.4'#新建带注释标签
 
 	git checkout tagname#切换到标签
@@ -212,6 +222,10 @@ git是一个分布式代码管理工具，所以可以支持多个仓库，在gi
 
 	git help *#获取命令的帮助信息
 	git status#获取当前的状态，非常有用，因为git会提示接下来的能做的操作
+
+最后再补一个救命的命令吧，如果你不小心删错了东西，就用下面的命令，可以看到你之前操作的id，大部分情况下是可以恢复的，记住git几乎不会删除东西。
+
+	git reflog # 显示最近操作的commit id
 
 ##参考资料
 

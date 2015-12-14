@@ -14,7 +14,7 @@ description: 最近做师傅的按钮拆分项目，掉了一个ios的大坑，�
 ## 描述
 这个bug只在IOS上有，包括ihone，ipad，由于ios浏览器都用的safari内核，所以ios浏览器全部中枪。
 
-- window，document，body 绑定click事件是，点击body不会触发
+- window，document，body 绑定click事件时，点击body不会触发
 
 [demo](http://yanhaijing.com/webtest/mobile/bug/ios-body-click.html)
 

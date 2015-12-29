@@ -82,21 +82,21 @@ js自带的数学运算不能满足你的需求了，那试试这个，扩展了
 
 最后向大家推荐依稀[microjs](http://microjs.com/)，这里收集了太多小而美的库，自己来淘宝吧。
 
-[cookie.js]: (https://github.com/js-coder/cookie.js)
-[store.js]: (https://github.com/marcuswestin/store.js)
-[data.js]: (https://github.com/yanhaijing/data.js)
-[template.js]: (https://github.com/yanhaijing/template.js)
-[lodJS]: (https://github.com/yanhaijing/lodjs)
-[favico.js]: (http://lab.ejci.net/favico.js/)
-[Modernizr]: (http://modernizr.com/)
-[Move.js]: (http://visionmedia.github.io/move.js/)
-[Keypress]: (http://dmauro.github.io/Keypress/)
-[device.js]: (http://matthewhudson.me/projects/device.js/)
-[is.js]: (http://arasatasaygin.github.io/is.js/)
-[es5-shim]: (https://github.com/es-shims/es5-shim)
-[parallax]: (https://github.com/wagerfield/parallax)
-[notie.js]: (https://github.com/jaredreich/notie.js)
-[share.js]: (https://github.com/overtrue/share.js)
-[mathjs]: (https://github.com/josdejong/mathjs)
-[es6-promise]: (https://github.com/jakearchibald/es6-promise)
+[cookie.js]: https://github.com/js-coder/cookie.js
+[store.js]: https://github.com/marcuswestin/store.js
+[data.js]: https://github.com/yanhaijing/data.js
+[template.js]: https://github.com/yanhaijing/template.js
+[lodJS]: https://github.com/yanhaijing/lodjs
+[favico.js]: http://lab.ejci.net/favico.js/
+[Modernizr]: http://modernizr.com/
+[Move.js]: http://visionmedia.github.io/move.js/
+[Keypress]: http://dmauro.github.io/Keypress/
+[device.js]: http://matthewhudson.me/projects/device.js/
+[is.js]: http://arasatasaygin.github.io/is.js/
+[es5-shim]: https://github.com/es-shims/es5-shim
+[parallax]: https://github.com/wagerfield/parallax
+[notie.js]: https://github.com/jaredreich/notie.js
+[share.js]: https://github.com/overtrue/share.js
+[mathjs]: https://github.com/josdejong/mathjs
+[es6-promise]: https://github.com/jakearchibald/es6-promise
 

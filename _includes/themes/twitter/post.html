@@ -10,14 +10,20 @@
         {% include JB/notice %}
         <div class="content">
             {{ content }}
+            {% include JB/origin_link %} 
         </div>
-        {% include JB/copyright %} {% include JB/myproject %} {% include JB/alipay %} {% include JB/advertise/amazon %} {% unless page.categories == empty %}
+        {% include JB/copyright %} 
+        {% include JB/myproject %} 
+        {% include JB/alipay %} 
+        {% include JB/advertise/amazon %} 
+        {% unless page.categories == empty %}
         <ul class="tag_box inline">
             <li><i class="glyphicon glyphicon-folder-open"></i>
             </li>
             {% assign categories_list = page.categories %} {% include JB/categories_list %}
         </ul>
-        {% endunless %} {% unless page.tags == empty %}
+        {% endunless %} 
+        {% unless page.tags == empty %}
         <ul class="tag_box inline">
             <li><i class="glyphicon glyphicon-tags"></i>
             </li>

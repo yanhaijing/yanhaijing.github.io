@@ -1,0 +1,3 @@
+<p>
+    原文网址：<a href="{{ site.production_url }}{{ page.url }}">{{ site.production_url }}{{ page.url }}</a>
+</p>

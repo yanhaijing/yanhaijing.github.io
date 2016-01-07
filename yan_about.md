@@ -1,13 +1,11 @@
 ---
 layout: page
 title : 关于我
-tagline: 颜海镜
+tagline: <img src="https://img.shields.io/badge/程序员-前端工程师-brightgreen.svg"> <img src="https://img.shields.io/badge/诗人-业余-blue.svg">
 header : Post Archive
 group: navigation
 ---
 {% include JB/setup %}
-
-![](https://img.shields.io/badge/程序员-前端工程师-brightgreen.svg) ![](https://img.shields.io/badge/诗人-业余-blue.svg)
 
 ## 个人简介
 颜海镜90后一枚，活跃在各个技术社区，常以歪脖无脸男作为头像，专注Web前端。热爱思考，热爱开源分享，爱好读书，羽毛球，乒乓球，相声，铁杆纲丝，当然非常热爱写代码了，yanhaijing.com是我的个人博客。

@@ -1,0 +1,12 @@
+<aside class="donate clearfix">
+	<h2>捐赠</h2>
+	<figure>
+		<img src="{{ HOME_PATH }}img/alipay.png" alt="支付宝帐号：yanhaijing@yeah.net" width="256" height="256">
+		<figcaption>帐号：yanhaijing@yeah.net</figcaption>
+	</figure>
+    <figure>
+        <img src="{{ HOME_PATH }}img/weixin.png" alt="微信支付二维码" width="256" height="256">
+        <figcaption>微信扫一扫转账</figcaption>
+    </figure>
+</aside>
+

@@ -90,8 +90,12 @@
 .myproject h2 {
     margin-top: 0px;
 }
+.donate figure {
+    float: left;
+    margin-right: 10px;
+}
 .donate figcaption {
-    text-indent: 45px;
+    text-align: center;
 }
 .navbar-brand {
     font-size: 20px;

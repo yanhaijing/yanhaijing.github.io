@@ -34,7 +34,7 @@ description: Jekyll 是一个简单的网站静态页面生成工具。由于是
 
 3.然后运行如下命令安装Jekyll：
 
-	> gem install jekyll
+	> gem install jekyll --version=2.5.3
 
 现在可以开始使用jekyll了。如果您还需要使用代码高亮工具，则需要继续安装Pygments ，过程如下：
 

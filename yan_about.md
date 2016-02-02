@@ -28,7 +28,7 @@ group: navigation
 [![]({{ HOME_PATH }}img/auth-douban.png)](http://www.douban.com/people/yanhaijing/ "我在豆瓣")
 [![]({{ HOME_PATH }}img/auth-tqq.png)](http://t.qq.com/web_javascript "我在腾讯微博")
 [![]({{ HOME_PATH }}img/turing.jpg)](http://www.ituring.com.cn/users/121364 "我在图灵")
-[![]({{ HOME_PATH }}img/zhihu.ico)](https://www.zhihu.com/people/yanhaijing "我在知乎")
+[![]({{ HOME_PATH }}img/zhihu.jpg)](https://www.zhihu.com/people/yanhaijing "我在知乎")
 
 ## 友情链接 
 - [@justjavac(迷渡)](http://justjavac.com/)

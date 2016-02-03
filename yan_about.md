@@ -29,6 +29,9 @@ group: navigation
 [![]({{ HOME_PATH }}img/auth-tqq.png)](http://t.qq.com/web_javascript "我在腾讯微博")
 [![]({{ HOME_PATH }}img/turing.jpg)](http://www.ituring.com.cn/users/121364 "我在图灵")
 [![]({{ HOME_PATH }}img/zhihu.jpg)](https://www.zhihu.com/people/yanhaijing "我在知乎")
+[![]({{ HOME_PATH }}img/twitter.png)](https://twitter.com/yanhaijing "我在推特")
+[![]({{ HOME_PATH }}img/segmentfault.jpg)](https://segmentfault.com/u/yanhaijing "我在segmentfault")
+[![]({{ HOME_PATH }}img/stackoverflow.jpg)](http://stackoverflow.com/users/2681005/yanhaijing "我在stackoverflow")
 
 ## 友情链接 
 - [@justjavac(迷渡)](http://justjavac.com/)

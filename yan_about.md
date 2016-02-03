@@ -20,7 +20,6 @@ group: navigation
 下面是我几个群，欢迎加入
 
 <a target="_blank" href="http://url.cn/OZZ7bw"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="GitHub 家园" title="GitHub 家园"></a>
-<a target="_blank" href="http://url.cn/RyKWB0"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="码农之家" title="码农之家"></a>
 <a target="_blank" href="http://url.cn/OXkoEC"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="CSS家园" title="CSS家园"></a>
 
 ## 更多信息 

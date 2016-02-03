@@ -123,7 +123,7 @@ book.json还有自定义更多的信息，比如网页的title，description等�
 源代码保存到master分支，build出来的上传到gh-pages分支，就这么简单的搞定了。如果你还不会使用git和github，那么不妨读读我的另一篇文章《[我的git笔记](http://yanhaijing.com/git/2014/11/01/my-git-note)》。
 
 ### 发布PDF
-这里已windows平台为例子，需要先安装[calibre](http://calibre-ebook.com/)（其实只是需要ebook-convert这个工具），安装好后将其安装目录配置到PATH。
+这里已windows平台为例子，需要先安装[calibre@2.38.0](http://calibre-ebook.com/)（其实只是需要ebook-convert这个工具），安装好后将其安装目录配置到PATH。
 
 然后就可以使用下面的命令生成pdf了。
 

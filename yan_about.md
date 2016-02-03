@@ -45,4 +45,5 @@ group: navigation
 - [@前端人的俱乐部](http://f2er.club/)
 - [@前端开发博客](http://caibaojian.com/)
 - [@莫名地扯淡(冯宗宝)](http://www.fzb.me/)
+- [@金展](http://jinzhan.me/)
 

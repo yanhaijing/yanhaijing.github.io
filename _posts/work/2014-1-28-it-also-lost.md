@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 亦得亦失
+title: 亦得亦失，我的2013年总结
 category : work
 tagline: "原创"
 tags : [work]

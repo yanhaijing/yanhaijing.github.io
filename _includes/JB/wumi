@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    var wumiiPermaLink = location.href;
+    var wumiiPermaLink = "{{ site.production_url }}{{page.url}}";
     var wumiiTitle = "{{ page.title }}";
     var wumiiTags = "{{ page.tags | join: ',' }}";
     var wumiiCategories = [{{ '"' }}{{ page.categories | json }}{{ '"' }}];

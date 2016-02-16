@@ -1,5 +1,5 @@
 <!-- Duoshuo Comment BEGIN -->
-	<div class="ds-thread"></div>
+	<div class="ds-thread" data-title="{{ page.title }}" data-url="{{ site.production_url }}{{ page.url }}"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"{{ site.JB.comments.duoshuo.short_name }}"};
 	(function() {

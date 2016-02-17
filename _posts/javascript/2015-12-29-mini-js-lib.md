@@ -1,13 +1,14 @@
 ---
 layout: post
 title: 不可错过的javascript迷你库
-category : js
+category : javascript
 tagline: "原创"
-tags : [js]
-keywords: [js]
+tags : [javascript]
+keywords: [javascript]
 description: 本文将介绍笔者收集的一些非常赞的开源库，这些库的共性是非常小，而且功能单一。
 ---
 {% include JB/setup %}
+
 最近看着下自己的[github star](https://github.com/yanhaijing)，把我吓坏了，手贱党，收藏癖的我都收藏了300+个仓库了，是时候整理一下了。
 
 Unix主张kiss，小而美被实践是最好用的，本文将介绍笔者收集的一些非常赞的开源库。

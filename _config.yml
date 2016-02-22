@@ -3,8 +3,6 @@
 permalink: /:categories/:year/:month/:day/:title/
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-auto: true
-pygments: false
 
 safe: true
 markdown: kramdown
@@ -18,9 +16,9 @@ description: 颜海镜的博客<yanhaijing.com>,专注于web前端,分享html/ht
 author :
   name : 颜海镜
   email : yanhaijing@yeah.net
-  github : https://github.com/yanhaijing
-  twitter : http://weibo.com/yanhaijing1234
-  feedburner : 颜海镜的博客
+  github : yanhaijing
+  twitter : yanhaijing
+  feedburner : yanhaijing
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

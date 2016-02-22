@@ -13,7 +13,7 @@ CSS不是一门很复杂的语言，但是即使你已经写css很多年了，�
 
 我经常会遇到一些css小细节，所以我想在这片文章中和大家分享，需要承认的是，这篇文章中的很多东西并不具有实操价值，但也许你可以留作后用。
 
-##body上的color不只是应用于文字
+## body上的color不只是应用于文字
 
 让我们从最简单的开始吧，color属性是被广泛运用的属性，某些人可能不曾注意，它并不仅仅只是定义文本的颜色。
 
@@ -37,7 +37,7 @@ W3c规范是这么[定义](http://www.w3.org/TR/css3-color/#foreground)的:
 
 我不是很明确地知道有哪些是被当做所谓的前景的，如果你知道的话，请在评论中告诉我。
 
-##visibility还可以设置 “collapse”值
+## visibility还可以设置 “collapse”值
 
 你可能已经用过visibility上千遍了，最常用的是visible和hidden，用来使元素显示或者隐藏。
 
@@ -56,7 +56,7 @@ CSS-Trick 网站的Almanac同学说[不要用这个属性](http://css-tricks.com
 
 我得承认，这个值可能很少会被用到，但是他确实是存在的。
 
-##background这个简写又有了新值
+## background这个简写又有了新值
 
 在css2.1中，background是这5个值的缩写，background-color, background-image, background-repeat, background-attachment, background-position。现在，在css3中，又有三个成员被加进来了，现在总共有8个值，他们是：
 
@@ -83,7 +83,7 @@ CSS-Trick 网站的Almanac同学说[不要用这个属性](http://css-tricks.com
 
 这些新值在现代浏览器中工作完美，但是你可能需要为不支持的浏览器优雅降级。
 
-##clip只对absolute元素和fixed元素有效
+## clip只对absolute元素和fixed元素有效
 
 上边我们谈到了backgrond-clip，现在我们谈谈clip，我们一般是这么写的:
 
@@ -104,7 +104,7 @@ CSS-Trick 网站的Almanac同学说[不要用这个属性](http://css-tricks.com
 
 你也可以通过设定position：fixed来让clip变得有效，因为根据[规范](http://www.w3.org/TR/CSS2/visuren.html#absolute-positioning)，fixed元素有资格被当做absolute元素。
 
-##垂直百分比是根据父层的宽度计算的，而不是父层高度计算的
+## 垂直百分比是根据父层的宽度计算的，而不是父层高度计算的
 
 这个说起来有[一点麻烦](http://www.impressivewebs.com/vertical-percentages-css/)，你应该知道百分比宽度是根据父层的宽度计算的，但是如果像padding，margin这样的属性用上百分比的时候，最终的结果是根据父层的宽度计算的，而不是根据父层的高度计算。
 
@@ -114,7 +114,7 @@ CSS-Trick 网站的Almanac同学说[不要用这个属性](http://css-tricks.com
 
 注意当我们滑动滑块的时候，只是改变了父层容器的宽度，但是padding-bottom的值却产生了变化。
 
-##border实际上是简写属性的简写
+## border实际上是简写属性的简写
 
 我们都写过这样的语句:
 
@@ -134,7 +134,7 @@ border属性是border-style，border-width，border-color的简写 但是请不�
 
 这里的重点是，你没法用border这个属性为四条边做出不同的颜色，宽度，样式，所以属性简写再简写后，表达就变得不那么精确了。
 
-##text-decoration实际上是三种属性的简写
+## text-decoration实际上是三种属性的简写
 
 我知道这篇文章所说的的可能会让你有一点点晕。
 
@@ -152,7 +152,7 @@ text-decoration现在是这三个属性的缩写：text-decoration-line, text-de
 
 在这个demo中，我们用了类似text-decoration-color这样的写法，我知道这样写很不爽，因为目前很多浏览器不支持，如果我们直接写text-decoration: overline aqua wavy;的话，无疑目前的浏览器识别不了这样的写法，于是只能不解析有，所以为了向下兼容，我们只能这么写了。
 
-##border-width 支持关键字值
+## border-width 支持关键字值
 
 这个并不是那么惊天地泣鬼神，但是除了接受标准的值外（像5px或者1em），border-width同时还接受三个关键字值: medium, thin,和 thick。
 
@@ -162,7 +162,7 @@ text-decoration现在是这三个属性的缩写：text-decoration-line, text-de
 
 当浏览器渲染这些关键字值得时候，规范并没有要求他们用特定的宽度值，但是在我的测试中，所有的浏览器都是把这三个值转化成了1px，3px，和5px。
 
-##很少有人用border-image
+## 很少有人用border-image
 
 我曾经写过一篇关于css3的 border-image的[文章](http://www.sitepoint.com/css3-border-images)，这个特性已经被现代浏览器很好的支持了，除了ie10及以下版本。但是有人在意吗？
 
@@ -174,7 +174,7 @@ text-decoration现在是这三个属性的缩写：text-decoration-line, text-de
 
 不幸的是，border-image仍然像一个新奇事物一样并未被很多人使用。但也许我是错的。如果你知道有哪个真实案例中有使用border-image，或者你就使用过它的话，请在评论中让我知道，我会很乐意承认我错了。
 
-##还存在empty-cells 这样一个属性
+## 还存在empty-cells 这样一个属性
 
 这个属性是被广泛支持的，包括ie8，它写起来是这个样子的：
 
@@ -188,7 +188,7 @@ text-decoration现在是这三个属性的缩写：text-decoration-line, text-de
 
 在这个例子中，需要确保表格的边框是可见的，而且border-collapse没有被设定成 collapsed。
 
-##font-style 还有一个值是“oblique”
+## font-style 还有一个值是“oblique”
 
 当我们使用font-style属性得时候，经常用到的两个值是normal和italic，但是你还可以给它另一个值oblique:
 
@@ -213,7 +213,7 @@ text-decoration现在是这三个属性的缩写：text-decoration-line, text-de
 
 ![]({{BLOG_IMG}}139.png)
 
-##word-wrap和overflow-wrap是等同的
+## word-wrap和overflow-wrap是等同的
 
 word-wrap不是一个被经常用到的[属性](http://www.impressivewebs.com/word-wrap-css3/)，但在某些情况下是非常有用的，一个常见的例子是让长url换行，以免它撑开父容器，例子如下：
 
@@ -227,13 +227,13 @@ word-wrap不是一个被经常用到的[属性](http://www.impressivewebs.com/wo
 
 我们可以在浏览器升级后开始使用overflow-wrap，但是直到现在，我依然看不到换成新语法的意义何在。
 
-##这里边有多少是你不知道的呢？
+## 这里边有多少是你不知道的呢？
 
 不知你从这篇文章中有没有学到什么，我希望是这样，也许大多数有经验的css开发者知道很多，但是对于css新手应该会受益多一点。
 
 大家都来扒一扒有几条是新发现呢？欢迎在评论中告诉我们！
 
-##注
+## 注
 
 英文出处：http://www.sitepoint.com/12-little-known-css-facts/
 

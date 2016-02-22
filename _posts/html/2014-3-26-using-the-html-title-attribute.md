@@ -11,18 +11,18 @@ description: 如果你想对使用手机，平板电脑和辅助技术的用户�
 
 如果你想对使用手机，平板电脑和辅助技术的用户隐藏某些内容，而只对键盘用户显示，那么请使用title属性。
 
-##细节
+## 细节
 
 [HTML的title](http://www.w3.org/html/wg/drafts/html/master/dom.html#the-title-attribute)属性本身有问题。之所以有问题是因为它在一些重要的方面表现的不够好，尽管它陪伴我们[超过14年了](http://www.w3.org/TR/REC-html32#anchor)。随着触摸设备的兴起，这个属性的作用进一步降低。title属性的可访问性变得很鸡肋，由于缺少浏览器的支持，屏幕阅读器的支持和制作人员的重视。
 
-###下列情况下title属性由于缺乏支持变得多余：
+### 下列情况下title属性由于缺乏支持变得多余：
 
 - 对于在手机浏览器里访问web内容信息的人。通常title属性的内容在桌面浏览器里显示为提示信息。据我所知，没有任何手机浏览器[支持显示](http://twitter.com/jared_w_smith/status/29095537048)提示信息，并且也没有其他访问title属性内容的视觉方法。
 - 对于那些无法使用鼠标的人提供信息。通常title属性的内容在桌面浏览器里显示为提示信息。虽然提示信息的行为已经有10多年历史，但一直没有浏览器实现使用键盘显示title属性的方法。
 - 对于在大多数[HTML元素](http://www.w3.org/TR/2010/WD-html-markup-20101019/elements.html#elements)上使用它为使用各种辅助技术的人提供信息。据我所知屏幕阅读器对访问title属性信息一致不支持。
 
 
-###title属性不友好用户如下
+### title属性不友好用户如下
 
 - 手机用户
 - 仅使用键盘的用户
@@ -32,14 +32,14 @@ description: 如果你想对使用手机，平板电脑和辅助技术的用户�
 - 认知障碍的用户
 
 
-###title属性有用的例子：
+### title属性有用的例子：
 
 - 为frame或iframe元素贴上标签：
     - `<frame title="navigation">`
 - 提供需要程序才能实现的在特殊情况下才显示的标签，直接使用可见的文本标签会显得多余：
     - `<input type="text" title="search"> <input type="submit" value="search">`
     - [ 数据表格中的标签控件](http://files.paciellogroup.com/presentations/techshare07/?slideSelect=0#slide28)。
-###title属性无用或用处不大的例子：
+### title属性无用或用处不大的例子：
 
 - 为不能作为文本的链接或周围内容添加额外信息：
   - `<a href="newsletter.PDF" title="PDF file, size 1 mb.">newsletter</a>`
@@ -77,12 +77,12 @@ alt="The castle now has two towers and two walls.">`
 
 **来源: [HTML 5.1](http://www.w3.org/html/wg/drafts/html/master/embedded-content-0.html#a-key-part-of-the-content)**
 
-##扩展阅读
+## 扩展阅读
 
 - [title attribute use and abuse](http://www.paciellogroup.com/blog/2012/01/html5-accessibility-chops-title-attribute-use-and-abuse/)
 - [The title attribute – what is it good for? (resurrected)](http://blog.paciellogroup.com/2010/11/?p=37)
 - [Too much accessibility – TITLE attributes](http://www.rnib.org.uk/wacblog/articles/too-much-accessibility/too-much-accessibility-title-attributes/)
 
 
-##注
+## 注
 原文：http://blog.paciellogroup.com/2010/11/using-the-html-title-attribute/

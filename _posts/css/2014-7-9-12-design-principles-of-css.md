@@ -29,6 +29,6 @@ CSS2.1 作为 CSS2 和 CSS1 的后序版本，基于一下一组设计理念：
   - 所有属性的‘inherit’值用来提升层叠的通用性，和更容易生成一致的风格。
   - 改进媒体支持，包括媒体分组和 braille，embossed，和 tty 媒体类型，允许用户或作者为这些设备定制页面。
 
-##注
+## 注
 
 原文：http://www.w3.org/TR/CSS2/intro.html#design-principles

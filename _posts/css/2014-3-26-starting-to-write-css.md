@@ -15,7 +15,7 @@ description: 你是否觉得 CSS 不再跟以前一样了呢？最近几年成�
 
 这篇文章就像是在 CSS 世界里旅行的总结。很多人说编写 CSS 不是真正的编程。我并不认同，它同样充满乐趣和挑战性。
 
-##CSS 预处理器（CSS Preprocessors）
+## CSS 预处理器（CSS Preprocessors）
 
 ![]({{BLOG_IMG}}94.jpg)
 
@@ -23,11 +23,11 @@ description: 你是否觉得 CSS 不再跟以前一样了呢？最近几年成�
 
 好吧，让我们面对它。这世上编写纯的 CSS 不是件有趣的事情。预处理器使用一些类似 CSS 语法，神奇地生成有效的 CSS 代码。在你和最终发送给浏览器的样式之间，它添加了一个中间层。这没有听起来那么坏，因为预处理器提供了一些真正实用的特性。
 
-###合并（Concatenation）
+### 合并（Concatenation）
 
 我认为能使你的文件合并在一起是最有价值的事情之一。我确信，你了解当在你的 `.css` 文件用` @import`时，实际上告诉浏览器“麻烦你顺便也捎带这个文件”。 确实如此，发送新的请求，这有点不好，因为你可能会有非常多的文件。发送额外的请求会降低应用的性能。如果你使用 CSS 预处理器，这个问题将会解决。它们会很容易地把你所有的样式编译到单一的 `.css` 文件。
 
-###扩展 （Extending）
+### 扩展 （Extending）
 
 主要有两个 CSS 预处理器 —— [LESS](http://lesscss.org/) 和 [SASS](http://sass-lang.com/)。它们都支持扩展。没错，工作方式略有不同，不过想法（idea）是一样的。你写一个有一串属性的基本类（通常称作 `mixin`），之后把这些属性导入到另一个选择器。例如：
 
@@ -89,7 +89,7 @@ description: 你是否觉得 CSS 不再跟以前一样了呢？最近几年成�
 
 有两个很好的事情发生。首先，这里不会编译 `.bordered` 类（there is no .bordered class compiled）。第二，SASS 合并了选择器，这让我们的 CSS 更短一些。
 
-###配置 （Configuration）
+### 配置 （Configuration）
 
 LESS 和 SASS 都支持定义变量。你可以稍后再访问这些变量，使用它们作为属性的值。
 
@@ -117,7 +117,7 @@ LESS 和 SASS 都支持定义变量。你可以稍后再访问这些变量，使
 	    border-left: solid 1px #000; 
 	}
 
-###反对预处理器 （Against the preprocessors）
+### 反对预处理器 （Against the preprocessors）
 
 - 预处理器是一个工具，也就是说，你必须多做一件事，把它添加到把你的开发环境中。你可能想要把它整合进你的应用里，当然这需要额外编写代码。
 
@@ -125,7 +125,7 @@ LESS 和 SASS 都支持定义变量。你可以稍后再访问这些变量，使
 
 - 许多开发者总是只盯着他们的 `.less` 或者 `.sass` 文件。但编译后的文件才是重要的。你的 SASS 代码可能很优雅并优化过的，但这并不意味着你最后得到同样优美的 CSS 代码。你可能会有真正需要关心的特定问题。因此，定期地检查编译后的版本。
 
-##BEM
+## BEM
 
 ![]({{BLOG_IMG}}95.jpg)
 
@@ -169,7 +169,7 @@ BEM 代表块 Block 元素 Element 修饰符 Modifier BEM代表块（Block），
 
 （值得阅读：[这里](http://bem.info/method/definitions/) 和 [这里](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) )
 
-##OOCSS
+## OOCSS
 
 ![]({{BLOG_IMG}}96.jpg)
 
@@ -177,7 +177,7 @@ BEM 代表块 Block 元素 Element 修饰符 Modifier BEM代表块（Block），
 
 我找到了 BEM 就能准确地命名我的类，然后就开始思考构造（composition）。也许我第一次阅读的文章是关于[面向对象的 CSS](https://github.com/stubbornella/oocss/wiki)。面向对象编程有时是关于添加抽象并且 CSS 能够支持它。是否使用预处理器，你都应该了解 OOCSS 。作为码农（coder），我发现这个理念真的跟平时编程很接近，例如 JavaScript 。这是两个主要原则（principles）：
 
-###结构和表层分开 （Separate structure and skin）
+### 结构和表层分开 （Separate structure and skin）
 
 让我们用下面的例子：
 
@@ -221,7 +221,7 @@ BEM 代表块 Block 元素 Element 修饰符 Modifier BEM代表块（Block），
 - 如果我们需要修改，只需修改一处。
 - 我们移除了 CSS 文件里的重复项，这让文件更小。
 
-###容器和内容分开 （Separate container and content）
+### 容器和内容分开 （Separate container and content）
 
 这里的理念是，不管每个元素放在哪里，都应该被应用同一种样式。因此，你应该避免跟下面类似的选择器用法：
 
@@ -231,13 +231,13 @@ BEM 代表块 Block 元素 Element 修饰符 Modifier BEM代表块（Block），
 
 这是因为如果你把 `.social-widget` 移到 `.header` 容器（container）外面，宽度（width）就会不相同。一般来说这不是好的做法，尤其是给整个页面到处都使用的部分添加样式。这个原则鼓励使 CSS 模块化，我强烈建议利用充足的时间尝试下。就我个人而言，遵守这个原则意味着能够编写出更好的 CSS。
 
-##框架 （The framework）
+## 框架 （The framework）
 
 如果你在 GitHub 打开 [OOCSS repository](https://github.com/stubbornella/oocss) 会看到一个框架。是的，这个框架用到面向对象的 CSS 理念，并且有一堆很酷的组件可以立即使用（ready-to-use）。某些时候我并不喜欢框架。如果你思考一下的话会发现，framework 这个单词有部分 frame 和 work，你确实在条条框框（frame）里工作（work）。你确实要对框架妥协并且必须遵守它的规则。我更愿意使用微框架（micro-frameworks）或者只提供最基本特性的工具。当然我不是打算重新发明轮子，但我总是试着在两者之间取得平衡。经常这样，现成可用（ready-to-use）的解决方案会带来混乱复杂的系统。我的建议是，干一件事只为了一个特定的目的。如果你可能多地包含方方面面，你的下场将会是……你懂的，一个框架。
 
 但是，我强烈推荐你查看下 OOCSS 框架。这是一个独特的知识（It's an unique piece of knowledge），也许会满足你的需求。[Nicole Sullivan](https://twitter.com/stubbornella) 托管这个 repository （仓库）。她是 OOCSS 的创始人（She is a pioneer in OOCSS），如果你有空的话我建议你查看下这个 [presentations/talks](http://www.youtube.com/watch?v=GhX8iPcDSsI)。
 
-##SMACSS
+## SMACSS
 
 ![]({{BLOG_IMG}}97.jpg)
 
@@ -252,7 +252,7 @@ BEM 代表块 Block 元素 Element 修饰符 Modifier BEM代表块（Block），
 - 主题（Theme）—— 更多地面向视觉部分。跟状态类型相似。
 我没有使用 SMACSS 的经验，但它非常受欢迎，并确实提倡了好的想法。它更像是一个理念而不是框架，这非常好。因此，你不会受严格的规则，类或者是组件（ components）束缚。
 
-##原子设计 （Atomic design）
+## 原子设计 （Atomic design）
 
 ![]({{BLOG_IMG}}98.jpg)
 
@@ -300,7 +300,7 @@ Brad 并没有止步于此。分子构成了组织（organisms）。按照同样
 
 你可能已经使用相似的方法开发你的应用软件。然而，以合理的方式命名会带来好的架构。你和所有你的团队队员在开发中会明白一些事情。把一件东西分成原子和分子是挺重要的一部分，因为这会改善 Web 应用程序的开发过程和维护。
 
-##OrganicCSS
+## OrganicCSS
 
 ![]({{BLOG_IMG}}99.jpg)
 
@@ -310,7 +310,7 @@ Brad 并没有止步于此。分子构成了组织（organisms）。按照同样
 
 当我看 Brad Frost 的文章时，我已经对相似的理念非常熟悉，因为我了解 Organic 。Brad 的 *[Atomic Design](http://bradfrostweb.com/blog/post/atomic-web-design/)* 十分出色，但我决定更进一步，基于原子设计（Atomic Design）理念试着写自己的微框架。我选择 SASS 作为预处理器并在 Github 创建了[仓库](https://github.com/krasimir/organic-css)
 
-###原子 （Atoms）
+### 原子 （Atoms）
 
 让我们从框架最小的部分开始 —— 原子。在[维基百科](http://zh.wikipedia.org/wiki/%E5%8E%9F%E5%AD%90)的定义是 \*原子是一种元素能保持其化学性质的最小单位。\*。在 CSS 的环境(context)中，我认为是一个属性和它的值。例如：
 
@@ -362,7 +362,7 @@ SASS 使用占位符（place holders）实现这个效果。也就是说：
 	    ));
 	}
 
-###分子 （Molecules）
+### 分子 （Molecules）
 
 分子是需要样式的 DOM 元素，但是没有子代。或者是没有直接联系的子代。例如 `<img src="logo.jpg" />` 可以是分子。如果你觉得在网页里识别出分子，只需思考下什么是有原子构成的。如果一些元素是由其他分子构成的，那么很可能是一个（细胞器）。下面几行展示的是如何定义一个分子：
 
@@ -377,7 +377,7 @@ SASS 使用占位符（place holders）实现这个效果。也就是说：
 
 我面前有些有趣的东西。让我们看下 `body` 标记。这是什么？是一个分子或者其他东西吗？没错，它通过原子需要一些样式，但通常包含了其他分子。它应该是其他东西。我做出决定，CSS 应该是主角。也就是说，如果 `body` 标记需要一些原子提供样式，那就是分子，理论上，我不该给它附加上任何其他的分子。这看起来有点不切实际，但在大多数情况下，这会阻止你使用后代选择器，这个好兆头。
 
-###细胞器 （Organelles）
+### 细胞器 （Organelles）
 
 一旦你能够识别出哪个 DOM 元素是分子，你将会知道什么细胞器。例如，典型的 `form` 元素是一个细胞器的好例子。它包含了分子像 `label`，`input` 或者 `textarea`。
 
@@ -389,7 +389,7 @@ SASS 使用占位符（place holders）实现这个效果。也就是说：
 
 这个框架中，细胞器（Organelles）是第一个跟当前应用紧密相关的 。原子和分子在不同项目中会有所改变，而细胞器却不会。
 
-###更多的抽象 （More abstractions）
+### 更多的抽象 （More abstractions）
 
 你也许经常想要在其他地方合并几个细胞器。如果是这种情况，添加其他抽象：
 
@@ -397,11 +397,11 @@ SASS 使用占位符（place holders）实现这个效果。也就是说：
 
 你选择什么来让你的 CSS 结构化，这是个问题。目前为止，我只在一个项目里使用过 OrganicCSS，但我能说，它使项目变清晰了。我把不同的元素放在它们各自的目录（文件夹）里并像这样命名类，例如，分子在一个“molecules”目录（文件夹），里面的文件命名为“header_molecule.scss”我才能容易地找到正在编写的是哪一个。例如，如果有一个叫 `header` 的细胞器，我简单地改成 `o-header`。然后，当我看 HTML 代码时可以是了解到，这个元素的 CSS 样式文件在 `organelles` 文件夹。
 
-##总结
+## 总结
 
 这个一个有趣的旅行。我不知道是否会在将来使用 OrganicCSS，但这不是重点。我学到的东西才是重要的。我知道必须改变我的 CSS 开发过程，我做到了。我确信我们应该谈论更多 CSS 的结构。如你所见，在文章里我们有很多好的资源。我们只是必须找到它们，学习它们干了什么和如何运行的。只有我们能决定是否使用它们。更好的是，当你了解了整个项目才能创作出能更好满足需求的东西。
 
-##注
+## 注
 
 - 原文：http://funwo.tk/2013-09-08-starting-to-write-css-cn.html
 - 英文：http://davidwalsh.name/starting-css

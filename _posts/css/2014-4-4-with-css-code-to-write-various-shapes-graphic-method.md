@@ -11,7 +11,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 
 一共收集整理了图形20个，比较实用，同时也为了熟悉CSS的代码。整合了一下，有错误欢迎指出。
 
-##1.正方形
+## 1.正方形
 
 ![]({{BLOG_IMG}}103.png)
 
@@ -21,7 +21,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 		background: red;
 	}
 
-##2.长方形
+## 2.长方形
 
 ![]({{BLOG_IMG}}104.jpg)
  
@@ -31,7 +31,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 		background: red;
 	}
 
-##3.左上三角
+## 3.左上三角
 
 ![]({{BLOG_IMG}}105.png)
 
@@ -42,7 +42,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 		border-right: 100px solid transparent;
 	}
 
-##4.右上三角
+## 4.右上三角
 
 ![]({{BLOG_IMG}}106.png)
  
@@ -53,7 +53,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 		border-left: 100px solid transparent;
 	}
 
-##5.左下三角
+## 5.左下三角
 
 ![]({{BLOG_IMG}}107.png)
  
@@ -64,7 +64,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 		border-right: 100px solid transparent;
 	}
 
-##6.右下三角
+## 6.右下三角
 
 ![]({{BLOG_IMG}}108.png)
  
@@ -75,7 +75,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 		border-left: 100px solid transparent;
 	}
 
-##7.平行四边形
+## 7.平行四边形
 
 ![]({{BLOG_IMG}}109.png)
 
@@ -88,7 +88,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 		background: red;
 	}
 
-##8.梯形
+## 8.梯形
 
 ![]({{BLOG_IMG}}110.png)
 
@@ -100,7 +100,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 		width: 100px;
 	}
 
-##9.六角星
+## 9.六角星
 
 ![]({{BLOG_IMG}}111.png)
 
@@ -124,7 +124,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 		left: -50px;
 	}
 
-##10.五角星
+## 10.五角星
 
 ![]({{BLOG_IMG}}112.png)
 
@@ -178,7 +178,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 	   content: '';
 	}
 
-##11.五边形
+## 11.五边形
 
 ![]({{BLOG_IMG}}113.png)
  
@@ -201,7 +201,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 	    border-color: transparent transparent red;
 	}
 
-##12.六边形
+## 12.六边形
 
 ![]({{BLOG_IMG}}114.png)
  
@@ -234,7 +234,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 		border-top: 25px solid red;
 	}
 
-##13.桃心
+## 13.桃心
 
 ![]({{BLOG_IMG}}115.png)
 
@@ -279,7 +279,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 	            transform-origin :100% 100%;
 	}
 
-##14.无限大符号
+## 14.无限大符号
 
 ![]({{BLOG_IMG}}116.png)
  
@@ -334,7 +334,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 	   border-radius:        50%   50%  50%  50%  / 60%   60%   40%  40%;
 	}
 
-##16.提示对话框
+## 16.提示对话框
 
 ![]({{BLOG_IMG}}118.png)
  
@@ -359,7 +359,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 	   border-bottom: 13px solid transparent;
 	}
 
-##17.十二角星
+## 17.十二角星
 
 ![]({{BLOG_IMG}}119.png)
  
@@ -390,7 +390,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 	            transform: rotate(135deg);
 	}
 
-##18.八角星
+## 18.八角星
 
 ![]({{BLOG_IMG}}120.png)
 
@@ -421,7 +421,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 	            transform: rotate(135deg);
 	}
 
-##19.钻石
+## 19.钻石
 
 ![]({{BLOG_IMG}}121.png)
 
@@ -446,7 +446,7 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 	    border-width: 70px 50px 0 50px;
 	}
 	
-##20.八卦
+## 20.八卦
 
 ![]({{BLOG_IMG}}122.png)
  
@@ -483,6 +483,6 @@ description: 一共收集整理了图形20个，比较实用，同时也为了�
 		height: 12px;
 	} 
 
-##注
+## 注
 
 原文:http://www.wzsky.net/html/Website/CSS/115159.html

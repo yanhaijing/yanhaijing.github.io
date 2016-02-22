@@ -19,7 +19,7 @@ description: 本文将会介绍如何在真机上调试移动端的页面。
 - Opera 远程调试
 - Weinre
 
-##UC浏览器开发版
+## UC浏览器开发版
 
 感谢UC造出这么好用的浏览器，同时注重开发者，远好于国内其他厂商，UC浏览器有一个开发版非常赞。
 
@@ -28,7 +28,7 @@ description: 本文将会介绍如何在真机上调试移动端的页面。
 
 UC开发版的网站上介绍的很清楚，也有很详细的文档，这里就不再赘述，简单记录下WIFI的调试方法，保证pc和手机在同一个网段，在PC上打开Chrome或Safari，在地址栏输入：**手机IP + :9998**，在手机端会弹出确认按钮，点击确认后，就可在pc上看到效果了，如此简单。
 
-##Chrome浏览器
+## Chrome浏览器
 
 要先使用Chrome浏览器的远程调试功能需要先翻墙才可以，还需做如下准备：
 
@@ -48,7 +48,7 @@ UC开发版的网站上介绍的很清楚，也有很详细的文档，这里就
 
 更多信息请移步[这里](https://developer.chrome.com/devtools/docs/remote-debugging#installing-androidsdk)。
 
-##Firefox浏览器
+## Firefox浏览器
 
 首先，需要如下几个准备工作：
 
@@ -89,7 +89,7 @@ PC端Firefox打开about:config，设置devtools.debugger.remote-enabled为True�
 
 更多信息，请移步[这里](https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Firefox_for_Android)。
 
-##Opera浏览器
+## Opera浏览器
 
 请下载opera官方浏览器，而非中文版，中文版把这个功能阉割了（鄙视一下），在手机浏览器地址栏输入如下命令，会看到下图所示的信息。
 
@@ -115,7 +115,7 @@ PC端Firefox打开about:config，设置devtools.debugger.remote-enabled为True�
 
 更多信息，请移步[这里](https://dev.opera.com/articles/remotely-debugging-opera-for-android/)。
 
-##Weinre
+## Weinre
 
 网上关于winner的介绍大多是基于java，很繁琐，其实基于node+npm会简单很多，感谢node，感谢npm。
 
@@ -150,7 +150,7 @@ PC端Firefox打开about:config，设置devtools.debugger.remote-enabled为True�
 
 ![]({{BLOG_IMG}}149.gif)
 
-##总结
+## 总结
 
 还有一些其他方法还没有实验过，只是听说过，所以就不写出来了，先挖个坑吧，以后慢慢填。
 

@@ -17,7 +17,7 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 
 ![]({{ BLOG_IMG }}146.png)
 
-##安装
+## 安装
 
 在 Windows 上安装 Git 同样轻松，有个叫做 msysGit 的项目提供了安装包：
 
@@ -25,7 +25,7 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 
 完成安装之后，就可以使用命令行的 git 工具（已经自带了 ssh 客户端）了，另外还有一个图形界面的 Git 项目管理工具。
 
-##配置
+## 配置
 
 首先是配置帐号信息
 	
@@ -57,7 +57,7 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 
 笔者一般只配置配置这几个，你也可以配置其他命令。
 
-##新建仓库
+## 新建仓库
 
 	git init #初始化
 	git status #获取状态
@@ -66,12 +66,12 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 	git remote add origin git@github.com:yanhaijing/test.git #添加源
 	git push -u origin master #push同事设置默认跟踪分支
 
-##从现有仓库克隆
+## 从现有仓库克隆
 
 	git clone git://github.com/yanhaijing/data.js.git	
 	git clone git://github.com/schacon/grit.git mypro#克隆到自定义文件夹
 
-##本地
+## 本地
 
 	git add * # 跟踪新文件
 	git add -u [path] # 添加[指定路径下]已跟踪文件
@@ -98,7 +98,7 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 	
 	git revert HEAD #撤销前一次操作
 	git revert HEAD~ #撤销前前一次操作
-	git revert commit ##撤销指定操作
+	git revert commit ## 撤销指定操作
 
 	git checkout -- file#取消对文件的修改（从暂存区——覆盖worktree file）
 	git checkout branch|tag|commit -- file_name#从仓库取出file覆盖当前分支
@@ -130,7 +130,7 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 	git stash pop #恢复的同时直接删除stash内容
 	git stash apply stash@{0} #恢复指定的工作现场，当你保存了不只一份工作现场时。
 
-##分支
+## 分支
 
 	git branch#列出本地分支
 	git branch -r#列出远端分支
@@ -151,7 +151,7 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 	git checkout -b test dev#基于dev新建test分支，并切换
 
 	git merge test#将test分支合并到当前分支
-	git merge --squash test ##合并压缩，将test上的commit压缩为一条
+	git merge --squash test ## 合并压缩，将test上的commit压缩为一条
 
 	git cherry-pick commit #拣选合并，将commit合并到当前分支
 	git cherry-pick -n commit #拣选多个提交，合并完后可以继续拣选下一个提交
@@ -163,7 +163,7 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 	git rebase --skip# 跳过	
 	git rebase --abort# 取消合并
 
-##远端
+## 远端
 	
 	git fetch origin remotebranch[:localbranch]# 从远端拉去分支[到本地指定分支]
 
@@ -179,7 +179,7 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 	git checkout -b [--track] test origin/dev#基于远端dev分支，新建本地test分支[同时设置跟踪]
 
 
-##源
+## 源
 
 git是一个分布式代码管理工具，所以可以支持多个仓库，在git里，服务器上的仓库在本地称之为remote。
 
@@ -197,7 +197,7 @@ git是一个分布式代码管理工具，所以可以支持多个仓库，在gi
 	git remote show origin#查看指定源的全部信息
 
 
-##标签
+## 标签
 
 当开发到一定阶段时，给程序打标签是非常棒的功能。
 
@@ -214,7 +214,7 @@ git是一个分布式代码管理工具，所以可以支持多个仓库，在gi
 	git tag -d v0.1#删除标签
 	git push origin :refs/tags/v0.1#删除远程标签
 	
-##总结	
+## 总结	
 
 啊哈！终于总结完了，以后不会的时候，再也不用到处去找了。
 
@@ -227,7 +227,7 @@ git是一个分布式代码管理工具，所以可以支持多个仓库，在gi
 
 	git reflog # 显示最近操作的commit id
 
-##参考资料
+## 参考资料
 
 - [Git参考手册](http://gitref.org/zh/index.html)
 - [git-简明指南](http://rogerdudler.github.io/git-guide/index.zh.html)

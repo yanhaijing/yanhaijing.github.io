@@ -11,7 +11,7 @@ description: 如果你构建过Web引用程序，你可能处理过很多DOM操�
 
 如果你构建过Web引用程序，你可能处理过很多DOM操作。访问和操作DOM元素几乎是每一个Web应用程序的通用需求。我们我们经常从不同的控件收集信息，我们需要设置value值，修改div或span标签的内容。当然有许多库能帮助处理这些行为，其中最流行的当属jQuery，已经成为事实上的标准。有事你并不需要jQuery提供每一样东西，所以在这篇文章中，我们将看看如何创建自己的类库来操作DOM元素。
 
-##API
+## API
 
 身为开发者的我们每天都要做决定。我相信在测试驱动开发中，我真的非常喜欢的一个事实是它迫使你在开始实际编码之前必须做出设计决定。沿着这些思路，我想我想要的DOM操作类库的API最终看起来可能像这样：
 
@@ -56,7 +56,7 @@ description: 如果你构建过Web引用程序，你可能处理过很多DOM操�
 	    return api;
 	}
 
-##作用域
+## 作用域
 
 很明显，我们打算使用类似getElementById，querySelector或querySelectorAll这样的方法。通常情况下，你可以像下面这样访问DOM：
 
@@ -87,7 +87,7 @@ querySeletor是非常有趣的，例如，它不仅仅是document对象的方法
 	}
  
 
-##查询DOM元素
+## 查询DOM元素
 
 按照我们上面所说的，我们将使用querySelector和querySelectorAll查询DOM元素。让我们为这些函数创建两个快捷方式。
 
@@ -174,7 +174,7 @@ querySeletor是非常有趣的，例如，它不仅仅是document对象的方法
 	// footer是paragraphs的属性
 	els.paragraphs.footer.el
 
-##获取或设置元素的值
+## 获取或设置元素的值
 
 表单元素的值如input或select可以被很容易的检索到——我们可以使用元素的value属性。我们我们已经有一个能访问的DOM元素了——存储在api.el。然而，当我们碰到单选框或复选框是有些棘手。对于其他HTML节点像div，section或span我们获取元素的值实际上是获取textContent属性。如果textContent是undefined那么可以用innerHTML代替（相似）。让我们写出另一个switch语句：
 
@@ -300,7 +300,7 @@ querySeletor是非常有趣的，例如，它不仅仅是document对象的方法
 
 这方法对于把数据冲HTML导成JavaScript对象非常有帮助。这正是我们很多人每天都很常见的任务。
 
-##最后结果
+## 最后结果
 
 最后完成的类库代码仅有100行代码，但它仍然满足我们所需的访问 DOM元素并且获取和设置value值/内容。
 
@@ -410,10 +410,10 @@ querySeletor是非常有趣的，例如，它不仅仅是document对象的方法
 
 我创建了一个[jsbin](http://jsbin.com/locap/5/embed?html,js,console)的例子，你可以看看类作品。
 
-##总结
+## 总结
 
 我上面讨论的类库是[AbsurdJS客户端组件](http://absurdjs.com/pages/client-side-components/)的一部分。该模块的完成文档可以在[这里](http://absurdjs.com/pages/api/build-in-components/#dom)找到。这代码的目的并非要取代jQuery或其他可以访问DOM的流行类库。函数的思想是自成一体，一个函数只做一件事并把它做好。这是[AbsurdJS](http://absurdjs.com/)背后的主要思想，它也是基于模块化建设的，如[router](http://absurdjs.com/pages/api/build-in-components/#router)或[Ajax](http://absurdjs.com/pages/api/build-in-components/#ajax)模块。
 
-##注
+## 注
 
 原文 http://flippinawesome.org/2014/03/10/a-dom-manipulation-class-in-100-lines-of-javascript/

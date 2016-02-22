@@ -23,13 +23,13 @@ description: 本文将介绍HTML5 离线缓存的方方面面，以及自动化�
 - 自动化工具
 - 参考资料
 
-##起源
+## 起源
 
 html5之前的网页，都是无连接，必须联网才能访问，这其实也是web的特色，这其实对于PC是时代问题并不大，但到了移动互联网时代，设备终端位置不再固定，依赖无线信号，网络的可靠性变得降低，比如坐在火车上，过了一个隧道（15分钟），便无法访问网站，这对于web的伤害是很大的，比如对于 《[ecmascript合集](http://yanhaijing.com/es5)》这样的为阅读而生的页面。
 
 html5便引入了cache manifest 文件。那么什么是cache manifest呢，接下来会讲到。
 
-##什么是Cache Manifest
+## 什么是Cache Manifest
 
 首先manifest是一个后缀名为minifest的文件，在文件中定义那些需要缓存的文件，支持manifest的浏览器，会将按照manifest文件的规则，像文件保存在本地，从而在没有网络链接的情况下，也能访问页面。
 
@@ -37,19 +37,19 @@ html5便引入了cache manifest 文件。那么什么是cache manifest呢，接�
 
 ![]({{BLOG_IMG}}/164.png)
 
-##Manifest的特点
+## Manifest的特点
 
 - 离线浏览: 用户可以在离线状态下浏览网站内容。
 - 更快的速度: 因为数据被存储在本地，所以速度会更快.
 - 减轻服务器的负载: 浏览器只会下载在服务器上发生改变的资源。
 
-##浏览器支持情况
+## 浏览器支持情况
 
 所有主流浏览器均支持应用程序缓存，除了 Internet Explorer。[caniuse](http://caniuse.com/#search=manifest)给出的答案如下图所示。
 
 ![]({{BLOG_IMG}}/165.png)
 
-##如何使用
+## 如何使用
 
 html新增了一个manifest属性，可以用来指定当前页面的manifest文件。
 
@@ -57,7 +57,7 @@ html新增了一个manifest属性，可以用来指定当前页面的manifest文
 
 	<html lang="en" manifest="index.manifest">
 
-##Manifest文件
+## Manifest文件
 
 接下来详细说说manifest的细节，一个典型的manifest文件代码结构像下面这样：
 
@@ -76,7 +76,7 @@ manifest文件，基本格式为三段： CACHE， NETWORK，与 FALLBACK，其�
 
 以#号开头的是注释，一般会在第二行写个版本号，用来在缓存的文件更新时，更改manifest的作用，可以是版本号，时间戳或者md5码等等。
 
-###CACHE:（必须）
+### CACHE:（必须）
 
 标识出哪些文件需要缓存，可以是相对路径也可以是绝对路径。
 
@@ -96,7 +96,7 @@ NETWORK:（可选）
 
 	NETWORK:
 	*
-###FALLBACK:（可选）
+### FALLBACK:（可选）
 
 指定了一个后备页面，当资源无法访问时，浏览器会使用该页面。该段落的每条记录都列出两个 URI—第一个表示资源，第二个表示后备页面。两个 URI 都必须使用相对路径并且与清单文件同源。可以使用通配符。
 
@@ -110,7 +110,7 @@ NETWORK:（可选）
 	FALLBACK:
 	*.html /404.html
 
-##如何更新缓存
+## 如何更新缓存
 
 如下三种方式，可以更新缓存：
 
@@ -126,7 +126,7 @@ html5中引入了js操作离线缓存的方法，下面的js可以手动更新�
 
 如果用户清除了浏览器缓存（手动或用其他一些工具）都会重新下载文件。
 
-##注意事项
+## 注意事项
 
 - 浏览器对缓存数据的容量限制可能不太一样（某些浏览器设置的限制是每个站点 5MB）。
 - 如果manifest文件，或者内部列举的某一个文件不能正常下载，整个更新过程都将失败，浏览器继续全部使用老的缓存。
@@ -136,7 +136,7 @@ html5中引入了js操作离线缓存的方法，下面的js可以手动更新�
 - 站点中的其他页面即使没有设置manifest属性，请求的资源如果在缓存中也从缓存中访问。
 - 当manifest文件发生改变时，资源请求本身也会触发更新。
 
-##自动化工具
+## 自动化工具
 
 manifest文件中的cache部分不能使用通配符，必须手动指定，这实在太让人不可理解，文件一多，就成了体力活了，这里介绍的 [grunt-manifest](https://www.npmjs.com/package/grunt-manifest)能自动生成manifest文件的目的。grunt-manifest依赖grunt，grunt是一个自动化构建工具，如果你不知道grunt，请移步[这里](http://www.gruntjs.net/)。
 
@@ -187,7 +187,7 @@ options下有很多参数，主要参数如下：
 
 这里有[basejs](http://yanhaijing.com/basejs/)的[配置文件](https://github.com/yanhaijing/basejs/blob/gh-pages/Gruntfile.js)和生成的[manifest文件](https://github.com/yanhaijing/basejs/blob/gh-pages/index.manifest)的例子。
 
-##参考资料
+## 参考资料
 
 - [HTML5离线存储之Application Cache](http://www.nihaoshijie.com.cn/index.php/archives/425)
 - [HTML 5 应用程序缓存](http://www.w3school.com.cn/html5/html_5_app_cache.asp)

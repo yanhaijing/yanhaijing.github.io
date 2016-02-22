@@ -11,7 +11,7 @@ description: 在这篇文章里，我将深入研究JavaScript中最基本的部
 
 在这篇文章里，我将深入研究JavaScript中最基本的部分——执行上下文（execution context）。读完本文后，你应该清楚了解解释器做了什么，为什么函数和变量能在声明前使用以及他们的值是如何决定的。
 
-##什么是执行上下文？
+## 什么是执行上下文？
 
 当JavaScript代码运行，执行环境非常重要，有下面几种不同的情况：
 
@@ -27,7 +27,7 @@ description: 在这篇文章里，我将深入研究JavaScript中最基本的部
 
 你可以有任意多个函数上下文，每次调用函数创建一个新的上下文，会创建一个私有作用域，函数内部声明的任何变量都不能在当前函数作用域外部直接访问。在上面的例子中，函数能访问当前上下文外面的变量声明，但在外部上下文不能访问内部的变量/函数声明。为什么会发生这种情况？代码到底是如何被解释的？
 
-##执行上下文堆栈
+## 执行上下文堆栈
 
 浏览器里的JavaScript解释器被实现为单线程。这意味着同一时间只能发生一件事情，其他的行文或事件将会被放在叫做执行栈里面排队。下面的图是单线程栈的抽象视图：
 
@@ -58,7 +58,7 @@ description: 在这篇文章里，我将深入研究JavaScript中最基本的部
 - 无限制函数上下文。
 - 每次函数被调用创建新的执行上下文，包括调用自己。
 
-##执行上下文的细节
+## 执行上下文的细节
 
 我们现在已经知道没次调用函数，都会创建新的执行上下文。然而，在JavaScript解释器内部，每次调用执行上下文，分为两个阶段：
 
@@ -77,7 +77,7 @@ description: 在这篇文章里，我将深入研究JavaScript中最基本的部
 	    this: {} 
 	}
 
-###激活/变量对象【AO/VO】
+### 激活/变量对象【AO/VO】
 
 当函数被调用是executionContextObj被创建，但在实际函数执行之前。这是我们上面提到的第一阶段，创建阶段。在此阶段，解释器扫描传递给函数的参数或arguments，本地函数声明和本地变量声明，并创建executionContextObj对象。扫描的结果将完成变量对象的创建。
 
@@ -148,7 +148,7 @@ description: 在这篇文章里，我将深入研究JavaScript中最基本的部
 	    this: { ... }
 	}
 
-###提升（Hoisting）
+### 提升（Hoisting）
 
 你能在网上找到很多定义JavaScript hoisting术语的资源，解释变量和函数声明被提升到函数作用域的顶部。然而，没有人解释为什么会发生这种情况的细节，学习了上面关于解释器如何创建爱你活动对象的新知识，很容易明白为什么。看下面的例子：
 
@@ -178,7 +178,7 @@ description: 在这篇文章里，我将深入研究JavaScript中最基本的部
 - **为什么bar的值是undefined？**
     - bar实际上是一个变量，但变量的值是函数，并且我们知道变量在创建阶段被创建但他们被初始化为undefined。
 
-##总结
+## 总结
 
 希望现在你了解JavaScript解释器如何执行你的代码。了解执行上下文和堆栈，将有助于你了解背后的原因——为什么你的代码被解释为和你最初希望不同的值。
 
@@ -188,12 +188,12 @@ description: 在这篇文章里，我将深入研究JavaScript中最基本的部
 
 **注意：**有些人一直在问闭包，回调，延时等问题，我将在[下一篇文章](http://davidshariff.com/blog/javascript-scope-chain-and-closures/)里提到，更多关注域执行上下文有关的[作用域链](http://davidshariff.com/blog/javascript-scope-chain-and-closures/)相关方面。
 
-##深入阅读
+## 深入阅读
 
 - [ECMA-262 5th Edition](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-262.pdf)
 - [ECMA-262-3 in detail. Chapter 2. Variable object](http://dmitrysoshnikov.com/ecmascript/chapter-2-variable-object/)
 - [Identifier Resolution, Execution Contexts and scope chains](http://jibbering.com/faq/notes/closures/#clIRExSc)
 
-##注
+## 注
 
 原文：http://davidshariff.com/blog/what-is-the-execution-context-in-javascript/

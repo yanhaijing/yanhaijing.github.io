@@ -30,7 +30,7 @@ description: console.js 与console就想html5shim于html5，仅此而已，如�
 那么是时候做出改变了，console.js会帮你解决这些问题。
 
 
-##console.js是什么
+## console.js是什么
 
 console.js是一个微型js库，用来修复在不支持或部分支持console的浏览器下，调用`console.***`出错的问题。
 
@@ -92,7 +92,7 @@ b.js
 
 更多信息请参考console.js的[文档](https://github.com/yanhaijing/console.js#readme)。
 
-##仅此而已了吗？
+## 仅此而已了吗？
 
 我一直在思考还可以做哪些改进，或者功能，仅此而已了吗？当然不是，我能想到的还可以做下面的一些改进。
 
@@ -104,13 +104,13 @@ b.js
 
 当然这些功能是否应该加入console.js，是个问题，应该思考下，console.js的初衷是什么。。。
 
-##不足
+## 不足
 
 对于ie8 9浏览器，在首次打开控制台时，会新建console对象，现在console.js，尽在页面载入时做修复，无法解决这个问题。
 
 但对于打开控制台的人，绝大多数应该不属于用户吧。($ _ $)
 
-##总结
+## 总结
 
 console.js 与console就想html5shim于html5，仅此而已，如此简单。
 

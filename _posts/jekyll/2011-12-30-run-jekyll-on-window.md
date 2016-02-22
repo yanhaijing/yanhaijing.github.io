@@ -62,13 +62,13 @@ E:\Ruby192\lib\ruby\gems\1.9.1\gems\albino-1.3.3\lib\albino.rb
 
 然后就可以使用Jekyll了，在生成静态页面的时候 可能还会出现 GBK字符不能编码的问题，但是不影响生成网页了。
 
-##更新
+## 更新
 
 笔者最近安装了最新版的jekyll，已经不存在需要修复两处bug的问题了，安装到第六步就ok了，上面提到的gbk编码问题，可用如下方法解决，在cmd窗口输入如下命令，临时改变编码。
 
 	> chcp 65001
 
-##参考资料
+## 参考资料
 
 - [Running Jekyll on Windows](http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html)
 - [Jekyll 本地调试之若干问题](http://chxt6896.github.io/blog/2012/02/13/blog-jekyll-native.html)

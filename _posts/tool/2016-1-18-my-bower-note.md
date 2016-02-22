@@ -42,7 +42,7 @@ Bower基于node.js，所以安装之前，必须先确保已安装node.js
 ## 总结
 目前bower基本已经过时了，记录一下供自己使用吧。
 
-##参考资料
+## 参考资料
 - [Bower：客户端库管理工具](http://javascript.ruanyifeng.com/tool/bower.html)
 - [bower解决js的依赖管理](http://blog.fens.me/nodejs-bower-intro/)
 

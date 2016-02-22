@@ -98,6 +98,6 @@ Server 端 UI 层是前后端的中间地带，而之前通常后端程序员们
 
 果断尝试一下吧，这个方案也许正适合你的团队。
 
-##注
+## 注
 
 原文：http://justjavac.com/nodejs/2013/10/07/node-js-and-the-new-web-front-end.html

@@ -98,7 +98,7 @@ for in是[es3][1]中就存在，最早用来遍历对象（集合）的方法。
 
 如果你想在老旧浏览器中也是用这些方法，那试试[es5shim](https://github.com/es-shims/es5-shim)吧。
 
-##相关资料
+## 相关资料
 - [细说JavaScript中对象的属性和方法][2]
 
 

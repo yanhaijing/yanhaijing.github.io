@@ -13,7 +13,7 @@ description: 本文将记录一些常用gem命令，以备不时之需（每次�
 
 本文将记录一些常用gem命令，以备不时之需（每次都查还烦人）。
 
-##更换淘宝镜像
+## 更换淘宝镜像
 由于国内网络原因（你懂的），导致 rubygems.org 存放在 Amazon S3 上面的资源文件间歇性连接失败。这里要更换默认镜像为[淘宝的镜像](http://ruby.taobao.org/)。
 
 	gem sources --remove https://rubygems.org/

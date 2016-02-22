@@ -31,7 +31,7 @@ js创建之初，正值java大行其道，面向对象编程春风正盛，js借
 
 本文就来总结下，如何使用构造函数来实现继承。
 
-##场景
+## 场景
 
 我们假设我们有一个父构造函数People和子构造函数Student，People有一个属性age和一个方法getAge，Student有一个属性num和getNum。
 
@@ -47,7 +47,7 @@ js创建之初，正值java大行其道，面向对象编程春风正盛，js借
 
 我们要实现是Student继承People，这在js里可要费一番力气了。
 
-##默认模式
+## 默认模式
 
 我们可以利用js的原型机制，将子构造函数的原型属性设置为父构造函数的实例，这是js中比较常用的方式：
 
@@ -69,7 +69,7 @@ js创建之初，正值java大行其道，面向对象编程春风正盛，js借
 
 哦！！！
 
-##借用构造函数
+## 借用构造函数
 
 先来看看如何解决第一个问题，我们可以巧用js的call方法，如果你还不知道这个方法，请移步[这里](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call)。
 
@@ -80,7 +80,7 @@ js创建之初，正值java大行其道，面向对象编程春风正盛，js借
 
 我们在子构造函数内部，借用父构造函数，这样就巧妙地在子类中继承了父类的实例化属性。这其实类似java的super关键字。
 
-##共享原型
+## 共享原型
 
 再来看看如何解决第二个问题，解决这个问题，其实我们可以将子构造函数的原型更改为父构造函数的原型，而不是父构造函数的实例。
 
@@ -90,7 +90,7 @@ js创建之初，正值java大行其道，面向对象编程春风正盛，js借
 
 但这样做会导致另一个问题，就是无法再在Student的原型上扩展方法了，因为会扩展同时会扩展到People的原型上。
 
-##临时构造函数
+## 临时构造函数
 
 为了解决上面引发的问题，和第三个问题。我们可以在子构造函数和父构造函数之间，加一层临时构造函数。
 
@@ -107,7 +107,7 @@ js创建之初，正值java大行其道，面向对象编程春风正盛，js借
 
 	Student.prorotype.constructor = Student;
 
-##圣杯
+## 圣杯
 
 我们将上面的几种方法综合起来，代码看起来就像下面这样子：
 	
@@ -134,7 +134,7 @@ js创建之初，正值java大行其道，面向对象编程春风正盛，js借
 	inherit(Student, People);//继承父构造函数
 	Student.prototype.getNum = function () {return this.num;};
 
-##总结
+## 总结
 
 本文大部分内容其实出自，《[javascript模式](http://www.amazon.cn/gp/product/B008QTG1HS/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B008QTG1HS&linkCode=as2&tag=yanhaijing-23)》第五章 代码的复用模式。记录下来省的自己每次都要去翻书了，当然主要还是写给MM看的。
 

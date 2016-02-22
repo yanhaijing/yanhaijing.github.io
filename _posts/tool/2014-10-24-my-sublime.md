@@ -36,7 +36,7 @@ description: 作为aptana死忠粉的我，最近由于工作需要最近开始�
 
 上面的配置项，如果你是一个完美主义者，可以在用户配置文件中配置，不修改默认配置文件。
 
-##快捷键
+## 快捷键
 
 作为码农，很多时间都是在敲键盘的，所以快捷键是非常重要的，sublime的快捷键非常非常多，很难都记住，按照80/20原则，只有20%是常用的，下面是我常用的快捷键：
 
@@ -89,7 +89,7 @@ description: 作为aptana死忠粉的我，最近由于工作需要最近开始�
 </tbody>
 </table>
 
-##插件
+## 插件
 sublime的功能已经很满足大部分需求了，但还是有个别差异化的需求，无法满足，这时候sublime的插件派上用场，先来晒下我的插件。
 
 ![]({{BLOG_IMG}}141.png)
@@ -222,9 +222,9 @@ DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，�
 
 [这里](https://github.com/yanhaijing/mysublime)是我的Package Syncing 导出来的文件。
 
-##总结
+## 总结
 sublime非常棒的，正是我喜欢的风格。
 
-##参考资料
+## 参考资料
 - [Gif多图：我常用的 16 个 Sublime Text 快捷键](http://blog.jobbole.com/82527/)
 - [12个不可不知的Sublime Text应用技巧和诀窍](http://segmentfault.com/a/1190000000505218)

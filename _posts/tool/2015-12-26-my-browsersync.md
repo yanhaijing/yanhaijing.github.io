@@ -98,7 +98,7 @@ BrowserSync提供的一个简易控制面板。BrowserSync最常用的几个配�
 ## 总结
 好了就先写这么多吧，如果你有更多需求请查看[官方文档](https://www.browsersync.io/docs/)，或者下面列出的参考资料。
 
-##参考资料
+## 参考资料
 - [Browsersync中文网](http://www.browsersync.cn/)
 - [BrowserSync，迅捷从免F5开始](http://segmentfault.com/a/1190000002607627)
 

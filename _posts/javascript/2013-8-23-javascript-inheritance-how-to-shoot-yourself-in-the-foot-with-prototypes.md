@@ -178,7 +178,7 @@ apply()方法可以让我们可以将messages数字的作用域更改为SubWidge
 	
 	SubWidget.prototype = Widget.prototype;
 
-##注
+## 注
 
 原文："[JavaScript Inheritance – How To Shoot Yourself In the Foot With Prototypes!](http://flippinawesome.org/2013/06/03/javascript-inheritance-how-to-shoot-yourself-in-the-foot-with-prototypes/#comment-2875 "javascript-inheritance-how-to-shoot-yourself-in-the-foot-with-prototypes")"
  

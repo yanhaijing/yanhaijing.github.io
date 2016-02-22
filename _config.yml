@@ -72,12 +72,12 @@ JB :
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.
   #
-  archive_path: /archive.html
-  categories_path : /categories.html
-  tags_path : /tags.html
+  archive_path: /archive/
+  categories_path : /categories/
+  tags_path : /tags/
   atom_path : /atom.xml
   rss_path : /rss.xml
-  about_path: /yan_about.md
+  about_path: /yan_about/
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.

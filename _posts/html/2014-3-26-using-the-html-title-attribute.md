@@ -65,7 +65,7 @@ alt="The castle now has two towers and two walls.">`
   - 虽然abbr元素的title属性被屏幕阅读器软件所支持，但使用它仍然是有问题的，因为其他用户群无法使用。建议当缩写词在文档中首次出现时提供文本格式的全称，或提供全称形式的术语表。这并不是说不可以使用title属性，因其具有局限性，应该提供文本形式的全称。
 
 
-###[HTML 5.1](http://www.w3.org/html/wg/drafts/html/master/) 包括使用title属性的一般性建议：
+### [HTML 5.1](http://www.w3.org/html/wg/drafts/html/master/) 包括使用title属性的一般性建议：
 
 > 依赖[title](http://www.w3.org/html/wg/drafts/html/master/dom.html#attr-title)属性目前是不被鼓励的，由于许多用户代理不能按照规范的要求显示这个属性（如需要鼠标指针设备引起提示信息的显示，排除了仅使用键盘的用户和触摸屏用户） 
 

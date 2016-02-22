@@ -11,6 +11,8 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 
 转眼间加入git的阵营已经快两年了，结识git，缘起github，2年前在寻找代码托管网站，当时还是用svn，起初使用google code，可是google的服务虽好，在天朝你懂得，后来发现了github，多亏了蒋鑫老师的《[GotGitHub](http://www.worldhello.net/gotgithub/)》将我带入github的大门，如果你是个github新手，那我强烈建议你阅读这篇文章，里面讲了很多东西。
 
+![]({{BLOG_IMG}}242.png)
+
 起初的时候我是用github for windows这个客户端，在切换到多分支的时候被，自动转换换行符坑的不浅，后来越来阅读了《[Pro Git](http://git-scm.com/book/zh/v1)》第一版，对git的了解深入了一步，并开始转到命令行上来，如今我在[github](https://github.com/yanhaijing)上开源了70几个库，借助git，可自由在这些项目之间穿梭，同时还维护了github家园的[微博](http://weibo.com/githubchina/)和Q群(193091696)，如果你想获取关于git和github的最新消息可以关注微博，如果你有什么疑问或者问题，欢迎加群一起讨论。
 
 这篇文章记录个人常用的一些命令，和记不住的一些命令。

@@ -11,6 +11,8 @@ description: Bower是一款针对浏览器端的库管理工具，本文将记�
 
 Bower是一款针对浏览器端的库管理工具，本文将记录bower的一些常用内容。
 
+![]({{BLOG_IMG}}230.jpg)
+
 ## 安装
 Bower基于node.js，所以安装之前，必须先确保已安装node.js
 

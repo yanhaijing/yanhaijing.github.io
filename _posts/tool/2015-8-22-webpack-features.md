@@ -11,6 +11,8 @@ description: webpack是一款优秀的静态资源打包工具，本文将会介
 
 [webpack][webpack]是一款优秀的静态资源打包工具，本文将会介绍其一些特色。
 
+![]({{BLOG_IMG}}239.png)
+
 ## 插件
 [webpack][webpack]有丰富的插件接口。内部插件使用这些接口完成了大部分特色。这些接口使webpack非常灵活。
 

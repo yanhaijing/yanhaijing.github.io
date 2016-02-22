@@ -14,8 +14,10 @@ description: 最近准备写一本书，所以研究研究GitBook，本文对学
 ## 什么是GitBook
 > GitBook 是一个基于 Node.js 的命令行工具，可使用 Github/Git 和 Markdown 来制作精美的电子书。
 
-- GitBook项目官网：http://www.gitbook.io
-- GitBook Github地址：https://github.com/GitbookIO/gitbook
+![]({{BLOG_IMG}}233.png) 
+
+- [GitBook项目官网](http://www.gitbook.io)
+- [GitBook Github地址](https://github.com/GitbookIO/gitbook)
 
 GitBook需要使用markdown格式编写，如果你不了解可以看看[这里](https://help.gitbook.com/format/markdown.html)。
 

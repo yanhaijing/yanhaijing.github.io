@@ -11,6 +11,8 @@ description: 本文带你领略photoshop的历史，从此你再也不会认为p
 
 众所周知photoshop的公开版本号一直比较随性，就想windows一样，我本人也搞不清楚这些版本之间的关系，作为一个喜欢新版的，第一步就是要搞清楚哪个版本是最新版。
 
+![]({{BLOG_IMG}}236.jpg)
+
 本文带你领略photoshop的历史，从此你再也不会认为photoshop8 比cs3更高级的想法。
 
 <table class="table table-bordered table-striped">

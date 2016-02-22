@@ -13,6 +13,8 @@ description: 本文解释如何使用Grunt.js构建JavaScript库。Grunt.js依�
 
 Grunt.js是一个开源工具，可以帮助你完成上面的所有步骤。它非常容易扩展，并使用JavaScript书写，所以任何为JavaScript库或项目工作的人都可以按自己的需要扩展它。
 
+![]({{BLOG_IMG}}245.png)
+
 本文解释如何使用Grunt.js构建JavaScript库。Grunt.js依赖Node.js和npm，所以第一节解释其是什么，如何安装和使用。如果你对npm有了解，那你可以跳过这一节。第四和第五节讲述如何配置Grunt和一系列典型Grunt任务。
 
 本文讨论的代码例子可以在[GitHub](https://github.com/SomMeri/grunt-tutorial)上访问。

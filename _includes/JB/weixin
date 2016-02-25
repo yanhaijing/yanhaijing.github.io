@@ -1,0 +1,7 @@
+<div class="weixin-open clearfix">
+    <h2>微信公众号</h2>
+    关注微信公众号：颜海镜，最新博文优先推送，不再错过精彩内容。
+    <figure>
+        <img src="{{ HOME_PATH }}img/weixin-open.jpg" alt="微信公众号：颜海镜" width="240" height="240">
+    </figure>
+</div> 

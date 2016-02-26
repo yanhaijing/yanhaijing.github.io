@@ -80,6 +80,9 @@ js自带的数学运算不能满足你的需求了，那试试这个，扩展了
 
 ![](https://raw.github.com/josdejong/mathjs/master/img/mathjs.png)
 
+## [momentjs][momentjs]
+这个处理时间的工具，你想要的都有了，太赞了，感谢评论区的推荐。
+
 ## 总结
 本文介绍的只是作者收集的一小部分而已，作者将会保持时时更新的，如果你有什么推荐的欢迎反馈给我。
 
@@ -102,4 +105,4 @@ js自带的数学运算不能满足你的需求了，那试试这个，扩展了
 [share.js]: https://github.com/overtrue/share.js
 [mathjs]: https://github.com/josdejong/mathjs
 [es6-promise]: https://github.com/jakearchibald/es6-promise
-
+[momentjs]: http://momentjs.cn/

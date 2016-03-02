@@ -219,6 +219,9 @@ DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，�
 ### HTMLEntity Snippets
 当你想输入html实体标签时，然后又记不住时，使用这个插件吧。
 
+### IMESupport
+当你发现你的输入法在输入中文的时候输入框不在光标的位置那可能是这个问题，这其实是sublime的一个bug，试试这个吧，这里有一篇文章介绍《[sublime text 插件：IMESupport](http://qianduanblog.com/post/sublime-text-3-plugin-imesupport.html)》。
+
 ### Package Syncing
 最后推荐一个同步插件，这个插件可以在不同的机器同步配置信息和插件，非常方便，但鉴于国内的墙太高，我都是直接把插件给手动备份了，然后直接拖进去，或者直接去github上下载对应的包。
 

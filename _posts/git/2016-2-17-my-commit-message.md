@@ -76,7 +76,7 @@ Footer 部分只用于两种情况：
 	Issue #1, #2, #3
 
 ### 关闭 Issue
-如果当前提交信息解决了摸个issue，那么可以在 Footer 部分关闭这个 issue，关闭的格式如下：
+如果当前提交信息解决了某个issue，那么可以在 Footer 部分关闭这个 issue，关闭的格式如下：
 
 	Close #1, #2, #3
 

@@ -40,8 +40,13 @@ description: 本文分为两部分，分别介绍Object和Object.prototype上的
 - isSealed⑤ 
 - freeze⑤
 - isFrozen⑤
+- assign⑥
+- is⑥
+- setPrototypeOf⑥
 
-带⑤的为es5新增的方法。下面将会一一介绍上面的方法。
+*注解：⑤的为es5新增的方法，⑥的为es6(es2015)新增的方法。*
+
+下面将会一一介绍上面的方法。
 
 ### create
 > Object.create() 方法创建一个拥有指定原型和若干个指定属性的对象。
@@ -69,6 +74,7 @@ description: 本文分为两部分，分别介绍Object和Object.prototype上的
 	Object.defineProperty(obj, prop, descriptor)
 
 descriptor 可包含4个属性，如下：
+
 - configurable 当且仅当这个属性描述符值为 true 时，该属性可能会改变，也可能会被从相应的对象删除。默认为 false。
 - enumerable true 当且仅当该属性出现在相应的对象枚举属性中。默认为 false。
 - value 属性的值

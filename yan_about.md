@@ -1,7 +1,7 @@
 ---
 layout: page
 title : 关于我
-tagline: <img src="https://img.shields.io/badge/程序员-前端工程师-brightgreen.svg"> <img src="https://img.shields.io/badge/诗人-业余-blue.svg">
+tagline: <a href="https://github.com/yanhaijing" target="_blank"><img src="https://img.shields.io/badge/程序员-前端工程师-brightgreen.svg" alt="程序员-前端工程师"></a> <a href="http://yanhaijing.com/spring/" target="_blank"><img src="https://img.shields.io/badge/诗人-业余-blue.svg" alt="诗人-业余"></a>
 header : Post Archive
 group: navigation
 ---

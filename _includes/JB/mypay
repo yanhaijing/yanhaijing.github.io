@@ -1,12 +1,12 @@
 <aside class="donate clearfix">
 	<h2>捐赠（<a href="http://yanhaijing.com/mywallet/" target="_blank">我的钱包</a>）</h2>
 	<figure>
-		<img src="{{ HOME_PATH }}img/alipay.jpg" alt="支付宝帐号：yanhaijing@yeah.net" width="256" height="256">
-		<figcaption>支付宝扫一扫转账</figcaption>
-	</figure>
-    <figure>
         <img src="{{ HOME_PATH }}img/weixin.png" alt="微信支付二维码" width="256" height="256">
         <figcaption>微信扫一扫转账</figcaption>
     </figure>
+    <figure>
+		<img src="{{ HOME_PATH }}img/alipay.jpg" alt="支付宝帐号：yanhaijing@yeah.net" width="256" height="256">
+		<figcaption>支付宝扫一扫转账</figcaption>
+	</figure>
 </aside>
 

@@ -1,5 +1,5 @@
 <aside class="donate clearfix">
-	<h2>捐赠（<a href="http://yanhaijing.com/mywallet/" target="_blank">我的钱包</a>）</h2>
+	<h2>打赏（<a href="http://yanhaijing.com/mywallet/" target="_blank">我的收款主页</a>）</h2>
 	<figure>
         <img src="{{ HOME_PATH }}img/weixin.png" alt="微信支付二维码" width="256" height="256">
         <figcaption>微信扫一扫转账</figcaption>

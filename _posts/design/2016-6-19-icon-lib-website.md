@@ -27,5 +27,8 @@ icon archive和icon seeker很相似，功能大体相同。但素材更多一点
 ## [simpleicons](http://simpleicons.org/)
 最后给大家介绍一下 simpleicon，这里面内容比较少，但都是svg格式的图片。
 
+## [iconfont](http://www.iconfont.cn/)
+感谢网友推荐的阿里巴巴矢量图标库，这个上面都是矢量资源，内容也很多，很不错。
+
 ## 总结
 有了这篇文章，终于可以把自己的收藏夹给清空了，好happy啊，如果你也有一些自己的私货，那么拿出来和大家分享吧。

@@ -29,14 +29,14 @@ group: navigation
 
 ## 更多信息
 [![]({{ HOME_PATH }}img/auth-douban.png)](http://www.douban.com/people/yanhaijing/ "我在豆瓣")
-[![]({{ HOME_PATH }}img/auth-tqq.png)](http://t.qq.com/web_javascript "我在腾讯微博")
 [![]({{ HOME_PATH }}img/turing.jpg)](http://www.ituring.com.cn/users/121364 "我在图灵")
 [![]({{ HOME_PATH }}img/zhihu.jpg)](https://www.zhihu.com/people/yanhaijing "我在知乎")
 [![]({{ HOME_PATH }}img/twitter.png)](https://twitter.com/yanhaijing "我在推特")
 [![]({{ HOME_PATH }}img/segmentfault.jpg)](https://segmentfault.com/u/yanhaijing "我在segmentfault")
 [![]({{ HOME_PATH }}img/stackoverflow.jpg)](http://stackoverflow.com/users/2681005/yanhaijing "我在stackoverflow")
 
-## 友情链接 
+## 友情链接 [我来添加](https://github.com/yanhaijing/yanhaijing.github.com/edit/master/yan_about.md)
+
 - [@justjavac(迷渡)](http://justjavac.com/)
 - [@腊八粥(IT翻译博客)](http://www.labazhou.net/)
 - [@php101(土豆丫)](http://www.php101.cn/)
@@ -52,3 +52,4 @@ group: navigation
 - [@devigner Jinzhan](http://jinzhan.me/)
 - [@Phodal](https://www.phodal.com/)
 - [@wujunze](https://wujunze.com/)
+

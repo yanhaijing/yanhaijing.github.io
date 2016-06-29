@@ -21,6 +21,30 @@ description: 本文是《父与子的编程之旅：与小卡特一起学Python�
 
 ## 出发吧
 
+### 安装python
+学习[python][1]的第一步是安装python，可以到python的[官网下载](https://www.python.org/downloads/)，这里有很多版本，选择合适的版本和平台下载即可
+
+我选择是2.x，我下载时最新的版本是2.7.12，windows平台的安装就是一路下一步即可安装好。
+
+### 交互模式
+在开始菜单搜索或找到python安装目录，打开IDLE(Python GUI)，即进入了python的交互模式，
+
+![]({{BLOG_IMG}}296.png)
+
+交互模式的意思就是，你可以输入一行代码，然后按下回车，python会立马告诉你执行结果，这个特别好用。
+
+    print "Hello World"
+
+上面代码的执行结果就是打印出Hellow World，print是python的输出语句。
+
+### 第一个程序
+打开菜单->File->New File（ctrl + N），就可以进入文本编辑模式，这里可以输入多行代码，比如键入如下代码：
+
+    print "Hello World";
+    print 22 + 10;
+
+然后保存到某个目录，名字为xxx.py，菜单->Run->Run Module（F5），即可执行上面的代码。
+
 ## 记住内存和变量
 
 ## 基本数学运算
@@ -50,3 +74,5 @@ description: 本文是《父与子的编程之旅：与小卡特一起学Python�
 ## 文件输入与输出
 
 ## 总结
+
+- [1] https://www.python.org/

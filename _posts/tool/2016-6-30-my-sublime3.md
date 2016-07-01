@@ -5,7 +5,7 @@ category : tool
 tagline: "原创"
 tags : [tool]
 keywords: [sublime, sublime3, tool]
-description: 
+description: 本文记录我是用sublime 3的笔记，涉及到方方面面，主要是方便自己，也希望能够帮到你。
 ---
 {% include JB/setup %}
 今天打开[sublime][1]的官网，发现官网上已经推荐默认推荐大家使用sublime text 3了，作为追赶时代的人，我怎么能够落后呢？我决定开始使用sublime3，同时我也希望你也能够使用。

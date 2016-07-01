@@ -122,9 +122,12 @@ sublime的插件工具也是一个插件，这似乎是个悖论，需要安装�
 ### Liquid
 提供Liquid语法支持，如果你也写博客的话不妨试试。
 
+### SyncedSidebarBg
+有很多强迫症同学发现自己的目录栏和编辑部分的背景颜色不一致，这个插件可以帮你解决这个让你不爽的问题
+
 ### [LESS](https://github.com/danro/LESS-sublime)
 
-这是一个非常棒的插件，可以让sublime支持less的语法高亮和语法提示，对于搞less的同学灰常重要，不过多解释。
+这是一个非常棒的插件，可以让sublime支持less的语法高亮和语法提示，对于搞less的同学灰常重要，不做过多解释。
 
 ### SCSS
 提供sass语法高亮支持，不建议安装SASS，SCSS更适合.scss语法支持。

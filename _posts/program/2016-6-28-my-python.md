@@ -132,6 +132,60 @@ python中的变量是没有类型，那么如何检查一个变量当前的值�
     type(c) # <type 'str'>
 
 ## 输入
+对一个程序来说最重要的一点就是输入了，如果电脑不能响应输入，那么就一点用处都没有了。
+
+### raw_input
+raw_input函数可以从用户哪里得到一个字符串
+    
+    print "请输入："
+    some = raw_input();
+    print "你的输入是：", some
+
+上面的程序会输出你输入的任何字符
+
+raw_input还可以接受一个参数，这个参数会被作为输出，上面的程序可以简化为下面这样
+
+    some = raw_input("请输入：")
+    print "你的输入是：", some
+
+### print
+print用来给打印输出，简单点说就是向控制台打印一些东西
+
+    print "yan"
+    print "yan"
+    print "yan"
+
+上面的三条语句会得到下面的输出
+
+    yan
+    yan
+    yan
+
+如果想在同一行打印的话可以在结尾加上逗号
+
+    print "yan",
+    print "yan",
+    print "yan"
+
+上面的语句会得到下面的输出
+
+    yan yan yan
+
+中间会有一个空格，print还支持多个参数，中间用逗号分隔
+
+    print "yan", "yan", "yan"
+
+上面的语句会得到下面的输出，中间也有一个空格
+
+    yan yan yan
+
+### 来自互联网的输入
+可以python的内置库，可以获得从互联网的而输入，下面的代码可以输出我的博客内容
+
+    import urllib2
+    file = urllib2.urlopen("http://yanhaijing.com")
+    msg = file.read()
+    print msg
 
 ## 判断在判断
 

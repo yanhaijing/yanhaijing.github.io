@@ -75,4 +75,4 @@ description: 本文是《父与子的编程之旅：与小卡特一起学Python�
 
 ## 总结
 
-- [1] https://www.python.org/
+[1]: https://www.python.org/

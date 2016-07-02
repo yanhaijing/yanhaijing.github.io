@@ -116,6 +116,9 @@ sublime的插件工具也是一个插件，这似乎是个悖论，需要安装�
 
 ![]({{BLOG_IMG}}143.bmp)
 
+### Vintage
+如果你习惯使用vim，那么可以安装这个插件，这个插件可以让sublime像vim一样。
+
 ### [Smarty](https://packagecontrol.io/packages/Smarty)
 提供smarty语法的支持。Smarty插件默认的分隔符是`{}`，如果你使用的分隔符不同可以更改插件目录的Smarty.tmPreferences文件，找到其中的SMARTY_LDELIM和SMARTY_RDELIM，修改为你的分隔符即可。
 

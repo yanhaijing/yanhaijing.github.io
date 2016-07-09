@@ -281,10 +281,174 @@ python中没有多行注释，只能用单行注视模拟多行注释，像下�
     # 多行注释
     # ***********
 
-## 嵌套与可变循环
-
-
 ## 收集起来——列表和字典
+python中存取数据有两种类型的东西，一种叫做列表，一种叫做字典。
+
+### 列表
+python中的列表和数组很像，创建列表的语法如下所示：
+
+    list = [1, 2, 3, 4]
+    print list[0] # 1
+
+可以用append向列表添加一个元素
+
+    list = []
+    list.append(1)
+    print list # 1
+
+### 列表分片
+python中想从列表中获取列表片段，需要用到分片(slicing)
+
+    list = ['a', 'b', 'c', 'd']
+    print list[1:3]
+
+    >>> ['b', 'c'] 
+
+分片的语法可以简写，可以省略冒号前后的数字
+
+    list = [1, 2, 3, 4, 5]
+
+    print list[:]
+    >>> [1, 2, 3, 4, 5]
+
+    print list[3:]
+    >>> [4, 5]
+    
+    print list[:3]
+    >>> [1, 2, 3]
+
+需要注意分片会返回一个新的列表，不会修改原列表。
+
+### in关键字
+要查找摸个元素是否在列表中，可以使用in
+
+    list = ['a']
+
+    print 'a' in list
+    >>> True
+
+### del关键字
+del 从列表删除指定位置元素
+
+    list = ['a', 'b', 'c']
+    del list[0]
+    print list
+    >>> ['b', 'c']
+
+### 列表方法
+列表有很多方法，上面的append就是其中之一
+
+- append
+- extend
+- insert
+- remove
+- pop 
+- index
+- sort
+- reverse
+- sorted
+
+append用来在列表末尾添加一个元素
+
+    list = [1]
+    list.append(2)
+    print list
+    >>> [1, 2]
+
+extend在列表末尾添加多个元素
+
+    list = [1]
+    list.extend([2, 3])
+    print list
+    >>> [1, 2, 3]
+
+insert在指定位置插入元素
+
+    list = [1, 2, 3]
+    list.insert(1, 'a')
+    print list
+    >>> [1, 'a', 2, 3]
+
+remove从列表中删除指定元素，如果删除的元素不在列表中会报错，可以和in关键字配合使用
+
+    list = [1, 2, 3]
+    list.remove(2)
+    print list
+    >>> [1, 3]
+
+**注意：**和del区分，del用来删除指定的索引位置元素
+
+pop去除列表中最后一个元素
+
+    list = [1, 2, 3]
+    a = list.pop()
+    print a
+    print list
+    >>> 3
+    >>> [1, 2]
+
+index查找指定元素在列表中的索引，如果删除的元素不在列表中会报错，可以和in关键字配合使用
+
+    list = [1, 2, 3]
+    print list.index(3)
+    >>> 2
+
+**注意：**和in区分开，in会返回布尔值，index会返回索引
+
+sort用来给列表排序
+
+    list = [4, 2, 1]
+    list.sort()
+    print list
+    >>> [1, 2, 4] 
+
+如果想倒叙排列列表，可以给sort传一个参数
+
+    list = [1, 2, 3]
+    list.sort(reverse = True)
+    print list
+    >>> [3, 2, 1]
+
+**注意：**sort会修改原来的列表，而不是创建一个新的列表，所以下面的操作不正确
+
+    print list.sort() # 不正确的做法
+    >>> None
+    
+    list.sort() # 需要分两步
+    print list
+
+reverse翻转列表，逆序排序数组还可以用这个
+
+    list = [1, 2, 3]
+    list.reverse()
+    print list
+    >>> [3, 2, 1]
+
+sorted输一个系统函数，而不是数组函数，可以得到一个列表的有序副本，而不会影响原来的列表
+
+    list = [3, 2, 1]
+    nlist = sorted(list)
+    print list
+    print nlist
+    >>> [3, 2, 1]
+    >>> [1, 2, 3]
+
+### 循环列表
+列表可用for循环来遍历
+
+    for i in [1, 2, 3]:
+        print i
+    >>> 1
+    >>> 2
+    >>> 3
+
+### 不可变的列表
+pythton中的列表是可变类型，python中有一种不可变的列表——元组，元组的语法如下
+
+    tuple = (1, 2, 3) # 不可增删改
+
+### 字典
+
 
 ## 函数
 

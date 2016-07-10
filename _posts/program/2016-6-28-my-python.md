@@ -501,6 +501,72 @@ del用来删除字典中的数据
     >>> True
 
 ## 函数
+当程序变大以后就需要一些方法来把程序分解成更小的部分，在python中主要有三种方法：
+
+- 函数——就像代码的积木，可以反复的使用
+- 对象——把程序中的各个部分描述为自包含的单元
+- 模块——包含程序各部分的独立文件
+
+创建一个函数需要使用def关键字
+
+    def hello():
+        print 'hello world'
+    
+    hello()
+    >>> 'hello world'
+
+函数可以有多个参数，中间用逗号分隔
+
+    def hello(who):
+        print 'hello', who
+    hello()
+    >>> hello yan
+
+函数可以有返回值
+
+    def add(x, y):
+        return x + y
+
+    add(1, 2)
+    >>> 3
+
+函数内部的变量都是局部变量，在函数外部不能访问
+
+    def test():
+    x = 1
+    print x
+
+    x = 10
+    print x
+    test()
+    >>> 10
+    >>> 1
+
+在函数中可以访问全局变量，但不可修改，修改会创建一个局部变量
+
+    def test2():
+        y = 10
+        print y
+
+    y = 1
+    test2()
+    print y
+    >>> 10
+    >>> 1
+
+在函数内部想强制访问全局变量，需要使用global
+
+    def test3():
+        global z
+        z = 10
+        print z
+
+    z = 1
+    test3()
+    print z
+    >>> 1
+    >>> 10
+    >>> 10
 
 ## 对象
 

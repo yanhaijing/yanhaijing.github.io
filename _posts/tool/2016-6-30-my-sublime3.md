@@ -169,13 +169,19 @@ DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，�
 
 Terminal会占用默认的`ctrl + shift + t`这个快捷键，这个可以打开刚刚关闭的页面，所以我将这个快捷键修改为 `ctrl + alt + t`。
 
+### Git
+安装这个插件就可以在底部状态栏显示当前文件的git状态
+
+### TortoiseSVN
+安装这个插件可以在邮件显示svn提交命令，这样我就不用打开文件夹了
+
 ### AutoFileName
 以前用dreamweave的时候在引用文件的时候，可以自动补全文件名的功能，这个插件让sublime有了这个功能。
 
 ### AllAutocomplete
 自动完成插件，可在全部打开的文件中，自动完成。
 
-### Aligment
+### Alignment
 对齐插件，强迫症患者必备，可以按等号对齐两边的变量。
 
 ### SideBarEnhancements
@@ -189,6 +195,9 @@ Terminal会占用默认的`ctrl + shift + t`这个快捷键，这个可以打开
 
 ### HTMLEntity Snippets
 当你想输入html实体标签时，然后又记不住时，使用这个插件吧。
+
+### ConvertToUTF8
+这个插件可以让sublime3打开gbk编码的文件，但是不能保存，我还没找到更好的插件
 
 ### Package Syncing
 最后推荐一个同步插件，这个插件可以在不同的机器同步配置信息和插件，非常方便，但鉴于国内的墙太高，我都是直接把插件给手动备份了，然后直接拖进去，或者直接去github上下载对应的包。

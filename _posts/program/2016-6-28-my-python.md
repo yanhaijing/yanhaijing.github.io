@@ -569,8 +569,76 @@ del用来删除字典中的数据
     >>> 10
 
 ## 对象
+对象可以把函数和数据收集在一起。对象可以包含属性和动作。
+
+举个例子就是球，可以操作一个球，踢球，捡球，这些操作成为动作；球的颜色，大小称为球的属性。
+
+python中称为对象的属性和方法。
+
+### 创建对象
+python中创建对象分为两步，第一步是创建对象的描述——类；第二步使用类来创建一个真正的对象。
+    
+    # 定义对象描述
+    # __init__ 初始化对象方法
+    # setColor 对象的方法
+
+    class Ball:
+        def __init__(self, color):
+            self.color = color
+
+        def setColor(self, color):
+            self.color = color
+    
+    # 实例化对象
+    ball = Ball('red');
+    print ball.color
+
+    ball.setColor('green')
+    print ball.color
+
+    # python中的对象可动态添加属性，这一点和java不一样
+    ball.size = 'big'
+
+    >>> red
+    >>> green
+
+### “魔法”方法
+python中对象有一些魔法方法，上面的__init__就是，还有一个魔法方法是__str__，可以自定义对象的打印文本
+
+    class Ball:
+        def __str__():
+            return 'yanhaijing.com'
+
+    ball = Ball()
+    print ball
+
+    >>> yanhaijing.com
+
+### self
+python的对象方法调用时，的第一个参数表示调用的对象，self是约定俗成的做法，不是必须的。
+
+### 隐藏数据
+python也不支持私有的属性，这一点和js一样。
+
+### 继承
+在面向对象编程中，类可以从其他类继承属性和方法。
+
+    class People:
+        __init__(self, name):
+            self.name = name
+
+        talk():
+            # pass作为占位符，可以表示为空函数
+            pass
+    
+    # 继承People
+    class Teacher(People):
+        __init__(self, name):
+            # 调用父类方法
+            People.__init__(self, name)
 
 ## 模块
+
 
 ## 打印格式化与字符串
 

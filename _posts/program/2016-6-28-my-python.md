@@ -638,7 +638,60 @@ python也不支持私有的属性，这一点和js一样。
             People.__init__(self, name)
 
 ## 模块
+如果一个东西可以由几部分组成，我们就可以说这个东西是模块化的。乐高积木是最直观的例子了。
 
+python中每个文件都是一个模块，模块意味着分治，可以把一个复杂的系统拆分成由简单的部分组成，这在大型程序中是非常有意义的。
+
+模块是更高维度的抽象，可以把一组功能类似的函数，都放到一个模块中，一个复杂的模块也可以由更多简单的模块组成。
+
+### 创建模块
+模块就是一个文件，文件中的函数，变量都可以被别的模块引用，也就是说模块的一切的公开的
+
+    # module1.py
+    qiu = 1
+    def hello():
+        return 'hello'
+
+上面定义了一个模块，有一个公开的属性qiu和一个公开的函数hello。
+
+### 使用模块
+在其他文件中可以用import关键字引用模块。
+
+    import module1
+
+    print module1.qiu
+    print module1.hello()
+
+    >>> 1
+    >>> hello
+
+还可以换一种写法
+
+    from module1 import hello
+
+    print hello()
+
+    >>> hello
+
+### 标准模块
+python中内置了很多系统函数，要使用这些函数需要引用相应的模块，比如：
+
+- time
+- 随机数
+
+time模块能够获取你的计算机时钟的信息，其中比较常用的就是sleep可以用来让程序暂停一会
+
+    import time
+    time.sleep(1)
+
+random模块用于生成随机数
+
+    import random
+
+    print random.randint(0, 100) # 1-100之间随机数
+    print random.random() # 0-1之间随机数
+    >>> 4
+    >>> 0.5456454545
 
 ## 打印格式化与字符串
 

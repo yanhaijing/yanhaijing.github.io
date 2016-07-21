@@ -99,6 +99,7 @@ sublime的快捷键非常非常多，很难都记住，按照80/20原则，只�
 <tr><td>ctrl+j</td><td>合并选中的行（多行边一行）</td></tr>
 <tr><td>ctrl+kk</td><td>从光标处删除至行尾</td></tr>
 <tr><td>ctrl+shift+k</td><td>删除整行</td></tr>
+<tr><td>shift+ctrl+;</td><td>删除标签</td></tr>
 </tbody>
 </table>
 

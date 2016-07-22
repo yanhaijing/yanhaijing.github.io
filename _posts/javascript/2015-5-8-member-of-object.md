@@ -240,7 +240,7 @@ Object.prototype上的方法，都是实例方法，必须在对象实例上调�
 - hasOwnProperty
 - isPrototypeOf⑤
 - propertyIsEnumerable⑤
-- __proto__ ⑥
+- \_\_proto\_\_ ⑥
 
 ### hasOwnProperty
 > hasOwnProperty() 方法用来判断某个对象是否含有指定的自身属性。
@@ -275,9 +275,9 @@ Object.prototype上的方法，都是实例方法，必须在对象实例上调�
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable)。
 
-### __proto__
-> 一个对象的__proto__ 属性和自己的内部属性[[Prototype]]指向一个相同的值 (通常称这个值为原型)，原型的值可以是一个对象值也可以是null(比如说Object.prototype.__proto__的值就是null).该属性可能会引发一些错误，因为用户可能会不知道该属性的特殊性，而给它赋值，从而改变了这个对象的原型。 如果需要访问一个对象的原型，应该使用方法Object.getPrototypeOf。
-__proto__ 属性已经被添加在了ES6草案 §B.3.1中。
+### \_\_proto\_\_
+> 一个对象的\_\_proto\_\_ 属性和自己的内部属性[[Prototype]]指向一个相同的值 (通常称这个值为原型)，原型的值可以是一个对象值也可以是null(比如说Object.prototype.\_\_proto\_\_的值就是null).该属性可能会引发一些错误，因为用户可能会不知道该属性的特殊性，而给它赋值，从而改变了这个对象的原型。 如果需要访问一个对象的原型，应该使用方法Object.getPrototypeOf。
+\_\_proto\_\_ 属性已经被添加在了ES6草案 §B.3.1中。
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)。
 

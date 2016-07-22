@@ -14,11 +14,11 @@ description: 本文分为两部分，分别介绍Object和Object.prototype上的
 本文分为两部分，分别介绍Object和Object.prototype上的一些常用方法。主要参考了[MDN][1]，每个方法都给出了[MDN][1]的链接。
 
 ## 前言
-查看一个对象属性的最好方法，不是去百度，也不是去google，而是用下面的方法（抄袭自 《[DOM启蒙](http://www.amazon.cn/gp/product/B00JWXDB52/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00JWXDB52&linkCode=as2&tag=yanhaijing-23)》）：
+查看一个对象属性的最好方法，不是去百度，也不是去google，而是用下面的方法（来自《[DOM启蒙](http://www.amazon.cn/gp/product/B00JWXDB52/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00JWXDB52&linkCode=as2&tag=yanhaijing-23)》）：
 	
 	Object.getOwnPropertyNames(Object).sort().forEach(function (val) {console.log(val, '\n')});
 
-上面的代码会有如下的输出：
+上面的代码会有如下的输出，我的环境是Chrome(52.0.2743.82 m)，如果你的环境不同输出可能不一样：
 
 ![]({{BLOG_IMG}}169.png)
 
@@ -41,6 +41,7 @@ description: 本文分为两部分，分别介绍Object和Object.prototype上的
 - freeze⑤
 - isFrozen⑤
 - assign⑥
+- getOwnPropertySymbols⑥
 - is⑥
 - setPrototypeOf⑥
 
@@ -207,12 +208,39 @@ Object.preventExtensions 只能阻止一个对象不能再添加新的自身属�
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/isFrozen)。
 
+### assign
+> Object.assign() 方法可以把任意多个的源对象自身的可枚举属性拷贝给目标对象，然后返回目标对象。
+
+[更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+	
+	Object.assign(target, ...sources)
+
+### getOwnPropertySymbols 
+> Object.getOwnPropertySymbols() 方法会返回一个数组，该数组包含了指定对象自身的（非继承的）所有 symbol 属性键。
+
+[更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols)
+
+### is
+> Object.is() 方法用来判断两个值是否是同一个值。
+
+Object.is与严格比较运算符（===）的行为基本一致，不同之处只有两个：一是+0不等于-0，二是NaN等于自身。
+
+[更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/is)
+
+### setPrototypeOf
+> 将一个指定的对象的原型设置为另一个对象或者null(既对象的[[Prototype]]内部属性)。
+
+	Object.setPrototypeOf(obj, prototype)
+
+[更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf)
+
 ## Object.prototype
 Object.prototype上的方法，都是实例方法，必须在对象实例上调用。
 
 - hasOwnProperty
 - isPrototypeOf⑤
 - propertyIsEnumerable⑤
+- __proto__ ⑥
 
 ### hasOwnProperty
 > hasOwnProperty() 方法用来判断某个对象是否含有指定的自身属性。
@@ -246,6 +274,12 @@ Object.prototype上的方法，都是实例方法，必须在对象实例上调�
 如果对象没有指定的属性，该方法返回 false。
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable)。
+
+### __proto__
+> 一个对象的__proto__ 属性和自己的内部属性[[Prototype]]指向一个相同的值 (通常称这个值为原型)，原型的值可以是一个对象值也可以是null(比如说Object.prototype.__proto__的值就是null).该属性可能会引发一些错误，因为用户可能会不知道该属性的特殊性，而给它赋值，从而改变了这个对象的原型。 如果需要访问一个对象的原型，应该使用方法Object.getPrototypeOf。
+__proto__ 属性已经被添加在了ES6草案 §B.3.1中。
+
+[更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)。
 
 ## 总结
 除了上面介绍的方法，还有一些实验方法，和不常用的方法，可以在[这里](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)找到。

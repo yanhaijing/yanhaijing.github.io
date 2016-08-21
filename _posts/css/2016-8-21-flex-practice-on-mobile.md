@@ -9,7 +9,7 @@ description:
 ---
 {% include JB/setup %}
 
-待续。。。
+你的打赏，是我写下去的动力！！！待续。。。
 
 ## 参考资料
 - [Flex 布局教程：语法篇](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)

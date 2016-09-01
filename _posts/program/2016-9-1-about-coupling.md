@@ -1,17 +1,17 @@
 ---
 layout: post
-title: 详解7种耦合关系
+title: 图解7种耦合关系
 category : program
 tagline: "原创"
 tags : [program]
 keywords: [program, 耦合, 内聚]
-description: 本文将详细讲解七种耦合的不同之处
+description: 本文将用图文详细讲解七种耦合的不同之处
 ---
 {% include JB/setup %}
 
 之前组内同学问我耦合的关系，我没给对方讲清楚，今天借这个机会来深入讲讲模块之间的耦合关系这个事情。
 
-本文将详细讲解七种耦合的不同之处。
+本文将用图文详细讲解七种耦合的不同之处。
 
 
 ## 高内聚与低耦合

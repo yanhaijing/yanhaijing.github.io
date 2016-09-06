@@ -9,7 +9,7 @@ description: 作为”30 HTML和CSS最佳实践”的后续，本周，我们将
 ---
 {% include JB/setup %}
 
-作为”[30 HTML和CSS最佳实践](http://net.tutsplus.com/tutorials/html-css-techniques/30-html-best-practices-for-beginners/)”的后续，本周，我们将回顾JavaScript的知识 ！如果你看完了下面的内容，请务必让我们知道你掌握的小技巧！
+作为”[30 HTML和CSS最佳实践](http://yanhaijing.com/html/2013/12/23/30-html-best-practices-for-beginners/)”的后续，本周，我们将回顾JavaScript的知识 ！如果你看完了下面的内容，请务必让我们知道你掌握的小技巧！
 
 ## 1.使用 === 代替 == ##
 

@@ -42,6 +42,7 @@ group: navigation
 
 ## 友情链接 [我来添加](https://github.com/yanhaijing/yanhaijing.github.com/edit/master/yan_about.md)
 
+- [@百度经验研发团队](https://exp-team.github.io/)
 - [@justjavac(迷渡)](http://justjavac.com/)
 - [@腊八粥(IT翻译博客)](http://www.labazhou.net/)
 - [@php101(土豆丫)](http://www.php101.cn/)

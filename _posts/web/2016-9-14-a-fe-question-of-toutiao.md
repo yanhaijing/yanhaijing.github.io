@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 一套前端笔试题（今日头条）
+title: 一套校招前端笔试题
 category : web
 tagline: "原创"
 tags : [web]

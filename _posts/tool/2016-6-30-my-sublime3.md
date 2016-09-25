@@ -113,9 +113,16 @@ sublime的插件工具也是一个插件，这似乎是个悖论，需要安装�
 
     import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
 
+或者下面的也可以
+
+    import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'https://packagecontrol.io/' + pf.replace(' ','%20')).read())
+
 现在在Preferences中就能看到 Package Control了，如下图所示。
 
 ![]({{BLOG_IMG}}143.bmp)
+
+### JavaScript-Completions
+原生js提示插件，这个插件能够提供很多js语法。
 
 ### Vintage
 如果你习惯使用vim，那么可以安装这个插件，这个插件可以让sublime像vim一样。

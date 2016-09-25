@@ -19,6 +19,8 @@ description:
 - [专业跑步教练王晓刚 带你科学跑步_百度经验](http://jingyan.baidu.com/zt/run/index.html)
 - [小欧教你玩转R9](http://jingyan.baidu.com/zt/oppo/index.html)
 - [关于狗狗的一生，你必须知道的事](http://jingyan.baidu.com/zt/YCW1/index.html)
+- [宠物，你愿和谁相伴？](http://jingyan.baidu.com/zt/YCWZT2/index.html)
+- [苹果在此，我来削皮](http://jingyan.baidu.com/zt/PGZC/wap/index.html)
 
 ## 三个系统
 

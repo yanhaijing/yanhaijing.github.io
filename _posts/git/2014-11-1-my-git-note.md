@@ -23,7 +23,7 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 
 在 Windows 上安装 Git 同样轻松，有个叫做 msysGit 的项目提供了安装包：
 
-	http://msysgit.github.io/
+	https://git-for-windows.github.io/
 
 完成安装之后，就可以使用命令行的 git 工具（已经自带了 ssh 客户端）了，另外还有一个图形界面的 Git 项目管理工具。
 

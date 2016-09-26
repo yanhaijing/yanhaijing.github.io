@@ -22,7 +22,7 @@ description:
 		
 		Box = function(value){
 			//私有成员
-			privateStaticUser = value; 
+			var privateStaticUser = value; 
 			
 			//这个是私有方法
 			function privateMethod(){

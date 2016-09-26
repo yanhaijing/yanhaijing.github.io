@@ -27,6 +27,10 @@
             })
             .always(function() {
             });
+
+            $(window).on('load', function () {
+                $('.desc_link').html('返回首页').prop('href', '/');
+            });
         </script>
         <script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8" homePageUrl="http://yanhaijing.com" homePageName="返回首页"></script>
     </body>

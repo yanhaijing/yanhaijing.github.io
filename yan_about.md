@@ -12,6 +12,11 @@ group: navigation
 
 目前就职于百度，从事Web前端开发工作。
 
+## 微信公众号
+你可以关注我的微信公众号：**颜海镜**，来和我交流。
+
+<img src="{{ HOME_PATH }}img/weixin-open.jpg" alt="微信公众号：颜海镜" width="240" height="240">
+
 ## 我的作品 
 <a target="_blank" href="http://yanhaijing.com/myProject/" title="我的作品">http://yanhaijing.com/myProject/</a>
 
@@ -37,6 +42,7 @@ group: navigation
 
 ## 友情链接 [我来添加](https://github.com/yanhaijing/yanhaijing.github.com/edit/master/yan_about.md)
 
+- [@百度经验研发团队](https://exp-team.github.io/)
 - [@justjavac(迷渡)](http://justjavac.com/)
 - [@腊八粥(IT翻译博客)](http://www.labazhou.net/)
 - [@php101(土豆丫)](http://www.php101.cn/)

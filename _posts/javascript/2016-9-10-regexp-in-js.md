@@ -9,6 +9,8 @@ description:
 ---
 {% include JB/setup %}
 
+你的打赏，是我写下去的动力！！！待续。。。
+
 ## 语法
 
 ### 简单字符

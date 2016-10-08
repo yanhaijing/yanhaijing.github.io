@@ -9,7 +9,7 @@ description: 本文将用代码来说明函数参数和arguments的区别
 ---
 {% include JB/setup %}
 
-最近我在看《你不知道的JavaScript》中卷，在这里我也强烈建议你也读一读这本书，其中提到了一个函数参数和arguments的区别，在此做一个记录。
+最近我在看《[你不知道的JavaScript](https://www.amazon.cn/gp/product/B01LMYXGAI/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B01LMYXGAI&linkCode=as2&tag=yanhaijing-23)》中卷，在这里我也强烈建议你也读一读这本书，其中提到了一个函数参数和arguments的区别，在此做一个记录。
 
 本文将用代码来说明两者的区别。
 

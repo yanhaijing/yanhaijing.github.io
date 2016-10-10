@@ -54,7 +54,7 @@ description: 手把手教你如何在windows上安装java，并配置java环境�
 
 我们可以键入`javac -version`来验证
 
-![]({{BLOG_IMG}}412.png)
+![]({{BLOG_IMG}}414.png)
 
 第三步，配置CLASSPATH，新建变量`CLASSPATH`，键入下面的语句`.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar`
 
@@ -71,7 +71,7 @@ description: 手把手教你如何在windows上安装java，并配置java环境�
 
 然后运行`javac Hello`编译，在用`java`执行
 
-![]({{BLOG_IMG}}414.png)
+![]({{BLOG_IMG}}415.png)
 
 ## 总结
 按照上面的步骤我们就将环境配置好了。

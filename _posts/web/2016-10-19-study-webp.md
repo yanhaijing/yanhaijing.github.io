@@ -79,13 +79,17 @@ webp在安卓上的兼容性非常好，但ios完全不支持，[caniuse](http:/
     }
  
 目前是基于回调，可以封装成promise。
- 
+
+## 相关工具
+- [iSparta 图片压缩与格式转换工具](https://isparta.github.io/)
+- [智图 高效优质的图片优化平台](http://zhitu.isux.us/)
+
 ## 测试案例
-[官方demo](https://developers.google.com/speed/webp/gallery)
-[isparta静态图片](https://isparta.github.io/compare-webp/index.html#12345)
-[isparta动图](https://isparta.github.io/compare-webp/index_a.html#12)
+- [官方demo](https://developers.google.com/speed/webp/gallery)
+- [isparta静态图片](https://isparta.github.io/compare-webp/index.html#12345)
+- [isparta动图](https://isparta.github.io/compare-webp/index_a.html#12)
 
 ## 参考资料
-[webp官网](https://developers.google.com/speed/webp/)
-[WebP 探寻之路](https://isux.tencent.com/introduction-of-webp.html)
-[WebP使用方案](http://zhitu.isux.us/index.php/preview/webp)   
+- [webp官网](https://developers.google.com/speed/webp/)
+- [WebP 探寻之路](https://isux.tencent.com/introduction-of-webp.html)
+- [WebP使用方案](http://zhitu.isux.us/index.php/preview/webp)   

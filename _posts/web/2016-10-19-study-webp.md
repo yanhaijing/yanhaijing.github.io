@@ -80,6 +80,8 @@ webp在安卓上的兼容性非常好，但ios完全不支持，[caniuse](http:/
  
 目前是基于回调，可以封装成promise。
 
+我写了一组测试的demo，可以看这里：https://github.com/yanhaijing/webp
+
 ## 相关工具
 - [iSparta 图片压缩与格式转换工具](https://isparta.github.io/)
 - [智图 高效优质的图片优化平台](http://zhitu.isux.us/)

@@ -57,6 +57,8 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 	git config --global alias.br branch #git br
 	git config --global alias.ci commit #git ci
 
+	git config --global alias.ll commit #git ci
+
 笔者一般只配置配置这几个，你也可以配置其他命令。
 
 ## 新建仓库

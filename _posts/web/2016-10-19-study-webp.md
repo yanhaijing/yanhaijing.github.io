@@ -95,3 +95,4 @@ webp在安卓上的兼容性非常好，但ios完全不支持，[caniuse](http:/
 - [webp官网](https://developers.google.com/speed/webp/)
 - [WebP 探寻之路](https://isux.tencent.com/introduction-of-webp.html)
 - [WebP使用方案](http://zhitu.isux.us/index.php/preview/webp)   
+- [WebP Images & Performance](https://davidwalsh.name/webp-images-performance)

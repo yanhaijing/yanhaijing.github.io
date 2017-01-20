@@ -36,11 +36,10 @@ description: 最近对经验无线步骤页进行了改版，今天在组内做�
 一个非常小的点是fis打包的配置，为了能够自动把v2和v1的打包文件区分开我们用到了正则的`?!`技巧，关于正则我也打算写一篇博文《[详解JavaScript正则表达式](http://yanhaijing.com/javascript/2016/09/10/regexp-in-js)》。
 
     pack: {
-        '/static/pkg/step2.css': [
-            '/widget/v2/css/base.less',
+        'xxx/step2.css': [
             /\/widget\/v2\/(?!css\/).*\.less/
         ],
-        '/static/pkg/step.css': [
+        'xxx/step.css': [
             /\/widget\/(?!v2\/).*\.less/,
             '/widget/**.css'
         ]
@@ -110,9 +109,9 @@ description: 最近对经验无线步骤页进行了改版，今天在组内做�
 
 下面上一段步骤页滑动模块的js
 
-    import $ from 'common:widget/lib/gmu/zepto/zepto.js';
-    import {UIBase} from 'common:widget/js/ui/base/base.es';
-    var ec = require('common:widget/js/util/event/event.es').event;
+    import $ from 'zepto.js';
+    import {UIBase} from 'base.es';
+    var ec = require('event.es').event;
 
     class Slider extends UIBase {
         constructor(index) {

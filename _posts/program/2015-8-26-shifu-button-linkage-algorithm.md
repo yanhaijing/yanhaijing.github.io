@@ -36,35 +36,14 @@ description: 最近转到了百度师傅团队，接受百度师傅的开发，�
 ### buttonList
 这个数据结构用来存放按钮的状态，上面例子中的数据结构片段如下：
 
-	"buttonGroup": [{
-        "variable": "type",
-        "text": "选择类型",
-        "list": [{
-            "value": 1,
-            "text": "iPhone 4",
-            "subText": ""
-            "status": 1
-            }, {
-                "value": 2,
-                "text": "iPhone 4s",
-                "subText": ""
-                "status": 1
-            }
-        ]
-    }]
-
-其中大部分都是展现文案，和变量名称。
-
-- variable 当前按钮组的变量名
-- value 当前选中按钮的值
-
-其中status用来存储按钮的状态：
-
-- 0 不可选
-- 1 可选
-- 2 选中
-
-**注意：**value=1 不一定排在数组的第一个，value和数序无关，数组的顺序是按钮的展示顺序。
+	"buttonGroup": [
+        {
+            "text": "iPhone 4"
+        },
+        {
+            "text": "iPhone 4s"
+        }
+    ]
 
 ### map
 这个数据结构主要用来查找按钮在buttonGroup中的索引。上面例子中的按钮数据结构对应的map如下所示：
@@ -89,10 +68,7 @@ description: 最近转到了百度师傅团队，接受百度师傅的开发，�
             "type": 1,
             "method": 1,
             "color": 1
-        },
-        "price": 17900,
-        "regularPrice": 29900,
-        "stockout": false
+        }
     }]
 
 这个数据结构的意思代表，按钮组中对应的值可选中。

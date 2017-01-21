@@ -1,7 +1,7 @@
 ---
 layout: page
 title : 关于我
-tagline: <a href="https://github.com/yanhaijing" target="_blank"><img src="https://img.shields.io/badge/程序员-前端工程师-brightgreen.svg" alt="程序员-前端工程师"></a> <a href="http://yanhaijing.com/spring/" target="_blank"><img src="https://img.shields.io/badge/诗人-业余-blue.svg" alt="诗人-业余"></a>
+tagline: <a href="https://github.com/yanhaijing" target="_blank"><img src="https://img.shields.io/badge/程序员-前端工程师-brightgreen.svg" alt="程序员-前端工程师"></a> <a href="/spring/" target="_blank"><img src="https://img.shields.io/badge/诗人-业余-blue.svg" alt="诗人-业余"></a>
 header : Post Archive
 group: navigation
 ---
@@ -18,10 +18,10 @@ group: navigation
 <img src="{{ HOME_PATH }}img/weixin-open.jpg" alt="微信公众号：颜海镜" width="240" height="240">
 
 ## 我的作品 
-<a target="_blank" href="http://yanhaijing.com/myProject/" title="我的作品">http://yanhaijing.com/myProject/</a>
+<a target="_blank" href="/myProject/" title="我的作品">/myProject/</a>
 
-## [我的钱包](http://yanhaijing.com/mywallet/)
-这是我的[收款主页](http://yanhaijing.com/mywallet/)，希望我的博客和开源项目能够帮到你，期待你能给我一点鼓励，￥_￥
+## [我的钱包](/mywallet/)
+这是我的[收款主页](/mywallet/)，希望我的博客和开源项目能够帮到你，期待你能给我一点鼓励，￥_￥
 
 ## 我的读书
 我在豆瓣维护了我的[读书清单](https://book.douban.com/people/yanhaijing/)，如果可以你可以送我我想读的书单中的书。
@@ -33,10 +33,11 @@ group: navigation
 <a target="_blank" href="http://url.cn/OXkoEC" rel="nofollow"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="CSS家园" title="CSS家园"></a>
 
 ## 更多信息
+[![]({{ HOME_PATH }}img/twitter.png)](https://twitter.com/yanhaijing "我在推特")
 [![]({{ HOME_PATH }}img/auth-douban.png)](http://www.douban.com/people/yanhaijing/ "我在豆瓣")
 [![]({{ HOME_PATH }}img/turing.jpg)](http://www.ituring.com.cn/users/121364 "我在图灵")
 [![]({{ HOME_PATH }}img/zhihu.jpg)](https://www.zhihu.com/people/yanhaijing "我在知乎")
-[![]({{ HOME_PATH }}img/twitter.png)](https://twitter.com/yanhaijing "我在推特")
+[![]({{ HOME_PATH }}img/jianshu.jpg)](http://www.jianshu.com/users/63a87c3a4c79/timeline "我在简书")
 [![]({{ HOME_PATH }}img/segmentfault.jpg)](https://segmentfault.com/u/yanhaijing "我在segmentfault")
 [![]({{ HOME_PATH }}img/stackoverflow.jpg)](http://stackoverflow.com/users/2681005/yanhaijing "我在stackoverflow")
 

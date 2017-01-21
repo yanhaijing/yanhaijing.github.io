@@ -18,7 +18,7 @@ group: navigation
 <img src="{{ HOME_PATH }}img/weixin-open.jpg" alt="微信公众号：颜海镜" width="240" height="240">
 
 ## 我的作品 
-<a target="_blank" href="/myProject/" title="我的作品">/myProject/</a>
+<a target="_blank" href="/myProject/" title="我的作品">颜海镜的项目</a>
 
 ## [我的钱包](/mywallet/)
 这是我的[收款主页](/mywallet/)，希望我的博客和开源项目能够帮到你，期待你能给我一点鼓励，￥_￥

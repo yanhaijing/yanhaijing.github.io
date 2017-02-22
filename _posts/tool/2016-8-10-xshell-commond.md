@@ -34,7 +34,7 @@ description: 今天来说说如何使用xshell的命令集来加快登录线上�
 
     Sub Main
         ' *** Send ***
-        xsh.Screen.Send("ssh work@机器")
+        xsh.Screen.Send("ssh user@机器")
         xsh.Screen.Send(VbCr)
         ' *** WaitForString ***
         xsh.Screen.WaitForString("password:")

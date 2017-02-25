@@ -1,5 +1,5 @@
 <div class="weixin-open clearfix">
-    <h2>微信公众号</h2>
+    <h2>公众号</h2>
     扫码或搜索：<strong>颜海镜</strong>，最新博文优先推送
     <figure>
         <img src="{{ HOME_PATH }}img/weixin-open.jpg" alt="微信公众号：颜海镜" width="240" height="240">

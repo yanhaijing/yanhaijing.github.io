@@ -3,7 +3,7 @@
 
 <img src="http://yanhaijing.com/img/facelessman.png" width="120">
 
-##关于我
+## 关于我
 [这里有我的简介](http://yanhaijing.com/yan_about.html)
 
 ## 技术支持
@@ -13,7 +13,7 @@
 - [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)
 - [在Windows系统配置Jekyll](http://yanhaijing.com/jekyll/2011/12/30/run-jekyll-on-window)
 
-##联系方式
+## 联系方式
 - [Weibo](http://weibo.com/yanhaijing1234 "yanhaijing's Weibo")
 - [Email](http://yanhaijing@yeah.net "yanhaijing's Email")
 

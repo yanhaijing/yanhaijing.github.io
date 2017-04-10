@@ -1,11 +1,22 @@
 ---
 layout: post
 title: 红蓝墨水之谜？
-category : math
-tagline: "原创"
-tags : [math]
-keywords: [数学]
+category: math
+tagline: 原创
+tags:
+  - math
+keywords:
+  - 数学
 description: 一道很有意思的面试题
+comments:
+  - author:
+      type: full
+      displayName: yanhaijing
+      url: 'https://github.com/yanhaijing'
+      picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
+    content: test
+    date: 2017-04-10T11:45:51.606Z
+
 ---
 {% include JB/setup %}
 

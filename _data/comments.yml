@@ -13,6 +13,19 @@ red-blue-ink:
       picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
     content: ts
     date: 2017-04-10T13:07:12.772Z
+  - author:
+      type: full
+      displayName: yanhaijing
+      url: 'https://github.com/yanhaijing'
+      picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
+    content: |-
+      3123
+      123
+
+      123
+
+      4444
+    date: 2017-04-10T13:46:35.798Z
 some-of-module:
   - author:
       type: full

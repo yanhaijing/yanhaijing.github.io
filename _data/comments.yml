@@ -41,3 +41,10 @@ some-of-module:
       picture: 'https://avatars2.githubusercontent.com/u/11425811?v=3&s=73'
     content: '&#x6D4B;&#x8BD5;&#x8BC4;&#x8BBA;'
     date: 2017-04-10T14:45:39.580Z
+  - author:
+      type: github
+      displayName: Fanxmistic
+      url: 'https://github.com/Fanxmistic'
+      picture: 'https://avatars2.githubusercontent.com/u/11425811?v=3&s=73'
+    content: '&#x6D4B;&#x8BD5;&#x8BC4;&#x8BBA;'
+    date: 2017-04-10T14:46:08.193Z

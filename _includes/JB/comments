@@ -3,6 +3,8 @@
 {% case site.JB.comments.provider %}
 {% when "duoshuo" %}
   {% include JB/comments-providers/duoshuo %}
+{% when "commentit" %}
+  {% include JB/comments-providers/commentit %}
 {% when "disqus" %}
   {% include JB/comments-providers/disqus %}
 {% when "livefyre" %}

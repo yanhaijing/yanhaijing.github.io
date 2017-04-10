@@ -84,11 +84,14 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : duoshuo
+    provider : commentit
     disqus :
       short_name : yanhaijing
     duoshuo :
       short_name : yanhaijing
+    commentit :
+      commentitUsername: yanhaijing
+      commentitRepo: yanhaijing/yanhaijing.github.com
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.

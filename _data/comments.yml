@@ -6,3 +6,45 @@ red-blue-ink:
       picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
     content: test
     date: 2017-04-10T12:16:29.318Z
+  - author:
+      type: full
+      displayName: yanhaijing
+      url: 'https://github.com/yanhaijing'
+      picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
+    content: ts
+    date: 2017-04-10T13:07:12.772Z
+  - author:
+      type: full
+      displayName: yanhaijing
+      url: 'https://github.com/yanhaijing'
+      picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
+    content: |-
+      3123
+      123
+
+      123
+
+      4444
+    date: 2017-04-10T13:46:35.798Z
+some-of-module:
+  - author:
+      type: full
+      displayName: yanhaijing
+      url: 'https://github.com/yanhaijing'
+      picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
+    content: test2
+    date: 2017-04-10T13:07:07.910Z
+  - author:
+      type: github
+      displayName: Fanxmistic
+      url: 'https://github.com/Fanxmistic'
+      picture: 'https://avatars2.githubusercontent.com/u/11425811?v=3&s=73'
+    content: '&#x6D4B;&#x8BD5;&#x8BC4;&#x8BBA;'
+    date: 2017-04-10T14:45:39.580Z
+  - author:
+      type: github
+      displayName: Fanxmistic
+      url: 'https://github.com/Fanxmistic'
+      picture: 'https://avatars2.githubusercontent.com/u/11425811?v=3&s=73'
+    content: '&#x6D4B;&#x8BD5;&#x8BC4;&#x8BBA;'
+    date: 2017-04-10T14:46:08.193Z

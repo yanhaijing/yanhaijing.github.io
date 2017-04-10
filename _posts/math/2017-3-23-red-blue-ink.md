@@ -16,6 +16,13 @@ comments:
       picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
     content: test
     date: 2017-04-10T11:45:51.606Z
+  - author:
+      type: full
+      displayName: yanhaijing
+      url: 'https://github.com/yanhaijing'
+      picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
+    content: test
+    date: 2017-04-10T11:48:58.285Z
 
 ---
 {% include JB/setup %}

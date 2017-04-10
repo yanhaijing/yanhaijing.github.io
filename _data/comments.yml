@@ -6,3 +6,11 @@ red-blue-ink:
       picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
     content: test
     date: 2017-04-10T12:16:29.318Z
+some-of-module:
+  - author:
+      type: full
+      displayName: yanhaijing
+      url: 'https://github.com/yanhaijing'
+      picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
+    content: test2
+    date: 2017-04-10T13:07:07.910Z

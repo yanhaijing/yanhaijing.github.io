@@ -15,6 +15,7 @@ description: 我常用的windows网络命令总结
 - ipconfig
 - netstat
 - route
+- nslookup
 - tracert
 - arp
 
@@ -29,6 +30,7 @@ description: 我常用的windows网络命令总结
 网卡相关操作
 
     $ ipconfig # 查看网卡信息，如ip地址
+    $ ipconfig /all # 查看mac地址
 
     $ ipconfig /displaydns # 查看dns缓存内容
     $ ipconfig /flushdns # 清除dns缓存
@@ -44,6 +46,11 @@ description: 我常用的windows网络命令总结
 查看和配置路由
 
     $ route print # 显示路由表
+
+## nslookup
+查询dns信息
+
+    $ nslookup jingyan.baidu.com # 查询指定域名的dns信息
 
 ## tracert
 跟踪路由信息

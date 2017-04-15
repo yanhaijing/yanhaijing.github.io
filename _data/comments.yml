@@ -1,3 +1,27 @@
+trans-duoshuo-comment:
+  - author:
+      type: github
+      displayName: wdssmq
+      url: 'https://github.com/wdssmq'
+      picture: 'https://avatars0.githubusercontent.com/u/8186642?v=3&s=73'
+    content: >-
+      &#x767B;&#x9646;&#x6309;&#x94AE;&#x5F88;&#x4E45;&#x624D;&#x52A0;&#x8F7D;&#x5230;&#x3002;&#x3002;
+    date: 2017-04-12T12:00:02.976Z
+some-of-module:
+  - author:
+      type: github
+      displayName: Fanxmistic
+      url: 'https://github.com/Fanxmistic'
+      picture: 'https://avatars2.githubusercontent.com/u/11425811?v=3&s=73'
+    content: '&#x6D4B;&#x8BD5;&#x8BC4;&#x8BBA;'
+    date: 2017-04-10T14:45:39.580Z
+  - author:
+      type: github
+      displayName: Fanxmistic
+      url: 'https://github.com/Fanxmistic'
+      picture: 'https://avatars2.githubusercontent.com/u/11425811?v=3&s=73'
+    content: '&#x6D4B;&#x8BD5;&#x8BC4;&#x8BBA;'
+    date: 2017-04-10T14:46:08.193Z
 encapsulation-of-javascript:
   - author:
       type: full
@@ -6499,6 +6523,13 @@ my-sublime3:
       picture: /img/facelessman.png
     content: 棒棒的
     date: 2016-09-21T10:56:23+08:00
+  - author:
+      type: full
+      displayName: ochukai
+      url: 'https://github.com/ochukai'
+      picture: 'https://avatars1.githubusercontent.com/u/2998925?v=3&s=73'
+    content: '&#x91D1;&#x5229;&#x79D1;&#x6280;'
+    date: 2017-04-13T03:49:16.634Z
 my-linux:
   - author:
       type: full

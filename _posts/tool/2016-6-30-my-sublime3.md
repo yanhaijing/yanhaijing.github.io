@@ -127,6 +127,9 @@ sublime的插件工具也是一个插件，这似乎是个悖论，需要安装�
 ### Vintage
 如果你习惯使用vim，那么可以安装这个插件，这个插件可以让sublime像vim一样。
 
+### [Babel]
+最近在写React，jsx用这个来做高亮显示
+
 ### [Smarty](https://packagecontrol.io/packages/Smarty)
 提供smarty语法的支持。Smarty插件默认的分隔符是`{}`，如果你使用的分隔符不同可以更改插件目录的Smarty.tmPreferences文件，找到其中的SMARTY_LDELIM和SMARTY_RDELIM，修改为你的分隔符即可。
 
@@ -150,7 +153,7 @@ sublime的插件工具也是一个插件，这似乎是个悖论，需要安装�
 支持jquery的只能语法提示，很赞。
 
 ### Emmet
-Emmet的前身是大名鼎鼎的Zen coding，如果你从事Web前端开发的话，对该插件一定不会陌生。它使用仿CSS选择器的语法来生成代码，大大提高了HTML/CSS代码编写的速度。
+Emmet的前身是大名鼎鼎的Zen coding，如果你从事Web前端开发的话，对该插件一定不会陌生。它使用仿CSS选择器的语法来生成代码，大大提高了HTML/CSS代码编写的速度。对于html可以使用tab键，对于其他比如jsx可以使用ctrl+e
 
 - [这里是一篇演示文章](http://www.iteye.com/news/27580)
 - [Emmet官网](http://docs.emmet.io/)

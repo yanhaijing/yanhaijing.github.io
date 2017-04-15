@@ -35,5 +35,5 @@
     </div>
   </div>
 {% else %}
-  There are no comments on this post.
+  暂无评论，抢沙发！！！
 {% endfor %}

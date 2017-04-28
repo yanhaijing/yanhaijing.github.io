@@ -7,6 +7,16 @@ trans-duoshuo-comment:
     content: >-
       &#x767B;&#x9646;&#x6309;&#x94AE;&#x5F88;&#x4E45;&#x624D;&#x52A0;&#x8F7D;&#x5230;&#x3002;&#x3002;
     date: 2017-04-12T12:00:02.976Z
+  - author:
+      type: github
+      displayName: zfl9
+      url: 'https://github.com/zfl9'
+      picture: 'https://avatars2.githubusercontent.com/u/22726048?v=3&s=73'
+    content: |-
+      &grave;&grave;&grave; python
+      print(&apos;python syntax test&apos;)
+      &grave;&grave;&grave;
+    date: 2017-04-22T06:12:28.245Z
 some-of-module:
   - author:
       type: github
@@ -4885,6 +4895,13 @@ node-js-and-the-new-web-front-end:
       picture: /img/facelessman.png
     content: 3q
     date: 2015-12-14T19:52:53+08:00
+  - author:
+      type: github
+      displayName: zhuziyi1989
+      url: 'https://github.com/zhuziyi1989'
+      picture: 'https://avatars3.githubusercontent.com/u/4889586?v=3&s=73'
+    content: '&#x1F44D;'
+    date: 2017-04-28T02:14:49.017Z
 my-browsersync:
   - author:
       type: full

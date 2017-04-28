@@ -1,3 +1,41 @@
+understanding-scope-and-context-in-javascript:
+  - author:
+      type: full
+      displayName: 一休
+      url: ''
+      picture: '/img/default-avatar.png'
+    content: |+
+      上下文总是关键字 this 的值，是调用当前可执行代码的对象的引用。
+      这里我觉得说的不对啊，只有全局上下文时，this-->此时的变量对象
+      函数上下文就不是这么回事了
+      上下文 = VO|AO + scope chain + this
+    date: 2017-04-5T12:00:02.976Z
+red-blue-ink:
+  - author:
+      type: full
+      displayName: swf
+      url: ''
+      picture: '/img/default-avatar.png'
+    content: 不错！
+    date: 2017-04-5T12:00:02.976Z
+  - author:
+      type: full
+      displayName: 低比热容
+      url: ''
+      picture: '/img/default-avatar.png'
+    content: |+
+      不明白题主什么意思。
+      问的是不是这样：此时红墨水【瓶】里含蓝墨水的量和蓝墨水【瓶】里含红墨水的量关系是什么？大于、小于、等于？
+      明确说是不等于的。
+      我用matlab写程序算了一下。
+    date: 2017-04-5T12:00:02.976Z
+  - author:
+      type: full
+      displayName: 桃子幻象
+      url: ''
+      picture: '/img/default-avatar.png'
+    content: 如果认为一勺是准确的 (理想勺或体积可加的理想液体), 那么根据守恒..
+    date: 2017-04-8T12:00:02.976Z
 trans-duoshuo-comment:
   - author:
       type: github

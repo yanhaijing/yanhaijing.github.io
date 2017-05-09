@@ -4664,7 +4664,7 @@ my-gitbook-note:
       displayName: Pegasus
       url: 'http://weibo.com/wangpegasus'
       picture: /img/default-avatar.png
-    content: "现在有一些不错的\uD83C\uDF45app可以用了"
+    content: 现在有一些不错的\uD83C\uDF45app可以用了
     date: 2016-03-17T10:51:49.000Z
   - author:
       type: full
@@ -5958,7 +5958,7 @@ how-to-reconstruct-a-large-historical-project:
       displayName: Yuying_Wu
       url: 'http://weibo.com/wuyuying1128'
       picture: /img/default-avatar.png
-    content: "棒棒哒…一看标题我还以为是有啥新的重构项目，这不是几个世纪前的项目吗？\uD83D\uDE02\uD83D\uDE02\uD83D\uDE02"
+    content: 棒棒哒…一看标题我还以为是有啥新的重构项目，这不是几个世纪前的项目吗？\uD83D\uDE02\uD83D\uDE02\uD83D\uDE02
     date: 2016-06-19T03:40:27.000Z
   - author:
       type: full

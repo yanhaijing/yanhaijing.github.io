@@ -84,6 +84,15 @@ trans-duoshuo-comment:
       picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
     content: '@xuexb yeah'
     date: 2017-05-09T09:33:06.519Z
+  - author:
+      type: github
+      displayName: yanhaijing
+      url: 'https://github.com/yanhaijing'
+      picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
+    content: >-
+      @sinsle
+      &#x611F;&#x8C22;&#x652F;&#x6301;&#xFF0C;&#x52A0;&#x500D;&#x52AA;&#x529B;
+    date: 2017-05-09T09:35:27.119Z
 some-of-module:
   - author:
       type: github

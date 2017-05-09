@@ -221,6 +221,10 @@ vtt格式如下所示，标记了每个字幕开始出现的时间和消失的�
 
 本文提到的所有代码都可以在[这里找到](https://github.com/yanhaijing/video-demo)。
 
+## 相关资料
+- [移动端HTML5<video>视频播放优化实践](http://www.xuanfengge.com/html5-video-play.html)
+- [视频播放的那些事](http://taobaofed.org/blog/2016/05/23/video-player/)
+
 ## 参考资料
 - [《HTML5秘籍》第二版](http://www.amazon.cn/gp/product/B00VDSW71S/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00VDSW71S&linkCode=as2&tag=yanhaijing-23)
 - [《HTML5程序设计》第二版](http://www.amazon.cn/gp/product/B0081E9X0K/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B0081E9X0K&linkCode=as2&tag=yanhaijing-23)

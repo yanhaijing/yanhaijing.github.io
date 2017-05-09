@@ -77,6 +77,13 @@ trans-duoshuo-comment:
       picture: 'https://avatars2.githubusercontent.com/u/3872051?v=3&s=73'
     content: '&#x8BD5;&#x4E0B;&#x8BC4;&#x8BBA;~'
     date: 2017-05-05T03:08:38.408Z
+  - author:
+      type: github
+      displayName: yanhaijing
+      url: 'https://github.com/yanhaijing'
+      picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
+    content: '@xuexb yeah'
+    date: 2017-05-09T09:33:06.519Z
 some-of-module:
   - author:
       type: github

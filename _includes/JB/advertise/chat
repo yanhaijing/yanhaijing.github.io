@@ -1,0 +1,6 @@
+<aside class="chat-adver">
+    <strong>手把手教你，大型项目如何接入ES6，微信扫码了解</strong>
+    <figure>
+        <img src="{{ HOME_PATH }}img/chat.png" alt="微信公众号：颜海镜" width="400" height="206">
+    </figure>
+</aside>

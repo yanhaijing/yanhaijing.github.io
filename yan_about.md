@@ -50,6 +50,7 @@ group: navigation
 
 - [@百度经验研发团队](https://exp-team.github.io/)
 - [@justjavac(迷渡)](http://justjavac.com/)
+- [@skyseraph](http://skyseraph.com/)
 - [@腊八粥(IT翻译博客)](http://www.labazhou.net/)
 - [@php101(土豆丫)](http://www.php101.cn/)
 - [@wutongr(梧桐)](http://www.wutongr.com/)

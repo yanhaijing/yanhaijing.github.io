@@ -7430,3 +7430,11 @@ some-practice-of-nodejs:
       picture: /img/facelessman.png
     content: 哎呀，一直也没搞
     date: 2017-03-17T02:08:37.000Z
+my-git-note:
+  - author:
+      type: full
+      displayName: jaywcjlove
+      url: 'https://github.com/jaywcjlove'
+      picture: 'https://avatars2.githubusercontent.com/u/1680273?v=3&s=73'
+    content: '&#x8FD9;&#x4E2A;&#x8BC4;&#x8BBA;&#x4E0D;&#x9519;&#x725B;&#x903C;&#x1F4AF;'
+    date: 2017-06-07T08:46:20.525Z

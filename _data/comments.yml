@@ -7438,3 +7438,10 @@ my-git-note:
       picture: 'https://avatars2.githubusercontent.com/u/1680273?v=3&s=73'
     content: '&#x8FD9;&#x4E2A;&#x8BC4;&#x8BBA;&#x4E0D;&#x9519;&#x725B;&#x903C;&#x1F4AF;'
     date: 2017-06-07T08:46:20.525Z
+  - author:
+      type: github
+      displayName: yanhaijing
+      url: 'https://github.com/yanhaijing'
+      picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
+    content: '@jaywcjlove &#x5C31;&#x662F;&#x8FD9;&#x4E48;666'
+    date: 2017-06-12T05:21:34.482Z

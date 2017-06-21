@@ -101,6 +101,13 @@ trans-duoshuo-comment:
     content: >-
       &#x6211;&#x6DFB;&#x52A0;&#x4E00;&#x76F4;&#x8BF4;&#x8DEF;&#x5F84;&#x4E0D;&#x5BF9;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x8981;&#x4FEE;&#x6539;&#x8DEF;&#x5F84;&#x4EE3;&#x7801;
     date: 2017-06-21T13:50:04.465Z
+  - author:
+      type: github
+      displayName: saixia
+      url: 'https://github.com/saixia'
+      picture: 'https://avatars0.githubusercontent.com/u/12034029?v=3&s=73'
+    content: '  '
+    date: 2017-06-21T13:50:52.803Z
 some-of-module:
   - author:
       type: github

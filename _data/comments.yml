@@ -108,6 +108,15 @@ trans-duoshuo-comment:
       picture: 'https://avatars0.githubusercontent.com/u/12034029?v=3&s=73'
     content: '  '
     date: 2017-06-21T13:50:52.803Z
+  - author:
+      type: github
+      displayName: yanhaijing
+      url: 'https://github.com/yanhaijing'
+      picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
+    content: |-
+      @saixia
+      &#x54EA;&#x4E00;&#x6B65;&#x8BF4;&#x8DEF;&#x5F84;&#x4E0D;&#x5BF9;&#x54C8;
+    date: 2017-06-26T03:28:33.673Z
 some-of-module:
   - author:
       type: github

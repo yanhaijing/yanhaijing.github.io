@@ -64,42 +64,41 @@ sublime的快捷键非常非常多，很难都记住，按照80/20原则，只�
 
 <table class="table">
 <thead>
-<tr><th>快捷键</th><th>功能</th></tr>
+    <tr><th>Mac 快捷键</th><th>Windows 快捷键</th><th>功能</th></tr>
 </thead>
 <tbody>
-<tr><td>ctrl+shift+p</td><td>打开命令面板</td></tr>
-<tr><td>ctrl+p</td><td>搜索项目中的文件</td></tr>
-<tr><td>ctrl+r</td><td>前往Method</td></tr>
-<tr><td>ctrl+g</td><td>跳转到第几行</td></tr>
-<tr><td>ctrl+k & ctrl+b</td><td>切换侧边栏显示状态</td></tr>
-<tr><td>ctrl+shift+(backspace|del)</td><td>(左侧|右侧)全部删除</td></tr>
-<tr><td>ctrl+y</td><td>重做或重复</td></tr>
-<tr><td>shift+方向键</td><td>移动并选择</td></tr>
-<tr><td>ctrl+([|])</td><td>缩进|取消缩进</td></tr>
-<tr><td>ctrl+shift+([|])</td><td>(折叠|展开)代码</td></tr>
-<tr><td>ctrl+l</td><td>选择行，重复可依次增加选择下一行</td></tr>
-<tr><td>ctrl+m</td><td>跳转到对应括号</td></tr>
-<tr><td>ctrl+shift+m</td><td>选中括号间的内容</td></tr>
-<tr><td>alt+.</td><td>close tag</td></tr>
-<tr><td>ctrl+/</td><td>当前行注释状态切换</td></tr>
-<tr><td>ctrl+h</td><td>替换</td></tr>
-<tr><td>ctrl+[shift]+f</td><td>[全局]查找</td></tr>
-<tr><td>ctrl+[shift]+tab, ctrl+pageup, alt+num</td><td>切换tab面板</td></tr>
-<tr><td>ctrl+shift+y</td><td>将光标处的表达式计算，对于数学不好的很有用</td></tr>
-<tr><td>ctrl+[shift]+v</td><td>[缩进]粘贴</td></tr>
-<tr><td>ctrl+d</td><td>选择一个选中项的下一个匹配项</td></tr>
-<tr><td>alt+f3</td><td>选择文件中的所有匹配项项</td></tr>
-<tr><td>ctrl+shift+’</td><td>选择所有选中项的标签</td></tr>
-<tr><td>ctrl+shift+a</td><td>选择当前选中项的父容器，可连续使用</td></tr>
-<tr><td>ctrl+shift+(↑|↓)</td><td>(上|下)移动一行</td></tr>
-<tr><td>ctrl+shift+d</td><td>复制行或选中项</td></tr>
-<tr><td>alt+shift+w</td><td>用标签包裹行或选中项</td></tr>
-<tr><td>ctrl+(↑|↓), alt+(↑|↓), alt+shift+(↑|↓)</td><td>(加|减)1, (加|减)10, (加|减)0.1</td></tr>
-<tr><td>ctrl+shift+;</td><td>移除未闭合的容器元素</td></tr>
-<tr><td>ctrl+j</td><td>合并选中的行（多行边一行）</td></tr>
-<tr><td>ctrl+kk</td><td>从光标处删除至行尾</td></tr>
-<tr><td>ctrl+shift+k</td><td>删除整行</td></tr>
-<tr><td>shift+ctrl+;</td><td>删除标签</td></tr>
+    <tr><td>cmd+shift+p</td><td>ctrl+shift+p</td><td>打开命令面板</td></tr>
+    <tr><td>cmd+p</td><td>ctrl+p</td><td>搜索项目中的文件</td></tr>
+    <tr><td>cmd+r</td><td>ctrl+r</td><td>前往Method</td></tr>
+    <tr><td>ctrl+g</td><td>ctrl+g</td><td>跳转到第几行</td></tr>
+    <tr><td>cmd+k & cmd+b</td><td>ctrl+k & ctrl+b</td><td>切换侧边栏显示状态</td></tr>
+    <tr><td>cmd+del | ctrl+k</td><td>ctrl+shift+(backspace | del)</td><td>(左侧|右侧)全部删除</td></tr>
+    <tr><td>cmd+y</td><td>ctrl+y</td><td>重做或重复</td></tr>
+    <tr><td>shift+方向键</td><td>shift+方向键</td><td>移动并选择</td></tr>
+    <tr><td>cmd+([ | ])</td><td>ctrl+([ | ])</td><td>缩进|取消缩进</td></tr>
+    <tr><td>cmd+opt+([|])</td><td>ctrl+shift+([|])</td><td>(折叠|展开)代码</td></tr>
+    <tr><td>cmd+l</td><td>ctrl+l</td><td>选择行，重复可依次增加选择下一行</td></tr>
+    <tr><td>ctrl+m</td><td>ctrl+m</td><td>跳转到对应括号</td></tr>
+    <tr><td>ctrl+shift+m</td><td>ctrl+shift+m</td><td>选中括号间的内容</td></tr>
+    <tr><td>cmd+opt+.</td><td>alt+.</td><td>close tag</td></tr>
+    <tr><td>cmd+/</td><td>ctrl+/</td><td>当前行注释状态切换</td></tr>
+    <tr><td>cmd+opt+f</td><td>ctrl+h</td><td>替换</td></tr>
+    <tr><td>cmd+[shift]+f</td><td>ctrl+[shift]+f</td><td>[全局]查找</td></tr>
+    <tr><td>ctrl+[shift]+tab, cmd+num</td><td>ctrl+[shift]+tab, ctrl+pageup, alt+num</td><td>切换tab面板</td></tr>
+    <tr><td>cmd+shift+y</td><td>ctrl+shift+y</td><td>将光标处的表达式计算，对于数学不好的很有用</td></tr>
+    <tr><td>cmd+[shift]+v</td><td>ctrl+[shift]+v</td><td>[缩进]粘贴</td></tr>
+    <tr><td>cmd+d</td><td>ctrl+d</td><td>选择一个选中项的下一个匹配项</td></tr>
+    <tr><td>ctrl+cmd+g</td><td>alt+f3</td><td>选择文件中的所有匹配项项</td></tr>
+    <tr><td>cmd+shift+k</td><td>ctrl+shift+’</td><td>选择所有选中项的标签</td></tr>
+    <tr><td>ctrl+d</td><td>ctrl+shift+a</td><td>选择当前选中项的父容器，可连续使用</td></tr>
+    <tr><td>ctrl+cmd+(↑|↓)</td><td>ctrl+shift+(↑|↓)</td><td>(上|下)移动一行</td></tr>
+    <tr><td>cmd+shift+d</td><td>ctrl+shift+d</td><td>复制行或选中项</td></tr>
+    <tr><td>ctrl+shift+w</td><td>alt+shift+w</td><td>用标签包裹行或选中项</td></tr>
+    <tr><td>, cmd+opt+(↑|↓), opt+(↑|↓)</td><td>ctrl+(↑|↓), alt+(↑|↓), alt+shift+(↑|↓)</td><td>(加|减)1, (加|减)10, (加|减)0.1</td></tr>
+    <tr><td>cmd+'</td><td>ctrl+shift+;</td><td>移除未闭合的容器元素</td></tr>
+    <tr><td>cmd+j</td><td>ctrl+j</td><td>合并选中的行（多行边一行）</td></tr>
+    <tr><td>cmd+kk</td><td>ctrl+kk</td><td>从光标处删除至行尾</td></tr>
+    <tr><td>ctrl+shift+k</td><td>ctrl+shift+k</td><td>删除整行</td></tr>
 </tbody>
 </table>
 
@@ -209,6 +208,12 @@ Terminal会占用默认的`ctrl + shift + t`这个快捷键，这个可以打开
 
 ### ConvertToUTF8
 这个插件可以让sublime3打开gbk编码的文件，但是不能保存，我还没找到更好的插件
+
+### SublimeLinter
+如果想对我们的代码风格进行验证，则可安装这个插件，这个插件只是个框架，要验证具体的语言还得安装插件
+
+### SublimeLinter-contrib-eslint
+js语言的验证可以安装这个插件
 
 ### Package Syncing
 最后推荐一个同步插件，这个插件可以在不同的机器同步配置信息和插件，非常方便，但鉴于国内的墙太高，我都是直接把插件给手动备份了，然后直接拖进去，或者直接去github上下载对应的包。

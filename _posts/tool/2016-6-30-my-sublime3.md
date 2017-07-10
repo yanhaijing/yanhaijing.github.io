@@ -120,13 +120,13 @@ sublime的插件工具也是一个插件，这似乎是个悖论，需要安装�
 
 ![]({{BLOG_IMG}}143.bmp)
 
-### JavaScript-Completions
+### JavaScript Completions
 原生js提示插件，这个插件能够提供很多js语法。
 
 ### Vintage
 如果你习惯使用vim，那么可以安装这个插件，这个插件可以让sublime像vim一样。
 
-### [Babel]
+### Babel
 最近在写React，jsx用这个来做高亮显示
 
 ### [Smarty](https://packagecontrol.io/packages/Smarty)
@@ -162,7 +162,7 @@ DocBlockr 可以使你很方便地对代码建立文档。它会解析函数，�
 
 ![]({{BLOG_IMG}}144.gif)
 
-### HTML/CSS/JS Prettify
+### HTML-CSS-JS Prettify
 能够格式化css html 和js。
 
 **注意：**格式化的文件路径中不能有中文，不然会报找不到node的错误（windows下）。

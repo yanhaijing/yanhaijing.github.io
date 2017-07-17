@@ -54,6 +54,19 @@ description: 本文主要记录些svn的常用命令，以备自己日后使用�
 	svn log -v # 显示详细历史信息
 	svn log PATH # 查看指定目录历史信息
 
+## 树冲突
+主干上删除了一个文件，而你又对这个文件做了修改；主干上对文件做了修改，而你删除了这个文件的时候，都会发生树冲突
+
+树冲突并不可怕，当发生树冲突时有两种解决办法：
+
+其一，保留你的修改，远程的修改不算数
+
+	svn resolved –accept working path
+
+其二，保留远程的修改，用下面的命令删除文件后在提交就ok了
+
+	svn delete path 
+
 ## 参考资料
 - [那些常用的svn和git命令](http://w3cboy.com/post/2015/09/those-common-svn-and-git-commands/#0-tsina-1-96627-397232819ff9a47a7b7e80a40613cfe1)
 

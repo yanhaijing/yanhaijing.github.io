@@ -70,3 +70,12 @@ rebase与merge不同，rebase会将合入分支上超前的节点在待合入分
 ## 总结
 只有知道了这些合并方式的区别，才能git在手，天下我有，任你分支在凌乱，我自岿然不动
 
+## 继续学习
+- [起底Git-开篇](http://yanhaijing.com/git/2017/01/19/deep-git-0/)
+- [起底Git-版本控制简史](http://yanhaijing.com/git/2017/01/19/deep-git-1/)
+- [起底Git-Git简史](http://yanhaijing.com/git/2017/01/19/deep-git-2/)
+- [起底Git-Git内部原理](http://yanhaijing.com/git/2017/02/08/deep-git-3/)
+- [起底Git-Git基础](http://yanhaijing.com/git/2017/02/09/deep-git-4/)
+- [起底Git-Git进阶](http://yanhaijing.com/git/2017/02/09/deep-git-5/)
+- [起底Git-Git开发流程](http://yanhaijing.com/git/2017/02/09/deep-git-6/)
+- [起底Git-Git常用命令总结](http://yanhaijing.com/git/2014/11/01/my-git-note/)

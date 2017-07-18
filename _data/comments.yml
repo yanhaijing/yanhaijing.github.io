@@ -7513,3 +7513,11 @@ deep-git-2:
       picture: 'https://avatars7.githubusercontent.com/u/3192087?v=4&s=73'
     content: '@LiinNs &#x611F;&#x8C22;&#x652F;&#x6301;&#xFF0C;&#x5DF2;&#x6539;&#x6B63;'
     date: 2017-07-18T05:37:26.610Z
+four-method-for-git-merge:
+  - author:
+      type: github
+      displayName: jawil
+      url: 'https://github.com/jawil'
+      picture: 'https://avatars0.githubusercontent.com/u/16515708?v=4&s=73'
+    content: '&#x6C99;&#x53D1;'
+    date: 2017-07-18T11:04:38.811Z

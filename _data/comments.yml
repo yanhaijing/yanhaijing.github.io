@@ -125,6 +125,15 @@ trans-duoshuo-comment:
     content: >-
       &#x8BD5;&#x8BD5;&#x8BC4;&#x8BBA;&#xFF0C;&#x597D;&#x50CF;&#x5F88;&#x4E45;&#x624D;&#x80FD;&#x5237;&#x65B0;&#x51FA;&#x6765;
     date: 2017-07-24T03:16:59.005Z
+  - author:
+      type: github
+      displayName: yanhaijing
+      url: 'https://github.com/yanhaijing'
+      picture: 'https://avatars7.githubusercontent.com/u/3192087?v=4&s=73'
+    content: >-
+      @vinnyxiong
+      &#x8BC4;&#x8BBA;&#x5B8C;&#xFF0C;&#x9700;&#x8981;&#x6211;&#x5BA1;&#x6838;&#x624D;&#x80FD;&#x53D1;&#x51FA;&#x6765;
+    date: 2017-07-24T11:07:59.674Z
 some-of-module:
   - author:
       type: github

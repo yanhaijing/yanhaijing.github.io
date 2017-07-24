@@ -117,6 +117,14 @@ trans-duoshuo-comment:
       @saixia
       &#x54EA;&#x4E00;&#x6B65;&#x8BF4;&#x8DEF;&#x5F84;&#x4E0D;&#x5BF9;&#x54C8;
     date: 2017-06-26T03:28:33.673Z
+  - author:
+      type: full
+      displayName: vinnyxiong
+      url: 'https://github.com/vinnyxiong'
+      picture: 'https://avatars2.githubusercontent.com/u/16040912?v=4&s=73'
+    content: >-
+      &#x8BD5;&#x8BD5;&#x8BC4;&#x8BBA;&#xFF0C;&#x597D;&#x50CF;&#x5F88;&#x4E45;&#x624D;&#x80FD;&#x5237;&#x65B0;&#x51FA;&#x6765;
+    date: 2017-07-24T03:16:59.005Z
 some-of-module:
   - author:
       type: github

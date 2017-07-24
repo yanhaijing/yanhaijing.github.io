@@ -117,6 +117,14 @@ trans-duoshuo-comment:
       @saixia
       &#x54EA;&#x4E00;&#x6B65;&#x8BF4;&#x8DEF;&#x5F84;&#x4E0D;&#x5BF9;&#x54C8;
     date: 2017-06-26T03:28:33.673Z
+  - author:
+      type: full
+      displayName: vinnyxiong
+      url: 'https://github.com/vinnyxiong'
+      picture: 'https://avatars2.githubusercontent.com/u/16040912?v=4&s=73'
+    content: >-
+      &#x8BD5;&#x8BD5;&#x8BC4;&#x8BBA;&#xFF0C;&#x597D;&#x50CF;&#x5F88;&#x4E45;&#x624D;&#x80FD;&#x5237;&#x65B0;&#x51FA;&#x6765;
+    date: 2017-07-24T03:16:59.005Z
 some-of-module:
   - author:
       type: github
@@ -7521,3 +7529,19 @@ four-method-for-git-merge:
       picture: 'https://avatars0.githubusercontent.com/u/16515708?v=4&s=73'
     content: '&#x6C99;&#x53D1;'
     date: 2017-07-18T11:04:38.811Z
+javascript-continuous-assignment-operator:
+  - author:
+      type: github
+      displayName: lmnsg
+      url: 'https://github.com/lmnsg'
+      picture: 'https://avatars1.githubusercontent.com/u/10400425?v=4&s=73'
+    content: >
+      a.x = a = {n:2} &#x540E;&#xFF0C;b.x&#x68C0;&#x6D4B;&#x5230;&#x4E86; a.x
+      &#x6307;&#x5411;&#x7684; a = { n: 2 }
+      &#x7684;&#x5F15;&#x7528;&#xFF0C;&#x7136;&#x540E;&#x7531;&#x4E8E; a
+      &#x91CD;&#x65B0;&#x8D4B;&#x503C;&#x540E;&#xFF0C;b &#x548C;
+      a&#x7684;&#x5F15;&#x7528;&#x65AD;&#x88C2;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;
+      b &#x7684;&#x503C;&#x662F; { n: 1, x: a },
+      &#x8D4B;&#x503C;&#x540E;&#x7684; a &#x5DF2;&#x7ECF;&#x6CA1;&#x6709; x
+      &#x4E86;&#xFF0C; &#x6240;&#x4EE5; a.x &#x662F; undefined&#x3002;
+    date: 2017-07-24T07:57:45.314Z

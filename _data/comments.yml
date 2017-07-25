@@ -6818,6 +6818,20 @@ binary-in-js:
       picture: /img/facelessman.png
     content: O(∩_∩)O哈哈~
     date: 2016-07-22T14:27:06.000Z
+  - author:
+      type: github
+      displayName: mqliutie
+      url: 'https://github.com/mqliutie'
+      picture: 'https://avatars2.githubusercontent.com/u/11795518?v=4&s=73'
+    content: >
+      1
+      1111010&#x660E;&#x663E;&#x662F;&#x4E00;&#x4E2A;&#x8D1F;&#x6570;&#xFF0C;&#x800C;&#x4E14;&#x662F;&#x8D1F;&#x6570;&#x7684;&#x8865;&#x7801;&#x8868;&#x793A;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x6C42;&#x5B83;&#x7684;&#x539F;&#x7801;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x518D;&#x5BF9;&#x5B83;&#x6C42;&#x8865;1
+      0000110&#x5C31;&#x662F;&#x8FD9;&#x4E2A;&#x6570;&#x7684;&#x771F;&#x503C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x7ED3;&#x679C;&#x663E;&#x793A;-110&#xFF0C;&#x8FD9;&#x4E0B;&#x603B;&#x7B97;&#x81EA;&#x5706;&#x5176;&#x8BF4;&#x4E86;&#xFF0C;O(&cap;_&cap;)O&#x54C8;&#x54C8;~
+
+
+      &#x600E;&#x4E48;&#x770B;&#x51FA;&#x6765;&#x7684;&#x662F;&#x8865;&#x7801;?
+      &#x6587;&#x5B57;&#x91CC;&#x9762;&#x662F;&#x4E0D;&#x662F;&#x6F0F;&#x4E86;&#x4E00;&#x4E2A;&#x6C42;&#x53CD;&#x7684;&#x8FC7;&#x7A0B;?
+    date: 2017-07-25T08:02:32.915Z
 prototype-and-inheritance-of-js:
   - author:
       type: full

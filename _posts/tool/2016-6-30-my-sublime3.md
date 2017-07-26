@@ -48,6 +48,14 @@ sublime3是高度定制化的，安装完成后，我做的第一件事情就是
 
 如果你感兴趣也可以修改其他配置选项试试，快去定制属于自己的编辑器吧。
 
+如果你发现你的goto anything非常卡顿，那有可能是安装了巨大的node_modules导致的，你可以修改下面的配置，注意最后三个
+
+        "binary_file_patterns": ["*.jpg", "*.jpeg", "*.png", "*.gif", "*.ttf", "*.tga", "*.dds", "*.ico", "*.eot", "*.pdf", "*.swf", "*.jar", "*.zip", "vendor/**", "node_modules/**/node_modules/**", ".certs/**"],
+
+上面我们把node_modules目录下的node_moduels都排除在外，如果你还觉得卡，那就直接把node_moduels也排除在外吧。。。
+
+解决办法，参考[文章](https://blog.michaelchen.io/goto-anything-is-super-slow-in-sublime-text/)
+
 ## 快捷键
 如果你还不习惯快捷键，那你真的该学习了，我越来越依赖快捷键了。
 

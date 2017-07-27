@@ -76,7 +76,7 @@ sublime的快捷键非常非常多，很难都记住，按照80/20原则，只�
 </thead>
 <tbody>
     <tr><td>cmd+shift+p</td><td>ctrl+shift+p</td><td>打开命令面板</td></tr>
-    <tr><td>cmd+p</td><td>ctrl+p</td><td>搜索项目中的文件</td></tr>
+    <tr><td>cmd+p|cmd+t</td><td>ctrl+p</td><td>搜索项目中的文件</td></tr>
     <tr><td>cmd+r</td><td>ctrl+r</td><td>前往Method</td></tr>
     <tr><td>ctrl+g</td><td>ctrl+g</td><td>跳转到第几行</td></tr>
     <tr><td>cmd+k & cmd+b</td><td>ctrl+k & ctrl+b</td><td>切换侧边栏显示状态</td></tr>
@@ -95,6 +95,7 @@ sublime的快捷键非常非常多，很难都记住，按照80/20原则，只�
     <tr><td>ctrl+[shift]+tab, cmd+num</td><td>ctrl+[shift]+tab, ctrl+pageup, alt+num</td><td>切换tab面板</td></tr>
     <tr><td>cmd+shift+y</td><td>ctrl+shift+y</td><td>将光标处的表达式计算，对于数学不好的很有用</td></tr>
     <tr><td>cmd+[shift]+v</td><td>ctrl+[shift]+v</td><td>[缩进]粘贴</td></tr>
+    <tr><td>cmd+opt+v</td><td>ctrl+k & ctrl+v</td><td>从历史记录粘贴</td></tr>
     <tr><td>cmd+d</td><td>ctrl+d</td><td>选择一个选中项的下一个匹配项</td></tr>
     <tr><td>ctrl+cmd+g</td><td>alt+f3</td><td>选择文件中的所有匹配项项</td></tr>
     <tr><td>cmd+shift+k</td><td>ctrl+shift+’</td><td>选择所有选中项的标签</td></tr>

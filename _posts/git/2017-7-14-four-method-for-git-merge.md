@@ -26,7 +26,7 @@ git中的分支非常的轻量，其实就是一个文件，里面记录了分�
 在git中合并分支有三种方法，分别是merge，rebase，cherry-pick，而其中merge又有三种区别，下面将一一介绍
 
 ## fast-forward
-如果带合并的分支在当前分支的下游，也就是说没有分叉时，会发生快速合并，从test分支切换到master分支，然后合并test分支
+如果待合并的分支在当前分支的下游，也就是说没有分叉时，会发生快速合并，从test分支切换到master分支，然后合并test分支
 
     git checkout master
     git merge test

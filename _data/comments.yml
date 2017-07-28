@@ -7568,3 +7568,11 @@ javascript-continuous-assignment-operator:
       &#x8D4B;&#x503C;&#x540E;&#x7684; a &#x5DF2;&#x7ECF;&#x6CA1;&#x6709; x
       &#x4E86;&#xFF0C; &#x6240;&#x4EE5; a.x &#x662F; undefined&#x3002;
     date: 2017-07-24T07:57:45.314Z
+my-mac-note:
+  - author:
+      type: full
+      displayName: ckj375
+      url: 'https://github.com/ckj375'
+      picture: 'https://avatars3.githubusercontent.com/u/4559417?v=4&s=73'
+    content: test
+    date: 2017-07-28T06:56:37.950Z

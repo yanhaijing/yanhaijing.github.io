@@ -7552,6 +7552,16 @@ four-method-for-git-merge:
       picture: 'https://avatars0.githubusercontent.com/u/16515708?v=4&s=73'
     content: '&#x6C99;&#x53D1;'
     date: 2017-07-18T11:04:38.811Z
+  - author:
+      type: github
+      displayName: yangguang1029
+      url: 'https://github.com/yangguang1029'
+      picture: 'https://avatars3.githubusercontent.com/u/7802861?v=4&s=73'
+    content: >-
+      &#x770B;&#x5230;git rebase
+      master&#x7684;&#x65F6;&#x5019;&#x7A81;&#x7136;&#x5F88;&#x5947;&#x602A;&#xFF0C;&#x600E;&#x4E48;test&#x5206;&#x652F;&#x8DDF;master&#x5206;&#x652F;&#x6DF7;&#x6210;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#x4E86;&#x3002;test&#x5206;&#x652F;&#x53C8;&#x4E0D;&#x662F;&#x88AB;&#x5220;&#x9664;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x7A81;&#x7136;&#x60F3;&#x5230;&#x6587;&#x7AE0;&#x5F00;&#x5934;&#x8BF4;&#xFF0C;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#x53EA;&#x662F;&#x6307;&#x5411;commit
+      id&#x7684;&#x6307;&#x9488;&#xFF0C;&#x987F;&#x65F6;&#x89C9;&#x5F97;&#x6CA1;&#x95EE;&#x9898;&#x4E86;&#x3002;&#x4EE5;&#x524D;&#x4E00;&#x76F4;&#x5728;&#x8111;&#x6D77;&#x91CC;&#x628A;&#x5206;&#x652F;&#x60F3;&#x8C61;&#x6210;&#x7269;&#x7406;&#x7684;&#x4E00;&#x6761;&#x7EBF;&#x4E86;&#x3002;
+    date: 2017-08-01T13:43:43.151Z
 javascript-continuous-assignment-operator:
   - author:
       type: github

@@ -50,6 +50,10 @@ js中的异步编程共有下面这些方法，好吧以前我就知道前两个
 - Generator
 - async/await
 
+先来一张形象的图
+
+![]({{BLOG_IMG}}504.jpg)
+
 ## 回调函数
 callback是我们最熟悉的方式，上面提到的动画的例子，用callback实现代码如下
 
@@ -203,10 +207,10 @@ Promise解决了回调的一些问题，但并没有全部解决，比如Promise
 
 看一下模拟同步的代码，貌似成功解决了
 
-var chain = Promise.resolve();
-for (let i = 0; i < arr.length; ++i) {
-    chain = chain.then(() => async(arr[i]).then((x) => arr[i] = x))
-}
+    var chain = Promise.resolve();
+    for (let i = 0; i < arr.length; ++i) {
+        chain = chain.then(() => async(arr[i]).then((x) => arr[i] = x))
+    }
 
 ## Generator
 Generator是一个革命性特性，es2015(es6)中引入，让原本必须一次执行完毕函数，现在可以在中间暂停，并在下次继续执行，这就让js可以模拟协程的概念

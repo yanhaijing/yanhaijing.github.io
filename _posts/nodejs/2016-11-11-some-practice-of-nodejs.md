@@ -5,7 +5,7 @@ category : nodejs
 tagline: "原创"
 tags : [nodejs, javascript]
 keywords: [nodejs, javascript]
-description: 
+description: 本文讲解了如何用nodejs和phantomjs实现一个网站静态资源收集分析系统
 ---
 {% include JB/setup %}
 
@@ -18,20 +18,20 @@ description:
 ## 调研
 我最先想到的方案就是手动收集依赖，但这种方式明显不可取，但在一番曲折之后我发现了[HAR][HAR]这种神奇的东西，一句话概括，HAR是一种数据格式，对人家还有专门的组织定义规范了，起作用是定义网络请求的数据规范，以便在不同工具中共享数据
 
-![]({{BLOG_IMG}}508.png)
+![]({{BLOG_IMG}}508.jpg)
 
 感兴趣的同学可以自己导出数据看下格式，上面从chrome面板导出数据，让后放到[HAR Viewer](http://www.softwareishard.com/har/viewer/
 )工具就可以还原了，似不似很神奇，O(∩_∩)O哈哈~
 
-![]({{BLOG_IMG}}509.png)
+![]({{BLOG_IMG}}509.jpg)
 
 *小技巧：*如果想收集一个页面依赖了哪些域名，可以这样操作
 
-![]({{BLOG_IMG}}507.png)
+![]({{BLOG_IMG}}507.jpg)
 
 目标是自动化，我打算用node来写逻辑，一番调研后发现phantomjs是一个无头浏览器，可以被node调用，真个程序的架构就清晰了，涉及node，phantomjs和HAR
 
-![]({{BLOG_IMG}}510.png)
+![]({{BLOG_IMG}}510.jpg)
 
 理想很丰满，现实很骨感，我其实没用过phantomjs，也没写过node，o(╯□╰)o
 
@@ -40,7 +40,7 @@ phantomjs是一个没有界面的，可通过JavaScript api编程的Webkit，快
 
 phantomjs的整体架构如下，我们可以调用phantomjs暴漏的api，从而实现自己想要的功能
 
-![]({{BLOG_IMG}}512.png)
+![]({{BLOG_IMG}}512.jpg)
 
 phantomjs的主要功能有4大块，而网络监控正是我需要的
 
@@ -73,7 +73,7 @@ phantomjs的主要功能有4大块，而网络监控正是我需要的
 ## nodejs
 Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境，其架构如下
 
-![]({{BLOG_IMG}}514.png)
+![]({{BLOG_IMG}}514.jpg)
 
 作为一个没怎么用过node的前端老司机，我给前端的建议是不要怕，node其实并不难，或者说用node完成自己想做的事情并不难
 
@@ -110,15 +110,56 @@ node作为一个有了对系统完整操作的功能，所有有众多内置模�
 - *Path 文件路径相关
 - Modules 模块相关
 
-## 实现细节
+## 技术细节
 为了可扩展性，我将整个系统设计成四个部分，配置系统，获取HAR系统，解析系统，可视化系统
 
-![]({{BLOG_IMG}}511.png)
+![]({{BLOG_IMG}}515.png)
 
+`config.js`是配置文件，我将配置做成网站加页面的维度，这样就可以统计多个网站的多个页面了
 
+`get-website.js`读取`config.js`，然后解析成网站和对应的页面
+
+`get-page.js`里是获取每个页面网络数据，因为要执行子进程，所以要用到`execFile`
+
+`parse-website.js`负责将数据按照页面，网站收集，分类，整理
+
+`print-website.js`负责将数据打印输出，涉及文件读写
+
+整个程序用到了`child_process`，调用phantom子进程
+
+    childProcess.execFile(binPath, childArgs, {maxBuffer: 1000*1024}, function(err, stdout, stderr) {
+        if (err) {
+            reject(stdout || stderr || err);
+            return;
+        }
+        // handle results
+        resolve(stdout);
+    });
+
+`process`获取当前进程的信息，如获取当前程序的路径，环境变量
+
+    process.cwd()
+
+`path`路径相关操作，如拼接读写文件的路径
+
+    var path = require('path')
+    path.join(__dirname, 'phantomjs-script.js')
+
+`fs`读写文件，如将最终数据写入文件
+
+    fs.writeFile(filepath, content, function (err) {
+        if (err) {
+            reject(err);
+            return;
+        }
+
+        resolve(name);
+    });
 
 ## 总结
 整个系统可以实现对配置文件中的页面依赖的资源进行收集整理和分析，终于把手工的工作变成了自动的，作为一个程序员一定要有自动化的意识，重复的工作让机器来做
+
+这种脚本类型的任务，node的异步会让程序更复杂，o(╯□╰)o
 
 如果然我推荐一篇学习nodejs的文章的话，那我推荐《[七天学会nodejs](http://nqdeng.github.io/7-days-nodejs/
 )》，如果让我推荐一本书的话，我推荐《nodejs实战》

@@ -33,9 +33,7 @@ description:
 
 ![]({{BLOG_IMG}}510.png)
 
-为了可扩展性，可伸缩性，我将真个系统设计成如下部分，配置系统，获取HAR系统，解析系统，可视化系统，理想很丰满，现实很骨感，我其实没用过phantomjs，也没写过node，o(╯□╰)o
-
-![]({{BLOG_IMG}}511.png)
+理想很丰满，现实很骨感，我其实没用过phantomjs，也没写过node，o(╯□╰)o
 
 ## phantomjs
 phantomjs是一个没有界面的，可通过JavaScript api编程的Webkit，快速并且原生支持多种web标准：DOM处理，CSS选择器，JSON，Canvas和SVG，这是官网对phantomjs的介绍
@@ -73,8 +71,55 @@ phantomjs的主要功能有4大块，而网络监控正是我需要的
     phantomjs ./test.js
 
 ## nodejs
+Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境，其架构如下
+
+![]({{BLOG_IMG}}514.png)
+
+作为一个没怎么用过node的前端老司机，我给前端的建议是不要怕，node其实并不难，或者说用node完成自己想做的事情并不难
+
+学习node必须先了解这四个基本概念，commonjs、package、npm、package.json
+
+由于js本身缺少模块的功能(es6已经有了原生支持)，为解决这个问题，社区创造了commonjs，node中的模块都是commonjs模块，一个模块可以暴漏接口供其他模块使用，也可以引用其他模块暴漏的接口
+
+    var q = require('q'); // 依赖模块q
+
+    exoprts.a = q; // 暴漏给其他模块使用
+
+有时候我们会想吧几个js文件给别人，让别人使用，这是package的概念，package是一堆功能类似的模块的集合，每个package的根目录都有一个package.json文件，用来记录一些自己的信息，比如名字，版本号等
+
+我们自己的node项目也会有一个package.json文件，主要是用来记录依赖了哪些第三方包
+
+node的开源包一般都在npm这个社区上，npm同时可以安装包的一个命令行工具，比如我们再npm网站上找到了`bootstrap`这个包，就可以在命令行用npm安装这个包，安装好后，可以将这个依赖写到package.json，方便以后安装
+
+    npm install bootstrap
+
+node作为一个有了对系统完整操作的功能，所有有众多内置模块，带星号的是我用到的模块，看到这么多不要慌，你可能只会用到20%
+
+- Buffer 二进制文件相关
+- *Child Processes 处理子进程的模块
+- *Console 控制台输出
+- Events 事件系统
+- *File System 文件系统
+- *Globals 全局变量
+- HTTP http请求相关
+- Utilites 内置工具函数
+- *URI URL相关操作
+- Stream 文件流相关
+- Query String
+- *Process 当前进程相关
+- *Path 文件路径相关
+- Modules 模块相关
+
+## 实现细节
+为了可扩展性，我将整个系统设计成四个部分，配置系统，获取HAR系统，解析系统，可视化系统
+
+![]({{BLOG_IMG}}511.png)
+
+
 
 ## 总结
+整个系统可以实现对配置文件中的页面依赖的资源进行收集整理和分析，终于把手工的工作变成了自动的，作为一个程序员一定要有自动化的意识，重复的工作让机器来做
+
 如果然我推荐一篇学习nodejs的文章的话，那我推荐《[七天学会nodejs](http://nqdeng.github.io/7-days-nodejs/
 )》，如果让我推荐一本书的话，我推荐《nodejs实战》
 

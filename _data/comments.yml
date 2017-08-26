@@ -7510,6 +7510,13 @@ some-practice-of-nodejs:
       picture: /img/facelessman.png
     content: 哎呀，一直也没搞
     date: 2017-03-17T02:08:37.000Z
+  - author:
+      type: github
+      displayName: xuexb
+      url: 'https://github.com/xuexb'
+      picture: 'https://avatars1.githubusercontent.com/u/3872051?v=4&s=73'
+    content: '&#x73B0;&#x5728;&#x80FD;&#x7528; chrome-headless &#x4E86;~'
+    date: 2017-08-26T02:22:08.783Z
 my-git-note:
   - author:
       type: full

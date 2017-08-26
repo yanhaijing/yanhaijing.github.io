@@ -162,7 +162,7 @@ node作为一个有了对系统完整操作的功能，所有有众多内置模�
 这种脚本类型的任务，node的异步会让程序更复杂，o(╯□╰)o
 
 如果然我推荐一篇学习nodejs的文章的话，那我推荐《[七天学会nodejs](http://nqdeng.github.io/7-days-nodejs/
-)》，如果让我推荐一本书的话，我推荐《nodejs实战》
+)》，如果让我推荐一本书的话，我推荐《[nodejs实战](https://www.amazon.cn/gp/product/B00K4RUZHW/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00K4RUZHW&linkCode=as2&tag=yanhaijing-23)》
 
 
 [HAR]: http://www.softwareishard.com/blog/har-12-spec/

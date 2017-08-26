@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 移动端flex布局实战经验
+title: 移动端flex布局实战
 category : css
 tagline: "原创"
 tags : [css]

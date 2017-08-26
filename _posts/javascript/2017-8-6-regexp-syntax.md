@@ -5,7 +5,7 @@ category : javascript
 tagline: "原创"
 tags : [javascript]
 keywords: [正则表达式, regexp, javascript]
-description: 
+description: 本文详细介绍了正则表达式的语法部分
 ---
 {% include JB/setup %}
 

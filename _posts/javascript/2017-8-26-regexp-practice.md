@@ -100,7 +100,7 @@ match方法也会返回匹配的结果，匹配结果和exec类似
 ## String#replace
 字符串的replace方法，可以将字符串的匹配字符，替换成另外的指定字符
 
-    'abc'.replace('a', b) // 'bbc'
+    'abc'.replace('a', 'b') // 'bbc'
 
 其第一个参数可以是正则表达式，如果想全局替换需添加全局参数
 
@@ -196,4 +196,4 @@ lastIndex比较有意思，表示上次匹配成功的是的索引
 
 在下一篇文章中，准备讲一讲正则的实现原理，难度略大o(╯□╰)o
 
-本文灵感来源率《[JavaScript忍者秘籍](https://www.amazon.cn/gp/product/B016DWSEWO/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B016DWSEWO&linkCode=as2&tag=yanhaijing-23)》这本书，如果你想成为高手的话，我也非常推荐看下这本书
+本文灵感来源于《[JavaScript忍者秘籍](https://www.amazon.cn/gp/product/B016DWSEWO/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B016DWSEWO&linkCode=as2&tag=yanhaijing-23)》这本书，如果你想成为高手的话，我也非常推荐看下这本书

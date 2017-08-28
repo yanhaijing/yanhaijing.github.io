@@ -134,6 +134,14 @@ trans-duoshuo-comment:
       @vinnyxiong
       &#x8BC4;&#x8BBA;&#x5B8C;&#xFF0C;&#x9700;&#x8981;&#x6211;&#x5BA1;&#x6838;&#x624D;&#x80FD;&#x53D1;&#x51FA;&#x6765;
     date: 2017-07-24T11:07:59.674Z
+  - author:
+      type: github
+      displayName: songxin1990
+      url: 'https://github.com/songxin1990'
+      picture: 'https://avatars0.githubusercontent.com/u/6946828?v=4&s=73'
+    content: >-
+      &#x597D;&#x7528;&#x5417;&#xFF1F;&#x6709;&#x6CA1;&#x5176;&#x4ED6;&#x7684;&#x8BC4;&#x8BBA;&#x7CFB;&#x7EDF;&#x4E86;&#xFF1F;
+    date: 2017-08-26T11:44:03.505Z
 some-of-module:
   - author:
       type: github

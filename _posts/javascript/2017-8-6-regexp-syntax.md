@@ -191,6 +191,6 @@ js只支持正向预搜索，也就是xxx后面必须是yyy，或者xxx后面不
 
 ![]({{BLOG_IMG}}505.png)
 
-本文仅讲述了语法，下一篇文章将详细介绍如何在js中使用正则，推荐一下[glob](https://github.com/isaacs/node-glob)，号称给人看的正则，比正则的语法简单多了，也是平时开发的神器
+本文仅讲述了语法，[下一篇文章](http://yanhaijing.com/javascript/2017/08/26/regexp-practice/)将详细介绍如何在js中使用正则，推荐一下[glob](https://github.com/isaacs/node-glob)，号称给人看的正则，比正则的语法简单多了，也是平时开发的神器
 
 

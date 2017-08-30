@@ -7525,6 +7525,15 @@ some-practice-of-nodejs:
       picture: 'https://avatars1.githubusercontent.com/u/3872051?v=4&s=73'
     content: '&#x73B0;&#x5728;&#x80FD;&#x7528; chrome-headless &#x4E86;~'
     date: 2017-08-26T02:22:08.783Z
+  - author:
+      type: full
+      displayName: yugasun
+      url: 'https://github.com/yugasun'
+      picture: 'https://avatars0.githubusercontent.com/u/8536173?v=4&s=73'
+    content: >-
+      @xuexb
+      [puppeteer(&#x5080;&#x5121;&#x5E08;)](https://github.com/GoogleChrome/puppeteer)
+    date: 2017-08-30T09:01:45.674Z
 my-git-note:
   - author:
       type: full

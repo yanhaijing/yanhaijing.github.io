@@ -7643,3 +7643,12 @@ find-job-of-360:
       @cuijiudai
       &#x55EF;&#xFF0C;&#x900F;&#x6F0F;&#x9762;&#x8BD5;&#x9898;&#x8FD8;&#x662F;&#x4E0D;&#x5BF9;&#x7684;&#x54E6;
     date: 2017-08-05T03:23:03.956Z
+regexp-practice:
+  - author:
+      type: github
+      displayName: jawil
+      url: 'https://github.com/jawil'
+      picture: 'https://avatars0.githubusercontent.com/u/16515708?v=4&s=73'
+    content: |
+      &#x5927;&#x4F6C;&#x600E;&#x4E48;&#x53BB;&#x7F8E;&#x56E2;&#x4E86;
+    date: 2017-09-05T08:29:39.001Z

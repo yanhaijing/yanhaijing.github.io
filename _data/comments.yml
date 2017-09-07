@@ -142,6 +142,13 @@ trans-duoshuo-comment:
     content: >-
       &#x597D;&#x7528;&#x5417;&#xFF1F;&#x6709;&#x6CA1;&#x5176;&#x4ED6;&#x7684;&#x8BC4;&#x8BBA;&#x7CFB;&#x7EDF;&#x4E86;&#xFF1F;
     date: 2017-08-26T11:44:03.505Z
+  - author:
+      type: github
+      displayName: conupefox
+      url: 'https://github.com/conupefox'
+      picture: 'https://avatars2.githubusercontent.com/u/3516647?v=4&s=73'
+    content: '&#x8BD5;&#x8BD5;&#x6CD5;&#x56FD;&#x5C0F;&#x54E5;'
+    date: 2017-09-06T07:58:21.055Z
 some-of-module:
   - author:
       type: github

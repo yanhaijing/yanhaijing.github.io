@@ -56,7 +56,7 @@ group: navigation
 - [@wutongr(梧桐)](http://www.wutongr.com/)
 - [@淡忘~浅思](http://www.ido321.com/)
 - [@杨佰(yangbai)的个人博客](http://www.yangbai.me/)
-- [@前端小武](http://www.xuexb.com/)
+- [@前端小武](https://xuexb.com/)
 - [@爱天台](http://www.aitiantai.com/)
 - [@随心小筑](http://jser.it/)
 - [@前端人的俱乐部](http://f2er.club/)

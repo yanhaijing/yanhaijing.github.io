@@ -83,6 +83,12 @@ js自带的数学运算不能满足你的需求了，那试试这个，扩展了
 ## [momentjs][momentjs]
 这个处理时间的工具，你想要的都有了，太赞了，感谢评论区的推荐。
 
+## [spacetime][spacetime]
+moment太大，那试试这个吧，超小，功能还超全的一个时间处理库
+
+## [iNotify][iNotify]
+浏览器通知各种兼容性的坑，试试这个库吧，磨平各个浏览器的差异，同时还新增多种通知
+
 ## 总结
 本文介绍的只是作者收集的一小部分而已，作者将会保持时时更新的，如果你有什么推荐的欢迎反馈给我。
 
@@ -106,3 +112,5 @@ js自带的数学运算不能满足你的需求了，那试试这个，扩展了
 [mathjs]: https://github.com/josdejong/mathjs
 [es6-promise]: https://github.com/jakearchibald/es6-promise
 [momentjs]: http://momentjs.cn/
+[spacetime]: https://github.com/smallwins/spacetime
+[iNotify]: https://github.com/jaywcjlove/iNotify

@@ -452,7 +452,7 @@ JavaScript定义了不同值之间的区别：
 
 下标列出了所有typeof的结果：
  
-<table class="table">
+<table class="table table-bordered">
 <tbody>
 <tr>
 <td><strong>操作数</strong></td>

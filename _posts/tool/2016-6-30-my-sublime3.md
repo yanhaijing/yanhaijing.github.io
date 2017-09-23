@@ -70,7 +70,7 @@ sublime的快捷键非常非常多，很难都记住，按照80/20原则，只�
 - `[x]` x是可选操作
 - `x, y` x操作, y操作（两个类似操作写到一行）
 
-<table class="table">
+<table class="table table-bordered">
 <thead>
     <tr><th>Mac 快捷键</th><th>Windows 快捷键</th><th>功能</th></tr>
 </thead>

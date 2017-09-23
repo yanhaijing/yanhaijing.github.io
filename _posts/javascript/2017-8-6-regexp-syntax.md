@@ -45,7 +45,7 @@ description: 本文详细介绍了正则表达式的语法部分
 
 下面是常用转义字符列表：
 
-<table class="table">
+<table class="table table-bordered">
 <tr><td>\n</td><td>匹配换行符</td></tr>
 <tr><td>\r</td><td>匹配回车符</td></tr>
 <tr><td>\t</td><td>匹配制表符，也就是tab键</td></tr>

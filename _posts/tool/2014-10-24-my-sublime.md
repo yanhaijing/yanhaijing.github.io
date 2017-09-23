@@ -51,7 +51,7 @@ description: 作为aptana死忠粉的我，最近由于工作需要最近开始�
 - `[x]` x是可选操作
 - `x, y` x操作, y操作（两个类似操作写到一行）
 
-<table class="table">
+<table class="table table-bordered">
 <thead>
 <tr><th>快捷键</th><th>功能</th></tr>
 </thead>

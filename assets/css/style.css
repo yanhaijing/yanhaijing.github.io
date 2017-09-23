@@ -73,6 +73,27 @@
     border: 1px solid #4c964d;
     color: #FFF;
 }
+
+/* table 默认样式修复 */
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+table th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+}
+/* table 默认样式修复 */
+
 .yan-copyright {
     margin-top: 1em;
     padding: 15px;

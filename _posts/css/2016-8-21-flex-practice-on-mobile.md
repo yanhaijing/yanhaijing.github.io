@@ -151,39 +151,158 @@ uc span行内元素作为子项时 display 必须设置为block，最好直接�
 
 举个例子，display: flex要这么写
 
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
+```css
+display: -webkit-box;
+display: -webkit-flex;
+display: flex;
+```
 
-一定有同学说这也太麻烦了，有没有啥简单的办法呢？
+一定有同学说这也太麻烦了，有没有啥简单的办法呢？还真有，共有三种办法，感谢前辈
 
-有关一插件叫做autoprefix，sublime就可以安装，你只需写标准属性，然后快捷键一下就ok了，但这种方式后面会不太好维护，比如有一天不需要09版语法了怎么破？？？一个一个去改吧，o(╯□╰)o
+第一种，编辑器插件，有一个叫做autoprefix插件，sublime就可以安装，你只需写标准属性，然后按一下快捷键就能够自动填充前缀属性。这种方法用起来最简单，但这种方法后面会不太好维护，比如有一天不需要09版语法了怎么破？？？一个一个去改吧，o(╯□╰)o
 
-如果你用less或者sass的话是有办法的，可以用mixin，这个可维护性会好一点
+第二种，预处理器mixin，如果你用过less或者sass的话，一定知道mixin，下面已less 2.x为例，sass大同小异
 
-    .display-flex {
+```less
+.display-flex(@display: flex) {
+    & when (@display =flex) {
         display: -webkit-box;
-        display: -webkit-flex;
-        display: flex;
     }
+    & when (@display =inline-flex) {
+        display: -webkit-inline-box;
+    }
+    display: e("-webkit-@{display}");
+    display: @display;
+}
+
+.flex-direction(@direction) {
+    & when (@direction =row) {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+    }
+    & when (@direction =row-reverse) {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+    }
+    & when (@direction =column) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+    }
+    & when (@direction =column-reverse) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+    }
+    -webkit-flex-direction: @direction;
+    flex-direction: @direction;
+}
+
+.flex-wrap(@wrap) {
+    & when (@wrap =nowrap) {
+        -webkit-box-lines: single;
+    }
+    & when (@wrap =wrap) {
+        -webkit-box-lines: multiple;
+    }
+    -webkit-flex-wrap: @wrap;
+    flex-wrap: @wrap;
+}
+
+.justify-content(@justify-content) {
+    & when (@justify-content =flex-start) {
+        -webkit-box-pack: start;
+    }
+    & when (@justify-content =flex-end) {
+        -webkit-box-pack: end;
+    }
+    & when (@justify-content =center) {
+        -webkit-box-pack: center;
+    }
+    & when (@justify-content =space-between) {
+        -webkit-box-pack: justify;
+    }
+    -webkit-justify-content: @justify-content;
+    justify-content: @justify-content;
+}
+
+.align-items(@align-items) {
+    & when (@justify-content =flex-start) {
+        -webkit-box-pack: start;
+    }
+    & when (@justify-content =flex-end) {
+        -webkit-box-pack: end;
+    }
+    & when (@justify-content =center) {
+        -webkit-box-pack: center;
+    }
+    & when (@justify-content =baseline) {
+        -webkit-box-pack: baseline;
+    }
+    & when (@justify-content =stretch) {
+        -webkit-box-pack: stretch;
+    }
+    -webkit-align-items: @align-items;
+    align-items: @align-items;
+}
+
+.order(@order) {
+    -webkit-box-ordinal-group: @order;
+    -webkit-order: @order;
+    order: @order;
+}
+
+.flex(@flex) {
+    -webkit-box-flex: @flex;
+    -webkit-flex: @flex;
+    flex: @flex;
+}
+```
 
 在使用的只要一行就行了
 
-    .container {
-        .display-flex;
-    }
+```less
+.container {
+    .display-flex;
+    .flex-direction(row);
+    .justify-content(center);
+}
+```
 
-有同学这么麻烦，我不想写啊？其实一定有人一定写好了，比如sass里的compass里面既有，可以参考一下
+上面的代码less编译完的结果如下
 
-其实大部分项目的mixin未必是有人维护的，那有没有更优雅的办法呢？其实自从postcss出来之后，自动加前缀的活就该交给css后处理器来做了，有了这个插件我们只需要配置要兼容的浏览器版本就可以了，加前缀的事情后处理器自动帮你解决
+```css
+.container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+```
 
-终于可以和浏览器前缀愉快的玩耍了，普及一个小科普知识，css后面的实验室性不会再以加前缀的方式进行了，而是会已浏览器的设置方式来显示开启，因为前缀的方式不够优雅。。。
+有同学说这么麻烦，我不想写啊？其实应该有人已经写好了，比如[compass](https://github.com/Igosuki/compass-mixins/blob/master/lib/compass/css3/_flexbox.scss)，可以参考一下
+
+这种方式的前提就是已经使用了css预处理器，可维护性比第一种方法更好；但是以我的经验来说，其实大部分项目的mixin未必是有人维护的，比如可能有一天不需要前缀版本了，但是并一定会有人去更新的
+
+第三种，css后处理器，其实自从postcss出来之后，自动加前缀的活就该交给postcss来做了，有了这个插件我们只需要配置要兼容的浏览器版本就可以了，加前缀的事情后处理器自动帮你解决，最近babel也出了一个类似的babel-env
+
+fis中可以使用`fis-postprocessor-autoprefixer`这个插件，我在之前的文章《[经验无线步骤页改版总结](http://yanhaijing.com/program/2016/09/07/exp-wap-step/)》中有介绍
+
+webpack中可以使用[postcss-loader](https://github.com/postcss/postcss-loader)这个loader
+
+终于可以和浏览器前缀愉快的玩耍了^_^
+
+**普及一个小科普知识，css后面的实验室性不会再以加前缀的方式进行了，而是会通过浏览器的设置方式来显示开启实验属性，因为前缀的方式不够优雅。。。这锅主要还是怪前端开发者，因为我们啊，只写webkit前缀，都不写标准属性，o(╯□╰)o**
 
 ## 总结
-其实选择哪种方式就看你自己了，现在在移动端已经可以任性的使用flex了，但pc端还不行，ie8。。。
+希望本文能够帮助你更好的使用flex，少踩一些坑，现在在移动端已经可以任性的使用flex了，但pc端还不行，ie8。。。如果没有兼容性问题，那就快来使用这一好用的布局方式吧
 
 最后我强烈建议大家阅读大漠老师的《[图解CSS3](https://amazon.cn/gp/product/B00LHL3DV4/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=yanhaijing-23&camp=536&creative=3200&linkCode=as2&creativeASIN=B00LHL3DV4&linkId=ce75459043755ec9e78830fa6e65f2be)》，这是我见过讲css3讲的最好的书了
 
-## 参考资料
+## 相关资料
 - [Flex 布局教程：语法篇](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 - [Flex 布局教程：实例篇](http://www.ruanyifeng.com/blog/2015/07/flex-examples.html)

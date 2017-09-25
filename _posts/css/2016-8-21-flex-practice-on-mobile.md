@@ -175,10 +175,10 @@ display: flex;
 
 ```less
 .display-flex(@display: flex) {
-    & when (@display =flex) {
+    & when (@display=flex) {
         display: -webkit-box;
     }
-    & when (@display =inline-flex) {
+    & when (@display=inline-flex) {
         display: -webkit-inline-box;
     }
     display: e("-webkit-@{display}");
@@ -186,19 +186,19 @@ display: flex;
 }
 
 .flex-direction(@direction) {
-    & when (@direction =row) {
+    & when (@direction=row) {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
     }
-    & when (@direction =row-reverse) {
+    & when (@direction=row-reverse) {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: reverse;
     }
-    & when (@direction =column) {
+    & when (@direction=column) {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
     }
-    & when (@direction =column-reverse) {
+    & when (@direction=column-reverse) {
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;
     }
@@ -207,10 +207,10 @@ display: flex;
 }
 
 .flex-wrap(@wrap) {
-    & when (@wrap =nowrap) {
+    & when (@wrap=nowrap) {
         -webkit-box-lines: single;
     }
-    & when (@wrap =wrap) {
+    & when (@wrap=wrap) {
         -webkit-box-lines: multiple;
     }
     -webkit-flex-wrap: @wrap;
@@ -218,16 +218,16 @@ display: flex;
 }
 
 .justify-content(@justify-content) {
-    & when (@justify-content =flex-start) {
+    & when (@justify-content=flex-start) {
         -webkit-box-pack: start;
     }
-    & when (@justify-content =flex-end) {
+    & when (@justify-content=flex-end) {
         -webkit-box-pack: end;
     }
-    & when (@justify-content =center) {
+    & when (@justify-content=center) {
         -webkit-box-pack: center;
     }
-    & when (@justify-content =space-between) {
+    & when (@justify-content=space-between) {
         -webkit-box-pack: justify;
     }
     -webkit-justify-content: @justify-content;
@@ -235,20 +235,20 @@ display: flex;
 }
 
 .align-items(@align-items) {
-    & when (@justify-content =flex-start) {
-        -webkit-box-pack: start;
+    & when (@align-items=flex-start) {
+        -webkit-box-align: start;
     }
-    & when (@justify-content =flex-end) {
-        -webkit-box-pack: end;
+    & when (@align-items=flex-end) {
+        -webkit-box-align: end;
     }
-    & when (@justify-content =center) {
-        -webkit-box-pack: center;
+    & when (@align-items=center) {
+        -webkit-box-align: center;
     }
-    & when (@justify-content =baseline) {
-        -webkit-box-pack: baseline;
+    & when (@align-items=baseline) {
+        -webkit-box-align: baseline;
     }
-    & when (@justify-content =stretch) {
-        -webkit-box-pack: stretch;
+    & when (@align-items=stretch) {
+        -webkit-box-align: stretch;
     }
     -webkit-align-items: @align-items;
     align-items: @align-items;

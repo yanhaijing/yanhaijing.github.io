@@ -44,3 +44,8 @@ OS X时代
 - OS X 10.11 El Capitan 2015
 - macOS 10.12 Sierra 2016.6.14
 - macOS 10.13 High Sierra 2017.6.5
+
+## 常用软件
+- draw.io 跨平台的viso，软件开发必备的绘图工具
+- typora 所见即所得的md工具，一用就会爱上
+- cheatsheet 一键查看当前工具的快捷键神器，从此再也不用担心不知道快捷键是啥了

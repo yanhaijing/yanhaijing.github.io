@@ -43,6 +43,16 @@ red-blue-ink:
       picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
     content: '&#x6D4B;&#x8BD5;&#x6D4B;&#x8BD5;'
     date: 2017-04-28T11:01:38.089Z
+  - author:
+      type: full
+      displayName: ljq29
+      url: 'https://github.com/ljq29'
+      picture: 'https://avatars2.githubusercontent.com/u/25943689?v=4&s=73'
+    content: >-
+      sorry &#xFF0C; lz&#x8FD8;&#x662F;&#x5BF9;&#x7684;&#x3002;
+
+      &#x521A;&#x521A;&#x53D1;&#x73B0;&#x6211;&#x5BF9;&#x9898;&#x76EE;&#x7406;&#x89E3;&#x6709;&#x504F;&#x5DEE;&#x3002;
+    date: 2017-10-01T03:45:35.179Z
 trans-duoshuo-comment:
   - author:
       type: github

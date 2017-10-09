@@ -43,6 +43,16 @@ red-blue-ink:
       picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
     content: '&#x6D4B;&#x8BD5;&#x6D4B;&#x8BD5;'
     date: 2017-04-28T11:01:38.089Z
+  - author:
+      type: full
+      displayName: ljq29
+      url: 'https://github.com/ljq29'
+      picture: 'https://avatars2.githubusercontent.com/u/25943689?v=4&s=73'
+    content: >-
+      sorry &#xFF0C; lz&#x8FD8;&#x662F;&#x5BF9;&#x7684;&#x3002;
+
+      &#x521A;&#x521A;&#x53D1;&#x73B0;&#x6211;&#x5BF9;&#x9898;&#x76EE;&#x7406;&#x89E3;&#x6709;&#x504F;&#x5DEE;&#x3002;
+    date: 2017-10-01T03:45:35.179Z
 trans-duoshuo-comment:
   - author:
       type: github
@@ -6754,6 +6764,15 @@ my-sublime3:
       picture: 'https://avatars1.githubusercontent.com/u/2998925?v=3&s=73'
     content: '&#x91D1;&#x5229;&#x79D1;&#x6280;'
     date: 2017-04-13T03:49:16.634Z
+  - author:
+      type: full
+      displayName: zhaozhiyuan1989
+      url: 'https://github.com/zhaozhiyuan1989'
+      picture: 'https://avatars0.githubusercontent.com/u/23535406?v=4&s=73'
+    content: >-
+      ##
+      &#x4E0D;&#x80FD;&#x56DE;&#x590D;&#x522B;&#x4EBA;&#x7684;&#x8BC4;&#x8BBA;&#x5417;
+    date: 2017-10-07T05:50:00.922Z
 my-linux:
   - author:
       type: full
@@ -7659,3 +7678,26 @@ regexp-practice:
     content: |
       &#x5927;&#x4F6C;&#x600E;&#x4E48;&#x53BB;&#x7F8E;&#x56E2;&#x4E86;
     date: 2017-09-05T08:29:39.001Z
+principle-of-rem-layout:
+  - author:
+      type: github
+      displayName: Maple13
+      url: 'https://github.com/Maple13'
+      picture: 'https://avatars3.githubusercontent.com/u/11918457?v=4&s=73'
+    content: >-
+      &#x5F88;&#x671F;&#x5F85;, &#x4E00;&#x76F4;&#x6709;&#x4E86;&#x89E3;&#x8FC7;
+      rem,
+      &#x4F46;&#x5B9E;&#x9645;&#x9879;&#x76EE;&#x4E2D;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x8FC7;&#x5168;&#x5C40;
+      rem&#x65B9;&#x6848;,
+      &#x4F46;&#x53EA;&#x4F7F;&#x7528;&#x4E00;&#x90E8;&#x5206;&#x53C8;&#x611F;&#x89C9;&#x7528;&#x5904;&#x4E0D;&#x5927;
+    date: 2017-09-30T06:03:02.600Z
+  - author:
+      type: github
+      displayName: Maple13
+      url: 'https://github.com/Maple13'
+      picture: 'https://avatars3.githubusercontent.com/u/11918457?v=4&s=73'
+    content: >-
+      &#x5F88;&#x671F;&#x5F85;, &#x4E4B;&#x524D;&#x4E86;&#x89E3;&#x8FC7; rem,
+      &#x4F46;&#x662F;&#x6CA1;&#x6709;&#x5B9E;&#x9645;&#x9879;&#x76EE;&#x4E2D;&#x5168;&#x5C40;&#x4F7F;&#x7528;&#x8FC7;,
+      &#x4F46;&#x5C40;&#x90E8;&#x4F7F;&#x7528;&#x53C8;&#x611F;&#x89C9;&#x7528;&#x5904;&#x4E0D;&#x5927;&#x5462;
+    date: 2017-09-30T06:04:37.254Z

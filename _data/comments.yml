@@ -7701,3 +7701,11 @@ principle-of-rem-layout:
       &#x4F46;&#x662F;&#x6CA1;&#x6709;&#x5B9E;&#x9645;&#x9879;&#x76EE;&#x4E2D;&#x5168;&#x5C40;&#x4F7F;&#x7528;&#x8FC7;,
       &#x4F46;&#x5C40;&#x90E8;&#x4F7F;&#x7528;&#x53C8;&#x611F;&#x89C9;&#x7528;&#x5904;&#x4E0D;&#x5927;&#x5462;
     date: 2017-09-30T06:04:37.254Z
+some-command-of-cmd:
+  - author:
+      type: github
+      displayName: nick950222
+      url: 'https://github.com/nick950222'
+      picture: 'https://avatars1.githubusercontent.com/u/24955297?v=4&s=73'
+    content: '&#x8D5E;'
+    date: 2017-10-13T04:42:28.942Z

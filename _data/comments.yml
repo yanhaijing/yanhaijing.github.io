@@ -7709,3 +7709,23 @@ some-command-of-cmd:
       picture: 'https://avatars1.githubusercontent.com/u/24955297?v=4&s=73'
     content: '&#x8D5E;'
     date: 2017-10-13T04:42:28.942Z
+exploring-the-abyss-of-null-and-undefined-in-javascript:
+  - author:
+      type: github
+      displayName: yxuecheng
+      url: 'https://github.com/yxuecheng'
+      picture: 'https://avatars3.githubusercontent.com/u/18499153?v=4&s=73'
+    content: >-
+      null&#x548C;undefine
+      &#x9AD8;&#x7EA7;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;24&#x9875;&#x8BF4;&#x6CA1;&#x6709;toString&#x65B9;&#x6CD5;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x6253;&#x5370;&#x786E;&#x5B9E;&#x62A5;&#x9519;&#xFF0C;&#x4F46;&#x662F;ES5&#x89C4;&#x8303;&#x89C4;&#x8303;9.8&#x4E0A;&#x53C8;&#x8BF4;
+      Undefined &#x8F6C;&#x6210; &quot;undefined&quot;
+      Null&#x8F6C;&#x6210;&quot;null&quot;
+      &#x662F;&#x600E;&#x4E48;&#x56DE;&#x4E8B;&#x554A;
+    date: 2017-10-20T08:40:23.756Z
+  - author:
+      type: full
+      displayName: yxuecheng
+      url: 'https://github.com/yxuecheng'
+      picture: 'https://avatars3.githubusercontent.com/u/18499153?v=4&s=73'
+    content: .
+    date: 2017-10-20T08:42:25.152Z

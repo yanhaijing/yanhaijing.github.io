@@ -394,11 +394,9 @@ document.addEventListener('DOMContentLoaded', callback);
 window.addEventListener('orientationchange' in window ? 'orientationchange' : 'resize', callback);
 ```
 
-页面效果如下，完整的例子在[这里]()
+页面效果如下，完整的例子在[这里](http://yanhaijing.com/rem/demo.html)
 
 ![]({{BLOG_IMG}}520.png)
-
-
 
 ## 总结
 

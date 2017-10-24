@@ -193,7 +193,86 @@ p {width: 15.625rem}
 
 ## Rem不是银弹
 
-可以算作响应式布局的一种，但响应式布局不是等比缩放
+rem是弹性布局的一种实现方式，弹性布局可以算作响应式布局的一种，但响应式布局不是弹性布局，弹性布局强调等比缩放，100%还原；响应式布局强调不同屏幕要有不同的显示，比如媒体查询
+
+> 用户选择大屏幕有两个几个出发点，有些人想要更大的字体，更大的图片，比如老花眼的我；有些人想要更多的内容，并不想要更大的图标；有些人想要个镜子。。。——颜海镜
+
+我认为一般内容型的网站，都不太适合使用rem，因为大屏用户可以自己选择是要更大字体，还是要更多内容，一旦使用了rem，就剥夺了用户的自由，比如百度知道，百度经验都没有使用rem布局；一些偏向app类的，图标类的，图片类的，比如淘宝，活动页面，比较适合使用rem，因为调大字体时并不能调大图标的大小
+
+rem可以做到100%的还原度，但同事rem的制作成本也更大，同时使用rem还有一些问题，下面我们一一列举下：
+
+首先是字体的问题，字体大小并不能使用rem，字体的大小和字体宽度，并不成线性关系，所以字体大小不能使用rem；由于设置了根元素字体的大小，会影响所有没有设置字体大小的元素，因为字体大小是会继承的，难道要每个元素都显示设置字体大小？？？
+
+我们可以在body上做字体修正，比如把body字体大小设置为16px，但如果用户自己设置了更大的字体，此时用户的设置将失效，比如合理的方式是，将其设置为用户的默认字体大小
+
+```css
+html {fons-size: width / 100}
+body {font-size: 16px}
+```
+
+那字体的大小如何实现响应式呢？可以通过修改body字体的大小来实现，同时所有设置字体大小的地方都是用em单位，对就是em，因为只有em才能实现，同步变化，我早就说过em就是为字体而生的
+
+```css
+@media screen and (min-width: 320px) {
+	body {font-size: 16px}
+}
+@media screen and (min-width: 481px) and (max-width:640px) {
+	body {font-size: 18px}
+}
+@media screen and (min-width: 641px) {
+	body {font-size: 20px}
+}
+
+p {font-size: 1.2em}
+p a {font-size: 1.2em}
+```
+
+第二，如果用户在PC端浏览，页面过宽怎么办？一般我们都会设置一个最大宽度，大于这个宽度的话页面居中，两边留白
+
+```js
+var clientWidth = document.documentElement.clientWidth;
+clientWidth = clientWidth < 780 ? clientWidth : 780;
+document.documentElement.style.fontSize = clientWidth / 100 + 'px';
+```
+
+设置body的宽度为100rem，并水平居中
+
+```css
+body {
+	margin: auto;
+	width: 100rem
+}
+```
+
+第三，如果用户禁用了js怎么破？其实这种用户真不多了，要不放弃吧。。。
+
+首先可以添加noscript标签提示用户
+
+```html
+<noscript>开启JavaScript，获得更好的体验</noscript>
+```
+
+给html添加一个320时的默认字体大小，保证页面可以显示
+
+```css
+html {fons-size: 3.2px}
+```
+
+如果你想要更好的体验，不如添加媒体查询吧
+
+```css
+@media screen and (min-width: 320px) {
+	html {font-size: 3.2px}
+}
+@media screen and (min-width: 481px) and (max-width:640px) {
+	html {font-size: 4.8px}
+}
+@media screen and (min-width: 641px) {
+	html {font-size: 6.4px}
+}
+```
+
+rem不是银弹，这个世上也没有银弹，每个方案都有其优点，也有其缺点，学会做出选择和妥协
 
 ## Rem布局方案
 

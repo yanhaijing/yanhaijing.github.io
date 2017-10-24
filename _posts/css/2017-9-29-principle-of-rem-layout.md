@@ -276,6 +276,128 @@ rem不是银弹，这个世上也没有银弹，每个方案都有其优点，�
 
 ## Rem布局方案
 
+通过上面可以得出最好的弹性布局方案是，rem+js方案，同时还要解决noscript问题，解决字体问题，解决屏幕过宽问题
+
+但是上面的方案还有个问题，就是分成100份的话，假设屏幕宽度320，此时html大小是3.2px，但浏览器支持最小字体大小是12px，怎么办？那就分成10份呗，只要把上面的100都换成10就好了
+
+下面给一个完整的例子，css的计算没有使用预处理器，这个很简单
+
+html代码如下
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>rem布局</title>
+</head>
+<body>
+    <noscript>开启JavaScript，获得更好的体验</noscript>
+
+    <div class="p1">
+        宽度为屏幕宽度的50%，字体大小1.2em
+        <div class="s1">
+            字体大小1.2.em
+        </div>
+    </div>
+
+    <div class="p2">
+        宽度为屏幕宽度的40%，字体大小默认
+        <div class="s2">
+            字体大小1.2em
+        </div>
+    </div>
+</body>
+</html>
+
+```
+
+css代码如下
+
+```css
+html {
+    font-size: 32px; /* 320/10 */
+}
+body {
+    font-size: 16px; /* 修正字体大小 */
+    /* 防止页面过宽 */
+    margin: auto;
+    padding: 0;
+    width: 10rem;
+    /* 防止页面过宽 */
+    outline: 1px dashed green;
+}
+
+/* js被禁止的回退方案 */
+@media screen and (min-width: 320px) {
+    html {font-size: 32px}
+    body {font-size: 16px;}
+}
+@media screen and (min-width: 481px) and (max-width:640px) {
+    html {font-size: 48px}
+    body {font-size: 18px;}
+}
+@media screen and (min-width: 641px) {
+    html {font-size: 64px}
+    body {font-size: 20px;}
+}
+
+noscript {
+    display: block;
+    border: 1px solid #d6e9c6;
+    padding: 3px 5px;
+    background: #dff0d8;
+    color: #3c763d;
+}
+/* js被禁止的回退方案 */
+
+.p1, .p2 {
+    border: 1px solid red;
+    margin: 10px 0;
+}
+
+.p1 {
+    width: 5rem;
+    height: 5rem;
+
+    font-size: 1.2em; /* 字体使用em */
+}
+
+.s1 {
+    font-size: 1.2em; /* 字体使用em */
+}
+
+.p2 {
+    width: 4rem;
+    height: 4rem;
+}
+.s2 {
+    font-size: 1.2em /* 字体使用em */
+}
+```
+
+js代码如下
+
+```js
+var documentElement = document.documentElement;
+
+function callback() {
+    var clientWidth = documentElement.clientWidth;
+    // 屏幕宽度大于780，不在放大
+    clientWidth = clientWidth < 780 ? clientWidth : 780;
+    documentElement.style.fontSize = clientWidth / 10 + 'px';
+}
+
+document.addEventListener('DOMContentLoaded', callback);
+window.addEventListener('orientationchange' in window ? 'orientationchange' : 'resize', callback);
+```
+
+页面效果如下，完整的例子在[这里]()
+
+![]({{BLOG_IMG}}520.png)
+
 
 
 ## 总结

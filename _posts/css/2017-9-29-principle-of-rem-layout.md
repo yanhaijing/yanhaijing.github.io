@@ -201,7 +201,7 @@ rem是弹性布局的一种实现方式，弹性布局可以算作响应式布�
 
 rem可以做到100%的还原度，但同事rem的制作成本也更大，同时使用rem还有一些问题，下面我们一一列举下：
 
-首先是字体的问题，字体大小并不能使用rem，字体的大小和字体宽度，并不成线性关系，所以字体大小不能使用rem；由于设置了根元素字体的大小，会影响所有没有设置字体大小的元素，因为字体大小是会继承的，难道要每个元素都显示设置字体大小？？？
+首先是字体的问题，字体大小并不能使用rem，字体的大小和字体宽度，并不成线性关系，这个函数我还没算出来，所以字体大小不能使用rem；由于设置了根元素字体的大小，会影响所有没有设置字体大小的元素，因为字体大小是会继承的，难道要每个元素都显示设置字体大小？？？
 
 我们可以在body上做字体修正，比如把body字体大小设置为16px，但如果用户自己设置了更大的字体，此时用户的设置将失效，比如合理的方式是，将其设置为用户的默认字体大小
 
@@ -315,7 +315,7 @@ html代码如下
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>rem布局</title>
+    <title>rem布局——rem+js</title>
 </head>
 <body>
     <noscript>开启JavaScript，获得更好的体验</noscript>
@@ -417,7 +417,13 @@ document.addEventListener('DOMContentLoaded', callback);
 window.addEventListener('orientationchange' in window ? 'orientationchange' : 'resize', callback);
 ```
 
-页面效果如下，完整的例子在[这里](http://yanhaijing.com/rem/demo.html)
+完整的例子如下
+
+- [rem+js的例子](http://yanhaijing.com/rem/rem-and-js.html)
+- [rem+vw的例子](http://yanhaijing.com/rem/rem-and-vw.html)
+- [vw的例子](http://yanhaijing.com/rem/vw.html)
+
+页面效果如下
 
 ![]({{BLOG_IMG}}520.png)
 

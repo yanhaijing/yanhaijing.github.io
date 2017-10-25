@@ -33,11 +33,11 @@ rem和em很容易混淆，其实两个都是css的单位，并且也都是相对
 ```css
 .p1 {font-size: 16px; line-height: 32px;}
 .s1 {font-size: 2em;}
-.s1 {font-size: 2em; line-height: 2em;}
+.s2 {font-size: 2em; line-height: 2em;}
 
 .p2 {font-size: 16px; line-height: 2;}
 .s5 {font-size: 2em;}
-.s5 {font-size: 2em; line-height: 2em;}
+.s6 {font-size: 2em; line-height: 2em;}
 ```
 
 em可以让我们的页面更灵活，更健壮，比起到处写死的px值，em似乎更有张力，改动父元素的字体大小，子元素会等比例变化，这一变化似乎预示了无限可能
@@ -408,3 +408,5 @@ window.addEventListener('orientationchange' in window ? 'orientationchange' : 'r
 - [从网易与淘宝的font-size思考前端设计稿与工作流](http://www.cnblogs.com/lyzg/p/4877277.html)
 - [移动web适配之rem](https://www.nihaoshijie.com.cn/index.php/archives/593/)
 - [使用 rem 提供一致的字体大小](http://harttle.com/2016/12/20/rem-and-accessibility.html)
+- [再聊移动端页面的适配](http://www.w3cplus.com/css/vw-for-layout.html)
+- [使用Flexible实现手淘H5页面的终端适配](http://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html)

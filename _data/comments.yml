@@ -5972,6 +5972,13 @@ html5-video:
       picture: 'https://avatars1.githubusercontent.com/u/14797594?v=4&s=73'
     content: '&#x5B66;&#x4E60;&#x4E86;'
     date: 2017-08-11T04:28:41.816Z
+  - author:
+      type: github
+      displayName: muyudou
+      url: 'https://github.com/muyudou'
+      picture: 'https://avatars2.githubusercontent.com/u/5087462?v=4&s=73'
+    content: '&#x68D2;&#x68D2;&#xFF01;&#xFF01;'
+    date: 2017-10-26T05:58:52.129Z
 i-hope-world:
   - author:
       type: full

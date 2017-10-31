@@ -7717,6 +7717,18 @@ principle-of-rem-layout:
       &#x8F6C;&#x53D1;&#x5230;&#x4E86; https://iblog.wilee.me/post/detail/10 
       &#x4FB5;&#x5220;~~~
     date: 2017-10-24T12:56:53.967Z
+  - author:
+      type: twitter
+      displayName: IrisYaooo
+      url: 'https://twitter.com/IrisYaooo'
+      picture: >-
+        https://pbs.twimg.com/profile_images/813582124242472960/IpWRReuS_bigger.jpg
+    content: >
+      &#x4E0D;&#x660E;&#x767D;&#x4E3A;&#x4EC0;&#x4E48;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x4E0D;&#x80FD;&#x7528;rem&#xFF1F;
+      &#x5B98;&#x65B9;&#x89E3;&#x91CA;&#x5B83;&#x662F; &grave;Equal to the
+      computed value of font-size on the root element. &grave; 
+      https://www.w3.org/TR/css-values-3/#font-relative-lengths
+    date: 2017-10-31T03:59:58.830Z
 some-command-of-cmd:
   - author:
       type: github

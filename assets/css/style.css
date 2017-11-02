@@ -134,6 +134,12 @@ table th {
     padding: 5px 10px;
     color: #666;
 }
+.notice-item {
+    display: none;
+}
+.notice-item:first-child {
+    display: block;
+}
 .notice b{
     margin-right: 5px;
 }

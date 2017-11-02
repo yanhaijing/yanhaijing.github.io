@@ -1,9 +1,9 @@
 <div class="notice">
-    <div>
+    <div class="notice-item">
         <b class="glyphicon glyphicon-bullhorn"></b>号外号外：招聘前端啦！地点：北京！！！<a href="/job" target="_blank">快点我查看</a>
     </div>
 
-    <div>
+    <div class="notice-item">
         <b class="glyphicon glyphicon-bullhorn"></b>号外号外：专注于移动端的fullPage.js来啦！！！<a href="https://github.com/yanhaijing/zepto.fullpage" target="_blank">快点我查看</a>
     </div>
 </div>

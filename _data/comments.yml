@@ -7729,6 +7729,15 @@ principle-of-rem-layout:
       computed value of font-size on the root element. &grave; 
       https://www.w3.org/TR/css-values-3/#font-relative-lengths
     date: 2017-10-31T03:59:58.830Z
+  - author:
+      type: github
+      displayName: yanhaijing
+      url: 'https://github.com/yanhaijing'
+      picture: 'https://avatars3.githubusercontent.com/u/3192087?v=4&s=73'
+    content: >-
+      @IrisYaooo
+      &#x5B57;&#x4F53;&#x548C;&#x5BBD;&#x5EA6;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x4E0D;&#x662F;&#x7EBF;&#x6027;&#x51FD;&#x6570;&#x554A;&#x3002;&#x3002;&#x3002;
+    date: 2017-11-02T02:27:42.198Z
 some-command-of-cmd:
   - author:
       type: github

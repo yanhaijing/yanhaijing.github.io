@@ -38,6 +38,8 @@ group: navigation
 <a target="_blank" href="http://url.cn/OXkoEC" rel="nofollow"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="CSS家园" title="CSS家园"></a>
 
 ## 更多信息
+[![]({{ HOME_PATH }}img/auth-github.png)](https://github.com/yanhaijing "我在GitHub")
+[![]({{ HOME_PATH }}img/auth-weibo.png)](http://weibo.com/yanhaijing1234 "我在微博")
 [![]({{ HOME_PATH }}img/twitter.png)](https://twitter.com/yanhaijing "我在推特")
 [![]({{ HOME_PATH }}img/auth-douban.png)](http://www.douban.com/people/yanhaijing/ "我在豆瓣")
 [![]({{ HOME_PATH }}img/turing.jpg)](http://www.ituring.com.cn/users/121364 "我在图灵")

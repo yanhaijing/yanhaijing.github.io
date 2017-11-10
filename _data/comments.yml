@@ -10,6 +10,16 @@ understanding-scope-and-context-in-javascript:
       函数上下文就不是这么回事了
       上下文 = VO|AO + scope chain + this
     date: 2017-04-05T12:00:02.976Z
+  - author:
+      type: github
+      displayName: felixccn
+      url: 'https://github.com/felixccn'
+      picture: 'https://avatars2.githubusercontent.com/u/29921478?v=4&s=73'
+    content: >-
+      &quot;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x540C;&#x65F6;&#x53EA;&#x80FD;&#x505A;&#x4E00;&#x4EF6;&#x4E8B;&#x60C5;&quot;&#x3002;at
+      a
+      time&#x7FFB;&#x8BD1;&#x6210;&ldquo;&#x540C;&#x65F6;&rdquo;&#x4E0D;&#x592A;&#x5408;&#x9002;&#xFF0C;&#x800C;&#x4E14;&#x8BFB;&#x8D77;&#x6765;&#x4E5F;&#x4E0D;&#x901A;&#x987A;&#xFF0C;&#x4EC0;&#x4E48;&#x53EB;&ldquo;&#x540C;&#x65F6;&#x53EA;&#x80FD;&#x505A;&#x4E00;&#x4EF6;&#x4E8B;&#x60C5;&rdquo;&#x3002;&#x56E0;&#x8BE5;&#x662F;&#x5728;&ldquo;&#x67D0;&#x4E00;&#x65F6;&#x523B;&rdquo;&#x6216;&ldquo;&#x6BCF;&#x6B21;&rdquo;&#x53EA;&#x80FD;&#x505A;&#x4E00;&#x4EF6;&#x4E8B;&#x60C5;&#x3002;
+    date: 2017-11-10T08:36:30.838Z
 red-blue-ink:
   - author:
       type: full

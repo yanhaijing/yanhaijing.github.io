@@ -7768,6 +7768,14 @@ principle-of-rem-layout:
       &#x81F3;&#x4E8E;vw,
       &#x54EA;&#x4E0D;&#x662F;&#x7ED9;&#x4EBA;&#x7528;&#x7684;.
     date: 2017-11-09T02:46:33.024Z
+  - author:
+      type: github
+      displayName: VincyChan
+      url: 'https://github.com/VincyChan'
+      picture: 'https://avatars0.githubusercontent.com/u/26925097?v=4&s=73'
+    content: >-
+      &#x955C;&#x54E5;&#xFF0C;&#x90A3;&#x6211;&#x60F3;&#x5C06;bootstrap&#x548C;rem&#x7ED3;&#x5408;&#x8D77;&#x6765;&#x4F7F;&#x7528;&#xFF0C;&#x8BE5;&#x548B;&#x6574;&#x5462;&#xFF1F;
+    date: 2017-11-11T07:49:34.519Z
 some-command-of-cmd:
   - author:
       type: github

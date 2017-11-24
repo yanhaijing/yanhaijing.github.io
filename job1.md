@@ -13,7 +13,10 @@ header : Post Archive
 
 简历请发到邮箱：<a href="mailto:hotspring.myw@alibaba-inc.com?subject=阿里钉钉招聘%2B前端%2B简历&body=颜海镜博客看到的招聘信息">hotspring.myw@alibaba-inc.com</a>
 
-### 前端开发工程师
+### 前端工程师、高级前端工程师、前端开发专家、高级前端开发专家，等 职位全部开放
+
+**所有职位定级，完全根据面试结果决定～ 任何才华在这里都会发光！**
+
 <pre class="pg-job-pre">
 岗位职责：
 前端工程师、高级前端工程师、前端开发专家、高级前端开发专家，等 职位全部开放，具体职位结果定级根据面试结果决定。

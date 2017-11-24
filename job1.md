@@ -6,7 +6,7 @@ header : Post Archive
 ---
 {% include JB/setup %}
 
-## 阿里钉钉<small>杭州 \| 工作经验1年+</small>
+## 阿里钉钉<small>杭州 \| 工作经验2年+</small>
 过来会和超漂亮的前端妹子一起工作，人很奈斯哟
 
 **重磅消息：有全员持股计划 ～ 计划本财年底执行**

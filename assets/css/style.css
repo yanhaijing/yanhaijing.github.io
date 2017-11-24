@@ -150,3 +150,7 @@ table th {
 .wgt-footer {
     padding-bottom: 5px;
 }
+
+.pg-job-pre {
+    white-space: pre-line;
+}

@@ -12,7 +12,7 @@ header : Post Archive
 简历请发到邮箱：<a href="mailto:yanhaijing@yeah.net?subject=美团外卖M端招聘%2B前端%2B简历&body=颜海镜博客看到的招聘信息">yanhaijing@yeah.net</a>
 
 ### 前端工程师
-<pre>
+<pre class="pg-job-pre">
 职位描述：
 1.探索使用最有效率的方式进行前端业务的开发
 2.对 web 前端框架的熟悉和使用
@@ -32,7 +32,7 @@ header : Post Archive
 </pre>
 
 ### 高级前端工程师
-<pre>
+<pre class="pg-job-pre">
 职位描述：
 1.使用 React Native 进行移动应用的业务开发
 2.对应用的性能进行调优和架构优化

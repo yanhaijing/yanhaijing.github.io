@@ -11,7 +11,7 @@ description:
 
 不解释，ES3时代的经典做法
 
-```javascript
+```
 (function() {
 	// 私有静态成员
 	var user = "";
@@ -55,7 +55,7 @@ description:
 
 时过境迁，下面来看看在ES6+中如何实现
 
-```	javascript
+```
 (function() {
 	// 私有静态成员
 	var user = "";

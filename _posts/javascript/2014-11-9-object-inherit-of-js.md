@@ -11,7 +11,7 @@ description: 本文就来总结下，如何使用构造函数来实现继承。
 
 js创建之初，正值java大行其道，面向对象编程春风正盛，js借鉴了java的对象机制，但仅是看起来像，也就是js的构造函数，如下：
 
-```javascript
+```
 function People(age) {
 	this.age = age;
 	this.getAge = function (){return this.age};
@@ -25,7 +25,7 @@ var p2 = new People(40);//People的实例2
 
 但上面代码问题是getAge方法会在每个People的实例中存在，如果实例多的话，会浪费很多空间，js采用了牺牲时间，获取空间的方法，js引入了原型理念，将方法放入原型中：
 
-```javascript
+```
 function People(age) {
 	this.age = age
 }
@@ -39,7 +39,7 @@ People.prototype.getAge = function () {return this.age};
 
 我们假设我们有一个父构造函数People和子构造函数Student，People有一个属性age和一个方法getAge，Student有一个属性num和getNum。
 
-```javascript
+```
 function People(age) {
 	this.age = age;
 }
@@ -57,7 +57,7 @@ Student.prototype.getNum = function () {return this.num;};
 
 我们可以利用js的原型机制，将子构造函数的原型属性设置为父构造函数的实例，这是js中比较常用的方式：
 
-```javascript
+```
 function Student(num) {
 	this.num = num;
 }
@@ -81,7 +81,7 @@ var stu1 = new Student('123');
 
 先来看看如何解决第一个问题，我们可以巧用js的call方法，如果你还不知道这个方法，请移步[这里](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call)。
 
-```javascript
+```
 function Student(age, num) {
 	People.call(this, age);
 	this.num = num;
@@ -94,7 +94,7 @@ function Student(age, num) {
 
 再来看看如何解决第二个问题，解决这个问题，其实我们可以将子构造函数的原型更改为父构造函数的原型，而不是父构造函数的实例。
 
-```javascript
+```
 Student.prototype = People.prototype;
 ```
 
@@ -106,7 +106,7 @@ Student.prototype = People.prototype;
 
 为了解决上面引发的问题，和第三个问题。我们可以在子构造函数和父构造函数之间，加一层临时构造函数。
 
-```javascript
+```
 function F() {
 }
 
@@ -119,7 +119,7 @@ Student.prototype = new F();
 
 在修复一下constructor属性就ok啦
 
-```javascript
+```
 Student.prorotype.constructor = Student;
 ```
 
@@ -127,7 +127,7 @@ Student.prorotype.constructor = Student;
 
 我们将上面的几种方法综合起来，代码看起来就像下面这样子：
 
-```javascript
+```
 //继承函数
 function inherit(C, P) {
 	var F = function (){};
@@ -168,7 +168,7 @@ Student.say() // Student应该可以继承People的静态方法，但目前还�
 
 下面给出解决办法
 
-```javascript
+```
 //继承函数
 function inherit(C, P) {
 	var F = function (){};
@@ -199,7 +199,7 @@ function inherit(C, P) {
 
 上面静态属性继承的问题，在于在陈旧浏览器中，属性和方法的继承是静态拷贝的，继承完后续父类的改动不会自动同步到子类，这是一个坑
 
-```javascript
+```
 People.say = function (word) {console.log(word)};
 inherit(Student, People);//继承父构造函数
 People.say = function (word) {console.log(word + 123)};
@@ -210,7 +210,7 @@ Student.say('abc') // abc 而不是 abc123
 
 ES6带来了原生class，从此继承这件事终于有了简单的写法
 
-```Javascript
+```
 class People {
     constructor(age) {
         this.age = age;

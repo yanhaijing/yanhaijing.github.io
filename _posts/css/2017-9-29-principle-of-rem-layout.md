@@ -21,12 +21,12 @@ rem和em很容易混淆，其实两个都是css的单位，并且也都是相对
 
 ```html
 <div class="p1">
-	<div class="s1">1</div>
-  	<div class="s2">1</div>
+    <div class="s1">1</div>
+    <div class="s2">1</div>
 </div>
 <div class="p2">
-	<div class="s5">1</div>
-  	<div class="s6">1</div>
+    <div class="s5">1</div>
+    <div class="s6">1</div>
 </div>
 ```
 
@@ -216,13 +216,13 @@ body {font-size: 16px}
 
 ```css
 @media screen and (min-width: 320px) {
-	body {font-size: 16px}
+    body {font-size: 16px}
 }
 @media screen and (min-width: 481px) and (max-width:640px) {
-	body {font-size: 18px}
+    body {font-size: 18px}
 }
 @media screen and (min-width: 641px) {
-	body {font-size: 20px}
+    body {font-size: 20px}
 }
 
 p {font-size: 1.2em}
@@ -241,8 +241,8 @@ document.documentElement.style.fontSize = clientWidth / 100 + 'px';
 
 ```css
 body {
-	margin: auto;
-	width: 100rem
+    margin: auto;
+    width: 100rem
 }
 ```
 
@@ -264,13 +264,13 @@ html {fons-size: 3.2px}
 
 ```css
 @media screen and (min-width: 320px) {
-	html {font-size: 3.2px}
+    html {font-size: 3.2px}
 }
 @media screen and (min-width: 481px) and (max-width:640px) {
-	html {font-size: 4.8px}
+    html {font-size: 4.8px}
 }
 @media screen and (min-width: 641px) {
-	html {font-size: 6.4px}
+    html {font-size: 6.4px}
 }
 ```
 

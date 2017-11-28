@@ -108,3 +108,11 @@ description:
 	Box.staticProperty2 = 1;
 })();
 ```
+
+## 总结
+更多js面向对象相关内容请看：
+
+- [JavaScript对象继承一瞥](http://yanhaijing.com/javascript/2014/11/09/object-inherit-of-js/)
+- [JavaScript原型之路](http://yanhaijing.com/javascript/2014/07/18/javascript-prototype/)
+- [详解JavaScript中的原型和继承](http://yanhaijing.com/javascript/2016/07/24/prototype-and-inheritance-of-js/)
+- [Javascript继承-原型的陷阱](http://yanhaijing.com/javascript/2013/08/23/javascript-inheritance-how-to-shoot-yourself-in-the-foot-with-prototypes/)

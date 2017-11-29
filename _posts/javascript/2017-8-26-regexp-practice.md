@@ -194,6 +194,6 @@ lastIndex比较有意思，表示上次匹配成功的是的索引
 ## 总结
 到这里你已经学会了正则的语法，并且学会了在js中使用正则的方法，接下来快去实战吧，要想学会正则必须多加练习，正所谓拳不离手曲不离口吗
 
-在下一篇文章中，准备讲一讲正则的实现原理，难度略大o(╯□╰)o
+在[下一篇文章](http://yanhaijing.com/javascript/2017/11/29/regexp-principle/)中，准备讲一讲正则的实现原理，难度略大o(╯□╰)o
 
 本文灵感来源于《[JavaScript忍者秘籍](https://www.amazon.cn/gp/product/B016DWSEWO/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B016DWSEWO&linkCode=as2&tag=yanhaijing-23)》这本书，如果你想成为高手的话，我也非常推荐看下这本书

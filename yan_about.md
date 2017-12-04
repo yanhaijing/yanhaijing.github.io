@@ -68,4 +68,5 @@ group: navigation
 - [@Phodal](https://www.phodal.com/)
 - [@wujunze](https://wujunze.com/)
 - [@arron](https://omeme.me/)
+- [@geekjc](https://www.geekjc.com)
 

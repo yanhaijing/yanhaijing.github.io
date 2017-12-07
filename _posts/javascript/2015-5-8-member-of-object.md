@@ -48,11 +48,11 @@ description: 本文分为两部分，分别介绍Object和Object.prototype上的
 - entries⑧
 - getOwnPropertyDescriptors⑧
 
-*注解：⑤为ES5新增的方法；⑥为ES6(ES2015)新增的方法；⑧为ES8(ES2017)新增的方法*
+**注解：⑤为ES5新增的方法；⑥为ES6(ES2015)新增的方法；⑧为ES8(ES2017)新增的方法**
 
 下面将会一一介绍上面的方法。
 
-### create
+### Object.create
 > Object.create() 方法创建一个拥有指定原型和若干个指定属性的对象。
 
 	Object.create(proto [, propertiesObject ])
@@ -60,19 +60,21 @@ description: 本文分为两部分，分别介绍Object和Object.prototype上的
 - proto 为新创建对象的原型对象，设置为null可创建没有原型的空对象。
 - propertiesObject 包涵若干个属性的描述符和defineProperties的第二个参数一样。
 
-	Object.create(Object.prototype, {
-		a: {
-			value: 1,
-			writable: true,
-			configurable: true
-		}
-	});
+```
+Object.create(Object.prototype, {
+	a: {
+		value: 1,
+		writable: true,
+		configurable: true
+	}
+});
+```
 
 创建一个继承自Object.prototype的对象，有一个属性a，其可写，可配置，不可枚举，值为1。
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/create)。
 
-### defineProperty
+### Object.defineProperty
 >Object.defineProperty() 方法直接在一个对象上定义一个新属性，或者修改一个已经存在的属性， 并返回这个对象。
 
 	Object.defineProperty(obj, prop, descriptor)
@@ -100,14 +102,14 @@ descriptor 可包含4个属性，如下：
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)。
 
-### defineProperties
+### Object.defineProperties
 > Object.defineProperties() 方法在一个对象上添加或修改一个或者多个自有属性，并返回该对象。
 
 	Object.defineProperties(obj, props)
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperties)。
 
-### getPrototypeOf
+### Object.getPrototypeOf
 > Object.getPrototypeOf() 方法返回指定对象的原型（也就是该对象内部属性[[Prototype]]的值）。
 
 	Object.getPrototypeOf(object)
@@ -126,7 +128,7 @@ descriptor 可包含4个属性，如下：
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/GetPrototypeOf)。
 
-### getOwnPropertyDescriptor
+### Object.getOwnPropertyDescriptor
 > Object.getOwnPropertyDescriptor() 返回指定对象上一个自有属性对应的属性描述符。（自有属性指的是直接赋予该对象的属性，不需要从原型链上进行查找的属性）
 	
 	Object.getOwnPropertyDescriptor(obj, prop)
@@ -139,7 +141,7 @@ descriptor 可包含4个属性，如下：
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor)。
 
-### keys
+### Object.keys
 > Object.keys() 方法会返回一个由给定对象的所有可枚举自身属性的属性名组成的数组，数组中属性名的排列顺序和使用for-in循环遍历该对象时返回的顺序一致（两者的主要区别是 for-in 还会遍历出一个对象从其原型链上继承到的可枚举属性）。
 
 	Object.keys(obj)
@@ -156,14 +158,14 @@ keys可以用来代替原来的for in循环，借助[es5新增的数组方法](h
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)。
 
-### getOwnPropertyNames
+### Object.getOwnPropertyNames
 > Object.getOwnPropertyNames()方法返回一个由指定对象的所有自身属性的属性名（包括不可枚举属性）组成的数组。
 
 	Object.getOwnPropertyNames(obj)
 
 其和Object.keys的区别就是能够获取自身的全部属性，包括不可枚举属性。
 
-### preventExtensions
+### Object.preventExtensions
 > Object.preventExtensions() 方法让一个对象变的不可扩展，也就是永远不能再添加新的属性。
 
 	Object.preventExtensions(obj)
@@ -178,12 +180,12 @@ Object.preventExtensions 只能阻止一个对象不能再添加新的自身属�
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions)。
 
-### isExtensible
+### Object.isExtensible
 > Object.isExtensible() 方法判断一个对象是否是可扩展的（是否可以在它上面添加新的属性）。
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/isExtensible)。
 
-### seal
+### Object.seal
 > Object.seal() 方法可以让一个对象密封，并返回被密封后的对象。密封对象是指那些不能添加新的属性，不能删除已有属性，以及不能修改已有属性的可枚举性、可配置性、可写性，但可能可以修改已有属性的值的对象。
 
 	Object.seal(obj)
@@ -194,43 +196,43 @@ Object.preventExtensions 只能阻止一个对象不能再添加新的自身属�
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/seal)。
 
-### isSealed
+### Object.isSealed
 > Object.isSealed() 方法判断一个对象是否是密封的（sealed）。
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed)。
 
-### freeze
+### Object.freeze
 > Object.freeze() 方法可以冻结一个对象。冻结对象是指那些不能添加新的属性，不能修改已有属性的值，不能删除已有属性，以及不能修改已有属性的可枚举性、可配置性、可写性的对象。也就是说，这个对象永远是不可变的。该方法返回被冻结的对象。
 
 	Object.freeze(obj)
 
 冻结对象是不可扩展的，密封的，同时期值属性的writable会被设置为false，set也将失效，总之会变为不可更改。任何尝试修改该对象的操作都会失败，可能是静默失败，也可能会抛出异常（[严格模式][2]）。
 
-### isFrozen
+### Object.isFrozen
 > Object.isFrozen() 方法判断一个对象是否被冻结（frozen）。
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/isFrozen)。
 
-### assign
+### Object.assign
 > Object.assign() 方法可以把任意多个的源对象自身的可枚举属性拷贝给目标对象，然后返回目标对象。
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
 	
 	Object.assign(target, ...sources)
 
-### getOwnPropertySymbols 
+### Object.getOwnPropertySymbols 
 > Object.getOwnPropertySymbols() 方法会返回一个数组，该数组包含了指定对象自身的（非继承的）所有 symbol 属性键。
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols)
 
-### is
+### Object.is
 > Object.is() 方法用来判断两个值是否是同一个值。
 
 Object.is与严格比较运算符（===）的行为基本一致，不同之处只有两个：一是+0不等于-0，二是NaN等于自身。
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/is)
 
-### setPrototypeOf
+### Object.setPrototypeOf
 > 将一个指定的对象的原型设置为另一个对象或者null(既对象的[[Prototype]]内部属性)。
 
 	Object.setPrototypeOf(obj, prototype)
@@ -245,7 +247,7 @@ Object.prototype上的方法，都是实例方法，必须在对象实例上调�
 - propertyIsEnumerable⑤
 - \_\_proto\_\_ ⑥
 
-### hasOwnProperty
+### Object#hasOwnProperty
 > hasOwnProperty() 方法用来判断某个对象是否含有指定的自身属性。
 
 	obj.hasOwnProperty(prop)
@@ -260,14 +262,14 @@ Object.prototype上的方法，都是实例方法，必须在对象实例上调�
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)。
 
-### isPrototypeOf
+### Object#isPrototypeOf
 > isPrototypeOf() 方法测试一个对象是否存在于另一个对象的原型链上。
 
 	prototype.isPrototypeOf(object)
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/isPrototypeOf)。
 
-### propertyIsEnumerable
+### Object#propertyIsEnumerable
 > propertyIsEnumerable() 方法返回一个布尔值，表明指定的属性名是否是当前对象可枚举的自身属性。
 
 	obj.propertyIsEnumerable(prop)
@@ -278,7 +280,7 @@ Object.prototype上的方法，都是实例方法，必须在对象实例上调�
 
 [更多详情](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable)。
 
-### \_\_proto\_\_
+### Object#\_\_proto\_\_
 > 一个对象的\_\_proto\_\_ 属性和自己的内部属性[[Prototype]]指向一个相同的值 (通常称这个值为原型)，原型的值可以是一个对象值也可以是null(比如说Object.prototype.\_\_proto\_\_的值就是null).该属性可能会引发一些错误，因为用户可能会不知道该属性的特殊性，而给它赋值，从而改变了这个对象的原型。 如果需要访问一个对象的原型，应该使用方法Object.getPrototypeOf。
 \_\_proto\_\_ 属性已经被添加在了ES6草案 §B.3.1中。
 

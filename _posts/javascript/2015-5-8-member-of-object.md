@@ -44,8 +44,11 @@ description: 本文分为两部分，分别介绍Object和Object.prototype上的
 - getOwnPropertySymbols⑥
 - is⑥
 - setPrototypeOf⑥
+- values⑧
+- entries⑧
+- getOwnPropertyDescriptors⑧
 
-*注解：⑤的为es5新增的方法，⑥的为es6(es2015)新增的方法。*
+*注解：⑤为ES5新增的方法；⑥为ES6(ES2015)新增的方法；⑧为ES8(ES2017)新增的方法*
 
 下面将会一一介绍上面的方法。
 

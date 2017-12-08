@@ -63,6 +63,13 @@ red-blue-ink:
 
       &#x521A;&#x521A;&#x53D1;&#x73B0;&#x6211;&#x5BF9;&#x9898;&#x76EE;&#x7406;&#x89E3;&#x6709;&#x504F;&#x5DEE;&#x3002;
     date: 2017-10-01T03:45:35.179Z
+  - author:
+      type: github
+      displayName: DouLu
+      url: 'https://github.com/DouLu'
+      picture: 'https://avatars3.githubusercontent.com/u/22651495?v=4&s=73'
+    content: '&#x6709;&#x610F;&#x601D;&#xFF01;&#x70B9;&#x8D5E;&#xFF01;'
+    date: 2017-12-08T08:19:05.777Z
 trans-duoshuo-comment:
   - author:
       type: github

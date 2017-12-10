@@ -2,11 +2,11 @@
 	<h2>打赏<a href="http://yanhaijing.com/mywallet/" target="_blank"><small>其他方式</small></a></h2>
 	<p><strong>本文对你有帮助？那就赏杯咖啡吧<strong><span class="glyphicon glyphicon glyphicon-glass"></span><span class="glyphicon glyphicon glyphicon-cutlery"></p>
     <figure>
-        <img src="{{ HOME_PATH }}img/weixin.png" alt="微信支付二维码" width="256" height="256">
+        <img src="{{ HOME_PATH }}img/weixin.png" alt="微信支付二维码" width="160" height="160">
         <figcaption>微信扫一扫转账</figcaption>
     </figure>
     <figure>
-		<img src="{{ HOME_PATH }}img/alipay.jpg" alt="支付宝帐号：yanhaijing@yeah.net" width="256" height="256">
+		<img src="{{ HOME_PATH }}img/alipay.jpg" alt="支付宝帐号：yanhaijing@yeah.net" width="160" height="160">
 		<figcaption>支付宝扫一扫转账</figcaption>
 	</figure>
 </aside>

@@ -1,6 +1,6 @@
 <div class="weixin-open clearfix">
     欢迎订阅我的微信公众帐号，只推送原创文字。扫码或搜索：<strong>颜海镜</strong>
     <figure>
-        <img src="{{ HOME_PATH }}img/weixin-open.jpg" alt="微信公众号：颜海镜" width="240" height="240">
+        <img src="{{ HOME_PATH }}img/weixin-open.jpg" alt="微信公众号：颜海镜" width="160" height="160">
     </figure>
 </div> 

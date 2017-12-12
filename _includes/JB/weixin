@@ -1,6 +1,6 @@
 <div class="weixin-open clearfix">
     <figure>
-        <img src="{{ HOME_PATH }}img/weixin-open.jpg" alt="微信公众号：颜海镜" width="160" height="160">
+        <img src="{{ HOME_PATH }}img/weixin-open.jpg" alt="微信公众号：颜海镜" width="150" height="150">
         <figcaption>
             关注微信公众号（颜海镜）
         </figcaption>

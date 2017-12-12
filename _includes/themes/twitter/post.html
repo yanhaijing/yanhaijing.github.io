@@ -19,7 +19,9 @@
         {% include JB/notice %}
         <div class="content">
             {{ content }}
-            {% include JB/origin_link %} 
+            <div class="blog-tail-origin-link">
+                {% include JB/origin_link %} 
+            </div>
             <!-- {% include JB/advertise/chat %} -->
             {% include JB/weixin %}
             {% include JB/mypay %}

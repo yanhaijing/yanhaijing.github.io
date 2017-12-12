@@ -94,6 +94,11 @@ table th {
 }
 /* table 默认样式修复 */
 
+.blog-tail-origin-link {
+    position: absolute;
+    text-indent: -999999px;
+}
+/* 版权 */
 .yan-copyright {
     margin-top: 1em;
     padding: 15px;
@@ -102,6 +107,9 @@ table th {
     font: 14px Microsoft Yahei, tahoma, sans-serif;
     word-break: break-word;
 }
+/* 版权 */
+
+/* 推荐项目 */
 .myproject {
     margin-top: 1em;
     padding: 15px;
@@ -111,6 +119,9 @@ table th {
 .myproject h2 {
     margin-top: 0px;
 }
+/* 推荐项目 */
+
+/* 捐赠 */
 .donate figure {
     float: left;
     margin-right: 10px;
@@ -118,6 +129,16 @@ table th {
 .donate figcaption {
     text-align: center;
 }
+.donate .donate-content {
+    // display: none;
+}
+.donate .donate-btn {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+}
+/* 捐赠 */
+
 .navbar-brand {
     font-size: 20px;
 }

@@ -139,6 +139,18 @@ table th {
 }
 /* 捐赠 */
 
+/* 捐赠&微信 */
+.weixin-and-donate {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.weixin-and-donate figure {
+    display: inline-block;
+    margin-top: 10px;
+}
+/* 捐赠&微信 */
+
 .navbar-brand {
     font-size: 20px;
 }

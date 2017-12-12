@@ -1,0 +1,11 @@
+<div class="weixin-and-donate">
+    <figure>
+        <img src="{{ HOME_PATH }}img/weixin-open.jpg" alt="微信公众号：颜海镜" width="170" height="170">
+        <figcaption>关注微信公众号（颜海镜）</figcaption>
+    </figure>
+
+    <figure>
+        <img src="{{ HOME_PATH }}img/weixin.png" alt="微信支付二维码" width="170" height="170">
+        <figcaption>微信扫一扫转账</figcaption>
+    </figure>
+</div>

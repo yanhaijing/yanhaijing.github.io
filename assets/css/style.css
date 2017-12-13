@@ -141,8 +141,6 @@ table th {
 
 /* 捐赠&微信 */
 .weixin-and-donate {
-    display: flex;
-    justify-content: space-around;
     text-align: center;
 }
 .weixin-and-donate figure {

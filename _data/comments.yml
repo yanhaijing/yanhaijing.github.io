@@ -70,6 +70,14 @@ red-blue-ink:
       picture: 'https://avatars3.githubusercontent.com/u/22651495?v=4&s=73'
     content: '&#x6709;&#x610F;&#x601D;&#xFF01;&#x70B9;&#x8D5E;&#xFF01;'
     date: 2017-12-08T08:19:05.777Z
+  - author:
+      type: github
+      displayName: leoperfect
+      url: 'https://github.com/leoperfect'
+      picture: 'https://avatars2.githubusercontent.com/u/16290658?v=4&s=73'
+    content: >-
+      &#x8FD9;&#x9053;&#x9898;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x60F3;&#xFF0C;&#x7EA2;&#x74F6;&#x84DD;&#x74F6;&#x8D28;&#x91CF;&#x90FD;&#x6CA1;&#x53D8;&#xFF0C;&#x5047;&#x8BBE;&#x7EA2;&#x74F6;&#x4E2D;&#x591A;&#x4E86;&#x84DD;&#x58A8;&#x6C34;n&#xFF0C;&#x90A3;&#x5FC5;&#x7136;&#x5C11;&#x4E86;&#x7B49;&#x91CF;&#x7684;&#x7EA2;&#x58A8;&#x6C34;n&#x5230;&#x4E86;&#x84DD;&#x74F6;&#x4E2D;&#xFF0C;&#x6240;&#x4EE5;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#x76F8;&#x7B49;&#x55BD;&#x3002;
+    date: 2017-12-21T09:21:52.735Z
 trans-duoshuo-comment:
   - author:
       type: github

@@ -140,12 +140,9 @@ table th {
 /* 捐赠 */
 
 /* 捐赠&微信 */
-.weixin-and-donate {
-    text-align: center;
-}
 .weixin-and-donate figure {
     display: inline-block;
-    margin-top: 10px;
+    text-align: center;
 }
 /* 捐赠&微信 */
 

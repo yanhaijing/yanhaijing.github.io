@@ -48,7 +48,7 @@ group: navigation
 [![]({{ HOME_PATH }}img/segmentfault.jpg)](https://segmentfault.com/u/yanhaijing "我在segmentfault")
 [![]({{ HOME_PATH }}img/stackoverflow.jpg)](http://stackoverflow.com/users/2681005/yanhaijing "我在stackoverflow")
 
-## 友情链接 [我来添加](https://github.com/yanhaijing/yanhaijing.github.com/edit/master/yan_about.md)
+## 友情链接 <small>[我来添加](https://github.com/yanhaijing/yanhaijing.github.com/edit/master/yan_about.md)</small>
 
 - [@百度经验研发团队](https://exp-team.github.io/)
 - [@justjavac(迷渡)](http://justjavac.com/)

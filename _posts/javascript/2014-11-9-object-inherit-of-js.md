@@ -155,13 +155,25 @@ s.getNum(); // 100
 s.getAge(); // 20
 ```
 
+如果你的环境支持ES5，对于ie等可以引入es5shim，那么可以使用Object.create来实现同样的功能
+
+```js
+function inherit(C, P) {
+    // 等同于临时构造函数
+    C.prototype = Object.create(P.prototype);
+
+    C.prototype.constructor = C; // 修复constructor
+    C.uper = P;//存储超类
+}
+```
+
 ## 圣杯的遗失
 
 上面的圣杯模式接近完美了，但却漏了一点，就是类的静态属性集成的问题，举个例子
 
 ```javascript
 People.say = function (word) {console.log(word)};
-inherit(Student, People);//继承父构造函数
+inherit(Student, People); // 继承父构造函数
 Student.say() // Student应该可以继承People的静态方法，但目前还没能实现
 ```
 
@@ -170,9 +182,8 @@ Student.say() // Student应该可以继承People的静态方法，但目前还�
 ```javascript
 //继承函数
 function inherit(C, P) {
-    var F = function (){};
-    F.prototype = P.prototype;
-    C.prototype = new F();//临时构造函数
+    // 等同于临时构造函数
+    C.prototype = Object.create(P.prototype);
 
     C.prototype.constructor = C;//修复constructor
     C.uper = P;//存储超类

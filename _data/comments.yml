@@ -7646,6 +7646,14 @@ my-git-note:
       picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
     content: '@jaywcjlove &#x5C31;&#x662F;&#x8FD9;&#x4E48;666'
     date: 2017-06-12T05:21:34.482Z
+  - author:
+      type: github
+      displayName: xsung
+      url: 'https://github.com/xsung'
+      picture: 'https://avatars3.githubusercontent.com/u/13825126?v=4&s=73'
+    content: >-
+      &#x6211;&#x628A;&#x7B2C;&#x4E00;&#x5F20;&#x56FE;&#x66F4;&#x65B0;&#x4E86;&#x4E00;&#x4E0B;&#xFF0C;https://github.com/xsung/blog/issues/1
+    date: 2018-01-19T19:47:06.834Z
 deep-git-2:
   - author:
       type: github

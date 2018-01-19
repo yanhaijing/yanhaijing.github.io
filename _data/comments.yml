@@ -6572,6 +6572,14 @@ es2015-practice:
       picture: /img/facelessman.png
     content: 目前还不支持哦 亲
     date: 2016-07-07T10:30:53.000Z
+  - author:
+      type: github
+      displayName: '310133239'
+      url: 'https://github.com/310133239'
+      picture: 'https://avatars1.githubusercontent.com/u/21993736?v=4&s=73'
+    content: >-
+      &#x652F;&#x6301;&#x4E00;&#x4E0B;&#x3002;&#x6B6A;&#x8116;&#x5B50;github&#x5173;&#x6CE8;&#x4F60;&#x3002;
+    date: 2018-01-19T01:41:12.187Z
 design-principles-of-web-front:
   - author:
       type: full

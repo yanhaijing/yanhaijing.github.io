@@ -7757,6 +7757,15 @@ regexp-practice:
     content: |
       &#x5927;&#x4F6C;&#x600E;&#x4E48;&#x53BB;&#x7F8E;&#x56E2;&#x4E86;
     date: 2017-09-05T08:29:39.001Z
+  - author:
+      type: full
+      displayName: luckyxutao
+      url: 'https://github.com/luckyxutao'
+      picture: 'https://avatars3.githubusercontent.com/u/1294316?v=4&s=73'
+    content: >-
+      /(?:0\d{2-3}-)?\d{7}/ // &#x7535;&#x8BDD;&#x53F7; 010-xxx xxx   {2-3}
+      &#x4EE3;&#x8868;&#x4EC0;&#x4E48;&#x610F;&#x4E49;&#xFF1F;&#x662F;&#x4E0D;&#x662F;{2,3}
+    date: 2018-01-30T09:17:50.492Z
 principle-of-rem-layout:
   - author:
       type: github

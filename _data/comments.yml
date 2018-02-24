@@ -6944,6 +6944,15 @@ binary-in-js:
       &#x600E;&#x4E48;&#x770B;&#x51FA;&#x6765;&#x7684;&#x662F;&#x8865;&#x7801;?
       &#x6587;&#x5B57;&#x91CC;&#x9762;&#x662F;&#x4E0D;&#x662F;&#x6F0F;&#x4E86;&#x4E00;&#x4E2A;&#x6C42;&#x53CD;&#x7684;&#x8FC7;&#x7A0B;?
     date: 2017-07-25T08:02:32.915Z
+  - author:
+      type: github
+      displayName: lyhper
+      url: 'https://github.com/lyhper'
+      picture: 'https://avatars3.githubusercontent.com/u/13343726?v=4&s=73'
+    content: >-
+      8&#x4F4D;&#x65E0;&#x7B26;&#x53F7;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x7684;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x5E94;&#x8BE5;&#x662F;[-2^8+1,
+      2^8-1]
+    date: 2018-02-24T03:18:21.600Z
 prototype-and-inheritance-of-js:
   - author:
       type: full

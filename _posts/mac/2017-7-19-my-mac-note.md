@@ -265,7 +265,9 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 安装好后就可以通过brew来安装程序了
 
 ```bash
-$ brew install wget
+$ brew install wget # 安装wget
+$ brew install git # 安装git
+$ brew install node # 安装node
 ```
 
 brew比较常用的命令如下：
@@ -327,6 +329,45 @@ pip 9.0.1 from /usr/local/lib/python2.7/site-packages (python 2.7)
 ```
 
 ### 安装ruby
+
+mac自带的ruby是2.3，我的博客需要用到jekyll，jekyll已经不支持2.3了，需要安装更高版本的ruby，可以通过brew直接安装一个，但ruby有自己的多版本管理工具[RVM](https://rvm.io/)，RVM 是一个命令行工具，可以提供一个便捷的多版本 Ruby 环境的管理和切换
+
+rvm的官网有安装程序的命令
+
+```bash
+$ \curl -sSL https://get.rvm.io | bash -s stable
+```
+
+下面来安装指定版本的ruby
+
+```bash
+$ rvm list known # 列出ruby所有版本
+[ruby-]2.4[.1]
+...
+
+$ rvm install 2.4.1 # 安装指定版本
+
+$ ruby -version
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-darwin16]
+```
+
+rvm安装的ruby位于`~yan/.rvm/rubies`目录下，不会和系统的ruby冲突，系统自带ruby位于`/usr/bin/ruby`
+
+如果很长时间安装不上，可能是rvm的下载源不稳定，可以尝试切换为[淘宝的源](https://cache.ruby-china.org/)
+
+```bash
+$ echo "ruby_url=https://cache.ruby-china.org/pub/ruby" > ~/.rvm/user/db
+```
+
+rvm常用命令如下：
+
+```bash
+$ rvm list # 列出本地版本
+$ rvm use 2.4.1 # 如果本地安装了多个版本，可切换到指定版本
+$ rvm remove 2.4.1 # 卸载指定版本
+```
+
+rvm还有很多其他的功能，不过我就用到这么多，自己摸索吧
 
 ## 常用软件
 

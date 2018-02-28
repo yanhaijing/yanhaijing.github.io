@@ -134,6 +134,200 @@ pkg相当于win下面的大型安装包，pkg 安装一般要求 sudo 授权，�
 
 ## 命令行
 
+命令行才是程序员的最爱，mac下的命令行几乎和linux一样好用，比windows好用太多，下面介绍一些命令行的知识
+
+### 配置文件
+
+如果想设置环境变量，修改PATH，自定义别名都涉及到对shell进行配置，网上搜的话还是比较混乱的，有的说`.bash_profile`，有的说`.bashrc`，怎么我的mac没有.bashrc？下面给大家分享下自己的认识
+
+需要注意我说的都是`~`目录下的配置文件，不涉及`/etc/`下的配置文件
+
+`.bash_profile`是为bash的配置文件，由于历史原因shell是有很多分支的，比如bshell，kshell，zshell，通过下面的命令可以查看系统支持的全部shell
+
+```bash
+$ cat /etc/shells
+/bin/bash
+/bin/csh
+/bin/ksh
+/bin/sh
+/bin/tcsh
+/bin/zsh
+```
+
+如果当前使用bash，mac中每次打开命令终端，或者新开tab页都会加载`.bash_profile`文件，mac下没有`.bashrc`文件，可以自己新建一个，但还需要在`.bash_profile`手动加载`.bashrc`
+
+```bash
+$ vi ~/.bash_profile
+# 环境变量
+# PATH设置
+
+# 如果当前是bash，则手动加载.bashrc
+if [ -f ~/.bashrc ] && [ $SHELL = '/bin/bash' ]; then
+   source ~/.bashrc
+fi
+```
+
+一般在`.bash_profile`中设置path，环境变量等；在`.bashrc`中设置bash自己私有的东西，比如bash下的别名
+
+```bash
+$ vi ~/.bashrc
+# bash shell私有设置
+alias ll=ls -l
+```
+
+一句话总结，`.bash_profile`中的内容会和其他shell共享，`.bashrc`中的内容仅仅bash会加载
+
+### 添加PATH
+
+程序员经常和环境变量打交道，下面来介绍下mac下如何设置环境变量，总的来说有两种方法
+
+下载了一个可执行程序，想放到环境变量的最简单方法就是通过软链接连接到`/usr/local/bin`目录下，这里需要注意的就是必须要写绝对路径，不然可能出错
+
+```bash
+$ ln -s /Users/yan/adb /usr/local/bin
+```
+
+如果想把一个目录加到PATH，上面的方法就行不通了，但是可以再`~/.bash_profile`修改path，下面把platform-tools添加到PATH中
+
+```bash
+$ vi ~/.bash_profile
+# 环境变量
+# PATH设置
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+```
+
+### zsh
+
+有人说zsh是终极shell，确实z是最后一个字母了o(╯□╰)o，zsh配置很复杂，搞不好好不如不用，不过这么复杂事情已经有人给搞好了，[Oh My ZSH](http://ohmyz.sh/)让zsh可以开箱即用，下面赶紧来使用zsh吧
+
+mac下自带zsh，仅需一个命令就可以切换到zsh了
+
+```Bash
+$ chsh -s /bin/zsh
+```
+
+下面还得安装oh my zsh，安装oh my zsh需要先安装git，好在mac自带了git，oh my zsh官网有安装的命令，就一行
+
+```bash
+$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+zsh的配置文件位于`~/.zshrc`，zsh不会加载`.bash_profile`，这可麻烦了，之前设置的环境变量怎么办？简单只需要在`.zshrc`中手动加载`.bash_profile`就行了
+
+```bash
+$ vi ~/.zshrc
+# 加载 .bash_profile
+source ~/.bash_profile
+```
+
+oh my zsh进行了很多配置，让zsh比bash好用很多，比如大量alias的设置，完整的别名列表见[这里](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet)
+
+```
+.. # 等同于 cd ..
+... # 等同于 cd ../..
+~ # 等同于 cd ~
+```
+
+oh my zsh有很多功能，比如换肤，比如大量插件，这里不久不折腾了，你要是喜欢就自己折腾吧，我安装了两个插件git和sublime
+
+```Bash
+$ vi ~/.zshrc
+plugins=(git sublime)
+```
+
+git插件可以让你的命令行显示出来分支名，工作区状态，非常好用；sublime插件会添加一个全局的sublime命令，通过这个命令可以通过命令行用sublime打开任何文件
+
+### 安装命令
+
+下面来介绍下mac如何安装第三方命令，在开始介绍之前，先介绍一点基本知识，mac中程序一般位于三个目录：
+
+- /bin 系统程序存放处
+- /usr/bin mac自动第三方程序存放处，如 git python ruby
+- /usr/local/bin 用户安装第三方程序存放处
+
+其中覆盖优先级是`/usr/local/bin ` > `/usr/bin` > `/bin`，优先级其实是由PATH中的设置决定的，上面的顺序是系统默认的设置
+
+mac下安装命令最简单的方式就是手动下载安装，比如手动下载git的安装包，但缺点很多，就不介绍了
+
+mac下有两个安装命令的工具一个是[MacPorts](http://www.macports.org/)，另一个是[Homebrew](http://brew.sh/)，下面主要介绍下Homebrew
+
+Homebrew（简称 brew）是Mac不可或缺的软件管理工具，让 Mac 拥有类似 apt-get 的功能，用以简化软件的安装、升级和卸载过程
+
+brew会下载源代码，然后执行 `./configure` && `make install` ，将软件安装到单独的目录（`/usr/local/Cellar`）下，然后软链（symlink）到 `/usr/local/bin` 目录下，同时会自动检测下载相关依赖库，并自动配置好各种环境变量，这简直不能太好用了^_^
+
+brew的安装也非常简单，去官网拷贝安装代码即可，其中ruby和curl都是mac的自带程序
+
+```bash
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+安装好后就可以通过brew来安装程序了
+
+```bash
+$ brew install wget
+```
+
+brew比较常用的命令如下：
+
+```
+brew install xxx # 安装
+brew uninstall xxx # 卸载
+brew upgrade xxx # 升级程序
+brew list # 写出本地安装程序
+brew search xxx # 查询可以用程序
+brew info xxx # 查看制定程序的信息
+```
+
+可以通过brew安装系统已经存在的程序，比如git，python等，brew安装的程序会覆盖系统安装的程序，但由于安装目录不同，仍可通过绝对路径访问系统自带程序
+
+```bash
+$ git # brew安装git
+$ /usr/bin/git # 系统自带git
+$ /usr/local/bin/git # brew安装git
+```
+
+### 安装python
+
+系统自带的python是2.7.10，但没有自带pip，python从2.7.13开始自带pip，由于要用pip所以我想在安装一个python，就可以通过brew安装
+
+搜索python，看到有两个
+
+```bash
+$ brew search python 
+python python3 ...
+```
+
+我想安装python2，应该是第一个，下面通过info看下具体信息，会出现很多信息，关注版本就好了
+
+```bash
+$ brew info python
+python: stable 2.7.14 (bottled), HEAD
+...
+```
+
+下面安装python
+
+```bash
+$ brew install python
+...
+```
+
+brew会告诉你安装到了哪里，修改了PATH，怎么调用pip，可以发现现在python已经指向新安装的python了，但，需要通过pip2来使用pip功能
+
+```bash
+$ python --version
+Python 2.7.13
+
+$ pip
+zsh: command not found: pip
+
+$ pip2 --version
+pip 9.0.1 from /usr/local/lib/python2.7/site-packages (python 2.7)
+```
+
+### 安装ruby
+
 ## 常用软件
 
 下面整理下自己常用的软件

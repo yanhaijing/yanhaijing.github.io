@@ -5127,6 +5127,19 @@ my-gitbook-note:
       picture: /img/facelessman.png
     content: 嗯，这个不错
     date: 2017-02-05T10:43:21.000Z
+  - author:
+      type: github
+      displayName: Tanijia
+      url: 'https://github.com/Tanijia'
+      picture: 'https://avatars3.githubusercontent.com/u/15335920?v=4&s=73'
+    content: >-
+      &#x5927;&#x4F6C;&#xFF0C;Windows&#x4E0A; gitbook versions:install
+      &#x547D;&#x4EE4;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;
+      &#x4F7F;&#x7528;&#x7684;&#x662F;&#x6700;&#x65B0;&#x7684;node.js v9
+
+      &#x63D0;&#x793A;&#xFF1A;Error: Command versions doesn&apos;t exist, run
+      &quot;gitbook help&quot; to list commands.
+    date: 2018-02-28T15:36:28.002Z
 node-js-and-the-new-web-front-end:
   - author:
       type: full

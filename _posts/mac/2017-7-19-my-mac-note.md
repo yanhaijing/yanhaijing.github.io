@@ -70,6 +70,8 @@ windows中会在桌面上放置软件的快捷方式，非常方便，mac类似�
 
 Spotlight是聚光灯的意思，可以快速找到电脑上的软件和文件，这是一个神器，大概相当于windows上的开始菜单搜索和文件全局搜索，通过command+空格键打开，如果记得app的名字，通过这个打开app会比Launchpad快很多，Spotlight开可以用来搜索文件，只要记得文件名字就行
 
+除了上面提到的功能，还有很多功能，比如快速计算，换算单位。。。
+
 ### Finder
 
 mac下没有windows下的文件管理器，类似的功能是Finder，但是功能比windows弱很多，Finder的本意是访问并达到，而不是文件管理
@@ -383,6 +385,8 @@ rvm还有很多其他的功能，不过我就用到这么多，自己摸索吧
 - Read CHM 用来阅读chm文件
 - SwitchHosts! 用来管理host
 - VirtualBox 虚拟机软件，跨平台，用来安装windows和linux
+- AppCleaner 查看软件的文件路径，还能清理软件，适合有洁癖的人使用
+- Dr. Cleaner mac清理工具，不怎么用得到
 
 ## 总结
 

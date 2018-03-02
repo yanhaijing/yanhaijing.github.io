@@ -209,10 +209,24 @@ function and(...fns) {
 }
 
 // 获取类型为1，flag为true的列表
-getList(assertFilter(and(compose(pickType, isType(1)), pickFlag, isFlag(true)))))
+getList(
+    assertFilter(
+        and(
+            compose(pickType, isType(1)),
+            compose(pickFlag, isFlag(true))
+        )
+    )
+)
 
 // 获取类型为1或2，并且flag为true的列表
-getList(assertFilter(and(compose(pickType, or(isType(1), isType(2))), pickFlag, isFlag(true)))))
+getList(
+    assertFilter(
+        and(
+            compose(pickType, or(isType(1), isType(2))),
+            compose(pickFlag, isFlag(true))
+        )
+    )
+)
 ```
 
 ## 总结

@@ -5140,6 +5140,14 @@ my-gitbook-note:
       &#x63D0;&#x793A;&#xFF1A;Error: Command versions doesn&apos;t exist, run
       &quot;gitbook help&quot; to list commands.
     date: 2018-02-28T15:36:28.002Z
+  - author:
+      type: github
+      displayName: w4ctech
+      url: 'https://github.com/w4ctech'
+      picture: 'https://avatars2.githubusercontent.com/u/33955669?v=4&s=73'
+    content: |
+      gitbook &#x4F7F;&#x7528;&#x5165;&#x95E8;&#x94FE;&#x63A5; &#x6302;&#x4E86;
+    date: 2018-03-02T02:34:02.447Z
 node-js-and-the-new-web-front-end:
   - author:
       type: full
@@ -7915,3 +7923,12 @@ exploring-the-abyss-of-null-and-undefined-in-javascript:
       picture: 'https://avatars3.githubusercontent.com/u/18499153?v=4&s=73'
     content: .
     date: 2017-10-20T08:42:25.152Z
+my-mac-note:
+  - author:
+      type: github
+      displayName: xuexb
+      url: 'https://github.com/xuexb'
+      picture: 'https://avatars1.githubusercontent.com/u/3872051?v=4&s=73'
+    content: >-
+      &#x8BFB;&#x4E86;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#xFF0C;&#x4ECE;&#x6B64;&#x53D8;&#x6210;mac&#x9AD8;&#x624B;&#x4E86;
+    date: 2018-03-01T11:31:28.172Z

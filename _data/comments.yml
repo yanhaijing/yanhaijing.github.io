@@ -7940,3 +7940,11 @@ my-mac-note:
     content: >-
       &#x8BFB;&#x4E86;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#xFF0C;&#x4ECE;&#x6B64;&#x53D8;&#x6210;mac&#x9AD8;&#x624B;&#x4E86;
     date: 2018-03-01T11:31:28.172Z
+regexp-syntax:
+  - author:
+      type: github
+      displayName: muyudou
+      url: 'https://github.com/muyudou'
+      picture: 'https://avatars2.githubusercontent.com/u/5087462?v=4&s=73'
+    content: m
+    date: 2018-03-07T14:13:11.087Z

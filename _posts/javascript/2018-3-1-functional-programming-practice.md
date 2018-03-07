@@ -16,7 +16,7 @@ description:
 嗯，函数式变成这么火，时一定要学的，但是怎么学呢？本文通过一个例子来介绍函数式编程的用法，先声明本文没有复杂的概念，也没有各种定义，只有一个由浅入深的例子
 
 ## 背景
-假设有一个如下的数据结构，type是1-n，flag表示当前元素的状态，页面大概是一个列表，可以通过列表和选择状态来过滤列表内容
+假设有一个如下的数据结构，type是1-n，flag表示当前元素的状态，页面大概是一个列表，可以通过类型和选择状态来过滤列表内容
 
 ```js
 const list = [
@@ -39,13 +39,14 @@ const list = [
 
 - 获取全部的列表
 - 获取一个或多个类型的列表
+- 获取否定类型的列表
 - 获取指定状态的列表
 - 获取指定状态，指定类型的列表
 
 呃呃呃，有点懵是不是，思考下这个程序该怎么写？如果写一个函数满足上面所有的需求呢？
 
 ## 获取全部的列表
-下面先来写第一个需求，只需借助es6的函数式默认值和es5的数组filter函数就搞定了
+下面先来写第一个需求，需要用到数组的filter和函数的默认值，就是这么简单
 
 ```js
 function getList(filter = function () { return true }) {
@@ -53,7 +54,7 @@ function getList(filter = function () { return true }) {
 }
 ```
 
-调用`getList`就能获取全部的列表，filter参数就是传说中的高阶函数，但上面的代码还不够函数式，参数的默认值还可以被抽象出一个高阶函数出来，如下
+调用`getList`就能获取全部的列表，但上面的参数默认值其实可以提取出一个公共函数
 
 ```js
 // 高阶函数
@@ -63,12 +64,19 @@ function bool(flag) {
     }
 }
 
+bool(true) // function { return true; }
+bool(false) // function { return false; }
+```
+
+快来用bool来重写上面的代码吧，更简洁了是不是
+
+```js
 function getList(filter = bool(true)) {
     return list.filter(filter);
 }
 ```
 
-抽象出来的bool高阶函数，是可以复用的，高阶函数让函数可以被复用
+抽象出来的bool是一个高阶函数，bool让返回布尔值的函数变得可以复用，高阶函数让函数可以被复用
 
 ## 获取一个或多个类型的列表
 如果想获取指定类型的列表，最简单的写法如下
@@ -83,45 +91,65 @@ getList(function (data) { return data.type === 2 })
 getList(function (data) { return data.type === 3 })
 ```
 
-上面代码中多次调用`data.type`，其实可以抽象出来一个函数
+上面代码中多次调用`data.type`，我们把获取对象属性的功能抽象出来
 
 ```js
 function pick(obj, prop) {
     return obj.prop;
 }
 
+pick(data, 'type') // data.type
+```
+
+下面用pick函数改写上面的代码
+
+```js
 getList(function (data) { return pick(data, 'type') === 1 })
 getList(function (data) { return pick(data, 'type') === 2 })
 getList(function (data) { return pick(data, 'type') === 3 })
 ```
 
-换种写法感觉还不如不换了。。。要是能把type参数提前绑定就好了，绑定函数参数好像是函数柯里化，下面的currying函数可以给我函数绑定参数，稍后执行
+好像更复杂了。。。要是能把type参数提前绑定呢？绑定函数参数好像是函数柯里化，下面的currying函数
 
 ```js
 function currying(func, ...args) {
     return func.bind(null, ...args);
 }
+
+function add(x, y) { return x + y }
+
+const add10 = currying(add, 10);
+
+add10(1) // 11
+add10(5) // 15
 ```
 
 但currying的绑定顺序是从左到右的，上面我们希望的先绑定第二个参数，如果能反转一下参数顺序就好了
 
 ```js
-function reverseArgs(func) {
+function reverseArgs(...args) {
+    return args.reverse();
+}
+
+reverseArgs(1, 2, 3) // [3, 2, 1]
+```
+
+怎么才能把reverseArgs和我们的函数结合起来呢？下面介绍一个神奇的高阶函数
+
+```js
+// 返回一个函数A，A在被执行时会依次执行传入的函数参数
+// compose(fn1, fn2, fn3)(1) 相当于fn3(...fn2(...fn1(1)))
+function compose(...fns) {
     return function (...args) {
-        return func(...args.reverse())
+        return fns.reduce((prev, fn) => fn(...[].concat(prev)), args)
     }
 }
 ```
 
-有了currying和reverseArgs再来改造下我们上面的代码，豁然开朗有木有
+有了currying和反转参数的代码再来改造下我们上面的代码，豁然开朗有木有
 
 ```js
-// pick(data, 'type')
-function pick(obj, prop) {
-    return obj.prop;
-}
-
-const reversePick = reverseArgs(pick); // 参数顺序被反转 reversePick('type', data)
+const reversePick = compose(reverseArgs, pick); // 参数顺序被反转 reversePick('type', data)
 const pickType = currying(reversePick, 'type'); // 先绑定第一个参数 pickType(data)
 
 getList(function (data) { return pickType(data) === 1 })
@@ -129,45 +157,29 @@ getList(function (data) { return pickType(data) === 2 })
 getList(function (data) { return pickType(data) === 3 })
 ```
 
-上面的代码中多次判断逻辑可以抽象成一个高阶函数
+上面的代码中的另一个问题是存在多次判断的代码，下面提取出来
 
 ```js
-function isType(type) {
-    return function (t) {
-        return t === type
-    }
+function isEqual(x, y) {
+    return x === y;
 }
 
-getList(function (data) { return isType(1)(pickType(data)) })
-getList(function (data) { return isType(2)(pickType(data)) })
-getList(function (data) { return isType(3)(pickType(data)) })
+const isType1 = currying(isEqual, 1)
+const isType2 = currying(isEqual, 2)
+const isType3 = currying(isEqual, 3)
+
+getList(function (data) { return isType1(pickType(data)) })
+getList(function (data) { return isType2(pickType(data)) })
+getList(function (data) { return isType3(pickType(data)) })
 ```
 
-显然代码好像更复杂了，别急继续往下看，上面代码重复写了三个函数，这个函数也可以抽象为一个高阶函数
+显然代码好像更复杂了，别急继续往下看，上面代码重复写了三个函数，利用前面的`compose`可以把这个函数也消除，是不是很神奇
 
 ```js
-function assertFilter(assert) {
-    return function (data) {
-        return assert(data)
-    }
-}
-```
-
-但这个filter生成器，要想和前面的pickType和isType组合使用还需要引入一个高阶函数compose
-
-```js
-// 返回一个函数A，A在被执行时会依次执行传入的函数参数
-// compose(fn1, fn2, fn3)(1) 相当于fn3(fn2(fn1(1)))
-function compose(...fns) {
-    return function (...args) {
-        return fns.reduce((prev, fn) => [fn(...prev)], args)
-    }
-}
-
-// compose(pickType, isType(1))(data) = isType(1)(pickType(data))
-getList(assertFilter(compose(pickType, isType(1))))
-getList(assertFilter(compose(pickType, isType(2))))
-getList(assertFilter(compose(pickType, isType(3))))
+// compose(pickType, isType1(data) = function () { isType1(pickType(data)) }
+getList(compose(pickType, isType1))
+getList(compose(pickType, isType2))
+getList(compose(pickType, isType3))
 ```
 
 上面解决了一个类型的判断，如果相判断1或2该怎么做呢？还需要一个或操作的高阶函数
@@ -179,23 +191,33 @@ function or(...fns) {
     }
 }
 
-getList(assertFilter(compose(pickType, or(isType(1), isType(2)))))
+getList(compose(pickType, or(isType1, isType2))
+```
+
+## 获取否定类型的列表
+下面来看看如何获取否定类型的列表，比如获取所有type非1的，看起来需要一个取非的函数
+
+```
+function not(fn) {
+    return function (...args) {
+        return !fn(...args)
+    }
+}
+
+getList(compose(pickType, not(isType1))
 ```
 
 ## 获取指定状态的列表
 下面来看看如何获取指定类型的列表，其实参考上面的过程就很容易得出
 
 ```js
-function isFlag(flag) {
-    return function (f) {
-        return f === flag;
-    }
-}
+const isFlagTrue =  currying(isEqual, true)
+const isFlagFalse =  currying(isEqual, false)
 
-const pickFlag = currying(reversePick, 'flag'); // currying reversePick 见上面
+const pickFlag = currying(compose(reverseArgs, pick), 'flag'); // currying reverseArgs 见上面
 
-getList(assertFilter(compose(pickFlag, isFlag(true)))) // 获取flag为true的列表
-getList(assertFilter(compose(pickFlag, isFlag(false)))) // 获取flag为false的列表
+getList(compose(pickFlag, isFlagTrue)) // 获取flag为true的列表
+getList(compose(pickFlag, isFlagFalse)) // 获取flag为false的列表
 ```
 
 ## 获取指定状态，指定类型的列表
@@ -210,23 +232,132 @@ function and(...fns) {
 
 // 获取类型为1，flag为true的列表
 getList(
-    assertFilter(
-        and(
-            compose(pickType, isType(1)),
-            compose(pickFlag, isFlag(true))
-        )
+    and(
+        compose(pickType, isType1),
+        compose(pickFlag, isFlagTrue)
+    )
+)
+
+// 获取类型不为1，flag为true的列表
+getList(
+    and(
+        compose(pickType, not(isType1)),
+        compose(pickFlag, isFlagTrue)
     )
 )
 
 // 获取类型为1或2，并且flag为true的列表
 getList(
-    assertFilter(
-        and(
-            compose(pickType, or(isType(1), isType(2))),
-            compose(pickFlag, isFlag(true))
-        )
+    and(
+        compose(pickType, or(isType1, isType2)),
+        compose(pickFlag, isFlagTrue)
     )
 )
 ```
 
 ## 总结
+整个过程我们抽象了很多通用函数，这些函数都是可以复用的
+
+```js
+function bool(flag) {
+    return function() {
+        return !!flag;
+    }
+}
+
+function pick(obj, prop) {
+    return obj.prop;
+}
+
+function currying(func, ...args) {
+    return func.bind(null, ...args);
+}
+
+function reverseArgs(...args) {
+    return args.reverse();
+}
+
+function compose(...fns) {
+    return function (...args) {
+        return fns.reduce((prev, fn) => fn(...[].concat(prev)), args)
+    }
+}
+
+function isEqual(x, y) {
+    return x === y;
+}
+
+function or(...fns) {
+    return function (...args) {
+        return fns.some(fn => fn(...args))
+    }
+}
+
+function not(fn) {
+    return function (...args) {
+        return !fn(...args)
+    }
+}
+
+function and(...fns) {
+    return function (...args) {
+        return fns.every(fn => fn(...args))
+    }
+}
+```
+
+完整的业务代码如下，有了这些函数，代码变得非常简单，易读，并且非常灵活，可以随意组合
+
+```js
+const pickType = currying(compose(reverseArgs, pick), 'type');
+const isType1 = currying(isEqual, 1)
+const isType2 = currying(isEqual, 2)
+const isType3 = currying(isEqual, 3)
+
+const pickFlag = currying(compose(reverseArgs, pick), 'flag');
+const isFlagTrue =  currying(isEqual, true)
+const isFlagFalse =  currying(isEqual, false)
+
+const list = [
+    {
+        type: 1,
+        flag: true
+    },
+    {
+        type: 2,
+        flag: false
+    },
+    {
+        type: 3,
+        flag: true
+    }
+]
+
+function getList(filter = bool(true)) {
+    return list.filter(filter);
+}
+
+// 获取类型为1，flag为true的列表
+getList(
+    and(
+        compose(pickType, isType1),
+        compose(pickFlag, isFlagTrue)
+    )
+)
+
+// 获取类型不为1，flag为true的列表
+getList(
+    and(
+        compose(pickType, not(isType1)),
+        compose(pickFlag, isFlagTrue)
+    )
+)
+
+// 获取类型为1或2，并且flag为true的列表
+getList(
+    and(
+        compose(pickType, or(isType1, isType2)),
+        compose(pickFlag, isFlagTrue)
+    )
+)
+```

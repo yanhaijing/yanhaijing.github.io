@@ -7760,6 +7760,14 @@ talk-async:
     content: >
       &#x7528;&#x52A8;&#x753B;&#x6765;&#x7EC3;&#x4E60;&#x5F02;&#x6B65;&#x8FD9;&#x4E2A;&#x5207;&#x5165;&#x70B9;&#x771F;&#x68D2;&#xFF01;
     date: 2017-08-04T08:20:47.466Z
+  - author:
+      type: github
+      displayName: muyudou
+      url: 'https://github.com/muyudou'
+      picture: 'https://avatars2.githubusercontent.com/u/5087462?v=4&s=73'
+    content: >-
+      generator&#x7684;&#x770B;&#x4E00;&#x904D;&#x5FD8;&#x4E00;&#x904D;&#xFF0C;&#x770B;&#x89C1;async&#x540E;&#xFF0C;&#x53EA;&#x60F3;&#x5B66;&#x8FD9;&#x4E2A;&#x3002;&#x3002;&#x3002;
+    date: 2018-03-07T13:56:27.572Z
 find-job-of-360:
   - author:
       type: github

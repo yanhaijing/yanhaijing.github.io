@@ -157,6 +157,18 @@ getList(function (data) { return pickType(data) === 2 })
 getList(function (data) { return pickType(data) === 3 })
 ```
 
+但上面的代码并不能执行，由于数组filter函数，传给每个filter的参数并不是一个，而是三个，这就影响到了我们的reverseArgs，操作，随意需要先进性裁切操作，还需要引入一个函数
+
+```js
+function sliceArgs(num, ...args) {
+    return args.slice(0, num);
+}
+
+const sliceArgs2 = currying(sliceArgs, 2);
+
+const reversePick = compose(sliceArgs2, reverseArgs, pick);
+```
+
 上面的代码中的另一个问题是存在多次判断的代码，下面提取出来
 
 ```js
@@ -214,7 +226,7 @@ getList(compose(pickType, not(isType1))
 const isFlagTrue =  currying(isEqual, true)
 const isFlagFalse =  currying(isEqual, false)
 
-const pickFlag = currying(compose(reverseArgs, pick), 'flag'); // currying reverseArgs 见上面
+const pickFlag = currying(compose(sliceArgs2, reverseArgs, pick), 'flag'); // currying reverseArgs 见上面
 
 getList(compose(pickFlag, isFlagTrue)) // 获取flag为true的列表
 getList(compose(pickFlag, isFlagFalse)) // 获取flag为false的列表
@@ -277,6 +289,10 @@ function reverseArgs(...args) {
     return args.reverse();
 }
 
+function sliceArgs(num, ...args) {
+    return args.slice(0, num);
+}
+
 function compose(...fns) {
     return function (...args) {
         return fns.reduce((prev, fn) => fn(...[].concat(prev)), args)
@@ -309,12 +325,14 @@ function and(...fns) {
 完整的业务代码如下，有了这些函数，代码变得非常简单，易读，并且非常灵活，可以随意组合
 
 ```js
-const pickType = currying(compose(reverseArgs, pick), 'type');
+const sliceArgs2 = currying(sliceArgs, 2);
+
+const pickType = currying(compose(sliceArgs2, reverseArgs, pick), 'type');
 const isType1 = currying(isEqual, 1)
 const isType2 = currying(isEqual, 2)
 const isType3 = currying(isEqual, 3)
 
-const pickFlag = currying(compose(reverseArgs, pick), 'flag');
+const pickFlag = currying(compose(sliceArgs2, reverseArgs, pick), 'flag');
 const isFlagTrue =  currying(isEqual, true)
 const isFlagFalse =  currying(isEqual, false)
 

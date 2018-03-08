@@ -380,4 +380,27 @@ getList(
 )
 ```
 
+下面给出对应的非函数式写法的代码，对比一下，大量的过程式代码，区别还是很大的，如果是你，你会使用那种方式呢？
+
+```js
+function getList(filter = bool(true)) {
+    return list.filter(filter);
+}
+
+// 获取类型为1，flag为true的列表
+getList(function (data) {
+    return data.type === 1 && data.flag === true;    
+})
+
+// 获取类型不为1，flag为true的列表
+getList(function (data) {
+    return data.type !== 1 && data.flag === true;    
+})
+
+// 获取类型为1或2，并且flag为true的列表
+getList(function (data) {
+    return (data.type === 1 || data.type === 2) && data.flag === true;    
+})
+```
+
 最后给大家推荐一本javascript函数式编程的书籍《[JavaScript函数式编程](https://amazon.cn/gp/product/B01264FOY4/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=yanhaijing-23&creative=3200&linkCode=as2&creativeASIN=B01264FOY4&linkId=b05428b19333f7f958a427562757de10)》，如果对函数式感兴趣的话就赶紧入手吧

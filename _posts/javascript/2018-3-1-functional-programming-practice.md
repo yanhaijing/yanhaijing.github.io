@@ -379,3 +379,5 @@ getList(
     )
 )
 ```
+
+最后给大家推荐一本javascript函数式编程的书籍《[JavaScript函数式编程](https://amazon.cn/gp/product/B01264FOY4/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=yanhaijing-23&creative=3200&linkCode=as2&creativeASIN=B01264FOY4&linkId=b05428b19333f7f958a427562757de10)》，如果对函数式感兴趣的话就赶紧入手吧

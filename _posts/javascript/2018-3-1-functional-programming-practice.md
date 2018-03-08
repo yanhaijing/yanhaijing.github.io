@@ -95,7 +95,7 @@ getList(function (data) { return data.type === 3 })
 
 ```js
 function pick(obj, prop) {
-    return obj.prop;
+    return obj[prop];
 }
 
 pick(data, 'type') // data.type
@@ -278,7 +278,7 @@ function bool(flag) {
 }
 
 function pick(obj, prop) {
-    return obj.prop;
+    return obj[prop];
 }
 
 function currying(func, ...args) {

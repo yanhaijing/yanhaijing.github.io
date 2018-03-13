@@ -11,3 +11,6 @@ Thumbs.db
 .rvmrc
 
 .project
+
+node_modules
+package-lock.json

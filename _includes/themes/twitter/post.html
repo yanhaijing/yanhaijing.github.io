@@ -42,8 +42,9 @@
             {% assign tags_list = page.tags %} {% include JB/tags_list %}
         </ul>
         {% endunless %}
-
+        
         <hr>
+
         <nav>
             <ul class="pagination">
                 {% if page.previous %}
@@ -63,7 +64,11 @@
             </ul>
         </nav>
 
-        <hr> 
+        <div class="social-share" data-origin="yanhaijing" data-sites="weibo, wechat, douban, qzone, linkedin, twitter, facebook" data-mobile-sites="weibo, douban, qzone, linkedin, twitter, facebook">
+        </div>
+
+        <hr>
+
         {% include JB/comments %}
     </div>
 </div>

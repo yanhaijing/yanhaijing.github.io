@@ -18,10 +18,14 @@
         </div>
         {% include JB/notice %}
         <div class="content">
-            {{ content }}
             <div class="blog-tail-origin-link">
                 {% include JB/origin_link %} 
             </div>
+
+            {{ content }}
+
+            {% include JB/origin_link %} 
+            
             <!-- {% include JB/advertise/chat %} -->
             {% include JB/weixin_and_donate %}
         </div>

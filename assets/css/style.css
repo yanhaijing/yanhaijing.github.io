@@ -101,7 +101,7 @@ table th {
 /* 版权 */
 .yan-copyright {
     margin-top: 1em;
-    padding: 10px;
+    padding: 6px;
     background-color: #FFF7DC;
     border: 2px solid #FFBFBF;
     font: 14px Microsoft Yahei, tahoma, sans-serif;
@@ -112,7 +112,7 @@ table th {
 /* 推荐项目 */
 .myproject {
     margin-top: 1em;
-    padding: 10px;
+    padding: 6px;
     border: 2px solid #d3d3d3;
     background-color: #DEEBF7;
 }

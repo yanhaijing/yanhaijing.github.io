@@ -250,6 +250,7 @@ s.getAge(); // 20
 如果你使用Babel，并且需要兼容成旧浏览器，最好的做法是避免静态属性继承，或者硬编码，直接引用父类是更好的做法
 
 ## 总结
+我将本文的代码总结了一个js仓库，感兴趣的可以看[这里](https://github.com/yanhaijing/inherits.js)。
 
 本文大部分内容其实出自，《[javascript模式](http://www.amazon.cn/gp/product/B008QTG1HS/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B008QTG1HS&linkCode=as2&tag=yanhaijing-23)》第五章 代码的复用模式。记录下来省的自己每次都要去翻书了，当然主要还是写给MM看的。
 

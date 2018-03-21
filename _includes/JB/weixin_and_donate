@@ -5,7 +5,7 @@
     </figure>
 
     <figure>
-        <img src="{{ HOME_PATH }}img/weixin.png" alt="微信支付二维码" width="170" height="170">
+        <img src="{{ HOME_PATH }}img/weixin-donate.jpg" alt="微信支付二维码" width="170" height="170">
         <figcaption><strong>赞赏支持</strong> 微信扫一扫</figcaption>
     </figure>
 </div>

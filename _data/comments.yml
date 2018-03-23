@@ -7981,3 +7981,12 @@ html5-manifest:
       manifest
       &#x4EE3;&#x7801;&#x4F8B;&#x5B50;&#xFF0C;&#x7F51;&#x4E0A;&#x5B9E;&#x5728;&#x641C;&#x7D22;&#x4E0D;&#x5230;&#xFF01;&#xFF01;&#xFF01;&#xFF01;&#xFF01;
     date: 2018-03-23T10:23:45.665Z
+  - author:
+      type: github
+      displayName: yanhaijing
+      url: 'https://github.com/yanhaijing'
+      picture: 'https://avatars3.githubusercontent.com/u/3192087?v=4&s=73'
+    content: |-
+      @zzlw https://github.com/yanhaijing/basejs/blob/gh-pages/Gruntfile.js
+      manifest&#x7684;&#x65B9;&#x5F0F;&#x6709;&#x70B9;out&#x4E86;
+    date: 2018-03-23T11:15:34.410Z

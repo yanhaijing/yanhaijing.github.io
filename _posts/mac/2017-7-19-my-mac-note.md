@@ -376,6 +376,8 @@ rvm还有很多其他的功能，不过我就用到这么多，自己摸索吧
 下面整理下自己常用的软件
 
 - draw.io 跨平台的viso，主要用来画一些流程图，线框图，结构图
+- OmniGraffle 画各种图，基本用不到
+- OmniPlan 画甘特图，项目管理神器
 - typora 所见即所得的md工具，一用就会爱上
 - cheatsheet 一键查看当前工具的快捷键神器，再也不怕忘记快捷键了
 - Charles mac下的fiddler，用来抓取http请求
@@ -387,6 +389,9 @@ rvm还有很多其他的功能，不过我就用到这么多，自己摸索吧
 - VirtualBox 虚拟机软件，跨平台，用来安装windows和linux
 - AppCleaner 查看软件的文件路径，还能清理软件，适合有洁癖的人使用
 - Dr. Cleaner mac清理工具，不怎么用得到
+- Beyond Compare 跨平台的文件比较工具
+- CatchMouse 如果你有三个显示器的，在不同显示器之间快速切换鼠标的工具
+- 百度PPT遥控器 通过手机代替遥控笔，适合会议室没有遥控笔的情况
 
 ## 总结
 

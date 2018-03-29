@@ -8013,3 +8013,11 @@ html5-manifest:
       @zzlw https://github.com/yanhaijing/basejs/blob/gh-pages/Gruntfile.js
       manifest&#x7684;&#x65B9;&#x5F0F;&#x6709;&#x70B9;out&#x4E86;
     date: 2018-03-23T11:15:34.410Z
+functional-programming-practice:
+  - author:
+      type: github
+      displayName: navono
+      url: 'https://github.com/navono'
+      picture: 'https://avatars1.githubusercontent.com/u/3746639?v=4&s=73'
+    content: Ramda
+    date: 2018-03-29T07:25:07.098Z

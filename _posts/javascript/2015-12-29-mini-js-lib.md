@@ -31,9 +31,6 @@ Unix主张kiss，小而美被实践是最好用的，本文将介绍笔者收集
 ## [template.js][template.js]
 > template.js 一款javascript模板引擎，简单，好用。
 
-## [lodJS][lodJS]
-> JavaScript模块加载器，基于AMD。迄今为止，对AMD理解最好的实现
-
 ## [favico.js][favico.js]
 在favico上添加数字，是不是很nice，点击下面的官网查看效果，这肯定要逼死强迫症了。
 
@@ -50,9 +47,6 @@ Unix主张kiss，小而美被实践是最好用的，本文将介绍笔者收集
 
 ## [device.js][device.js]
 你想检测用户的设备，试试这个吧，比jq.browser全面多了。
-
-## [type.js][type.js]
-js的typeof对基础类型各种坑，对复杂数据类型全部返回`object`，试试这个js吧，给你正确的数据类型
 
 ## [is.js][is.js]
 迷你检查库，这个几乎涵盖了全部的各种检测，如果嫌弃这个太大，很多功能用不到，那就使用更迷你的[is2.js][is2.js]吧
@@ -92,17 +86,8 @@ moment太大，那试试这个吧，超小，功能还超全的一个时间处�
 ## [iNotify][iNotify]
 浏览器通知各种兼容性的坑，试试这个库吧，磨平各个浏览器的差异，同时还新增多种通知
 
-## [event.js][event.js]
-node里的EventEimtter很好用，可以再浏览器里又没有怎么办？试试这个库吧，EventEimtter能够极大的降低系统的耦合
-
-## [guid.js][guid.js]
-需要全局的唯一id，试试这个库吧
-
-## [inherits.js][inherits.js]
-ES5代码也想要继承的功能怎么搞？试试这个库
-
-## [console.js][console.js]
-ie6,7 下没有console，ie8,9下打开调试工具才会有console，可是代码里写了console.log又忘了去掉怎么办？可以试试这个js解决ie下缺失console的问题
+## [jsmini](https://github.com/jsmini)
+还没过瘾，jsmini library满足你，一组小而美的JavaScript迷你库，功能众多
 
 ## 总结
 本文介绍的只是作者收集的一小部分而已，作者将会保持时时更新的，如果你有什么推荐的欢迎反馈给我。
@@ -113,13 +98,13 @@ ie6,7 下没有console，ie8,9下打开调试工具才会有console，可是代�
 [store.js]: https://github.com/marcuswestin/store.js
 [data.js]: https://github.com/yanhaijing/data.js
 [template.js]: https://github.com/yanhaijing/template.js
-[lodJS]: https://github.com/yanhaijing/lodjs
 [favico.js]: http://lab.ejci.net/favico.js/
 [Modernizr]: http://modernizr.com/
 [Move.js]: http://visionmedia.github.io/move.js/
 [Keypress]: http://dmauro.github.io/Keypress/
 [device.js]: http://matthewhudson.me/projects/device.js/
 [is.js]: http://arasatasaygin.github.io/is.js/
+[is2.js]: https://github.com/yanhaijing/is.js
 [es5-shim]: https://github.com/es-shims/es5-shim
 [parallax]: https://github.com/wagerfield/parallax
 [notie.js]: https://github.com/jaredreich/notie.js
@@ -129,9 +114,3 @@ ie6,7 下没有console，ie8,9下打开调试工具才会有console，可是代�
 [momentjs]: http://momentjs.cn/
 [spacetime]: https://github.com/smallwins/spacetime
 [iNotify]: https://github.com/jaywcjlove/iNotify
-[console.js]: https://github.com/yanhaijing/console.js
-[type.js]: https://github.com/yanhaijing/type.js
-[is2.js]: https://github.com/yanhaijing/is.js
-[event.js]: https://github.com/yanhaijing/event.js
-[guid.js]: https://github.com/yanhaijing/guid.js
-[inherits.js]: https://github.com/yanhaijing/inherits.js

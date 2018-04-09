@@ -2,6 +2,9 @@
     <h2>开源项目</h2>
     <ul>
         <li>
+            <a href="https://github.com/yanhaijing/zepto.fullpage" target="_blank">zepto.fullpage</a> 专注于移动端的fullPage.js
+        </li>
+        <li>
             <a href="https://github.com/yanhaijing/template.js" target="_blank">template.js</a> 一款javascript模板引擎，简单，好用。
         </li>
         <li>

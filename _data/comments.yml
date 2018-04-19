@@ -8013,6 +8013,22 @@ html5-manifest:
       @zzlw https://github.com/yanhaijing/basejs/blob/gh-pages/Gruntfile.js
       manifest&#x7684;&#x65B9;&#x5F0F;&#x6709;&#x70B9;out&#x4E86;
     date: 2018-03-23T11:15:34.410Z
+  - author:
+      type: github
+      displayName: zhaobc
+      url: 'https://github.com/zhaobc'
+      picture: 'https://avatars1.githubusercontent.com/u/19944259?v=4&s=73'
+    content: >-
+      &#x90A3;&#x6709;&#x4EC0;&#x4E48;&#x65B0;&#x7684;&#x65B9;&#x6CD5;&#x505A;&#x79BB;&#x7EBF;&#x7F13;&#x5B58;&#x5417;
+    date: 2018-04-02T03:08:16.455Z
+  - author:
+      type: github
+      displayName: zhaobc
+      url: 'https://github.com/zhaobc'
+      picture: 'https://avatars1.githubusercontent.com/u/19944259?v=4&s=73'
+    content: >-
+      &#x90A3;&#x6709;&#x4EC0;&#x4E48;&#x65B0;&#x7684;&#x65B9;&#x6CD5;&#x505A;&#x79BB;&#x7EBF;&#x7F13;&#x5B58;&#x5417;
+    date: 2018-04-02T03:09:50.592Z
 functional-programming-practice:
   - author:
       type: github

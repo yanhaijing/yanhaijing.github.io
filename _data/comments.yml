@@ -8046,3 +8046,11 @@ chrome-mutil-user:
     content: >
       &#x697C;&#x4E3B;&#x7684;&#x60F3;&#x6CD5;&#x5F88;&#x4E0D;&#x9519;&#xFF0C;&#x5B66;&#x5230;&#x4E86;
     date: 2018-04-26T12:58:40.556Z
+switch-environment:
+  - author:
+      type: github
+      displayName: sinsle
+      url: 'https://github.com/sinsle'
+      picture: 'https://avatars1.githubusercontent.com/u/17467939?v=4&s=73'
+    content: '&#x5173;&#x6CE8;&#x4E25;&#x6D77;&#x955C;&#x5927;&#x795E;'
+    date: 2018-05-14T02:32:22.074Z

@@ -4,7 +4,7 @@
 <img src="http://yanhaijing.com/img/facelessman.png" width="120">
 
 ## 关于我
-[这里有我的简介](http://yanhaijing.com/yan_about.html)
+[这里有我的简介](http://yanhaijing.com/yan_about/)
 
 ## 技术支持
 - [jekyllcn](http://jekyllcn.com/)

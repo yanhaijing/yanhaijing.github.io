@@ -48,12 +48,12 @@ description:
 
 关于插件的知识这里不再展开，这里开发的是一个插件类，并且是对全部页面展现的
 
-![]({{BLOG_IMG/522.png}})
+![]({{BLOG_IMG}}522.png)
 
 ## 系统设计
 麻雀虽小五脏俱全，这么一个小小的插件，主要包含三部分，服务端、客户端和反馈系统，整体架构图如下：
 
-![]({{BLOG_IMG/523.png}})
+![]({{BLOG_IMG}}523.png)
 
 数据的设计非常简单，如下所示，version和changeLog用来做升级提示，data中是数据
 
@@ -77,7 +77,7 @@ description:
 
 程序执行的流程图如下，首先是获取数据，需要处理各种异常：
 
-![]({{BLOG_IMG/524.png}})
+![]({{BLOG_IMG}}524.png)
 
 由于没有放到Chrome的应用商店，所以升级的提示需要自己做，思路也很简单，在程序里面写死当前的版本号，如果当前版本号和接口返回罪行版本号不一致，就提示升级
 
@@ -166,3 +166,7 @@ function renderUpdate(version, changeLog) {
 
 ## 总结
 说了这么，都是思路和方法，下面提供一个实际的[仓库](https://github.com/yanhaijing/switch-env)，只是个demo哦
+
+最后再来看下效果图吧
+
+![]({{BLOG_IMG}}525.gif)

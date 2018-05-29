@@ -84,7 +84,7 @@ vi ~/.gitconfig
 
 然后在添加gitconfig-work文件
 
-```vi
+```bash
 vi ~/.gitconfig-work
 ```
 

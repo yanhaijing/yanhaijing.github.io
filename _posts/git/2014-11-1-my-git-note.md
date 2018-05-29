@@ -61,6 +61,43 @@ description: 这篇文章记录个人常用的一些命令，和记不住的一�
 
 笔者一般只配置配置这几个，你也可以配置其他命令。
 
+我遇到一个问题，就是我工作中的邮箱和自己的邮箱不一样，这就很苦恼了，一个程序员绝不接受一个仓库一个仓库的配置吧，在网上 搜了很多方法都太繁琐。。。好在Git 2.13引入了一个新功能——条件配置，能够很简单的解决这个问题，详情请看[这里](https://blog.github.com/2017-05-10-git-2-13-has-been-released/)
+
+简单来说就是现在可以指定不同的目录使用不同的配置文件，这个功能简直太赞了，下面通过我的需求来举个例子，我自己的代码都位于gihtub目录，工作的代码位于work目录
+
+首先需要修改gitconfig文件，一般都是修改自己账户下的gitconfig
+
+```bash
+vi ~/.gitconfig
+```
+
+在最下面添加如下的代码`includeIf`，效果就是work目录下会引用path中的配置文件
+
+```
+[user]
+    name = 颜海镜
+    email = yanhaijing@yeah.net
+
+[includeIf "gitdir:~/work"]
+    path = .gitconfig-work
+```
+
+然后在添加gitconfig-work文件
+
+```vi
+vi ~/.gitconfig-work
+```
+
+.gitconfig-work文件内容如下
+
+```
+[user]
+    name = 颜海镜
+    email = yanhaijing@meituan.com
+```
+
+配置好后，在work目录就会使用工作的邮箱，笑脸
+
 ## 新建仓库
 
 	git init #初始化

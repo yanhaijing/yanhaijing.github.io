@@ -137,6 +137,10 @@ book.json还有自定义更多的信息，比如网页的title，description等�
 ## 总结
 关于[GitBook][GitBook]的更多资料可查看官网的[帮助文档](https://help.gitbook.com)，哪里的介绍比较全面，也会保持时时更新。
 
+我把这些配置整理了个[仓库](https://github.com/yanhaijing/gitbook-boilerplate)，可以开箱即用，最重要的是添加了对docx格式的支持，我的[青丝集](http://yanhaijing.com/spring/)就是用的这个模版，墙裂推荐！
+
+> [gitbook-boilerplate](https://github.com/yanhaijing/gitbook-boilerplate) —— 一个基于gitbook快速写电子书的模版，支持html、pdf、**docx**、epub、mobi
+
 ## 参考资料
 - [Gitbook 使用入门](http://gitbook-zh.wanqingwong.com/)
 

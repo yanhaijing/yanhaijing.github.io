@@ -85,7 +85,7 @@ CMD规范参照commonjs中的方式，定义模块的方式如下:
 CMD的典型实现就是[seajs](http://seajs.org)，应用的很广泛。
 
 ## AMD(Asynchronous Module Definition)
-[AMD](https://github.com/amdjs/amdjs-api/wiki/AMD-(%E4%B8%AD%E6%96%87%E7%89%88)是异步模块定义，特别适合在浏览器端使用，其规范和CMD是很像的，AMD规范中定义模块的方式如下：
+<a href="https://github.com/amdjs/amdjs-api/wiki/AMD-(%E4%B8%AD%E6%96%87%E7%89%88)">AMD</a>是异步模块定义，特别适合在浏览器端使用，其规范和CMD是很像的，AMD规范中定义模块的方式如下：
 
 	define(id?, dependencies?, factory);
 

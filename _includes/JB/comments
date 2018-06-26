@@ -1,6 +1,8 @@
 {% if site.JB.comments.provider and page.comments != false %}
 
 {% case site.JB.comments.provider %}
+{% when "gitment" %}
+  {% include JB/comments-providers/gitment %}
 {% when "duoshuo" %}
   {% include JB/comments-providers/duoshuo %}
 {% when "commentit" %}

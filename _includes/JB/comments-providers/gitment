@@ -8,18 +8,21 @@
     <div id="gitment-container"></div>
 
     <link rel="stylesheet" href="{{ BASE_PATH }}/assets/plugin/gitment/gitment.css">
-    <script src="{{ BASE_PATH }}/assets/plugin/gitment/gitment.js"></script>
+    <script defer src="{{ BASE_PATH }}/assets/plugin/gitment/gitment.js"></script>
 
     <script>
-    var gitment = new Gitment({
-      id: '{{ page.id }}', // 可选。默认为 location.href
-      owner: '{{ site.JB.comments.gitment.owner }}',
-      repo: '{{ site.JB.comments.gitment.repo }}',
-      oauth: {
-        client_id: '{{ site.JB.comments.gitment.client_id }}',
-        client_secret: '{{ site.JB.comments.gitment.client_secret }}',
-      },
-    })
-    gitment.render('gitment-container')
+      window.addEventListener('load', function () {
+        console.log('load')
+        var gitment = new Gitment({
+          id: '{{ page.id }}', // 可选。默认为 location.href
+          owner: '{{ site.JB.comments.gitment.owner }}',
+          repo: '{{ site.JB.comments.gitment.repo }}',
+          oauth: {
+            client_id: '{{ site.JB.comments.gitment.client_id }}',
+            client_secret: '{{ site.JB.comments.gitment.client_secret }}',
+          },
+        })
+        gitment.render('gitment-container')
+      })
     </script>
 {% endif %}

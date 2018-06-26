@@ -1,5 +1,5 @@
 {% capture postdate %}{{page.date | date: '%s'}}{% endcapture %}
-{% capture newdate %}{{'2018-01-01' | date: '%s'}}{% endcapture %}
+{% capture newdate %}{{'2017-10-01' | date: '%s'}}{% endcapture %}
 
 {% comment %} 指定日期之后使用新的评论系统 {% endcomment %}
 {% if postdate < newdate%}

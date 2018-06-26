@@ -12,7 +12,6 @@
 
     <script>
       window.addEventListener('load', function () {
-        console.log('load')
         var gitment = new Gitment({
           id: '{{ page.id }}', // 可选。默认为 location.href
           owner: '{{ site.JB.comments.gitment.owner }}',

@@ -16,15 +16,15 @@ description: 本文将记录一些常用gem命令，以备不时之需（每次�
 本文将记录一些常用gem命令，以备不时之需（每次都查还烦人）。
 
 ## 更换淘宝镜像
-由于国内网络原因（你懂的），导致 rubygems.org 存放在 Amazon S3 上面的资源文件间歇性连接失败。这里要更换默认镜像为[淘宝的镜像](http://ruby.taobao.org/)。
+由于国内网络原因（你懂的），导致 rubygems.org 存放在 Amazon S3 上面的资源文件间歇性连接失败。这里要更换默认镜像为[ruby-china的镜像](https://gems.ruby-china.com/)。
 
 	gem sources --remove https://rubygems.org/
-	gem sources -a https://ruby.taobao.org/
+	gem sources -a https://gems.ruby-china.com/
 	gem sources -l
 	*** CURRENT SOURCES ***
 
-	https://ruby.taobao.org
-	# 请确保只有 ruby.taobao.org
+	https://gems.ruby-china.com/
+	# 请确保只有 https://gems.ruby-china.com/
 
 ## 常用命令
 	gem -v # 查看RubyGems软件的版本

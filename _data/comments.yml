@@ -7911,6 +7911,22 @@ principle-of-rem-layout:
     content: >-
       &#x5B9E;&#x73B0;&#x6CA1;&#x660E;&#x767D;&#x4E3A;&#x4EC0;&#x4E48;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x4E0D;&#x80FD;&#x7528;REM&#xFF0C;&#x5199;&#x4E86;demo&#x8BD5;&#x4E86;&#x4E0B;&#x662F;&#x53EF;&#x4EE5;&#x751F;&#x6548;&#x7684;&#x3002;&#x3002;&#x3002;&#x535A;&#x4E3B;&#x80FD;&#x4E0D;&#x80FD;&#x89E3;&#x6790;&#x4E0B;
     date: 2018-07-26T14:16:19.297Z
+  - author:
+      type: full
+      displayName: SAOSO
+      url: 'https://github.com/SAOSO'
+      picture: 'https://avatars2.githubusercontent.com/u/29364780?v=4&s=73'
+    content: >-
+      &#x770B;&#x4E86;&#x963F;&#x91CC;&#x65B9;&#x6848;&#x7684;&#x6587;&#x7AE0;&#x3002;
+
+      &#x4E3B;&#x8981;&#x662F;&#x4E24;&#x4E2A;&#x539F;&#x56E0;
+
+      1&#xFF0C;&#x5982;&#x679C;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x4E5F;&#x7528;rem&#x7684;&#x8BDD;&#xFF0C;&#x5728;&#x5927;&#x5C4F;&#x4E0A;&#x5B57;&#x4F53;&#x4F1A;&#x88AB;&#x653E;&#x5927;&#xFF0C;&#x4F46;&#x662F;&#x5927;&#x5C4F;&#x6211;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5927;&#x5C4F;&#x80FD;&#x663E;&#x793A;&#x66F4;&#x591A;&#x6587;&#x5B57;
+
+      2&#xFF0C;&#x73B0;&#x5728;&#x7EDD;&#x5927;&#x591A;&#x6570;&#x7684;&#x5B57;&#x4F53;&#x6587;&#x4EF6;&#x90FD;&#x81EA;&#x5E26;&#x4E00;&#x4E9B;&#x70B9;&#x9635;&#x5C3A;&#x5BF8;&#xFF0C;&#x901A;&#x5E38;&#x662F;16px&#x548C;24px&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x4E0D;&#x5E0C;&#x671B;&#x51FA;&#x73B0;13px&#x548C;15px&#x8FD9;&#x6837;&#x7684;&#x5947;&#x8469;&#x5C3A;&#x5BF8;&#x3002;
+
+      &#x4E3B;&#x8981;&#x662F;&#x8FD9;&#x4E24;&#x4E2A;&#x539F;&#x56E0;&#x5417;&#xFF1F;
+    date: 2018-07-26T14:34:04.878Z
 some-command-of-cmd:
   - author:
       type: github

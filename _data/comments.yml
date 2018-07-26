@@ -7903,6 +7903,14 @@ principle-of-rem-layout:
       &#x9;@VincyChan 
       &#x90A3;&#x4F60;&#x5C31;&#x6D3B;&#x5B66;&#x6D3B;&#x7528;&#x5427;&#xFF0C;&#x5B66;&#x4F1A;&#x539F;&#x7406;&#xFF0C;&#x4EE5;&#x4E0D;&#x53D8;&#x5E94;&#x4E07;&#x53D8;
     date: 2017-11-13T04:36:37.360Z
+  - author:
+      type: full
+      displayName: SAOSO
+      url: 'https://github.com/SAOSO'
+      picture: 'https://avatars2.githubusercontent.com/u/29364780?v=4&s=73'
+    content: >-
+      &#x5B9E;&#x73B0;&#x6CA1;&#x660E;&#x767D;&#x4E3A;&#x4EC0;&#x4E48;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x4E0D;&#x80FD;&#x7528;REM&#xFF0C;&#x5199;&#x4E86;demo&#x8BD5;&#x4E86;&#x4E0B;&#x662F;&#x53EF;&#x4EE5;&#x751F;&#x6548;&#x7684;&#x3002;&#x3002;&#x3002;&#x535A;&#x4E3B;&#x80FD;&#x4E0D;&#x80FD;&#x89E3;&#x6790;&#x4E0B;
+    date: 2018-07-26T14:16:19.297Z
 some-command-of-cmd:
   - author:
       type: github

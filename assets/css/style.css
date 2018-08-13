@@ -97,6 +97,7 @@ table th {
 .blog-tail-origin-link {
     position: absolute;
     text-indent: -999999px;
+    height: 0;
 }
 /* 版权 */
 .yan-copyright {

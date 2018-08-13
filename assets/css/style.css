@@ -193,6 +193,10 @@ table th {
     cursor: pointer;
 }
 
+.mybook-dialog .figure-list {
+    display: flex;
+}
+
 .mybook-dialog figure {
     width: 170px;
     text-align: center;

@@ -20,10 +20,17 @@
             </div>
             <div class="modal-body">
                 <p>《React状态管理与同构实战》限量签名版，可指定寄语，附赠小惊喜</p>
-                <figure>
-                    <img src="{{ HOME_PATH }}img/weidian2.png" alt="微店购买链接二维码" width="170" height="170">
-                    <figcaption>微信扫一扫，微店购买</figcaption>
-                </figure>
+                <div class="figure-list">
+                    <figure>
+                        <img src="{{ HOME_PATH }}img/weidian2.png" alt="微店购买链接二维码" width="170" height="170">
+                        <figcaption>微信扫一扫，微店购买</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="{{ HOME_PATH }}img/weixin.jpg" alt="微店购买链接二维码" width="170" height="170">
+                        <figcaption>扫一扫，添加微信购买</figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
     </div>

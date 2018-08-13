@@ -1,0 +1,30 @@
+<aside class="mybook">
+    <p>
+        我的新书《React状态管理与同构实战》，深入解读前沿同构技术，感谢大家支持
+    </p>
+    <div>
+        <b>限量签名版，可指定寄语，附赠小惊喜，<a class="mybook-btn" data-toggle="modal" data-target="#book-modal">点击获取</a></b>
+        <br>
+        京东：<a href="https://item.jd.com/12403508.html" target="_blank">https://item.jd.com/12403508.html</a> 
+        <br>
+        当当：<a href="http://product.dangdang.com/25308679.html" target="_blank">http://product.dangdang.com/25308679.html</a>
+    </div>
+</aside>
+
+<div id="book-modal" class="modal fade mybook-dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">系统提示</h4>
+            </div>
+            <div class="modal-body">
+                <p>《React状态管理与同构实战》限量签名版，可指定寄语，附赠小惊喜</p>
+                <figure>
+                    <img src="{{ HOME_PATH }}img/weidian.png" alt="微店购买链接二维码" width="170" height="170">
+                    <figcaption>微信扫一扫，微店购买</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>

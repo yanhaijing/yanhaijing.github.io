@@ -182,3 +182,18 @@ table th {
 .pg-job-pre {
     white-space: pre-line;
 }
+
+/* 送书 */
+.mybook {
+    margin-top: 1em;
+    padding: 10px;
+    background: #eee;
+}
+.mybook-btn {
+    cursor: pointer;
+}
+
+.mybook-dialog figure {
+    width: 170px;
+    text-align: center;
+}

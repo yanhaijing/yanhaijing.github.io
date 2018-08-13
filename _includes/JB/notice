@@ -1,5 +1,9 @@
 <div class="notice">
     <div class="notice-item">
+        <b class="glyphicon glyphicon-bullhorn"></b>号外号外：我的新书《React状态管理与同构实战》出版啦！！！<a href="https://item.jd.com/12403508.html" target="_blank">快点我查看</a>
+    </div>
+
+    <div class="notice-item">
         <b class="glyphicon glyphicon-bullhorn"></b>号外号外：美团招聘前端啦！地点：北京！！！<a href="/job" target="_blank">快点我查看</a>
     </div>
 

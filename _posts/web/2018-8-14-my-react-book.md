@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 我的新书《React状态管理与同构实战》出版啦
+title: 《React状态管理与同构实战》限量签名版来啦
 category : web
 tagline: "原创"
 tags : [web]

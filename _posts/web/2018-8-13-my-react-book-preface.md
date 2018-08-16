@@ -34,7 +34,7 @@ description: 我的新书《React状态管理与同构实战》自序 —— 人
 ## 总结
 《React 状态管理与同构实战》这本书由我和前端知名技术专家[侯策][lucas]合力打磨，凝结了我们在学习、实践 React 框架过程中的积累和心得。除了 React 框架使用介绍以外，着重剖析了状态管理以及服务端渲染同构应用方面的内容。同时吸取了社区大量优秀思想，进行归纳比对。
 
-本书受到百度公司副总裁沈抖、百度高级前端工程师董睿，以及知名JavaScript语言专家阮一峰、Node.js布道者狼叔、Flarum中文社区创始人 justjavac、新浪移动前端技术专家小爝、知乎知名博主顾轶灵等前端圈众多专家大咖的联合力荐。
+本书受到百度公司副总裁沈抖、百度高级前端工程师[董睿][dongrui]，以及知名JavaScript语言专家[阮一峰][ruanyf]、Node.js布道者[狼叔][langshu]、Flarum中文社区创始人 [justjavac][justjavac]、新浪移动前端技术专家[小爝][xiaojue]、知乎知名博主[顾轶灵][guyiling]等前端圈众多专家大咖的联合力荐。
 
 有兴趣的读者可以点击下面的链接购买，再次感谢各位的支持与鼓励！恳请各位批评指正！
 
@@ -44,3 +44,9 @@ description: 我的新书《React状态管理与同构实战》自序 —— 人
 
 
 [lucas]: https://www.zhihu.com/people/lucas-hc
+[dongrui]: https://www.zhihu.com/people/dong-rui-24/activities
+[langshu]: https://www.zhihu.com/people/i5ting/activities
+[ruanyf]: http://www.ruanyifeng.com/home.html
+[justjavac]: http://justjavac.com/
+[guyiling]: https://www.zhihu.com/people/justineo/activities
+[xiaojue]: https://www.zhihu.com/people/xiao-jue-83/activities

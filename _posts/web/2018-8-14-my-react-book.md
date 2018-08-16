@@ -47,7 +47,7 @@ React的横空出世颠覆了以往的前端开发方式，本书深入浅出Rea
 
 **众多圈内技术大咖的力荐 **
 
-百度公司副总裁沈抖、百度公司资深前端工程师董睿、前端圈知名技术专家阮一峰、狼叔、迷渡（justjavac）、小爝、顾轶灵联合力荐！
+百度公司副总裁沈抖、百度公司资深前端工程师[董睿][dongrui]、前端圈知名技术专家[阮一峰][ruanyf]、[狼叔][langshu]、[迷渡（justjavac）][justjavac]、[小爝][xiaojue]、[顾轶灵][guyiling]联合力荐！
 
 
 ## 内容简介
@@ -64,19 +64,19 @@ React自开源以来，便以革命性的设计理念迅速颠覆了前端开发
 
 > 本书针对React进行了专题研究，其中还包含Redux用法的详细介绍、源码解读、中间件的实现原理，以及前后端同构的解决方案等内容，适合初学者进阶学习React的相关知识，掌握实战技能。建议各位读者按照源码上机练习，达到更好的学习效果。
 <br>
-—— 资深JavaScript语言专家、知名技术博客作者，阮一峰
+—— 资深JavaScript语言专家、知名技术博客作者，[阮一峰][ruanyf]
 
 > 这本书系统讲解了Redux和同构技术，是一本在垂直领域中非常优秀的专业书籍。本书简明扼要，重视实践，尤其适合初学者。学会Redux可以让你在前端开发中更加游刃有余，同构开发对于拓宽前端开发领域也有着极其重要的意义，建议大家深入学习。
 <br>
-—— Node.js布道者、Cnode社区管理员，狼叔（i5ting）
+—— Node.js布道者、Cnode社区管理员，[狼叔（i5ting）][langshu]
 
 > 本书深入React技术，涉及方方面面，从入门到高阶实例，从状态管理到同构应用技巧，无论是在技术实现原理上，还是在实战经验上，本书都能帮助读者对React形成全貌理解。无论你是React新手还是资深工程师，相信都能从本书中获得启发。
 <br>
-—— 新浪移动前端技术专家，付强（小爝）
+—— 新浪移动前端技术专家，[付强（小爝）][xiaojue]
 
 > 本书不仅覆盖了以React、Redux、Next.js等为核心的组件化开发流程，还深入源码解读了技术细节，通过对设计思路的阐述帮助读者增强系统性的理解和认知。相信本书可以帮助广大开发者更好地掌握React体系的精髓，创造出体验更佳的产品。
 <br>
-—— 百度资深工程师，顾轶灵
+—— 百度资深工程师，[顾轶灵][guyiling]
 
 
 ## 阅读答疑
@@ -110,3 +110,9 @@ React自开源以来，便以革命性的设计理念迅速颠覆了前端开发
 <img src="{{BLOG_IMG}}527.jpg" width="400">
 
 [lucas]: https://www.zhihu.com/people/lucas-hc
+[dongrui]: https://www.zhihu.com/people/dong-rui-24/activities
+[langshu]: https://www.zhihu.com/people/i5ting/activities
+[ruanyf]: http://www.ruanyifeng.com/home.html
+[justjavac]: http://justjavac.com/
+[guyiling]: https://www.zhihu.com/people/justineo/activities
+[xiaojue]: https://www.zhihu.com/people/xiao-jue-83/activities

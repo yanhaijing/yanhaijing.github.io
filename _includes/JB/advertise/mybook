@@ -25,11 +25,6 @@
                         <img src="{{ HOME_PATH }}img/weidian2.png" alt="微店购买链接二维码" width="170" height="170">
                         <figcaption>微信扫一扫，微店购买</figcaption>
                     </figure>
-
-                    <figure>
-                        <img src="{{ HOME_PATH }}img/weixin.jpg" alt="微店购买链接二维码" width="170" height="170">
-                        <figcaption>扫一扫，添加微信购买</figcaption>
-                    </figure>
                 </div>
             </div>
         </div>

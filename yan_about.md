@@ -40,36 +40,36 @@ group: navigation
 <a target="_blank" href="http://url.cn/OXkoEC" rel="nofollow"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="CSS家园" title="CSS家园"></a>
 
 ## 更多信息
-[![]({{ HOME_PATH }}img/auth-github.png)](https://github.com/yanhaijing "我在GitHub")
-[![]({{ HOME_PATH }}img/auth-weibo.png)](http://weibo.com/yanhaijing1234 "我在微博")
-[![]({{ HOME_PATH }}img/twitter.png)](https://twitter.com/yanhaijing "我在推特")
-[![]({{ HOME_PATH }}img/auth-douban.png)](http://www.douban.com/people/yanhaijing/ "我在豆瓣")
-[![]({{ HOME_PATH }}img/turing.jpg)](http://www.ituring.com.cn/users/121364 "我在图灵")
-[![]({{ HOME_PATH }}img/zhihu.jpg)](https://www.zhihu.com/people/yanhaijing "我在知乎")
-[![]({{ HOME_PATH }}img/jianshu.jpg)](http://www.jianshu.com/users/63a87c3a4c79/timeline "我在简书")
-[![]({{ HOME_PATH }}img/segmentfault.jpg)](https://segmentfault.com/u/yanhaijing "我在segmentfault")
-[![]({{ HOME_PATH }}img/stackoverflow.jpg)](http://stackoverflow.com/users/2681005/yanhaijing "我在stackoverflow")
+<a href="https://github.com/yanhaijing" title="我在GitHub" target="_blank"><img src="{{ HOME_PATH }}img/auth-github.png"></a>
+<a href="http://weibo.com/yanhaijing1234" title="我在微博" target="_blank" rel="nofollow"><img src="{{ HOME_PATH }}img/auth-weibo.png"></a>
+<a href="https://juejin.im/user/56848f1d60b2fa064c24a4fd" title="我在掘金" target="_blank" rel="nofollow"><img src="{{ HOME_PATH }}img/juejin.png" width="20" height="20"></a>
+<a href="https://twitter.com/yanhaijing" title="我在推特" target="_blank" rel="nofollow"><img src="{{ HOME_PATH }}img/twitter.png"></a>
+<a href="http://www.douban.com/people/yanhaijing/" title="我在豆瓣" target="_blank" rel="nofollow"><img src="{{ HOME_PATH }}img/auth-douban.png"></a>
+<a href="http://www.ituring.com.cn/users/121364" title="我在图灵" target="_blank" rel="nofollow"><img src="{{ HOME_PATH }}img/turing.jpg"></a>
+<a href="https://www.zhihu.com/people/yanhaijing" title="我在知乎" target="_blank" rel="nofollow"><img src="{{ HOME_PATH }}img/zhihu.jpg"></a>
+<a href="http://www.jianshu.com/users/63a87c3a4c79/timeline" title="我在简书" target="_blank" rel="nofollow"><img src="{{ HOME_PATH }}img/jianshu.jpg"></a>
+<a href="https://segmentfault.com/u/yanhaijing" title="我在segmentfault" target="_blank" rel="nofollow"><img src="{{ HOME_PATH }}img/segmentfault.jpg"></a>
+<a href="http://stackoverflow.com/users/2681005/yanhaijing" title="我在stackoverflow" target="_blank" rel="nofollow"><img src="{{ HOME_PATH }}img/stackoverflow.jpg"></a>
 
-## 友情链接 <small>[我来添加](https://github.com/yanhaijing/yanhaijing.github.com/edit/master/yan_about.md)</small>
+## 友情链接 <small><a href="https://github.com/yanhaijing/yanhaijing.github.com/edit/master/yan_about.md" target="_blank">我来添加</a></small>
 
-- [@百度经验研发团队](https://exp-team.github.io/)
-- [@justjavac(迷渡)](http://justjavac.com/)
-- [@skyseraph](http://skyseraph.com/)
-- [@腊八粥(IT翻译博客)](http://www.labazhou.net/)
-- [@php101(土豆丫)](http://www.php101.cn/)
-- [@wutongr(梧桐)](http://www.wutongr.com/)
-- [@淡忘~浅思](http://www.ido321.com/)
-- [@杨佰(yangbai)的个人博客](http://www.yangbai.me/)
-- [@前端小武](https://xuexb.com/)
-- [@爱天台](http://www.aitiantai.com/)
-- [@随心小筑](http://jser.it/)
-- [@前端人的俱乐部](http://f2er.club/)
-- [@前端开发博客](http://caibaojian.com/)
-- [@莫名地扯淡(冯宗宝)](http://www.fzb.me/)
-- [@devigner Jinzhan](http://jinzhan.me/)
-- [@Phodal](https://www.phodal.com/)
-- [@wujunze](https://wujunze.com/)
-- [@arron](https://omeme.me/)
-- [@geekjc](https://www.geekjc.com)
-- [@前端路上](http://refined-x.com)
-
+- <a href="https://exp-team.github.io/" target="_blank">@百度经验研发团队</a>
+- <a href="http://justjavac.com/" target="_blank">@justjavac(迷渡)</a>
+- <a href="http://skyseraph.com/" target="_blank">@skyseraph</a>
+- <a href="http://www.labazhou.net/" target="_blank">@腊八粥(IT翻译博客)</a>
+- <a href="http://www.php101.cn/" target="_blank">@php101(土豆丫)</a>
+- <a href="http://www.wutongr.com/" target="_blank">@wutongr(梧桐)</a>
+- <a href="http://www.ido321.com/" target="_blank">@淡忘~浅思</a>
+- <a href="http://www.yangbai.me/" target="_blank">@杨佰(yangbai)的个人博客</a>
+- <a href="https://xuexb.com/" target="_blank">@前端小武</a>
+- <a href="http://www.aitiantai.com/" target="_blank">@爱天台</a>
+- <a href="http://jser.it/" target="_blank">@随心小筑</a>
+- <a href="http://f2er.club/" target="_blank">@前端人的俱乐部</a>
+- <a href="http://caibaojian.com/" target="_blank">@前端开发博客</a>
+- <a href="http://www.fzb.me/" target="_blank">@莫名地扯淡(冯宗宝)</a>
+- <a href="http://jinzhan.me/" target="_blank">@devigner Jinzhan</a>
+- <a href="https://www.phodal.com/" target="_blank">@Phodal</a>
+- <a href="https://wujunze.com/" target="_blank">@wujunze</a>
+- <a href="https://omeme.me/" target="_blank">@arron</a>
+- <a href="https://www.geekjc.com" target="_blank">@geekjc</a>
+- <a href="http://refined-x.com" target="_blank">@前端路上</a>

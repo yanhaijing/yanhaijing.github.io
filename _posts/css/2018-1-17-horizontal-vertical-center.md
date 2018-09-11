@@ -9,9 +9,9 @@ description: 本文将讲解css实现水平垂直居中的几种方式
 ---
 {% include JB/setup %}
 
-很多面试官喜欢通过这个问题考察一下面试者对css的了解，我就被问过好几次了，所以总结归纳一下这个问题
+划重点，这是一道面试必考题，很多面试官都喜欢问这个问题，我就被问过好几次了
 
-总结了一下大概有下面这些方法，本文将逐一介绍一下，我将本文整理成了一个[github仓库](https://github.com/yanhaijing/vertical-center)，欢迎大家star
+本文总结了一下CSS实现水平垂直居中的方式大概有下面这些，本文将逐一介绍一下，我将本文整理成了一个[github仓库](https://github.com/yanhaijing/vertical-center)，欢迎大家star
 
 仅居中元素定宽高适用
 

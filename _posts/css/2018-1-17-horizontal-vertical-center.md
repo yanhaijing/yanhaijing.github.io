@@ -151,6 +151,35 @@ wp是父元素的类名，box是子元素的类名，因为有定宽和不定宽
 点击查看[完整DEMO](http://yanhaijing.com/vertical-center/absolute3.html)
 
 ## absolute + transform
+还是绝对定位，但这个方法不需要子元素固定宽高，所以不再需要size类了，HTML代码如下
+
+```html
+<div class="wp">
+    <div class="box">123123</div>
+</div>
+```
+
+修复绝对定位的问题，还可以使用css3新增的transform，transform的translate属性也可以设置百分比，其是相对于自身的宽和高，所以可以讲translate设置为-50%，就可以做到居中了，代码如下
+
+```css
+/* 此处引用上面的公共代码 */
+/* 此处引用上面的公共代码 */
+
+/* 定位代码 */
+.wp {
+    position: relative;
+}
+.box {
+    position: absolute;;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+```
+
+这种方法兼容性依赖translate2d的兼容性
+
+点击查看[完整DEMO](http://yanhaijing.com/vertical-center/absolute4.html)
 
 ## writing-mode
 

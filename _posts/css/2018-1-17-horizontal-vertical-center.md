@@ -23,8 +23,8 @@ description: 本文将讲解css实现水平垂直居中的几种方式
 
 居中元素不定宽高
 - absolute + transform
-- writing-mode
 - lineheight
+- writing-mode
 - table
 - css-table
 - flex
@@ -181,9 +181,99 @@ wp是父元素的类名，box是子元素的类名，因为有定宽和不定宽
 
 点击查看[完整DEMO](http://yanhaijing.com/vertical-center/absolute4.html)
 
-## writing-mode
-
 ## lineheight
+利用行内元素居中属性也可以做到水平垂直居中，HTML代码如下
+
+```html
+<div class="wp">
+    <div class="box">123123</div>
+</div>
+```
+
+把box设置为行内元素，通过`text-align`就可以做到水平居中，但很多同学可能不知道通过通过`vertical-align`也可以在垂直方向做到居中，代码如下
+
+```css
+/* 此处引用上面的公共代码 */
+/* 此处引用上面的公共代码 */
+
+/* 定位代码 */
+.wp {
+    line-height: 300px;
+    text-align: center;
+    font-size: 0px;
+}
+.box {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: initial;
+    text-align: left; /* 修正文字 */
+}
+```
+
+这种方法需要在子元素中将文字显示重置为想要的效果
+
+点击查看[完整DEMO](http://yanhaijing.com/vertical-center/lineheight.html)
+
+## writing-mode
+很多同学一定和我一样不知道`writing-mode`属性，感谢@张鑫旭老师的反馈，简单来说writing-mode可以改变文字的显示方向，比如可以通过writing-mode让文字的显示变为垂直方向
+
+```html
+<div class="div1">水平方向</div>
+<div class="div2">垂直方向</div>
+```
+
+```css
+.div2 {
+    writing-mode: vertical-lr;
+}
+```
+
+显示效果如下：
+
+```
+水平方向
+垂
+直
+方
+向
+```
+
+更神奇的是所有水平方向上的css属性，都会变为垂直方向上的属性，比如`text-align`，通过`writing-mode`和`text-align`就可以做到水平和垂直方向的居中了，只不过要稍微麻烦一点
+
+```html
+<div class="wp">
+    <div class="wp-inner">
+        <div class="box">123123</div>
+    </div>
+</div>
+```
+
+```css
+/* 此处引用上面的公共代码 */
+/* 此处引用上面的公共代码 */
+
+/* 定位代码 */
+.wp {
+    writing-mode: vertical-lr;
+    text-align: center;
+}
+.wp-inner {
+    writing-mode: horizontal-tb;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.box {
+    display: inline-block;
+    margin: auto;
+    text-align: left;
+}
+```
+
+这种方法实现起来和理解起来都稍微有些复杂
+
+点击查看[完整DEMO](http://yanhaijing.com/vertical-center/writing-mode.html)
 
 ## table
 

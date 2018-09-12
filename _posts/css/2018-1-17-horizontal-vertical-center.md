@@ -3,7 +3,7 @@ layout: post
 title: CSS实现水平垂直居中的方式
 category : css
 tagline: "原创"
-tags : [css, interviewee]
+tags : [css, 面试题]
 keywords: [css, 水平, 垂直, 居中, 水平垂直居中]
 description: 本文将讲解css实现水平垂直居中的几种方式
 ---
@@ -11,7 +11,9 @@ description: 本文将讲解css实现水平垂直居中的几种方式
 
 划重点，这是一道面试必考题，很多面试官都喜欢问这个问题，我就被问过好几次了
 
-本文总结了一下CSS实现水平垂直居中的方式大概有下面这些，本文将逐一介绍一下，我将本文整理成了一个[github仓库](https://github.com/yanhaijing/vertical-center)，欢迎大家star
+![]({{BLOG_IMG}}528.png)
+
+要实现上图的效果看似很简单，实则暗藏玄机，本文总结了一下CSS实现水平垂直居中的方式大概有下面这些，本文将逐一介绍一下，我将本文整理成了一个[github仓库](https://github.com/yanhaijing/vertical-center)，欢迎大家star
 
 仅居中元素定宽高适用
 
@@ -29,10 +31,124 @@ description: 本文将讲解css实现水平垂直居中的几种方式
 - grid
 
 ## absolute + 负margin
+为了实现上面的效果先来做些准备工作，假设HTML代码如下，总共两个元素，父元素和子元素
+
+```html
+<div class="wp">
+    <div class="box size">123123</div>
+</div>
+```
+
+wp是父元素的类名，box是子元素的类名，因为有定宽和不定宽的区别，size用来表示指定宽度，下面是所有效果都要用到的公共代码，主要是设置颜色和宽高
+
+**注意：后面不在重复这段公共代码，只会给出相应提示**
+
+```css
+/* 公共代码 */
+.wp {
+    border: 1px solid red;
+    width: 300px;
+    height: 300px;
+}
+
+.box {
+    background: green;    
+}
+
+.box.size{
+    width: 100px;
+    height: 100px;
+}
+/* 公共代码 */
+```
+
+绝对定位的百分比是相对于父元素的宽高，通过这个特性可以让子元素的居中显示，但绝对定位是基于子元素的左上角，期望的效果是子元素的中心居中显示
+
+为了修正这个问题，可以借助外边距的负值，负的外边距可以让元素向相反方向定位，通过指定子元素的外边距为子元素宽度一半的负值，就可以让子元素居中了，css代码如下
+
+```css
+/* 此处引用上面的公共代码 */
+/* 此处引用上面的公共代码 */
+
+/* 定位代码 */
+.wp {
+    position: relative;
+}
+.box {
+    position: absolute;;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+```
+
+这是我比较常用的方式，这种方式比较好理解，兼容性也很好，缺点是需要知道子元素的宽高
+
+点击查看[完整DEMO](http://yanhaijing.com/vertical-center/absolute1.html)
 
 ## absolute + margin auto
+这种方式也要求居中元素的宽高必须固定，HTML代码如下
+
+```html
+<div class="wp">
+    <div class="box size">123123</div>
+</div>
+```
+
+这种方式通过设置各个方向的距离都是0，此时再讲margin设为auto，就可以在各个方向上居中了
+
+```css
+/* 此处引用上面的公共代码 */
+/* 此处引用上面的公共代码 */
+
+/* 定位代码 */
+.wp {
+    position: relative;
+}
+.box {
+    position: absolute;;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+```
+
+这种方法兼容性也很好，缺点是需要知道子元素的宽高
+
+点击查看[完整DEMO](http://yanhaijing.com/vertical-center/absolute2.html)
 
 ## absolute + calc
+这种方式也要求居中元素的宽高必须固定，所以我们为box增加size类，HTML代码如下
+
+```html
+<div class="wp">
+    <div class="box size">123123</div>
+</div>
+```
+
+感谢css3带来了计算属性，既然top的百分比是基于元素的左上角，那么在减去宽度的一半就好了，代码如下
+
+```css
+/* 此处引用上面的公共代码 */
+/* 此处引用上面的公共代码 */
+
+/* 定位代码 */
+.wp {
+    position: relative;
+}
+.box {
+    position: absolute;;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+}
+```
+
+这种方法兼容性依赖calc的兼容性，缺点是需要知道子元素的宽高
+
+点击查看[完整DEMO](http://yanhaijing.com/vertical-center/absolute3.html)
 
 ## absolute + transform
 
@@ -53,7 +169,9 @@ description: 本文将讲解css实现水平垂直居中的几种方式
 
 下面对比下各个方式的优缺点，肯定又双叒叕该有同学说回字的写法了，简单总结下
 
-- PC端有兼容性要求推荐css-table，否则推荐flex
+- PC端有兼容性要求，宽高固定，推荐absolute + 负margin
+- PC端有兼容要求，宽高不固定，推荐css-table
+- PC端无兼容性要求，推荐flex
 - 移动端推荐使用flex
 
 | 方法                     | 居中元素定宽高固定 | PC兼容性                        | 移动端兼容性          |

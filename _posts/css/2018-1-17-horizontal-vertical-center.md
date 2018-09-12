@@ -170,7 +170,7 @@ wp是父元素的类名，box是子元素的类名，因为有定宽和不定宽
     position: relative;
 }
 .box {
-    position: absolute;;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

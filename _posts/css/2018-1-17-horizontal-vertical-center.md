@@ -5,7 +5,7 @@ category : css
 tagline: "原创"
 tags : [css, 面试题]
 keywords: [css, 水平, 垂直, 居中, 水平垂直居中]
-description: 本文将讲解css实现水平垂直居中的几种方式
+description: 史上最全，本文将讲解css实现水平垂直居中的10种方式
 ---
 {% include JB/setup %}
 
@@ -276,13 +276,102 @@ wp是父元素的类名，box是子元素的类名，因为有定宽和不定宽
 点击查看[完整DEMO](http://yanhaijing.com/vertical-center/writing-mode.html)
 
 ## table
+曾经table被用来做页面布局，现在没人这么做了，但table也能够实现水平垂直居中，但是会增加很多冗余代码
+
+```html
+<table>
+    <tbody>
+        <tr>
+            <td class="wp">
+                <div class="box">123123</div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
+tabel单元格中的内容天然就是垂直居中的，只要添加一个水平居中属性就好了
+
+```css
+.wp {
+    text-align: center;
+}
+.box {
+    display: inline-block;
+}
+```
+
+这种方法就是代码太冗余，而且也不是table的正确用法
+
+点击查看[完整DEMO](http://yanhaijing.com/vertical-center/table.html)
 
 ## css-table
+css新增的table属性，可以让我们把普通元素，变为table元素的现实效果，通过这个特性也可以实现水平垂直居中
+
+```html
+<div class="wp">
+    <div class="box">123123</div>
+</div>
+```
+下面通过css属性，可以让div显示的和table一样
+
+```css
+.wp {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.box {
+    display: inline-block;
+}
+```
+
+这种方法和table一样的原理，但却没有那么多冗余代码，兼容性也还不错
+
+点击查看[完整DEMO](http://yanhaijing.com/vertical-center/css-table.html)
 
 ## flex
+flex作为现代的布局方案，颠覆了过去的经验，只需几行代码就可以优雅的做到水平垂直居中
+
+```html
+<div class="wp">
+    <div class="box">123123</div>
+</div>
+```
+
+```css
+.wp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+```
+目前在移动端已经完全可以使用flex了，PC端需要看自己业务的兼容性情况
+
+点击查看[完整DEMO](http://yanhaijing.com/vertical-center/flex.html)
 
 ## grid
+感谢@一丝姐 反馈的这个方案，css新出的网格布局，由于兼容性不太好，一直没太关注，通过grid也可以实现水平垂直居中
 
+```html
+<div class="wp">
+    <div class="box">123123</div>
+</div>
+```
+
+```css
+.wp {
+    display: grid;
+}
+.box {
+    align-self: center;
+    justify-self: center;
+}
+```
+
+代码量也很少，但兼容性不如flex，不推荐使用
+
+点击查看[完整DEMO](http://yanhaijing.com/vertical-center/grid.html)
 
 ## 总结
 
@@ -292,6 +381,8 @@ wp是父元素的类名，box是子元素的类名，因为有定宽和不定宽
 - PC端有兼容要求，宽高不固定，推荐css-table
 - PC端无兼容性要求，推荐flex
 - 移动端推荐使用flex
+
+**小贴士：**关注flex的兼容性决方案，请看这里《[移动端flex布局实战](//yanhaijing.com/css/2016/08/21/flex-practice-on-mobile/)》
 
 | 方法                     | 居中元素定宽高固定 | PC兼容性                        | 移动端兼容性          |
 | ---------------------- | --------- | ---------------------------- | --------------- |

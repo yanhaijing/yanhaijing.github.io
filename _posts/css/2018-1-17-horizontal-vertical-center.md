@@ -396,3 +396,30 @@ flex作为现代的布局方案，颠覆了过去的经验，只需几行代码�
 | css-table              | 否         | ie8+, chrome4+, firefox2+    | 安卓2.3+, iOS6+   |
 | flex                   | 否         | ie10+, chrome4+, firefox2+   | 安卓2.3+, iOS6+   |
 | grid                   | 否         | ie10+, chrome57+, firefox52+ | 安卓6+, iOS10.3+  |
+
+
+最近发现很多同学都对css不够重视，这其实是不正确的，比如下面的这么简单的问题都有那么多同学不会，我也是很无语
+
+```html
+<div class="red blue">123</div>
+<div class="blue red">123</div>
+```
+
+```css
+.red {
+    color: red
+}
+
+.blue {
+    color: blue
+}
+```
+
+问两个div的颜色分别是什么，竟然只有40%的同学能够答对，这40%中还有很多同学不知道为什么，希望这些同学好好补习下CSS基础，下面给大家推荐几本CSS的书籍
+
+- [CSS设计指南](https://amazon.cn/gp/product/B00M2DKZ1W/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=yanhaijing-23&creative=3200&linkCode=as2&creativeASIN=B00M2DKZ1W&linkId=b7b8130f4f0da8be122691521b9bae47)（最好的入门书）
+- [图解CSS3](https://amazon.cn/gp/product/B00LHL3DV4/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=yanhaijing-23&creative=3200&linkCode=as2&creativeASIN=B00LHL3DV4&linkId=1fcb124655bbe765eecd9ca84af6f6ba)（最好的CSS3入门）
+- [CSS世界](https://amazon.cn/gp/product/B0788XRYGF/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=yanhaijing-23&creative=3200&linkCode=as2&creativeASIN=B0788XRYGF&linkId=d6295dbff4749b7584891ba004214edb)（CSS进阶）
+- [CSS揭秘](https://amazon.cn/gp/product/B01ET3FO86/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=yanhaijing-23&creative=3200&linkCode=as2&creativeASIN=B01ET3FO86&linkId=bc697a9006483f55e36256f5458df5e8)（CSS高手）
+
+喜欢看网络资料同学，可以看看MDN的这个[CSS入门教程](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Getting_started)，强烈推荐，英语好的同学建议看英文版

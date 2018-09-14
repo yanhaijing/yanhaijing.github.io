@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSS实现水平垂直居中的10种方式
+title: CSS实现水平垂直居中的1010种方式
 category : css
 tagline: "原创"
 tags : [css, 面试题]

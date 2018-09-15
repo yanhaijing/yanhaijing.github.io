@@ -6,6 +6,13 @@
 ## 关于我
 [这里有我的简介](http://yanhaijing.com/yan_about/)
 
+## jekyll 命令
+
+```bash
+jekyll server
+jekyll server -D # 预览草稿
+```
+
 ## 技术支持
 - [jekyllcn](http://jekyllcn.com/)
 - [jekyllbootstrap](http://jekyllbootstrap.com)

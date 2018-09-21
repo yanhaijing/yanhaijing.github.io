@@ -73,3 +73,4 @@ group: navigation
 - <a href="https://omeme.me/" target="_blank">@arron</a>
 - <a href="https://www.geekjc.com" target="_blank">@geekjc</a>
 - <a href="http://refined-x.com" target="_blank">@前端路上</a>
+- <a href="https://blog.weechang.xyz" target="_blank">@耒耒耒耒耒</a>

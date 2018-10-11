@@ -6099,6 +6099,13 @@ i-hope-world:
       picture: /img/facelessman.png
     content: 我也喜欢超级英雄
     date: 2016-04-12T14:13:44.000Z
+  - author:
+      type: github
+      displayName: hewenguang
+      url: 'https://github.com/hewenguang'
+      picture: 'https://avatars3.githubusercontent.com/u/38025280?v=4&s=73'
+    content: '&#x5927;&#x795E;&#x597D;'
+    date: 2018-10-11T01:56:44.527Z
 how-to-reconstruct-a-large-historical-project:
   - author:
       type: full

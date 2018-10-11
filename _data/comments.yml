@@ -6099,6 +6099,13 @@ i-hope-world:
       picture: /img/facelessman.png
     content: 我也喜欢超级英雄
     date: 2016-04-12T14:13:44.000Z
+  - author:
+      type: github
+      displayName: hewenguang
+      url: 'https://github.com/hewenguang'
+      picture: 'https://avatars3.githubusercontent.com/u/38025280?v=4&s=73'
+    content: '&#x5927;&#x795E;&#x597D;'
+    date: 2018-10-11T01:56:44.527Z
 how-to-reconstruct-a-large-historical-project:
   - author:
       type: full
@@ -6407,6 +6414,15 @@ how-to-reconstruct-a-large-historical-project:
       picture: /img/facelessman.png
     content: 这个真不高，真实的比这多
     date: 2016-09-01T00:23:43.000Z
+  - author:
+      type: github
+      displayName: hewenguang
+      url: 'https://github.com/hewenguang'
+      picture: 'https://avatars3.githubusercontent.com/u/38025280?v=4&s=73'
+    content: >-
+      &#x6DF1;&#x6709;&#x611F;&#x89E6;&#xFF0C;wap
+      &#x77E5;&#x9053;&#x9875;&#x9762;&#x8BE6;&#x60C5;&#x9875;&#x5C31;&#x662F;&#x6211;&#x641E;&#x5F97;&#xFF0C;&#x5F53;&#x65F6;&#x5929;&#x5929;&#x52A0;&#x73ED;
+    date: 2018-10-11T02:04:44.354Z
 es2015-practice:
   - author:
       type: full
@@ -7927,6 +7943,19 @@ principle-of-rem-layout:
 
       &#x4E3B;&#x8981;&#x662F;&#x8FD9;&#x4E24;&#x4E2A;&#x539F;&#x56E0;&#x5417;&#xFF1F;
     date: 2018-07-26T14:34:04.878Z
+  - author:
+      type: github
+      displayName: hewenguang
+      url: 'https://github.com/hewenguang'
+      picture: 'https://avatars3.githubusercontent.com/u/38025280?v=4&s=73'
+    content: >+
+      rem&#x53EF;&#x4EE5;&#x505A;&#x5230;100%&#x7684;&#x8FD8;&#x539F;&#x5EA6;&#xFF0C;&#x4F46;&#x540C;&#x4E8B;rem&#x7684;&#x5236;&#x4F5C;&#x6210;&#x672C;&#x4E5F;&#x66F4;&#x5927;
+      -&gt;
+      &#x8FD8;&#x539F;&#x5EA6;&#xFF0C;&#x4F46;&#x540C;&ldquo;&#x65F6;&rdquo;rem&#x7684;&#x5236;&#x4F5C;&#x6210;&#x672C;&#x4E5F;&#x66F4;&#x5927;
+
+
+
+    date: 2018-10-11T02:28:58.188Z
 some-command-of-cmd:
   - author:
       type: github

@@ -6414,6 +6414,15 @@ how-to-reconstruct-a-large-historical-project:
       picture: /img/facelessman.png
     content: 这个真不高，真实的比这多
     date: 2016-09-01T00:23:43.000Z
+  - author:
+      type: github
+      displayName: hewenguang
+      url: 'https://github.com/hewenguang'
+      picture: 'https://avatars3.githubusercontent.com/u/38025280?v=4&s=73'
+    content: >-
+      &#x6DF1;&#x6709;&#x611F;&#x89E6;&#xFF0C;wap
+      &#x77E5;&#x9053;&#x9875;&#x9762;&#x8BE6;&#x60C5;&#x9875;&#x5C31;&#x662F;&#x6211;&#x641E;&#x5F97;&#xFF0C;&#x5F53;&#x65F6;&#x5929;&#x5929;&#x52A0;&#x73ED;
+    date: 2018-10-11T02:04:44.354Z
 es2015-practice:
   - author:
       type: full

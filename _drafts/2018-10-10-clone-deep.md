@@ -46,7 +46,7 @@ var a1 = {b: {c: {}};
 var a2 = shallowClone(a1); // 浅拷贝
 a2.b.c === a1.b.c // true
 
-var a3 = deepClone(a3); // 深拷贝
+var a3 = clone(a3); // 深拷贝
 a3.b.c === a1.b.c // false
 ```
 
@@ -75,12 +75,12 @@ var a1 = {b: {c: {d: 1}};
 只需稍加改动上面浅拷贝的代码即可，注意区别
 
 ```js
-function deepClone(source) {
+function clone(source) {
     var target = {};
     for(var i in source) {
         if (source.hasOwnProperty(i)) {
             if (typeof source[i] === 'object') {
-                target[i] = deepClone(source[i]); // 注意这里
+                target[i] = clone(source[i]); // 注意这里
             } else {
                 target[i] = source[i];
             }
@@ -110,7 +110,7 @@ function isObject(x) {
 函数需要校验参数，如果不是对象的话直接返回
 
 ```js
-function deepClone(source) {
+function clone(source) {
     if (!isObject(source)) return source;
 
     // xxx
@@ -119,7 +119,74 @@ function deepClone(source) {
 
 关于第三个问题，嗯，就留给大家自己思考吧，本文为了减轻大家的负担，就不考虑数组的情况了，其实ES6之后还要考虑set, map, weakset, weakmap，/(ㄒoㄒ)/~~
 
-## 最懒的深拷贝
+其实吧这三个都是小问题，其实递归方法最大的问题在于爆栈，当数据的层次很深是就会栈溢出
+
+下面的代码可以生成指定深度和每层广度的代码，这段代码我们后面还会再次用到
+
+```js
+function createData(deep, breadth) {
+    var data = {};
+    var temp = data;
+
+    for (var i = 0; i < deep; i++) {
+        temp = temp['data'] = {};
+        for (var j = 0; j < breadth; j++) {
+            temp[j] = j;
+        }
+    }
+
+    return data;
+}
+
+createData(1, 3); // 1层深度，每层有3个数据 {data: {0: 0, 1: 1, 2: 2}}
+createData(3, 0); // 3层深度，每层有0个数据 {data: {data: {data: {}}}}
+```
+
+当clone层级很深的话就会栈溢出，但数据的广度不会造成溢出
+
+```js
+clone(createData(1000)); // ok
+clone(createData(10000)); // Maximum call stack size exceeded
+
+clone(createData(10, 100000)); // ok 广度不会溢出
+```
+
+其实大部分情况下不会出现这么深层级的数据，但这种方式还有一个致命的问题，就是循环引用，举个例子
+
+```js
+var a = {};
+a.a = a;
+
+clone(a) // Maximum call stack size exceeded 直接死循环了有没有，/(ㄒoㄒ)/~~
+```
+
+关于循环引用的问题解决思路有两种，一直是循环检测，一种是暴力破解，关于循环检测大家可以自己思考下；关于暴力破解我们会在下面的内容中详细讲解
+
+## 一行代码的深拷贝
+有些同学可能见过用系统自带的JSON来做深拷贝的例子，下面来看下代码实现
+
+```js
+function cloneJSON(source) {
+    return JSON.parse(JSON.stringify(source));
+}
+```
+
+其实我第一次简单这个方法的时候，由衷的表示佩服，其实利用工具，达到目的，是非常聪明的做法
+
+下面来测试下cloneJSON有没有溢出的问题，看起来cloneJSON内部也是使用递归的方式
+
+```js
+cloneJSON(createData(10000)); // Maximum call stack size exceeded
+```
+
+既然是用了递归，那循环引用呢？并没有因为死循环而导致栈溢出啊，原来是JSON.stringify内部做了循环引用的检测，正是我们上面提到破解循环引用的第一种方法：循环检测
+
+```js
+var a = {};
+a.a = a;
+
+cloneJSON(a) // Uncaught TypeError: Converting circular structure to JSON
+```
 
 ## 破解递归爆栈
 
@@ -136,7 +203,7 @@ function deepClone(source) {
 |      | clone | cloneJSON | cloneLoop | cloneForce |
 | ---- | ----- | --------- | --------- | ---------- |
 | 难度   | ☆☆    | ☆         | ☆☆☆       | ☆☆☆☆       |
-| 兼容性  | ie6   | Ie8       | ie6       | ie6        |
+| 兼容性  | ie6   | ie8       | ie6       | ie6        |
 | 循环引用 | 一层    | 不支持       | 一层        | 一层         |
 | 栈溢出  | 会     | 会         | 不会        | 不会         |
 | 保持引用 | 否     | 否         | 否         | 是          |

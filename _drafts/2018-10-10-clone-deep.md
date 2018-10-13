@@ -244,12 +244,11 @@ function cloneLoop(x) {
         const parent = node.parent;
         const key = node.key;
         const data = node.data;
-        const tt = type(data);
 
         // 初始化赋值目标，key为undefined则拷贝到父元素，否则拷贝到子元素
         let res = parent;
         if (typeof key !== 'undefined') {
-            res = parent[key] = tt === 'array' ? [] : {};
+            res = parent[key] = {};
         }
 
         for(let k in data) {
@@ -291,30 +290,20 @@ c.a1 === c.a2 // false
 
 如果我们发现个新对象就把这个对象和他的拷贝存下来，每次拷贝对象前，都先看一下这个对象是不是已经拷贝过了，如果拷贝过了，就不需要拷贝了，直接用原来的，这样我们就能够保留引用关系了，✧(≖ ◡ ≖✿)嘿嘿
 
-但是代码怎么写呢，o(╯□╰)o，别急
+但是代码怎么写呢，o(╯□╰)o，别急往下看，其实和循环的代码大体一样，不一样的地方我用`// ==========`标注出来了
+
+引入一个数组`uniqueList`用来存储已经拷贝的数组，每次循环遍历时，先判断对象是否在`uniqueList`中了，如果在的话就不执行拷贝逻辑了
+
+`find`是抽象的一个函数，其实就是遍历`uniqueList`
 
 ```js
-function find(arr, item) {
-    for(let i = 0; i < arr.length; i++) {
-        if (arr[i].source === item) {
-            return arr[i];
-        }
-    }
-
-    return null;
-}
 // 保持引用关系
 function cloneForce(x) {
+    // =============
     const uniqueList = []; // 用来去重
-    const t = type(x);
+    // =============
 
-    let root = x;
-
-    if (t === 'array') {
-        root = [];
-    } else if (t === 'object') {
-        root = {};
-    }
+    let root = {};
 
     // 循环数组
     const loopList = [
@@ -331,14 +320,14 @@ function cloneForce(x) {
         const parent = node.parent;
         const key = node.key;
         const data = node.data;
-        const tt = type(data);
 
         // 初始化赋值目标，key为undefined则拷贝到父元素，否则拷贝到子元素
         let res = parent;
         if (typeof key !== 'undefined') {
-            res = parent[key] = tt === 'array' ? [] : {};
+            res = parent[key] = {};
         }
-
+        
+        // =============
         // 数据已经存在
         let uniqueData = find(uniqueList, data);
         if (uniqueData) {
@@ -352,33 +341,19 @@ function cloneForce(x) {
             source: data,
             target: res,
         });
-
-        if (tt === 'array') {
-            for (let i = 0; i < data.length; i++) {
-                if (isClone(data[i])) {
+        // =============
+    
+        for(let k in data) {
+            if (data.hasOwnProperty(k)) {
+                if (typeof data[k] === 'object') {
                     // 下一次循环
                     loopList.push({
                         parent: res,
-                        key: i,
-                        data: data[i],
+                        key: k,
+                        data: data[k],
                     });
                 } else {
-                    res[i] = data[i];
-                }
-            }
-        } else if (tt === 'object'){
-            for(let k in data) {
-                if (hasOwnProp(data, k)) {
-                    if (isClone(data[k])) {
-                        // 下一次循环
-                        loopList.push({
-                            parent: res,
-                            key: k,
-                            data: data[k],
-                        });
-                    } else {
-                        res[k] = data[k];
-                    }
+                    res[k] = data[k];
                 }
             }
         }
@@ -386,22 +361,163 @@ function cloneForce(x) {
 
     return root;
 }
+
+function find(arr, item) {
+    for(let i = 0; i < arr.length; i++) {
+        if (arr[i].source === item) {
+            return arr[i];
+        }
+    }
+
+    return null;
+}
 ```
 
+下面来验证一下效果，amazing
+
+```js
+var b = 1;
+var a = {a1: b, a2: b};
+
+a.a1 === a.a2 // true
+
+var c = cloneForce(a);
+c.a1 === c.a2 // true
+```
+
+接下来再说一下如何破解循环引用，等一下，上面的代码好像可以破解循环引用啊，赶紧验证一下
+
+惊不惊喜，(\*^\_\_^\*) 嘻嘻……
+
+```js
+var a = {};
+a.a = a;
+
+cloneForce(a)
+```
+
+看起来完美的`cloneForce`是不是就没问题呢？`cloneForce`有两个问题
+
+第一个问题，所谓成也萧何，败也萧何，如果保持引用不是你想要的，那就不能用`cloneForce`了；
+
+第二个问题，`cloneForce`在对象数量很多时会出现很大的问题，如果数据量很大不适合使用`cloneForce`
+
 ## 性能对比
+上边的内容还是有点难度，下面我们来点更有难度的，对比一下不同方法的性能
+
+我们先来做实验，看数据，影响性能的原因有两个，一个是深度，一个是每层的广度，我们采用固定一个变量，只让一个变量变化的方式来测试性能
+
+测试的方法是在指定的时间内，深拷贝执行的次数，次数越多，证明性能越好
+
+下面的`runTime`是测试代码的核心片段，下面的例子中，我们可以测试在2秒内运行`clone(createData(500, 1)`的次数
+
+```js
+function runTime(fn, time) {
+    var stime = Date.now();
+    var count = 0;
+    while(Date.now() - stime < time) {
+        fn();
+        count++;
+    }
+
+    return count;
+}
+
+runTime(function () { clone(createData(500, 1)) }, 2000);
+```
+
+下面来做第一个测试，将广度固定在100，深度由小到大变化，记录1秒内执行的次数
+
+| 深度   | clone | cloneJSON | cloneLoop | cloneForce |
+| ---- | ----- | --------- | --------- | ---------- |
+| 500  | 351   | 212       | 338       | 372        |
+| 1000 | 174   | 104       | 175       | 143        |
+| 1500 | 116   | 67        | 112       | 82         |
+| 2000 | 92    | 50        | 88        | 69         |
+
+将上面的数据做成表格可以发现，一些规律
+
+- 随着深度变小，相互之间的差异在变小
+- clone和cloneLoop的差别并不大
+- cloneLoop > cloneForce > cloneJSON
+
+![]({{BLOG_IMG}}539.png)
+
+我们先来分析下各个方法的时间复杂度问题，各个方法要做的相同事情，这里就不计算，比如循环对象，判断是否为对象
+
+- clone时间 = 创建递归函数 + 每个对象处理时间
+- cloneJSON时间 = 循环检测 + 每个对象处理时间 * 2 （递归转字符串 + 递归解析）
+- cloneLoop时间 = 每个对象处理时间
+- cloneForce时间 = 判断对象是否缓存中 + 每个对象处理时间
+
+cloneJSON的速度只有clone的50%，很容易理解，因为其会多进行一次递归时间
+
+cloneForce由于要判断对象是否在缓存中，而导致速度变慢，我们来计算下判断逻辑的时间复杂度，假设对象的个数是n，则其时间复杂度为O(n2)，对象的个数越多，cloneForce的速度会越慢
+
+```
+1 + 2 + 3 ... + n = n^2/2 - 1
+```
+
+关于clone和cloneLoop这里有一点问题，看起来实验结果和推理结果不一致，其中必有蹊跷
+
+接下来做第二个测试，将深度固定在10000，广度固定为0，记录2秒内执行的次数
+
+| 宽度   | clone | cloneJSON | cloneLoop | cloneForce |
+| ---- | ----- | --------- | --------- | ---------- |
+| 0    | 13400 | 3272      | 14292     | 989        |
+
+排除宽度的干扰，来看看深度对各个方法的影响
+
+- 随着对象的增多，cloneForce的性能低下凸显
+- cloneJSON的性能也大打折扣，这是因为循环检测占用了很多时间
+- cloneLoop的性能高于clone，可以看出递归新建函数的时间和循环对象比起来可以忽略不计
+
+下面我们来测试一下cloneForce的性能极限，这次我们测试运行指定次数需要的时间
+
+```js
+var data1 = createData(2000, 0);
+var data2 = createData(4000, 0);
+var data3 = createData(6000, 0);
+var data4 = createData(8000, 0);
+var data5 = createData(10000, 0);
+
+cloneForce(data1)
+cloneForce(data2)
+cloneForce(data3)
+cloneForce(data4)
+cloneForce(data5)
+```
+
+通过测试发现，其时间成指数级增长，当对象个数大于万级别，就会有300ms以上的延迟
+
+![]({{BLOG_IMG}}540.png)
 
 ## 总结
 
-尺有所短寸有所长，无关乎好坏优劣，其实每种方法都有自己的优缺点，和适用场景，人尽其才，物尽其用，方是一剂良方
+尺有所短寸有所长，无关乎好坏优劣，其实每种方法都有自己的优缺点，和适用场景，人尽其才，物尽其用，方是真理
 
 下面对各种方法进行对比，希望给大家提供一些帮助
 
-|      | clone | cloneJSON | cloneLoop | cloneForce |
-| ---- | ----- | --------- | --------- | ---------- |
-| 难度   | ☆☆    | ☆         | ☆☆☆       | ☆☆☆☆       |
-| 兼容性  | ie6   | ie8       | ie6       | ie6        |
-| 循环引用 | 一层    | 不支持       | 一层        | 一层         |
-| 栈溢出  | 会     | 会         | 不会        | 不会         |
-| 保持引用 | 否     | 否         | 否         | 是          |
-| 适合场景 |       |           | 层级很多      | 保持引用关系     |
+|      | clone  | cloneJSON | cloneLoop | cloneForce |
+| ---- | ------ | --------- | --------- | ---------- |
+| 难度   | ☆☆     | ☆         | ☆☆☆       | ☆☆☆☆       |
+| 兼容性  | ie6    | ie8       | ie6       | ie6        |
+| 循环引用 | 一层     | 不支持       | 一层        | 支持         |
+| 栈溢出  | 会      | 会         | 不会        | 不会         |
+| 保持引用 | 否      | 否         | 否         | 是          |
+| 适合场景 | 一般数据拷贝 | 一般数据拷贝    | 层级很多      | 保持引用关系     |
 
+本文的灵感都来自于[@jsmini/clone](https://github.com/jsmini/clone)，如果大家想使用文中的4种深拷贝方式，可以直接使用@jsmini/clone这个库
+
+```js
+// npm install --save @jsmini/clone
+import { clone, cloneJSON, cloneLoop, cloneForce } from '@jsmini/clone';
+```
+
+本文为了简单和易读，示例代码中忽略了一些边界情况，如果想学习生产中的代码，请阅读[@jsmini/clone](https://github.com/jsmini/clone)的源码
+
+@jsmini/clone孵化于[jsmini](https://github.com/jsmini)，jsmini致力于为大家提供一组小而美，无依赖的高质量库
+
+jsmini的诞生离不开[jslib-base](https://github.com/yanhaijing/jslib-base)，感谢jslib-base为jsmini提供了底层技术
+
+最后感谢你阅读了本文，相信现在你能够驾驭任何深拷贝的问题了，如果有什么疑问，欢迎和我讨论

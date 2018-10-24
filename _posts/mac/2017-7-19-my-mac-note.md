@@ -330,6 +330,22 @@ $ pip2 --version
 pip 9.0.1 from /usr/local/lib/python2.7/site-packages (python 2.7)
 ```
 
+除了通过升级python的方式安装pip，也可以单独安装pip
+
+首先需要手动下载pip安装文件，下载get-pip.py(https://bootstrap.pypa.io/get-pip.py)
+
+然后运行下面的命令即可
+
+```bash
+$ python get-pip.py
+```
+
+安装好pip以后，就可以通过pip来进行自身的升级
+
+```bash
+$ pip install --upgrade pip
+```
+
 ### 安装ruby
 
 mac自带的ruby是2.3，我的博客需要用到jekyll，jekyll已经不支持2.3了，需要安装更高版本的ruby，可以通过brew直接安装一个，但ruby有自己的多版本管理工具[RVM](https://rvm.io/)，RVM 是一个命令行工具，可以提供一个便捷的多版本 Ruby 环境的管理和切换

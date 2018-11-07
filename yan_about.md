@@ -74,4 +74,4 @@ group: navigation
 - <a href="https://www.geekjc.com" target="_blank">@geekjc</a>
 - <a href="http://refined-x.com" target="_blank">@前端路上</a>
 - <a href="https://blog.weechang.xyz" target="_blank">@耒耒耒耒耒</a>
-- <a href="https://alili.tech" target="_blank">@前端大爆炸</a>
+- <a href="https://alili.tech" target="_blank">@前端大爆炸 WEB BANG! BANG!! BANG!!!</a>

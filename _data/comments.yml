@@ -6990,6 +6990,24 @@ binary-in-js:
       8&#x4F4D;&#x65E0;&#x7B26;&#x53F7;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x7684;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x5E94;&#x8BE5;&#x662F;[-2^8+1,
       2^8-1]
     date: 2018-02-24T03:18:21.600Z
+  - author:
+      type: github
+      displayName: zsjun
+      url: 'https://github.com/zsjun'
+      picture: 'https://avatars0.githubusercontent.com/u/8063904?v=4&s=73'
+    content: >
+      @mqliutie
+      &#x56E0;&#x4E3A;&#x8D1F;&#x6570;&#x5728;&#x8BA1;&#x7B97;&#x673A;&#x91CC;&#x8FB9;&#x662F;&#x7528;&#x8865;&#x7801;&#x8868;&#x793A;&#x7684;
+    date: 2018-12-29T03:45:03.509Z
+  - author:
+      type: github
+      displayName: zsjun
+      url: 'https://github.com/zsjun'
+      picture: 'https://avatars0.githubusercontent.com/u/8063904?v=4&s=73'
+    content: >-
+      @mqliutie
+      &#x56E0;&#x4E3A;&#x8D1F;&#x6570;&#x5728;&#x8BA1;&#x7B97;&#x673A;&#x7528;&#x8865;&#x7801;&#x8868;&#x793A;&#x7684;
+    date: 2018-12-29T03:45:41.270Z
 prototype-and-inheritance-of-js:
   - author:
       type: full

@@ -5482,6 +5482,13 @@ mini-js-lib:
       picture: /img/facelessman.png
     content: 感谢支持
     date: 2016-08-30T02:01:26.000Z
+  - author:
+      type: github
+      displayName: xufeixufei
+      url: 'https://github.com/xufeixufei'
+      picture: 'https://avatars1.githubusercontent.com/u/20239062?v=4&s=73'
+    content: Fork.
+    date: 2019-01-08T15:11:00.304Z
 one-day-in-tianjin:
   - author:
       type: full

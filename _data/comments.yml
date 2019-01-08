@@ -5206,6 +5206,13 @@ my-browsersync:
       picture: /img/facelessman.png
     content: 我们用的fis，刷新这块都是手动刷新的，因为这个工具和fis配合起来在windows上总是不行
     date: 2017-01-05T04:58:39.000Z
+  - author:
+      type: github
+      displayName: xufeixufei
+      url: 'https://github.com/xufeixufei'
+      picture: 'https://avatars1.githubusercontent.com/u/20239062?v=4&s=73'
+    content: Nice Good.
+    date: 2019-01-08T15:58:42.060Z
 mini-js-lib:
   - author:
       type: full

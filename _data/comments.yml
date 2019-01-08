@@ -7534,6 +7534,16 @@ deep-git-0:
       picture: /img/facelessman.png
     content: 感谢提醒，已修改
     date: 2017-01-21T07:44:17.000Z
+  - author:
+      type: github
+      displayName: xufeixufei
+      url: 'https://github.com/xufeixufei'
+      picture: 'https://avatars1.githubusercontent.com/u/20239062?v=4&s=73'
+    content: >-
+      Good,&#x8FD9;&#x91CC;&#x4E0D;&#x9700;&#x8981;
+      &#x95F7;&#x58F0;||&#x95F7;&#x9A9A;
+      &#x53D1;&#x5927;&#x8D22;&#x7684;&#x58F0;&#x97F3; Nice.
+    date: 2019-01-08T15:25:29.080Z
 deep-git-3:
   - author:
       type: full

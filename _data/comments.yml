@@ -6917,6 +6917,13 @@ my-linux:
       picture: /img/facelessman.png
     content: 3q
     date: 2016-07-31T02:42:26.000Z
+  - author:
+      type: github
+      displayName: xufeixufei
+      url: 'https://github.com/xufeixufei'
+      picture: 'https://avatars1.githubusercontent.com/u/20239062?v=4&s=73'
+    content: Good.
+    date: 2019-01-08T15:31:23.078Z
 binary-in-js:
   - author:
       type: full

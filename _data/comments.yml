@@ -5206,6 +5206,13 @@ my-browsersync:
       picture: /img/facelessman.png
     content: 我们用的fis，刷新这块都是手动刷新的，因为这个工具和fis配合起来在windows上总是不行
     date: 2017-01-05T04:58:39.000Z
+  - author:
+      type: github
+      displayName: xufeixufei
+      url: 'https://github.com/xufeixufei'
+      picture: 'https://avatars1.githubusercontent.com/u/20239062?v=4&s=73'
+    content: Nice Good.
+    date: 2019-01-08T15:58:42.060Z
 mini-js-lib:
   - author:
       type: full
@@ -5482,6 +5489,13 @@ mini-js-lib:
       picture: /img/facelessman.png
     content: 感谢支持
     date: 2016-08-30T02:01:26.000Z
+  - author:
+      type: github
+      displayName: xufeixufei
+      url: 'https://github.com/xufeixufei'
+      picture: 'https://avatars1.githubusercontent.com/u/20239062?v=4&s=73'
+    content: Fork.
+    date: 2019-01-08T15:11:00.304Z
 one-day-in-tianjin:
   - author:
       type: full
@@ -6910,6 +6924,13 @@ my-linux:
       picture: /img/facelessman.png
     content: 3q
     date: 2016-07-31T02:42:26.000Z
+  - author:
+      type: github
+      displayName: xufeixufei
+      url: 'https://github.com/xufeixufei'
+      picture: 'https://avatars1.githubusercontent.com/u/20239062?v=4&s=73'
+    content: Good.
+    date: 2019-01-08T15:31:23.078Z
 binary-in-js:
   - author:
       type: full
@@ -7527,6 +7548,16 @@ deep-git-0:
       picture: /img/facelessman.png
     content: 感谢提醒，已修改
     date: 2017-01-21T07:44:17.000Z
+  - author:
+      type: github
+      displayName: xufeixufei
+      url: 'https://github.com/xufeixufei'
+      picture: 'https://avatars1.githubusercontent.com/u/20239062?v=4&s=73'
+    content: >-
+      Good,&#x8FD9;&#x91CC;&#x4E0D;&#x9700;&#x8981;
+      &#x95F7;&#x58F0;||&#x95F7;&#x9A9A;
+      &#x53D1;&#x5927;&#x8D22;&#x7684;&#x58F0;&#x97F3; Nice.
+    date: 2019-01-08T15:25:29.080Z
 deep-git-3:
   - author:
       type: full

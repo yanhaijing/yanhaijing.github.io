@@ -58,8 +58,8 @@ npm默认从npm上下载安装包资源：
 
 npm默认install时会安装`^a.b.c`，这其实非常不好，你可以做下面的配置，将`^`改为`~`或`""`
 
-	npm config set save-prefix ^ # ^a.b.c
-	npm config set save-prefix ~ # ~a.b.c
+	npm config set save-prefix "^" # ^a.b.c
+	npm config set save-prefix "~" # ~a.b.c
 	npm config set save-prefix "" # a.b.c
 
 ## 常用命令

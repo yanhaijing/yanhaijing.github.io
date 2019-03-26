@@ -3,11 +3,13 @@ layout: post
 title: 深拷贝的终极探索
 category : javascript
 tagline: "原创"
-tags : [javascript, 面试题]
+tags : [javascript, 面试题, jsmini]
 keywords: [javascript]
 description: 
 ---
 {% include JB/setup %}
+
+> 本文已收录到《[jsmini系列文章](https://yanhaijing.com/tags/#jsmini)》
 
 **划重点，这是一道面试必考题，我就问过很多面试者这个问题，✧(≖ ◡ ≖✿)嘿嘿**
 

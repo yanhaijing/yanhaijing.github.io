@@ -9,7 +9,7 @@ description:
 ---
 {% include JB/setup %}
 
-> 本文已收录到《[jsmini系列文章](https://yanhaijing.com/tags/#jsmini)》
+> 本文已收录到《[jsmini系列文章](https://yanhaijing.com/tags/#jsmini-ref)》
 
 **划重点，这是一道面试必考题，我就问过很多面试者这个问题，✧(≖ ◡ ≖✿)嘿嘿**
 

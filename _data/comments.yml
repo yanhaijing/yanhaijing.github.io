@@ -7257,6 +7257,14 @@ about-coupling:
       picture: /img/facelessman.png
     content: demo里有举得例子
     date: 2016-09-22T05:13:14.000Z
+  - author:
+      type: github
+      displayName: YuanChiFun
+      url: 'https://github.com/YuanChiFun'
+      picture: 'https://avatars0.githubusercontent.com/u/39124150?v=4&s=73'
+    content: >-
+      &#x60F3;&#x770B;&#x4F5C;&#x8005;&#x7684;&#x5185;&#x805A;&#x7BC7;&#x3002;&#x3002;
+    date: 2019-04-02T09:19:55.422Z
 my-hexo:
   - author:
       type: full

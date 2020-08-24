@@ -19,6 +19,7 @@ $ jekyll server -D # 预览草稿
 
 ```bash
 $ \curl -sSL https://get.rvm.io | bash -s stable
+$ echo "ruby_url=https://cache.ruby-china.com/pub/ruby" > ~/.rvm/user/db # 修改rvm镜像
 $ rvm list known # 列出ruby所有版本
 $ rvm install 2.4.9 # 安装指定版本
 $ ruby -version

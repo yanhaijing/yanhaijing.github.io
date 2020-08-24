@@ -9,8 +9,30 @@
 ## jekyll 命令
 
 ```bash
-jekyll server
-jekyll server -D # 预览草稿
+$ jekyll server
+$ jekyll server -D # 预览草稿
+```
+
+## 环境搭建
+### MAC环境搭建
+第一步，通过升级ruby版本
+
+```bash
+$ \curl -sSL https://get.rvm.io | bash -s stable
+$ rvm list known # 列出ruby所有版本
+$ rvm install 2.4.9 # 安装指定版本
+$ ruby -version
+```
+
+第二步，安装jekyll
+
+```bash
+# 更换国内镜像
+$ gem sources --remove https://rubygems.org/
+$ gem sources -a https://gems.ruby-china.com/
+
+# 安装jekyll
+$ gem install bundler jekyll
 ```
 
 ## 技术支持

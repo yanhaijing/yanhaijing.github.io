@@ -84,7 +84,7 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : gitment
+    provider : gitalk
     disqus :
       short_name : yanhaijing
     duoshuo :
@@ -92,6 +92,11 @@ JB :
     commentit :
       commentitUsername: yanhaijing
       commentitRepo: yanhaijing/yanhaijing.github.com
+    gitalk:
+      owner: yanhaijing
+      repo: yanhaijing.github.io
+      client_id: dc5d301c931eb6e45669
+      client_secret: 25a870dd5e0ea194c8e8bcc9058599490e7c414b
     gitment:
       owner: yanhaijing
       repo: yanhaijing.github.io

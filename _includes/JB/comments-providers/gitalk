@@ -1,0 +1,27 @@
+{% capture postdate %}{{page.date | date: '%s'}}{% endcapture %}
+{% capture newdate %}{{'2017-10-01' | date: '%s'}}{% endcapture %}
+{% assign id_arr = page.id | split: "/" %}
+
+{% comment %} 指定日期之后使用新的评论系统 {% endcomment %}
+{% if postdate < newdate%}
+    {% include JB/comments-providers/commentit %}
+{% else %}
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+    <div id="gitalk-container"></div>
+
+    <script>
+        var gitalk = new Gitalk({
+            clientID: '{{ site.JB.comments.gitment.client_id }}',
+            clientSecret: '{{ site.JB.comments.gitment.client_secret }}',
+            repo: '{{ site.JB.comments.gitalk.repo }}',
+            owner: '{{ site.JB.comments.gitalk.owner }}',
+            admin: ['yanhaijing'],
+            id: '{{ id_arr[1] }}/{{ id_arr.last }}',      // Ensure uniqueness and length less than 50
+            distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    </script>
+{% endif %}

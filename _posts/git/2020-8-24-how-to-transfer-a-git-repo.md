@@ -12,6 +12,12 @@ description: 本文将向大家介绍迁移 Git 仓库的的方法
 
 最近要把 Git 仓库迁移，看有些同学迁移中不太顺利，自己研究总结了下，分享给大家，本文将向大家介绍迁移 Git 仓库的的方法
 
+如果你对git还不太熟悉，可以先阅读我的git入门文章
+
+- [起底Git](https://yanhaijing.com/git/2017/01/19/deep-git-0/)
+- [我的git笔记](https://yanhaijing.com/git/2014/11/01/my-git-note/)
+- [图解4种git合并分支方法](https://yanhaijing.com/git/2017/07/14/four-method-for-git-merge/)
+
 ## 直接PUSH
 
 有同学说，这不是很简答么，像下面这样不就好了？

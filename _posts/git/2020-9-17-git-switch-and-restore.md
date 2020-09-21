@@ -78,6 +78,10 @@ $ git checkout -- HEAD aaa # 从repo中恢复aaa到staged和worktree
 $ git reset --hard -- aaa # 同上
 ```
 
+一图胜千言系列
+
+![]({{BLOG_IMG}}541.png)
+
 新的restore命令专门用来恢复staged和worktree的文件
 
 ```bash
@@ -86,6 +90,10 @@ $ git restore --staged aaa # 从repo中恢复aaa到staged
 $ git restore --staged --worktree aaa # 从repo中恢复aaa到staged和worktree
 $ git restore --source dev aaa # 从指定commit中恢复aaa到worktree
 ```
+
+一图胜千言系列
+
+![]({{BLOG_IMG}}542.png)
 
 可以看到restore提供checkout和reset两个命令才能提供的文件恢复能力，也提供了更好的语义
 

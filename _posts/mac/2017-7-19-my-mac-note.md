@@ -231,14 +231,21 @@ oh my zsh进行了很多配置，让zsh比bash好用很多，比如大量alias�
 ~ # 等同于 cd ~
 ```
 
-oh my zsh有很多功能，比如换肤，比如大量插件，这里不久不折腾了，你要是喜欢就自己折腾吧，我安装了两个插件git和sublime
+oh my zsh有很多功能，比如换肤，这里就不折腾了，你要是喜欢就自己折腾吧
+
+我安装了如下几个插件
 
 ```Bash
 $ vi ~/.zshrc
-plugins=(git sublime)
+plugins=(git sublime code z zsh-autosuggestions zsh-syntax-highlighting)
 ```
 
-git插件可以让你的命令行显示出来分支名，工作区状态，非常好用；sublime插件会添加一个全局的sublime命令，通过这个命令可以通过命令行用sublime打开任何文件
+- git插件可以让你的命令行显示出来分支名，工作区状态，非常好用；
+- sublime插件会添加一个全局的`st`命令，通过这个命令可以通过命令行用sublime打开任何文件
+- vscode的插件，同sublime插件的作用
+- z 提供类似jump的功能，可以进入过得目录，快速跳转
+- zsh-syntax-highlighting是一个非常有用的命令，可以提示输入的命令是否正确
+- zsh-autosuggestions会根据你的历史记录，提供自动提示功能，非常好用
 
 ### 安装命令
 

@@ -3,7 +3,7 @@ layout: post
 title: 深拷贝的终极探索
 category : javascript
 tagline: "原创"
-tags : [javascript, 面试题, jsmini]
+tags : [javascript, 面试知识, jsmini]
 keywords: [javascript]
 description: 
 ---

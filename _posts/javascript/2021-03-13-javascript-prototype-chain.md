@@ -3,11 +3,13 @@ layout: post
 title: 如何回答面试中的JavaScript原型链问题
 category : javascript
 tagline: "原创"
-tags : [javascript, 面试题]
+tags : [javascript, 面试知识]
 keywords: [javascript]
 description: 本文简单直观的教会大家如何在面试中破解JavaScript原型链问题
 ---
 {% include JB/setup %}
+
+> 本文已收录到《[面试知识系列](https://yanhaijing.com/tags/#%E9%9D%A2%E8%AF%95%E7%9F%A5%E8%AF%86-ref)》
 
 **划重点，这是一道面试必考题，我就问过很多面试者这个问题，✧(≖ ◡ ≖✿)嘿嘿**
 

@@ -3,7 +3,7 @@ layout: post
 title: CSS实现水平垂直居中的1010种方式
 category : css
 tagline: "原创"
-tags : [css, 面试题]
+tags : [css, 面试知识]
 keywords: [css, 水平, 垂直, 居中, 水平垂直居中]
 description: 史上最全，本文将讲解css实现水平垂直居中的10种方式
 ---

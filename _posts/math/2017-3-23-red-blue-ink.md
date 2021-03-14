@@ -3,7 +3,7 @@ layout: post
 title: 红蓝墨水之谜？
 category : math
 tagline: "原创"
-tags : [math]
+tags : [math, 面试知识]
 keywords: [数学]
 description: 一道很有意思的面试题
 ---

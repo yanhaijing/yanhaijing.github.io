@@ -1,13 +1,13 @@
 <div class="notice">
     <div class="notice-item">
-        <b class="glyphicon glyphicon-bullhorn"></b>号外号外：猿辅导招聘前端，后端，客户端啦！地点：北京！！！<a href="/job" target="_blank">快点我查看</a>
-    </div>
-
-    <div class="notice-item">
-        <b class="glyphicon glyphicon-bullhorn"></b>号外号外：我的新书《React状态管理与同构实战》出版啦！！！<a href="https://item.jd.com/12403508.html" target="_blank">快点我查看</a>
+        <b class="glyphicon glyphicon-bullhorn"></b>号外号外：我的新书《现代JavaScript库开发：原理、技术与实战》出版啦！！！<a href="https://u.jd.com/eM4Khcz" target="_blank" ref="nofollow">快点我查看</a>
     </div>
 
     <div class="notice-item">
         <b class="glyphicon glyphicon-bullhorn"></b>号外号外：一组小而美的JavaScript迷你库！！！<a href="https://github.com/jsmini" target="_blank">快点我查看</a>
+    </div>
+    
+    <div class="notice-item">
+        <b class="glyphicon glyphicon-bullhorn"></b>号外号外：猿辅导招聘前端，后端，客户端啦！地点：北京！！！<a href="/job" target="_blank">快点我查看</a>
     </div>
 </div>

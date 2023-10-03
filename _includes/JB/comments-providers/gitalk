@@ -1,5 +1,5 @@
 {% capture postdate %}{{page.date | date: '%s'}}{% endcapture %}
-{% capture newdate %}{{'2017-10-01' | date: '%s'}}{% endcapture %}
+{% capture newdate %}{{'2017-01-01' | date: '%s'}}{% endcapture %}
 {% assign id_arr = page.id | split: "/" %}
 
 {% comment %} 指定日期之后使用新的评论系统 {% endcomment %}

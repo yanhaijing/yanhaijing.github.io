@@ -32,12 +32,6 @@ group: navigation
 ## 我的读书
 我在豆瓣维护了我的[读书清单](https://book.douban.com/people/yanhaijing/)，如果可以你可以送我我想读的书单中的书。
 
-## 我的Q群 
-下面是我几个群，欢迎加入
-
-<a target="_blank" href="http://url.cn/OZZ7bw" rel="nofollow"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="GitHub 家园" title="GitHub 家园"></a>
-<a target="_blank" href="http://url.cn/OXkoEC" rel="nofollow"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="CSS家园" title="CSS家园"></a>
-
 ## 更多信息
 <a href="https://github.com/yanhaijing" title="我在GitHub" target="_blank"><img src="{{ HOME_PATH }}img/auth-github.png"></a>
 <a href="http://weibo.com/yanhaijing1234" title="我在微博" target="_blank" rel="nofollow"><img src="{{ HOME_PATH }}img/auth-weibo.png"></a>

@@ -135,8 +135,8 @@ description: 《现代JavaScript库开发：原理、技术与实战》作者分
 
 ## 资源汇总
 - [zepto.fullpage](https://github.com/yanhaijing/zepto.fullpage)，专注于移动端的fullPage.js。
-- [template.js](https://github.com/yanhaijing/template.js)，一款 javascript 模板引擎，简单，好用
-- [jslib-base](https://github.com/yanhaijing/jslib-base/)，最好用的 JS|TS 第三方库脚手架，10 秒快速搭建一个新库的基础框架。
+- [template.js](https://github.com/yanhaijing/template.js)，一款 javascript 模板引擎，简单，好用。
+- [jslib-base](https://github.com/yanhaijing/jslib-base/)，最好用的 JS\|TS 第三方库脚手架，10 秒快速搭建一个新库的基础框架。
 - [jsmini](https://github.com/jsmini)，Simple and beautifu library for JavaScript.
 - [gitbook-boilerplate](https://github.com/yanhaijing/gitbook-boilerplate)，一个基于gitbook快速写电子书的模版。
 

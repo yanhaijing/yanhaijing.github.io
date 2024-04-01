@@ -2,6 +2,6 @@
   "name": "yanhaijing.github.io",
   "private": true,
   "devDependencies": {
-    "prettier": "2.7.1"
+    "prettier": "^2.7.1"
   }
 }

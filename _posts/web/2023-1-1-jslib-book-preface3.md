@@ -64,6 +64,6 @@ description: 我的新书《现代JavaScript库开发：原理、技术与实战
 
 我还给大家准备了签名版，免费赠送直播课和周边，想要签名版的可以通过微信公众号联系我：**颜海镜**
 
-京东：<a href="https://u.jd.com/Subw5HP" target="_blank">https://u.jd.com/Subw5HP</a> 
+京东：<a href="https://u.jd.com/7QlXVqN" target="_blank">https://u.jd.com/7QlXVqN</a> 
 
 当当：<a href="http://product.dangdang.com/29494845.html" target="_blank">http://product.dangdang.com/29494845.html</a>

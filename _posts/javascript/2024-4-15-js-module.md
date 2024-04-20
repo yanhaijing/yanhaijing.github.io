@@ -59,11 +59,11 @@ define(["beta"], function (beta) {
 
 笔者早年间写的[变色方块小游戏](http://yanhaijing.com/inverter/)，就是使用 RequireJS 作为加载器的，其源代码中只加载一个入口文件。
 
-![image.png]({{BLOG_IMG}}611.png)
+![image.png]({{BLOG_IMG}}612.png)
 
 其依赖的其他模块都通过 RequireJS 异步导入，示例如下：
 
-![image.png]({{BLOG_IMG}}612.png)
+![image.png]({{BLOG_IMG}}611.png)
 
 目前 AMD 已经很少使用，仅作为了解即可，但在当时 AMD 也有很多用户，很多 JS 库都提供了 AMD 的引入方式。
 

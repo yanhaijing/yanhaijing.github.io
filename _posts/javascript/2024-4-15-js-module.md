@@ -194,7 +194,7 @@ webpack 对于 browser 的支持也通过增加配置的方式，上面我们看
 
 只需简单添加`type="module"`即可，示例如下，现在我们使用 vite 在 dev 模式下，就是基于浏览器原生 ESM 加载模块的。
 
-![image.png]({{BLOG_IMG}}623.png)如下
+![image.png]({{BLOG_IMG}}623.png)
 
 ## Node.js 如何支持 ESM
 

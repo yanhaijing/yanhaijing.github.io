@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 世界读书日：Chatgpt时代你多久没读书了？
+title: 世界读书日：ChatGPT 时代你多久没读书了？
 category : other
 tagline: "原创"
 tags : [other]

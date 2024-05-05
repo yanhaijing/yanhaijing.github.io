@@ -19,23 +19,32 @@ $ jekyll server -D # 预览草稿
 
 ### MAC 环境搭建
 
-第一步，通过升级 ruby 版本
+第一步，通过升级 ruby 版本（使用 rbenv）
 
 ```bash
-$ \curl -sSL https://get.rvm.io | bash -s stable
-$ echo "ruby_url=https://cache.ruby-china.com/pub/ruby" > ~/.rvm/user/db # 修改rvm镜像
-$ rvm list known # 列出ruby所有版本
-$ rvm install 3.3.0 # 安装指定版本
-$ ruby -version
+# 安装 rbenv 和 ruby-build（如果还没有安装）
+$ brew install rbenv ruby-build
+
+# 初始化 rbenv（添加到 shell 配置）
+$ rbenv init - zsh >> ~/.zshrc
+$ source ~/.zshrc
+
+# 列出可用的 ruby 版本
+$ rbenv versions
+
+# 安装指定版本的 Ruby（例如 3.3.10）
+$ rbenv install 3.3.10
+
+# 设置全局 Ruby 版本
+$ rbenv global 3.3.10
+
+# 验证安装
+$ ruby --version
 ```
 
 第二步，安装 jekyll
 
 ```bash
-# 更换国内镜像
-$ gem sources --remove https://rubygems.org/
-$ gem sources -a https://gems.ruby-china.com/
-
 # 安装jekyll
 $ gem install bundler jekyll
 ```

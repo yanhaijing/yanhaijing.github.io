@@ -10,6 +10,34 @@ description: 轻松在Mac上安装多个Node.js版本，解决全局安装权限
 
 {% include JB/setup %}
 
+## 🚀 极速安装指南 (TL;DR)
+
+如果你不想深究原理，只想在 Mac (Zsh) 上快速搞定 **无 sudo 权限烦恼** 的 Node.js 环境，请直接在终端执行以下命令：
+
+```bash
+# 1. 确保已安装 Homebrew
+brew install n
+
+# 2. 配置 n 的目录与环境变量 (解决安装 Node 需要 sudo 的问题)
+mkdir -p $HOME/.n
+echo 'export N_PREFIX=$HOME/.n' >> ~/.zshrc
+echo 'export PATH=$N_PREFIX/bin:$PATH' >> ~/.zshrc
+source ~/.zshrc
+
+# 3. 安装最新的 LTS 版 Node.js
+n lts
+
+# 4. 配置 npm 全局安装路径 (解决 npm i -g 需要 sudo 的问题)
+mkdir -p $HOME/.npm-global
+npm config set prefix '~/.npm-global'
+echo 'export PATH="$HOME/.npm-global/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+---
+
+## 📚 详细讲解
+
 我之前写过一篇[小白的 Mac 上手指南(干货)](https://yanhaijing.com/mac/2017/07/19/my-mac-note/)，受到了很多掘友好评，最近重新安装环境，我发现以前安装 Node 和 npm 的方法还有优化空间，原来老司机也有翻车的时候。
 
 所以我决定重写一篇文章，本文的技巧一定会让你效率翻倍，老规矩本文不止告诉你怎么做，还告诉你为什么这么做。

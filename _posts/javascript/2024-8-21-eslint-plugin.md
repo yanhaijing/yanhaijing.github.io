@@ -260,7 +260,7 @@ ruleTester.run('type-typeof-limit', rule, {
 
 写好单元测试后，执行“npm test”命令即可运行测试，如果看到如图所示的输出，则表示单元测试通过了。
 
-![]({{BLOG_IMG}}/647.png)
+![]({{BLOG_IMG}}/646.png)
 
 下面在真实实验环境下新建插件，由于我们的插件还没有发布，因此需要通过 link 的方式使用。
 
@@ -296,7 +296,7 @@ typeof a === 'object';
 
 如果能够看到如图所示的红色波浪线，当将鼠标指针悬停到波浪线上时，显示如图所示的错误信息，则表示成功了。
 
-![]({{BLOG_IMG}}/648.png)
+![]({{BLOG_IMG}}/647.png)
 
 ## type-instanceof-limit
 
